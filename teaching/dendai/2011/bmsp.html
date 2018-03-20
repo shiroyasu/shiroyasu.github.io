@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<link rel="shortcut icon" href="../img/favicon.png" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="../img/favicon.png" type="image/vnd.microsoft.icon" />
+<title>基礎数学 特別クラス（担当：佐藤）</title>
+<link rel=stylesheet type="text/css" href="../hstyle-d.css">
+</head>
+<body>
+<script src="../MathJax/MathJax.js">
+MathJax.Hub.Config({
+	jax: ["input/TeX","output/HTML-CSS"],
+	extensions: ["tex2jax.js"],
+	tex2jax: {
+		inlineMath: [['$','$'],['\\(','\\)']],
+		processEscapes: 0
+		}
+	});
+</script>
+<span class="sg"><a href="../../../index.html">home</a> &#155;&#155; <a href="../../index.html">Teaching</a> &#155;&#155; <a href="../../dendai.html">Previous Teaching at TDU</a> &#155;&#155;</span>
+<br><br>
+<span class="ttl">基礎数学（特別クラス）</span> <span class="ttl-g">Basic Mathematics</span><br>
+<span class="sg">2011年度 春セメスター 月水金 2時限 (10:30-11:20)，水 4時限 (12:30-13:20)，金 6時限（14:30-15:20） 教育棟 307教室</span>
+<br><br>
+担　当：佐藤 弘康 (hiroyasu [at] sie.dendai.ac.jp)<br>
+研究室：研究棟 501教員室 (0476-46-8652)<br>
+<hr>
+<span class="sbttl">連絡事項</span>
+
+<table width="700" border="0" class="box" cellpadding="3">
+<tr>
+<td>
+<ul>
+<li>この授業は終了しました．</li>
+<!--
+<li><b>7月25日(月)</b>に<b><a href="./bmsp/bmsp-edte-keiji.pdf">期末試験</a></b>を実施しました．</li>
+<li>第10回小テストの<a href="./bmsp/bmsp-mt.10-ans.pdf">解答</a>を公開しました．</li>
+<li>第8回小テストの追試に不適切な問題（授業で扱っていない問題）がありましたので，その問題については無条件で加点します（極限の問題．正解は「<b>極限は存在しない</b>」です）．</li>
+<li>第7回小テストに配点ミスがあります．<a href="./bmsp/bmsp-mt.7.pdf">訂正しました</a>．</li>
+<li>水曜日に実施する小テストの追試は次週の月曜日と火曜日に実施します（どちらで受験しても可，学習サポートセンターで受験．14:30 -- 17:00）．この日程で都合が悪い学生はその都度申告してください．</li>
+<li>6月3日：第4回小テストの追試は6月6日（月）と7日（火）に実施します（どちらで受験しても可，学習サポートセンターでの受験のみ）．</li>
+<li>5月31日：第4回小テストの詳解を公開しました．</li>
+<li>5月25日：第3回小テストの詳解を公開しました．</li>
+<li>5月20日：第3回小テストを返却，略解を公開しました．<u>追試は5月24日（火）</u>に実施します．</li>
+<li>5月17日：第2回小テストの詳解を公開しました．</li>
+<li>5月13日に第2回小テストの答案を返却しました．<u>追試は5月16日（月）</u>に実施します．</li>
+<li>5月6日：第1回小テストの詳解を公開しました．</li>
+<li>5月2日に第1回小テストの答案を返却しました．<u>追試は5月6日（金）</u>に実施します．</li>
+<li>4月16日：このページを公開しました．</li>
+-->
+</ul>
+</td>
+<td>　</td>
+</tr>
+</table>
+<br>
+<span class="c">これまでの授業と今後の予定</span> <span class="sg">配布物のダウンロード</span>
+<br>
+<table 
+ style="width: 88%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="1" cellspacing="2"> 
+  <tbody> 
+    <tr> 
+      <td style="width: 35px; text-align: right; vertical-align: top;">4月</td> 
+      <td style="width: 75px; text-align: right; vertical-align: top;">18日<span class="sg">（月）</span></td> 
+      <td class="lt">ガイダンス<span class="sg">（<a href="./bmsp/bmsp-0418-guidance.pdf">資料</a>）</span></td> 
+    </tr>
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">20日<span class="sg">（水）</span></td> 
+      <td class="lt">&#167;1 実数 (1) <span class="sg">自然数，倍数と約数，素数と素因数分解（<a href="./bmsp/bmsp-slide.1.1.pdf">スライド：素数の調べ方</a> | <a href="./bmsp/bmsp-ex.1.1.pdf">問題 1.1</a>）</span><br>
+&#167;1 実数 (2) <span class="sg">最小公倍数・最大公約数</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">22日<span class="sg">（金）</span></td> 
+       <td class="lt">&#167;1 実数 (3) <span class="sg">有理数，循環小数</span><br>
+&#167;1 実数 (4) <span class="sg">平方根，絶対値</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">25日<span class="sg">（月）</span></td>
+       <td class="lt">問題演習 <span class="sg">問題 1.1, 1.2, 1.3(1) | <a href="./bmsp/bmsp-ex.1.2.pdf">追加問題 1.2</a>（<a href="./bmsp/bmsp-ex.1.2-ans.pdf">解答</a>）</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">27日<span class="sg">（水）</span></td> 
+       <td class="lt"><a href="./bmsp/bmsp-mt.1.pdf">第1回小テスト</a>（<a href="./bmsp/bmsp-mt.1rans.pdf">略解</a> | <a href="./bmsp/bmsp-mt.1dans.pdf">詳解</a>）<br>
+&#167;2 整式 (1) <span class="sg">多項式の演算</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt">5月</td> 
+      <td class="rt">2日<span class="sg">（月）</span></td> 
+       <td class="lt">&#167;2 整式 (2) <span class="sg">展開と因数分解</span></td>
+　    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">6日<span class="sg">（金）</span></td> 
+       <td class="lt">&#167;2 整式 (3) <span class="sg">多項式の割り算</span><br>
+       &#167;2 整式 (4) <span class="sg">多項式と関数，剰余定理</span><br>
+       <span class="sg"><a href="./bmsp/bmsp-mt.1.mu.pdf">第1回小テスト 追試</a>（<a href="./bmsp/bmsp-mt.1.mu-ans.pdf">解答</a>）</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">9日<span class="sg">（月）</span></td> 
+       <td class="lt">問題演習 <span class="sg">問題 3.1, 3.2, 3.3, 3.4, 3.6, 3.7, 3.8(1) | <a href="./bmsp/bmsp-ex.2.1.pdf">追加問題 2.1</a>（<a href="./bmsp/bmsp-ex.2.1-ans.pdf">解答</a>）</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">11日<span class="sg">（水）</span></td> 
+      <td class="lt"><a href="./bmsp/bmsp-mt.2.pdf">第2回小テスト</a>（<a href="./bmsp/bmsp-mt.2rans.pdf">略解</a> | <a href="./bmsp/bmsp-mt.2dans.pdf">詳解</a>）<br>
+      &#167;2 整式 (5) <span class="sg">因数定理，高次多項式の因数分解，分数式</span>
+      </td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">13日<span class="sg">（金）</span></td> 
+       <td class="lt">&#167;3 2次関数 (1) <span class="sg">2次関数の定義とグラフ</span><br>
+       &#167;3 2次関数 (2) <span class="sg">2次多項式の平方完成</span>
+       </td>
+    </tr> 
+<tr>
+     <td class="rt"></td> 
+      <td class="rt">16日<span class="sg">（月）</span></td> 
+       <td class="lt">問題演習 <span class="sg">問題 3.8(2), 3.10, 2.1 | <a href="./bmsp/bmsp-ex.2.2.pdf">追加問題 2.2</a>（<a href="./bmsp/bmsp-ex.2.2-ans.pdf">解答</a>）| <a href="./bmsp/bmsp-ex.3.1.pdf">追加問題 3.1</a>（<a href="./bmsp/bmsp-ex.3.1-ans.pdf">解答</a>）</span><br>
+       <span class="sg"><a href="./bmsp/bmsp-mt.2.mu.pdf">第2回小テスト 追試</a>（<a href="./bmsp/bmsp-mt.2.mu-ans.pdf">解答</a>）</span></td>
+    </tr>
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">18日<span class="sg">（水）</span></td> 
+      <td class="lt"><a href="./bmsp/bmsp-mt.3.pdf">第3回小テスト</a>（<a href="./bmsp/bmsp-mt.3rans.pdf">略解</a> | <a href="./bmsp/bmsp-mt.3dans.pdf">詳解</a>）<br>
+      &#167;3 2次関数 (3) <span class="sg">2次関数の最大値・最小値</span>
+      </td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">20日<span class="sg">（金）</span></td> 
+       <td class="lt">&#167;3 2次関数 (4) <span class="sg">2次方程式と解の公式</span><br>
+       &#167;3 2次関数 (5) <span class="sg">判別式，2次方程式の虚数解，解の公式を利用した因数分解</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">23日<span class="sg">（月）</span></td> 
+       <td class="lt">問題演習 <span class="sg">問題 2.2, 2.3, 2.4, 2.7, 3.5 | <a href="./bmsp/bmsp-ex.3.2.pdf">追加問題 3.2</a>（<a href="./bmsp/bmsp-ex.3.2-ans.pdf">解答</a>）</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt"><span class="sg">24日（火）</span></td> 
+       <td class="lt"><span class="sg"><a href="./bmsp/bmsp-mt.3.mu.pdf">第3回小テスト 追試</a>（<a href="./bmsp/bmsp-mt.3.mu-ans.pdf">解答</a>）</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">25日<span class="sg">（水）</span></td> 
+       <td class="lt"><a href="./bmsp/bmsp-mt.4.pdf">第4回小テスト</a>（<a href="./bmsp/bmsp-mt.4rans.pdf">略解</a> | <a href="./bmsp/bmsp-mt.4dans.pdf">詳解</a>）<br>
+       &#167;3 2次関数 (6) <span class="sg">2次不等式</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">27日<span class="sg">（金）</span></td> 
+       <td class="lt">&#167;4 三角関数 (1) <span class="sg">弧度法，三角比</span><br>
+       &#167;4 三角関数 (2) <span class="sg">正弦・余弦・正接の定義</span>
+       </td>
+    </tr>
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">30日<span class="sg">（月）</span></td> 
+      <td class="lt">問題演習 <span class="sg">問題 2.5, 4.1, 4.2 | <a href="./bmsp/bmsp-ex.3.3.pdf">追加問題 3.3</a>（<a href="./bmsp/bmsp-ex.3.3-ans.pdf">解答</a>） | <a href="./bmsp/bmsp-ex.4.1.pdf">追加問題 4.1</a>（<a href="./bmsp/bmsp-ex.4.1-ans.pdf">解答</a>）</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt"><span class="sg">31日（火）</span></td> 
+       <td class="lt"><span class="sg"><a href="./bmsp/bmsp-mt.4.mu.pdf">第4回小テスト 追試</a>（<a href="./bmsp/bmsp-mt.4.mu-ans.pdf">解答</a>）</span></td>
+    </tr>  
+    <tr> 
+      <td class="rt">6月</td> 
+      <td class="rt">1日<span class="sg">（水）</span></td> 
+       <td class="lt"><a href="./bmsp/bmsp-mt.5.pdf">第5回 小テスト</a>（<a href="./bmsp/bmsp-mt.5rans.pdf">略解</a> | <a href="./bmsp/bmsp-mt.5dans.pdf">詳解</a>）<br>
+       &#167;4 三角関数 (3) <span class="sg">三角関数の性質</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">3日<span class="sg">（金）</span></td> 
+       <td class="lt">&#167;4 三角関数 (4) <span class="sg">三角関数のグラフ1</span><br>
+       &#167;4 三角関数 (5) <span class="sg">三角関数のグラフ2</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">6日<span class="sg">（月）</span></td> 
+       <td class="lt">&#167;4 三角関数 (6) <span class="sg">加法定理</span></td></tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt"><span class="sg">7日（火）</span></td> 
+       <td class="lt"><span class="sg"><a href="./bmsp/bmsp-mt.5.mu.pdf">第5回小テスト 追試</a>（<a href="./bmsp/bmsp-mt.5.mu-ans.pdf">解答</a>）</span></td></tr> 
+    <tr>
+      <td class="rt"></td> 
+      <td class="rt">8日<span class="sg">（水）</span></td> 
+       <td class="lt">問題演習・これまでのまとめ<br>
+       <a href="./bmsp/bmsp-mdte.pdf">中間試験</a> <span class="sg">（<a href="./bmsp/bmsp-mdte-ans.pdf">解答</a>）</span></td> 
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">10日<span class="sg">（金）</span></td> 
+       <td class="lt">&#167;5 指数関数と対数関数 (1) <span class="sg">指数の拡張</span><br>
+       &#167;5 指数関数と対数関数 (2) <span class="sg">累乗根</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">13日<span class="sg">（月）</span></td> 
+       <td class="lt">問題演習 <span class="sg">問題 5.2, 5.3, 5.4, 5.6 | <a href="./bmsp/bmsp-ex.5.1.pdf">追加問題 5.1</a>（<a href="./bmsp/bmsp-ex.5.1-ans.pdf">解答</a>）</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">15日<span class="sg">（水）</span></td> 
+       <td class="lt"><a href="./bmsp/bmsp-mt.6.pdf">第6回 小テスト</a>（<a href="./bmsp/bmsp-mt.6rans.pdf">略解</a> | <a href="./bmsp/bmsp-mt.6dans.pdf">詳解</a>）<br>
+       &#167;5 指数関数と対数関数 (3) <span class="sg">指数関数のグラフ，対数の定義（予定）</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">17日<span class="sg">（金）</span></td> 
+       <td class="lt">&#167;5 指数関数と対数関数 (4) <span class="sg">対数の性質</span><br>
+       &#167;5 指数関数と対数関数 (5) <span class="sg">指数関数と対数関数のグラフ（<a href="./bmsp/bmsp-ex.5.2.pdf">補足 5.2</a>）</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">20日<span class="sg">（月）</span></td> 
+       <td class="lt">問題演習 <span class="sg">問題 5.7, 5.8, 5.10, 5.11 | <a href="./bmsp/bmsp-ex.5.3.pdf">追加問題 5.3</a>（<a href="./bmsp/bmsp-ex.5.3-ans.pdf">解答</a>）</span></td>
+    </tr>
+        <tr> 
+      <td class="rt"></td> 
+      <td class="rt"><span class="sg">21日（火）</span></td> 
+       <td class="lt"><span class="sg"><a href="./bmsp/bmsp-mt.6.mu.pdf">第6回小テスト 追試</a> | <a href="./bmsp/bmsp-mt.6.mu-ans.pdf">解答</a>）</span></td>
+    </tr>
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">22日<span class="sg">（水）</span></td> 
+       <td class="lt"><a href="./bmsp/bmsp-mt.7.pdf">第7回 小テスト</a>（<a href="./bmsp/bmsp-mt.7-ans.pdf">解答</a>）<br>
+       &#167;6 微分 (1) <span class="sg">平均変化率，極限，微分係数</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">24日<span class="sg">（金）</span></td> 
+       <td class="lt">&#167;6 微分 (2) <span class="sg">導関数</span><br>
+       &#167;6 微分 (3) <span class="sg">接線の方程式</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">27日<span class="sg">（月）</span></td> 
+       <td class="lt">問題演習 <span class="sg">問題 6.1, 6.2, 6.3, 6.4, 6.7 | <a href="./bmsp/bmsp-ex.6.1.pdf">追加問題 6.1</a>（<a href="./bmsp/bmsp-ex.6.1-ans.pdf">解答</a>）</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt"><span class="sg">28日（火）</span></td> 
+       <td class="lt"><span class="sg"><a href="./bmsp/bmsp-mt.7.mu.pdf">第7回小テスト 追試</a>（<a href="./bmsp/bmsp-mt.7.mu-ans.pdf">解答</a>）</span></td>
+    </tr>
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">29日<span class="sg">（水）</span></td> 
+       <td class="lt"><a href="./bmsp/bmsp-mt.8.pdf">第8回 小テスト</a>（<a href="./bmsp/bmsp-mt.8-ans.pdf">解答</a>）<br>
+       &#167;6 微分 (4) <span class="sg">関数の増減</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt">7月</td> 
+      <td class="rt">1日<span class="sg">（金）</span></td> 
+       <td class="lt">&#167;6 微分 (5) <span class="sg">$k$次関数のグラフ</span><br>
+       &#167;7 積分 (1) <span class="sg">原始関数，不定積分</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">4日<span class="sg">（月）</span></td> 
+       <td class="lt">問題演習 <span class="sg">問題 6.5, 6.6, 7.1 | <a href="./bmsp/bmsp-ex.6.2.pdf">追加問題 6.2</a>（<a href="./bmsp/bmsp-ex.6.2-ans.pdf">解答</a>） | <a href="./bmsp/bmsp-ex.7.1.pdf">追加問題 7.1</a>（<a href="./bmsp/bmsp-ex.7.1-ans.pdf">解答</a>）</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt"><span class="sg">5日（火）</span></td> 
+       <td class="lt"><span class="sg"><a href="./bmsp/bmsp-mt.8.mu.pdf">第8回小テスト 追試</a>（<a href="./bmsp/bmsp-mt.8.mu-ans.pdf">解答</a>）</span></td>
+    </tr>
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">6日<span class="sg">（水）</span></td> 
+       <td class="lt"><a href="./bmsp/bmsp-mt.9.pdf">第9回 小テスト</a>（<a href="./bmsp/bmsp-mt.9-ans.pdf">解答</a>）<br>
+       &#167;7 積分 (2) <span class="sg">定積分と面積1</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">8日<span class="sg">（金）</span></td> 
+       <td class="lt">&#167;7 積分 (3) <span class="sg">定積分と面積2</span><br>
+       &#167;7 積分 (4) <span class="sg">定積分と面積3</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">11日<span class="sg">（月）</span></td> 
+       <td class="lt">問題演習 <span class="sg">問題 7.2, 7.3, 7.4 | <a href="./bmsp/bmsp-ex.7.2.pdf">追加問題 7.2</a>（<a href="./bmsp/bmsp-ex.7.2-ans.pdf">解答</a>）</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt"><span class="sg">12日（火）</span></td> 
+       <td class="lt"><span class="sg"><a href="./bmsp/bmsp-mt.9.mu.pdf">第9回小テスト 追試</a>（<a href="./bmsp/bmsp-mt.9.mu-ans.pdf">解答</a>）</span></td>
+    </tr>
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">13日<span class="sg">（水）</span></td> 
+       <td class="lt"><a href="./bmsp/bmsp-mt.10.pdf">第10回 小テスト</a>（<a href="./bmsp/bmsp-mt.10-ans.pdf">解答</a>）<br>
+       第10回小テストの解説（「定積分と面積」の復習）</td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">15日<span class="sg">（金）</span></td> 
+       <td class="lt">&#167;8 数列 (1) <span class="sg">等差数列と等比数列</span><br>
+       &#167;8 数列 (2) <span class="sg">数列の和</span></span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt"><span class="sg">19日（火）</span></td> 
+       <td class="lt"><span class="sg"><a href="./bmsp/bmsp-mt.10.mu.pdf">第10回小テスト 追試</a>（<a href="./bmsp/bmsp-mt.10.mu-ans.pdf">解答</a>）</span></td>
+    </tr>
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">20日<span class="sg">（水）</span></td> 
+       <td class="lt">問題演習 <span class="sg">問題 9.1, 9.2, 9.3, 9.4 | <a href="./bmsp/bmsp-ex.8.1.pdf">追加問題 8.1</a>（<a href="./bmsp/bmsp-ex.8.1-ans.pdf">解答</a>）</span><br>
+      &#167;8 数列 (3) <span class="sg">漸化式と階差数列1（問題 9.5）</span></td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">22日<span class="sg">（金）</span></td> 
+       <td class="lt">&#167;8 数列 (4) <span class="sg">漸化式と階差数列2</span><br>
+       問題演習（まとめ）</td>
+    </tr> 
+    <tr> 
+      <td class="rt"></td> 
+      <td class="rt">25日<span class="sg">（月）</span></td> 
+       <td class="lt"><b><a href="./bmsp/bmsp-edte.pdf">期末試験</a></b>（<a href="./bmsp/bmsp-edte-ans.pdf">解答</a>）</td>
+    </tr> 
+   </tbody>
+</table>
+<hr>
+<span class="c">授業の内容</span>
+<ul>
+<li>この学部で学ぶ数学の基礎となる部分を学びます．内容は，数と式・2次関数・三角関数・指数関数・対数関数・微分積分の初歩で，高校の数学II,B までを含む内容です．特に微分積分学の講義ではこの科目の理解を前提とするため，確実に理解してください．</li>
+</ul>
+<span class="c">教科書について</span>
+<ul>
+<li>基本的には「大学新入生の数学（田澤義彦 著）」に沿って進めますが
+多少順番を入れ替えます（その都度アナウンスします）．</li>
+<li>田澤先生はこの教科書の<a href="http://math.kn.dendai.ac.jp/tazawa/HP_J/textbook/index.htm">ビデオ教材</a>を公開されてますので，そちらも参考にして学習に役立ててください．</li>
+</ul>
+<span class="c">授業の進め方</span>
+<ul>
+<li>講義3コマ，問題演習1コマの後，小テストを実施します．</li>
+<li>講義では基本事項の説明と例題の解説を行います．</li>
+<li>問題演習の時間に，例題の解説を参考にして教科書の演習問題を解いてもらいます（問題は講義の時間に指定します）．すべて解き終わったら教師（またはTA）がノートをチェックします．</li>
+</ul>
+<span class="c">小テストについて</span>
+<ul>
+<li>ほぼ毎週小テストを行います．</li>
+<li>答案回収後，略解を配布します．</li>
+<li>60点以上を合格とし，合格者にはさらに10点加点します（ただし，100点が上限）．</li>
+<li>60点未満の場合は追試を受験してもらいます（追試は学習サポートセンターで受験）．</li>
+<li>追試で60点以上取った場合，その小テストの獲得点数は60点となりますが，60点未満の場合は元の小テストの点数が獲得点数となります．
+<span class="sg">小テストの点数が30点だったとして追試を受けたとき，仮に追試で78点を取ったとするとその小テストの点数は60点となるが，追試が50点ならばその小テストの点数は30点のままとなる．</span></li>
+<li>追試を受けるためには，小テストで不正解だった問題をもう一度解き，レポート用紙（ルーズリーフノートでもよい）にまとめ，学習サポートセンターで数学担当教員にチェックしてもらってください（その場で提出）．</li>
+</ul>
+<span class="c">学習サポートセンターについて</span>
+<ul>
+<li>教育棟1階にある学生サポートセンターでは数学担当教員がみなさんの質問に答えてくれます．高校の教科書，学習参考書も置いてあります．積極的に利用してください．</li>
+<li>担当教員
+<ul>
+<li>　火水木金 (14:30 -- 17:30)：ブヘ・エリドン先生</li>
+<li>月　　　　 (14:30 -- 17:30)：アヒニヤズ・ヌルメメット先生</li>
+</ul>
+</li>
+</ul>
+<span class="c">オフィスアワーについて</span>
+<ul>
+<li>金曜日の15:30 -- 17:00 をオフィスアワーとします．</li>
+<li>上記以外の時間でも質問は歓迎します（この場合は事前に電話かメールでアポを取ることが望ましい．<a href="../index.html#schedule">予定表</a>を参考に）．</li>
+</ul>
+<br>
+<span class="c">成績について</span>
+<ul>
+<li>中間試験，期末試験，小テスト・問題演習が4:4:2の割合で評価されます．</li>
+</ul>
+<hr>
+<span class="sg"><a href="./bmed.html">top</a></span>
+</body>
+</html>

@@ -1,0 +1,1639 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     61445,       1630]
+NotebookOptionsPosition[     57888,       1513]
+NotebookOutlinePosition[     58995,       1548]
+CellTagsIndexPosition[     58916,       1543]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell["\:5b9f\:7fd2\:ff1a\:5e73\:9762\:306e\:7dda\:5f62\:5909\:63db", "Title",
+ CellChangeTimes->{
+  3.496187281618181*^9, {3.4961987035897703`*^9, 3.496198719786481*^9}, 
+   3.4962032080847483`*^9},
+ FontFamily->"\.83q\.83\.89\.83M\.83m\.8ap\.83S Pro W6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["1.1) \:70b9p\:3092\:7dda\:5f62\:5909\:63db\:3067\:79fb\:3059", "Section",
+ CellChangeTimes->{{3.496187281618181*^9, 3.496187309859312*^9}, {
+  3.496195560634843*^9, 3.496195567160737*^9}, {3.496357808616158*^9, 
+  3.4963578211512136`*^9}, {3.496358062497468*^9, 3.4963580827843027`*^9}, {
+  3.4963588090646553`*^9, 3.496358809338735*^9}},
+ FontFamily->"\.83q\.83\.89\.83M\.83m\.8ap\.83S Pro W6"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"A", ":=", 
+   RowBox[{"(", GridBox[{
+      {"1", "2"},
+      {"3", "4"}
+     }], ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p1", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p2", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"10", ",", "0"}], "}"}]}], "}"}], "]"}], ",", 
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", 
+           RowBox[{"-", "10"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "10"}], "}"}]}], "}"}], "]"}]}], "}"}], "]"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"PointSize", "[", "Large", "]"}], ",", 
+       RowBox[{"Point", "[", 
+        RowBox[{"{", 
+         RowBox[{"p1", ",", "p2"}], "}"}], "]"}], ",", 
+       RowBox[{"Text", "[", 
+        RowBox[{"\"\<p\>\"", ",", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"p1", ",", "p2"}], "}"}], "+", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0.5"}], "}"}]}]}], "]"}]}], "}"}], "}"}], "]"}],
+    ",", "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"PointSize", "[", "Large", "]"}], ",", 
+       RowBox[{"Point", "[", 
+        RowBox[{"A", ".", 
+         RowBox[{"{", 
+          RowBox[{"p1", ",", "p2"}], "}"}]}], "]"}], ",", 
+       RowBox[{"Text", "[", 
+        RowBox[{"\"\<Ap\>\"", ",", 
+         RowBox[{
+          RowBox[{"A", ".", 
+           RowBox[{"{", 
+            RowBox[{"p1", ",", "p2"}], "}"}]}], "+", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", 
+            RowBox[{"-", "0.7"}]}], "}"}]}]}], "]"}]}], "}"}], "}"}], "]"}]}],
+   "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.4961862529795523`*^9, 3.4961863198879747`*^9}, {
+   3.49618671721684*^9, 3.496186793860593*^9}, 3.496187141342314*^9, 
+   3.496187203486044*^9, {3.496187331483*^9, 3.496187404085987*^9}, {
+   3.4961882971997337`*^9, 3.496188326972683*^9}, {3.4961892091735487`*^9, 
+   3.496189269287661*^9}, {3.496189525123231*^9, 3.496189572030937*^9}, {
+   3.49619560561537*^9, 3.496195706343874*^9}, {3.496197143199295*^9, 
+   3.4961972516717453`*^9}, {3.496197397866946*^9, 3.496197542223284*^9}, {
+   3.496197577950651*^9, 3.4961975781901827`*^9}, {3.496197789406721*^9, 
+   3.4961978430707417`*^9}, {3.496357838800267*^9, 3.496357845236794*^9}, {
+   3.49635787708177*^9, 3.496358048197209*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext",
+ CellChangeTimes->{3.496224583260696*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["1.2) \:70b9p\:3092\:52d5\:304b\:3057\:305f\:3068\:304d\:306e\:50cf", \
+"Section",
+ CellChangeTimes->{{3.496187281618181*^9, 3.496187309859312*^9}, {
+  3.496195560634843*^9, 3.496195567160737*^9}, {3.496357808616158*^9, 
+  3.4963578211512136`*^9}, {3.496358062497468*^9, 3.496358075167264*^9}, {
+  3.496358756629704*^9, 3.496358805680332*^9}},
+ FontFamily->"\.83q\.83\.89\.83M\.83m\.8ap\.83S Pro W6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"A", ":=", 
+   RowBox[{"(", GridBox[{
+      {"1", "2"},
+      {"3", "4"}
+     }], ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Show", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Arrow", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"10", ",", "0"}], "}"}]}], "}"}], "]"}], ",", 
+        RowBox[{"Arrow", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", 
+             RowBox[{"-", "10"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "10"}], "}"}]}], "}"}], "]"}]}], "}"}], "]"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"PointSize", "[", "Large", "]"}], ",", 
+         RowBox[{"Point", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"p", "[", 
+             RowBox[{"[", "1", "]"}], "]"}], ",", 
+            RowBox[{"p", "[", 
+             RowBox[{"[", "2", "]"}], "]"}]}], "}"}], "]"}], ",", 
+         RowBox[{"Text", "[", 
+          RowBox[{"\"\<p\>\"", ",", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"p", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], ",", 
+              RowBox[{"p", "[", 
+               RowBox[{"[", "2", "]"}], "]"}]}], "}"}], "+", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0.5"}], "}"}]}]}], "]"}]}], "}"}], "}"}], 
+      "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"PointSize", "[", "Large", "]"}], ",", 
+         RowBox[{"Point", "[", 
+          RowBox[{"A", ".", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"p", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", 
+             RowBox[{"p", "[", 
+              RowBox[{"[", "2", "]"}], "]"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"Text", "[", 
+          RowBox[{"\"\<Ap\>\"", ",", 
+           RowBox[{
+            RowBox[{"A", ".", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"p", "[", 
+                RowBox[{"[", "1", "]"}], "]"}], ",", 
+               RowBox[{"p", "[", 
+                RowBox[{"[", "2", "]"}], "]"}]}], "}"}]}], "+", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", 
+              RowBox[{"-", "0.7"}]}], "}"}]}]}], "]"}]}], "}"}], "}"}], 
+      "]"}]}], "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"p", ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}], ",", "\"\<p\:306e\:5ea7\:6a19\>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "3"}], ",", 
+       RowBox[{"-", "3"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "3"}], "}"}]}], "}"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}], ",", " ", 
+   RowBox[{"ControlPlacement", "\[Rule]", "Left"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.4961862529795523`*^9, 3.4961863198879747`*^9}, {
+   3.49618671721684*^9, 3.496186793860593*^9}, 3.496187141342314*^9, 
+   3.496187203486044*^9, {3.496187331483*^9, 3.496187404085987*^9}, {
+   3.4961882971997337`*^9, 3.496188326972683*^9}, {3.4961892091735487`*^9, 
+   3.496189269287661*^9}, {3.496189525123231*^9, 3.496189572030937*^9}, {
+   3.49619560561537*^9, 3.496195706343874*^9}, {3.496197143199295*^9, 
+   3.4961972516717453`*^9}, {3.496197397866946*^9, 3.496197542223284*^9}, {
+   3.496197577950651*^9, 3.4961975781901827`*^9}, {3.496197789406721*^9, 
+   3.4961978430707417`*^9}, {3.496357838800267*^9, 3.496357845236794*^9}, {
+   3.49635787708177*^9, 3.496358048197209*^9}, {3.4963584478826*^9, 
+   3.49635855256901*^9}, {3.496358700213818*^9, 3.496358710906341*^9}, {
+   3.496358946467457*^9, 3.496358990500085*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`p$$ = {0, 0}, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`p$$], {0, 0}, "p\:306e\:5ea7\:6a19"}, {-3, -3}, {3, 
+      3}}}, Typeset`size$$ = {360., {177., 182.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`p$834$$ = {0, 0}}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`p$$ = {0, 0}}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`p$$, $CellContext`p$834$$, {0, 0}]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Graphics[{
+          Arrow[{{-10, 0}, {10, 0}}], 
+          Arrow[{{0, -10}, {0, 10}}]}], 
+        Graphics[{{
+           PointSize[Large], 
+           Point[{
+             Part[$CellContext`p$$, 1], 
+             Part[$CellContext`p$$, 2]}], 
+           Text["p", {
+              Part[$CellContext`p$$, 1], 
+              Part[$CellContext`p$$, 2]} + {0, 0.5}]}}], 
+        Graphics[{{
+           PointSize[Large], 
+           Point[
+            Dot[$CellContext`A, {
+              Part[$CellContext`p$$, 1], 
+              Part[$CellContext`p$$, 2]}]], 
+           Text["Ap", Dot[$CellContext`A, {
+               Part[$CellContext`p$$, 1], 
+               Part[$CellContext`p$$, 2]}] + {0, -0.7}]}}]], 
+      "Specifications" :> {{{$CellContext`p$$, {0, 0}, 
+          "p\:306e\:5ea7\:6a19"}, {-3, -3}, {3, 3}}}, 
+      "Options" :> {ControlPlacement -> Left}, "DefaultOptions" :> {}],
+     ImageSizeCache->{525., {204.84375, 210.15625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`A := {{1, 2}, {3, 4}}}; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.4963575710915127`*^9, {3.496358003457789*^9, 3.496358049012631*^9}, {
+   3.4963585530457363`*^9, 3.496358577818883*^9}, 3.496358644931396*^9, {
+   3.496358702950396*^9, 3.496358711242461*^9}, 3.496359029568429*^9, 
+   3.4963590706237917`*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext",
+ CellChangeTimes->{3.496224583260696*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["2.1)\:300c\:304a\:300d\:306e\:30c7\:30fc\:30bf", "Section",
+ CellChangeTimes->{{3.496187281618181*^9, 3.496187309859312*^9}, {
+  3.4961955481226263`*^9, 3.4961955493102217`*^9}, {3.49635879766608*^9, 
+  3.496358801607141*^9}},
+ FontFamily->"\.83q\.83\.89\.83M\.83m\.8ap\.83S Pro W6"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Oten", ":=", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"3.375", ",", "3.375"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"3.625", ",", "3.625"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"3.625", ",", "3.625"}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"4.625", ",", "2.625"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"4.625", ",", "2.625"}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"4.375", ",", "2.375"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"4.375", ",", "2.375"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"3.375", ",", "3.375"}], "}"}]}], "}"}]}], 
+    "\[IndentingNewLine]", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Oo", ":=", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.5", ",", "3.375"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0.5", ",", "3.625"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.5", ",", "3.625"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1.375", ",", "3.625"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1.375", ",", "3.625"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1.375", ",", "4.5"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1.375", ",", "4.5"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1.625", ",", "4.5"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1.625", ",", "4.5"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1.625", ",", "3.625"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1.625", ",", "3.625"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"2.5", ",", "3.625"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"2.5", ",", "3.625"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"2.5", ",", "3.375"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"2.5", ",", "3.375"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1.625", ",", "3.375"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1.625", ",", "3.375"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1.625", ",", "2"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1.625", ",", "2"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"3.5", ",", "2.625"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"3.5", ",", "2.625"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"4.625", ",", "1.5"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"4.625", ",", "1.5"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"3.625", ",", "0.375"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"3.625", ",", "0.375"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"3.375", ",", "0.625"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"3.375", ",", "0.625"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"4.2", ",", "1.5"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"4.2", ",", "1.5"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"3.4", ",", "2.325"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"3.4", ",", "2.325"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1.625", ",", "1.67"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1.625", ",", "1.67"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1.625", ",", "0.5"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1.625", ",", "0.5"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1.375", ",", "0.5"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1.375", ",", "0.5"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0.5", ",", "1.375"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.5", ",", "1.375"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0.5", ",", "1.625"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.5", ",", "1.625"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1.375", ",", "1.925"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1.375", ",", "1.925"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1.375", ",", "3.375"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1.375", ",", "3.375"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0.5", ",", "3.375"}], "}"}]}], "}"}]}], 
+    "\[IndentingNewLine]", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Onaka", ":=", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.9", ",", "1.45"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1.375", ",", "1.625"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1.375", ",", "1.625"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1.375", ",", "1"}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1.375", ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0.9", ",", "1.45"}], "}"}]}], "}"}]}], "\[IndentingNewLine]",
+     "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"waku", ":=", 
+  RowBox[{"{", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "5"}], "}"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", "5"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"5", ",", "5"}], "}"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"5", ",", "5"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"5", ",", "0"}], "}"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"5", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "\[IndentingNewLine]", 
+   "}"}]}]}], "Input",
+ CellChangeTimes->{{3.496194914971953*^9, 3.496194944976803*^9}, {
+  3.496197076035914*^9, 3.4961970941437893`*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext",
+ CellChangeTimes->{3.496224583260696*^9}]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["2.2)\:300c\:304a\:300d", "Section",
+ CellChangeTimes->{{3.496187281618181*^9, 3.496187309859312*^9}, {
+  3.4963588415613728`*^9, 3.496358842746747*^9}},
+ FontFamily->"\.83q\.83\.89\.83M\.83m\.8ap\.83S Pro W6"],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Line", "[", "Oten", "]"}], ",", 
+    RowBox[{"Line", "[", "Oo", "]"}], ",", 
+    RowBox[{"Line", "[", "Onaka", "]"}], ",", 
+    RowBox[{"Line", "[", "waku", "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.496195206995232*^9, 3.496195245626831*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext",
+ CellChangeTimes->{3.496224583260696*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["2.3)\:300c\:304a\:300d\:3092\:7dda\:5f62\:5909\:63db\:3059\:308b", \
+"Section",
+ CellChangeTimes->{{3.496187281618181*^9, 3.496187309859312*^9}, {
+  3.496195560634843*^9, 3.496195567160737*^9}, {3.496358846215013*^9, 
+  3.4963588472357397`*^9}},
+ FontFamily->"\.83q\.83\.89\.83M\.83m\.8ap\.83S Pro W6"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"A", ":=", 
+   RowBox[{"(", GridBox[{
+      {"1", "0"},
+      {"0", "1"}
+     }], ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"10", ",", "0"}], "}"}]}], "}"}], "]"}], ",", 
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", 
+           RowBox[{"-", "10"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "10"}], "}"}]}], "}"}], "]"}]}], "}"}], "]"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Line", "[", "Oten", "]"}], ",", 
+      RowBox[{"Line", "[", "Oo", "]"}], ",", 
+      RowBox[{"Line", "[", "Onaka", "]"}], ",", 
+      RowBox[{"Line", "[", "waku", "]"}]}], "}"}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", "Blue", ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Line", "[", 
+         RowBox[{"Oten", ".", 
+          RowBox[{"Transpose", "[", "A", "]"}]}], "]"}], ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"Oo", ".", 
+          RowBox[{"Transpose", "[", "A", "]"}]}], "]"}], ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"Onaka", ".", 
+          RowBox[{"Transpose", "[", "A", "]"}]}], "]"}], ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"waku", ".", 
+          RowBox[{"Transpose", "[", "A", "]"}]}], "]"}]}], "}"}]}], "}"}], 
+    "]"}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.4961862529795523`*^9, 3.4961863198879747`*^9}, {
+   3.49618671721684*^9, 3.496186793860593*^9}, 3.496187141342314*^9, 
+   3.496187203486044*^9, {3.496187331483*^9, 3.496187404085987*^9}, {
+   3.4961882971997337`*^9, 3.496188326972683*^9}, {3.4961892091735487`*^9, 
+   3.496189269287661*^9}, {3.496189525123231*^9, 3.496189572030937*^9}, {
+   3.49619560561537*^9, 3.496195706343874*^9}, {3.496197143199295*^9, 
+   3.4961972516717453`*^9}, {3.496197397866946*^9, 3.496197542223284*^9}, {
+   3.496197577950651*^9, 3.4961975781901827`*^9}, {3.496197789406721*^9, 
+   3.4961978430707417`*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext",
+ CellChangeTimes->{3.496224583260696*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["3.1) \:4e00\:822c\:5f62", "Section",
+ CellChangeTimes->{{3.496187281618181*^9, 3.496187309859312*^9}, {
+   3.496195560634843*^9, 3.496195567160737*^9}, 3.496197593520295*^9, 
+   3.49619793147174*^9, {3.496358851579988*^9, 3.496358873701817*^9}},
+ FontFamily->"\.83q\.83\.89\.83M\.83m\.8ap\.83S Pro W6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"M", "[", 
+    RowBox[{"a_", ",", "b_", ",", "c_", ",", "d_"}], "]"}], ":=", 
+   RowBox[{"(", GridBox[{
+      {"a", "b"},
+      {"c", "d"}
+     }], ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Show", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Arrow", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "20"}], ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"20", ",", "0"}], "}"}]}], "}"}], "]"}], ",", 
+        RowBox[{"Arrow", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", 
+             RowBox[{"-", "20"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "20"}], "}"}]}], "}"}], "]"}]}], "}"}], "]"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Line", "[", "Oten", "]"}], ",", 
+        RowBox[{"Line", "[", "Oo", "]"}], ",", 
+        RowBox[{"Line", "[", "Onaka", "]"}], ",", 
+        RowBox[{"Line", "[", "waku", "]"}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{"Thick", ",", "Blue", ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Line", "[", 
+           RowBox[{"Oten", ".", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"M", "[", 
+              RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "]"}], "]"}]}], 
+           "]"}], ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"Oo", ".", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"M", "[", 
+              RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "]"}], "]"}]}], 
+           "]"}], ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"Onaka", ".", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"M", "[", 
+              RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "]"}], "]"}]}], 
+           "]"}], ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"waku", ".", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"M", "[", 
+              RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "]"}], "]"}]}], 
+           "]"}]}], "}"}]}], "}"}], "]"}]}], "\[IndentingNewLine]", "]"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "1", ",", "\"\<(1,1) \:6210\:5206\>\""}], "}"}], ",", 
+     
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b", ",", "0", ",", "\"\<(1,2) \:6210\:5206\>\""}], "}"}], ",", 
+     
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"c", ",", "0", ",", "\"\<(2,1) \:6210\:5206\>\""}], "}"}], ",", 
+     
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"d", ",", "1", ",", "\"\<(2,2) \:6210\:5206\>\""}], "}"}], ",", 
+     
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}], ",", " ", 
+   RowBox[{"ControlPlacement", "\[Rule]", "Left"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.4961862529795523`*^9, 3.4961863198879747`*^9}, {
+   3.49618671721684*^9, 3.496186793860593*^9}, 3.496187141342314*^9, 
+   3.496187203486044*^9, {3.496187331483*^9, 3.496187404085987*^9}, {
+   3.4961882971997337`*^9, 3.496188326972683*^9}, {3.4961892091735487`*^9, 
+   3.496189269287661*^9}, {3.496189525123231*^9, 3.496189572030937*^9}, {
+   3.49619560561537*^9, 3.496195706343874*^9}, {3.496197143199295*^9, 
+   3.4961972516717453`*^9}, {3.496197397866946*^9, 3.496197542223284*^9}, {
+   3.496197577950651*^9, 3.496197769923394*^9}, {3.496197934701523*^9, 
+   3.496197944723256*^9}, {3.496197976492008*^9, 3.496198111444062*^9}, {
+   3.496198144250907*^9, 3.496198169518331*^9}, {3.496198446691181*^9, 
+   3.496198478678219*^9}, {3.4961985189728003`*^9, 3.4961985271379004`*^9}, 
+   3.4961986250153027`*^9, {3.49619866992832*^9, 3.496198673172134*^9}, 
+   3.496283239872642*^9}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 1, $CellContext`b$$ = 
+    0, $CellContext`c$$ = 0, $CellContext`d$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 1, "(1,1) \:6210\:5206"}, -2, 2}, {{
+       Hold[$CellContext`b$$], 0, "(1,2) \:6210\:5206"}, -2, 2}, {{
+       Hold[$CellContext`c$$], 0, "(2,1) \:6210\:5206"}, -2, 2}, {{
+       Hold[$CellContext`d$$], 1, "(2,2) \:6210\:5206"}, -2, 2}}, 
+    Typeset`size$$ = {360., {177., 182.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = False, $CellContext`a$742$$ =
+     0, $CellContext`b$743$$ = 0, $CellContext`c$744$$ = 
+    0, $CellContext`d$745$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 1, $CellContext`b$$ = 
+        0, $CellContext`c$$ = 0, $CellContext`d$$ = 1}, "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$742$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$743$$, 0], 
+        Hold[$CellContext`c$$, $CellContext`c$744$$, 0], 
+        Hold[$CellContext`d$$, $CellContext`d$745$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Graphics[{
+          Arrow[{{-20, 0}, {20, 0}}], 
+          Arrow[{{0, -20}, {0, 20}}]}], 
+        Graphics[{
+          Line[$CellContext`Oten], 
+          Line[$CellContext`Oo], 
+          Line[$CellContext`Onaka], 
+          Line[$CellContext`waku]}], 
+        Graphics[{Thick, Blue, {
+           Line[
+            Dot[$CellContext`Oten, 
+             Transpose[
+              $CellContext`M[$CellContext`a$$, $CellContext`b$$, \
+$CellContext`c$$, $CellContext`d$$]]]], 
+           Line[
+            Dot[$CellContext`Oo, 
+             Transpose[
+              $CellContext`M[$CellContext`a$$, $CellContext`b$$, \
+$CellContext`c$$, $CellContext`d$$]]]], 
+           Line[
+            Dot[$CellContext`Onaka, 
+             Transpose[
+              $CellContext`M[$CellContext`a$$, $CellContext`b$$, \
+$CellContext`c$$, $CellContext`d$$]]]], 
+           Line[
+            Dot[$CellContext`waku, 
+             Transpose[
+              $CellContext`M[$CellContext`a$$, $CellContext`b$$, \
+$CellContext`c$$, $CellContext`d$$]]]]}}]], 
+      "Specifications" :> {{{$CellContext`a$$, 1, "(1,1) \:6210\:5206"}, -2, 
+         2}, {{$CellContext`b$$, 0, "(1,2) \:6210\:5206"}, -2, 
+         2}, {{$CellContext`c$$, 0, "(2,1) \:6210\:5206"}, -2, 
+         2}, {{$CellContext`d$$, 1, "(2,2) \:6210\:5206"}, -2, 2}}, 
+      "Options" :> {ControlPlacement -> Left}, "DefaultOptions" :> {}],
+     ImageSizeCache->{664., {204.84375, 210.15625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`Oten := {{{3.375, 3.375}, {3.625, 
+        3.625}}, {{3.625, 3.625}, {4.625, 2.625}}, {{4.625, 2.625}, {4.375, 
+        2.375}}, {{4.375, 2.375}, {3.375, 
+        3.375}}}, $CellContext`Oo := {{{0.5, 3.375}, {0.5, 3.625}}, {{0.5, 
+         3.625}, {1.375, 3.625}}, {{1.375, 3.625}, {1.375, 4.5}}, {{1.375, 
+         4.5}, {1.625, 4.5}}, {{1.625, 4.5}, {1.625, 3.625}}, {{1.625, 
+         3.625}, {2.5, 3.625}}, {{2.5, 3.625}, {2.5, 3.375}}, {{2.5, 3.375}, {
+         1.625, 3.375}}, {{1.625, 3.375}, {1.625, 2}}, {{1.625, 2}, {3.5, 
+          2.625}}, {{3.5, 2.625}, {4.625, 1.5}}, {{4.625, 1.5}, {3.625, 
+         0.375}}, {{3.625, 0.375}, {3.375, 0.625}}, {{3.375, 0.625}, {4.2, 
+         1.5}}, {{4.2, 1.5}, {3.4, 2.325}}, {{3.4, 2.325}, {1.625, 1.67}}, {{
+         1.625, 1.67}, {1.625, 0.5}}, {{1.625, 0.5}, {1.375, 0.5}}, {{1.375, 
+         0.5}, {0.5, 1.375}}, {{0.5, 1.375}, {0.5, 1.625}}, {{0.5, 1.625}, {
+         1.375, 1.925}}, {{1.375, 1.925}, {1.375, 3.375}}, {{1.375, 3.375}, {
+         0.5, 3.375}}}, $CellContext`Onaka := {{{0.9, 1.45}, {1.375, 
+         1.625}}, {{1.375, 1.625}, {1.375, 1}}, {{1.375, 1}, {0.9, 
+          1.45}}}, $CellContext`waku := {{{0, 0}, {0, 5}}, {{0, 5}, {5, 
+        5}}, {{5, 5}, {5, 0}}, {{5, 0}, {0, 0}}}, $CellContext`M[
+         Pattern[$CellContext`a, 
+          Blank[]], 
+         Pattern[$CellContext`b, 
+          Blank[]], 
+         Pattern[$CellContext`c, 
+          Blank[]], 
+         Pattern[$CellContext`d, 
+          
+          Blank[]]] := {{$CellContext`a, $CellContext`b}, {$CellContext`c, \
+$CellContext`d}}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.4961980980602217`*^9, {3.4961981562816973`*^9, 3.496198169837265*^9}, {
+   3.496198453380562*^9, 3.496198479289366*^9}, 3.496198527865991*^9, 
+   3.496198592401816*^9, 3.496198674888928*^9, {3.49628324236091*^9, 
+   3.496283266556622*^9}, 3.4963590498039103`*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext",
+ CellChangeTimes->{3.496224583260696*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["3.2) \:56de\:8ee2", "Section",
+ CellChangeTimes->{{3.496187281618181*^9, 3.496187309859312*^9}, {
+   3.496195560634843*^9, 3.496195567160737*^9}, 3.496197593520295*^9, {
+   3.4963588800057907`*^9, 3.4963588814500017`*^9}},
+ FontFamily->"\.83q\.83\.89\.83M\.83m\.8ap\.83S Pro W6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"R", "[", "s_", "]"}], ":=", 
+   RowBox[{"(", GridBox[{
+      {
+       RowBox[{"Cos", "[", "s", "]"}], 
+       RowBox[{"-", 
+        RowBox[{"Sin", "[", "s", "]"}]}]},
+      {
+       RowBox[{"Sin", "[", "s", "]"}], 
+       RowBox[{"Cos", "[", "s", "]"}]}
+     }], ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Show", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Arrow", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"10", ",", "0"}], "}"}]}], "}"}], "]"}], ",", 
+        RowBox[{"Arrow", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", 
+             RowBox[{"-", "10"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "10"}], "}"}]}], "}"}], "]"}]}], "}"}], "]"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Line", "[", "Oten", "]"}], ",", 
+        RowBox[{"Line", "[", "Oo", "]"}], ",", 
+        RowBox[{"Line", "[", "Onaka", "]"}], ",", 
+        RowBox[{"Line", "[", "waku", "]"}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{"Thick", ",", "Blue", ",", "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Line", "[", 
+           RowBox[{"Oten", ".", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"R", "[", "s", "]"}], "]"}]}], "]"}], ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"Oo", ".", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"R", "[", "s", "]"}], "]"}]}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Line", "[", 
+           RowBox[{"Onaka", ".", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"R", "[", "s", "]"}], "]"}]}], "]"}], ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"waku", ".", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"R", "[", "s", "]"}], "]"}]}], "]"}]}], "}"}]}], 
+       "\[IndentingNewLine]", "}"}], "]"}]}], "\[IndentingNewLine]", "]"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", "0", ",", 
+     RowBox[{"2", "Pi"}]}], "}"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.4961862529795523`*^9, 3.4961863198879747`*^9}, {
+   3.49618671721684*^9, 3.496186793860593*^9}, 3.496187141342314*^9, 
+   3.496187203486044*^9, {3.496187331483*^9, 3.496187404085987*^9}, {
+   3.4961882971997337`*^9, 3.496188326972683*^9}, {3.4961892091735487`*^9, 
+   3.496189269287661*^9}, {3.496189525123231*^9, 3.496189572030937*^9}, {
+   3.49619560561537*^9, 3.496195706343874*^9}, {3.496197143199295*^9, 
+   3.4961972516717453`*^9}, {3.496197397866946*^9, 3.496197542223284*^9}, {
+   3.496197577950651*^9, 3.496197769923394*^9}, {3.496198631250792*^9, 
+   3.4961986520063553`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`s$$ = 0, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`s$$], 0, 2 Pi}}, Typeset`size$$ = {
+    360., {177., 182.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`s$786$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`s$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`s$$, $CellContext`s$786$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Graphics[{
+          Arrow[{{-10, 0}, {10, 0}}], 
+          Arrow[{{0, -10}, {0, 10}}]}], 
+        Graphics[{
+          Line[$CellContext`Oten], 
+          Line[$CellContext`Oo], 
+          Line[$CellContext`Onaka], 
+          Line[$CellContext`waku]}], 
+        Graphics[{Thick, Blue, {
+           Line[
+            Dot[$CellContext`Oten, 
+             Transpose[
+              $CellContext`R[$CellContext`s$$]]]], 
+           Line[
+            Dot[$CellContext`Oo, 
+             Transpose[
+              $CellContext`R[$CellContext`s$$]]]], 
+           Line[
+            Dot[$CellContext`Onaka, 
+             Transpose[
+              $CellContext`R[$CellContext`s$$]]]], 
+           Line[
+            Dot[$CellContext`waku, 
+             Transpose[
+              $CellContext`R[$CellContext`s$$]]]]}}]], 
+      "Specifications" :> {{$CellContext`s$$, 0, 2 Pi}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{403., {221.34375, 226.65625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`Oten := {{{3.375, 3.375}, {3.625, 
+        3.625}}, {{3.625, 3.625}, {4.625, 2.625}}, {{4.625, 2.625}, {4.375, 
+        2.375}}, {{4.375, 2.375}, {3.375, 
+        3.375}}}, $CellContext`Oo := {{{0.5, 3.375}, {0.5, 3.625}}, {{0.5, 
+         3.625}, {1.375, 3.625}}, {{1.375, 3.625}, {1.375, 4.5}}, {{1.375, 
+         4.5}, {1.625, 4.5}}, {{1.625, 4.5}, {1.625, 3.625}}, {{1.625, 
+         3.625}, {2.5, 3.625}}, {{2.5, 3.625}, {2.5, 3.375}}, {{2.5, 3.375}, {
+         1.625, 3.375}}, {{1.625, 3.375}, {1.625, 2}}, {{1.625, 2}, {3.5, 
+          2.625}}, {{3.5, 2.625}, {4.625, 1.5}}, {{4.625, 1.5}, {3.625, 
+         0.375}}, {{3.625, 0.375}, {3.375, 0.625}}, {{3.375, 0.625}, {4.2, 
+         1.5}}, {{4.2, 1.5}, {3.4, 2.325}}, {{3.4, 2.325}, {1.625, 1.67}}, {{
+         1.625, 1.67}, {1.625, 0.5}}, {{1.625, 0.5}, {1.375, 0.5}}, {{1.375, 
+         0.5}, {0.5, 1.375}}, {{0.5, 1.375}, {0.5, 1.625}}, {{0.5, 1.625}, {
+         1.375, 1.925}}, {{1.375, 1.925}, {1.375, 3.375}}, {{1.375, 3.375}, {
+         0.5, 3.375}}}, $CellContext`Onaka := {{{0.9, 1.45}, {1.375, 
+         1.625}}, {{1.375, 1.625}, {1.375, 1}}, {{1.375, 1}, {0.9, 
+          1.45}}}, $CellContext`waku := {{{0, 0}, {0, 5}}, {{0, 5}, {5, 
+        5}}, {{5, 5}, {5, 0}}, {{5, 0}, {0, 
+        0}}}, $CellContext`R[$CellContext`u, $CellContext`v] := {{
+          Cos[$CellContext`u], (-Sin[$CellContext`u]) 
+          Sin[$CellContext`v], (-Cos[$CellContext`v]) Sin[$CellContext`u]}, {
+         0, 
+          Cos[$CellContext`v], -Sin[$CellContext`v]}, {
+          Sin[$CellContext`u], Cos[$CellContext`u] Sin[$CellContext`v], 
+          Cos[$CellContext`u] Cos[$CellContext`v]}}, $CellContext`R[
+         Pattern[$CellContext`s, 
+          Blank[]]] := {{
+          Cos[$CellContext`s], -Sin[$CellContext`s]}, {
+          Sin[$CellContext`s], 
+          Cos[$CellContext`s]}}, $CellContext`R[
+         Pattern[$CellContext`u, 
+          Blank[]], 
+         Pattern[$CellContext`v, 
+          Blank[]]] := {{
+          Cos[$CellContext`u], (-Sin[$CellContext`u]) 
+          Sin[$CellContext`v], (-Cos[$CellContext`v]) Sin[$CellContext`u]}, {
+         0, 
+          Cos[$CellContext`v], -Sin[$CellContext`v]}, {
+          Sin[$CellContext`u], Cos[$CellContext`u] Sin[$CellContext`v], 
+          Cos[$CellContext`u] Cos[$CellContext`v]}}}; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.496197719434889*^9, 3.496197771159676*^9, 
+  3.496197875906344*^9, 3.4961985956083517`*^9, 3.496198662363158*^9, 
+  3.496202798893689*^9, 3.4963590579548903`*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext",
+ CellChangeTimes->{3.496224583260696*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["3.3) \:93e1\:6620\:5909\:63db", "Section",
+ CellChangeTimes->{{3.496187281618181*^9, 3.496187309859312*^9}, {
+   3.496195560634843*^9, 3.496195567160737*^9}, 3.496197593520295*^9, {
+   3.496201757117283*^9, 3.496201761583085*^9}, {3.496358885586844*^9, 
+   3.496358888037972*^9}, {3.496559103755975*^9, 3.49655910792556*^9}},
+ FontFamily->"\.83q\.83\.89\.83M\.83m\.8ap\.83S Pro W6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"S", "[", "s_", "]"}], ":=", 
+   RowBox[{"(", GridBox[{
+      {
+       RowBox[{"Cos", "[", "s", "]"}], 
+       RowBox[{"Sin", "[", "s", "]"}]},
+      {
+       RowBox[{"Sin", "[", "s", "]"}], 
+       RowBox[{"-", 
+        RowBox[{"Cos", "[", "s", "]"}]}]}
+     }], ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Show", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Arrow", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"10", ",", "0"}], "}"}]}], "}"}], "]"}], ",", 
+        RowBox[{"Arrow", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", 
+             RowBox[{"-", "10"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "10"}], "}"}]}], "}"}], "]"}]}], "}"}], "]"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Line", "[", "Oten", "]"}], ",", 
+        RowBox[{"Line", "[", "Oo", "]"}], ",", 
+        RowBox[{"Line", "[", "Onaka", "]"}], ",", 
+        RowBox[{"Line", "[", "waku", "]"}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{"Thick", ",", "Blue", ",", "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Line", "[", 
+           RowBox[{"Oten", ".", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"S", "[", "s", "]"}], "]"}]}], "]"}], ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"Oo", ".", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"S", "[", "s", "]"}], "]"}]}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Line", "[", 
+           RowBox[{"Onaka", ".", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"S", "[", "s", "]"}], "]"}]}], "]"}], ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"waku", ".", 
+            RowBox[{"Transpose", "[", 
+             RowBox[{"S", "[", "s", "]"}], "]"}]}], "]"}]}], "}"}]}], 
+       "\[IndentingNewLine]", "}"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{"Thick", ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"10", "*", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Cos", "[", 
+               RowBox[{"s", "/", "2"}], "]"}], ",", 
+              RowBox[{"Sin", "[", 
+               RowBox[{"s", "/", "2"}], "]"}]}], "}"}]}], ",", 
+           RowBox[{"10", "*", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", 
+               RowBox[{"Cos", "[", 
+                RowBox[{"s", "/", "2"}], "]"}]}], ",", 
+              RowBox[{"-", 
+               RowBox[{"Sin", "[", 
+                RowBox[{"s", "/", "2"}], "]"}]}]}], "}"}]}]}], "}"}], "]"}]}],
+        "}"}], "]"}]}], "\[IndentingNewLine]", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", "0", ",", 
+     RowBox[{"2", "Pi"}]}], "}"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.4961862529795523`*^9, 3.4961863198879747`*^9}, {
+   3.49618671721684*^9, 3.496186793860593*^9}, 3.496187141342314*^9, 
+   3.496187203486044*^9, {3.496187331483*^9, 3.496187404085987*^9}, {
+   3.4961882971997337`*^9, 3.496188326972683*^9}, {3.4961892091735487`*^9, 
+   3.496189269287661*^9}, {3.496189525123231*^9, 3.496189572030937*^9}, {
+   3.49619560561537*^9, 3.496195706343874*^9}, {3.496197143199295*^9, 
+   3.4961972516717453`*^9}, {3.496197397866946*^9, 3.496197542223284*^9}, {
+   3.496197577950651*^9, 3.496197769923394*^9}, {3.496198631250792*^9, 
+   3.4961986520063553`*^9}, 3.496201764524116*^9, 3.496201828565526*^9, {
+   3.4962020127693577`*^9, 3.496202098867844*^9}, {3.496202149256001*^9, 
+   3.4962021569015408`*^9}, {3.496202609761243*^9, 3.496202652501169*^9}, {
+   3.4962027174998293`*^9, 3.496202726424038*^9}, {3.4962028737602654`*^9, 
+   3.4962029390218267`*^9}, {3.496552961492104*^9, 3.49655297611937*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`s$$ = 0, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`s$$], 0, 2 Pi}}, Typeset`size$$ = {
+    360., {177., 182.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`s$660$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`s$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`s$$, $CellContext`s$660$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Graphics[{
+          Arrow[{{-10, 0}, {10, 0}}], 
+          Arrow[{{0, -10}, {0, 10}}]}], 
+        Graphics[{
+          Line[$CellContext`Oten], 
+          Line[$CellContext`Oo], 
+          Line[$CellContext`Onaka], 
+          Line[$CellContext`waku]}], 
+        Graphics[{Thick, Blue, {
+           Line[
+            Dot[$CellContext`Oten, 
+             Transpose[
+              $CellContext`S[$CellContext`s$$]]]], 
+           Line[
+            Dot[$CellContext`Oo, 
+             Transpose[
+              $CellContext`S[$CellContext`s$$]]]], 
+           Line[
+            Dot[$CellContext`Onaka, 
+             Transpose[
+              $CellContext`S[$CellContext`s$$]]]], 
+           Line[
+            Dot[$CellContext`waku, 
+             Transpose[
+              $CellContext`S[$CellContext`s$$]]]]}}], 
+        Graphics[{Thick, 
+          Line[{10 {
+              Cos[$CellContext`s$$/2], 
+              Sin[$CellContext`s$$/2]}, 
+            10 {-Cos[$CellContext`s$$/2], -Sin[$CellContext`s$$/2]}}]}]], 
+      "Specifications" :> {{$CellContext`s$$, 0, 2 Pi}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{403., {221.34375, 226.65625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`Oten := {{{3.375, 3.375}, {3.625, 
+        3.625}}, {{3.625, 3.625}, {4.625, 2.625}}, {{4.625, 2.625}, {4.375, 
+        2.375}}, {{4.375, 2.375}, {3.375, 
+        3.375}}}, $CellContext`Oo := {{{0.5, 3.375}, {0.5, 3.625}}, {{0.5, 
+         3.625}, {1.375, 3.625}}, {{1.375, 3.625}, {1.375, 4.5}}, {{1.375, 
+         4.5}, {1.625, 4.5}}, {{1.625, 4.5}, {1.625, 3.625}}, {{1.625, 
+         3.625}, {2.5, 3.625}}, {{2.5, 3.625}, {2.5, 3.375}}, {{2.5, 3.375}, {
+         1.625, 3.375}}, {{1.625, 3.375}, {1.625, 2}}, {{1.625, 2}, {3.5, 
+          2.625}}, {{3.5, 2.625}, {4.625, 1.5}}, {{4.625, 1.5}, {3.625, 
+         0.375}}, {{3.625, 0.375}, {3.375, 0.625}}, {{3.375, 0.625}, {4.2, 
+         1.5}}, {{4.2, 1.5}, {3.4, 2.325}}, {{3.4, 2.325}, {1.625, 1.67}}, {{
+         1.625, 1.67}, {1.625, 0.5}}, {{1.625, 0.5}, {1.375, 0.5}}, {{1.375, 
+         0.5}, {0.5, 1.375}}, {{0.5, 1.375}, {0.5, 1.625}}, {{0.5, 1.625}, {
+         1.375, 1.925}}, {{1.375, 1.925}, {1.375, 3.375}}, {{1.375, 3.375}, {
+         0.5, 3.375}}}, $CellContext`Onaka := {{{0.9, 1.45}, {1.375, 
+         1.625}}, {{1.375, 1.625}, {1.375, 1}}, {{1.375, 1}, {0.9, 
+          1.45}}}, $CellContext`waku := {{{0, 0}, {0, 5}}, {{0, 5}, {5, 
+        5}}, {{5, 5}, {5, 0}}, {{5, 0}, {0, 0}}}, $CellContext`S[
+         Pattern[$CellContext`s, 
+          Blank[]]] := {{
+          Cos[$CellContext`s], 
+          Sin[$CellContext`s]}, {
+          Sin[$CellContext`s], -Cos[$CellContext`s]}}}; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.496197719434889*^9, 3.496197771159676*^9, 3.496197875906344*^9, 
+   3.4961985956083517`*^9, 3.496198662363158*^9, 3.496201774559906*^9, 
+   3.496201828913258*^9, {3.496202072417068*^9, 3.4962020994600153`*^9}, 
+   3.496202157706148*^9, 3.496202663168228*^9, 3.496202808040173*^9, {
+   3.4962028911685*^9, 3.496202939440831*^9}, 3.496359060988551*^9, 
+   3.496552980288506*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext",
+ CellChangeTimes->{3.496224583260696*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{828, 633},
+WindowMargins->{{91, Automatic}, {Automatic, 76}},
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (2009\:5e744\:670823\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[567, 22, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[926, 34, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[5143, 150, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[22468, 646, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[23987, 691, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[27679, 793, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[38569, 1050, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[47826, 1273, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 58193, 1523}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[634, 25, 255, 4, 85, "Title"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[926, 34, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[1015, 39, 401, 5, 72, "Section"],
+Cell[1419, 46, 2849, 77, 152, "Input"],
+Cell[4271, 125, 823, 19, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5143, 150, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[5232, 155, 405, 6, 72, "Section"],
+Cell[CellGroupData[{
+Cell[5662, 165, 4152, 108, 177, "Input"],
+Cell[9817, 275, 2653, 59, 433, "Output"]
+}, Open  ]],
+Cell[12485, 337, 823, 19, 26, "PreviousNext"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13345, 361, 289, 4, 72, "Section"],
+Cell[13637, 367, 7956, 252, 643, "Input"],
+Cell[21596, 621, 823, 19, 26, "PreviousNext"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22468, 646, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[22557, 651, 215, 3, 72, "Section"],
+Cell[22775, 656, 337, 8, 27, "Input"],
+Cell[23115, 666, 823, 19, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23987, 691, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[24076, 696, 308, 5, 72, "Section"],
+Cell[24387, 703, 2417, 63, 137, "Input"],
+Cell[26807, 768, 823, 19, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27679, 793, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[27768, 798, 308, 4, 72, "Section"],
+Cell[CellGroupData[{
+Cell[28101, 806, 4300, 109, 217, "Input"],
+Cell[32404, 917, 5278, 105, 433, "Output"]
+}, Open  ]],
+Cell[37697, 1025, 823, 19, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38569, 1050, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[38658, 1055, 285, 4, 72, "Section"],
+Cell[CellGroupData[{
+Cell[38968, 1063, 3166, 81, 184, "Input"],
+Cell[42137, 1146, 4802, 99, 465, "Output"]
+}, Open  ]],
+Cell[46954, 1248, 823, 19, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[47826, 1273, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[47915, 1278, 388, 5, 72, "Section"],
+Cell[CellGroupData[{
+Cell[48328, 1287, 4319, 107, 199, "Input"],
+Cell[52650, 1396, 4372, 91, 465, "Output"]
+}, Open  ]],
+Cell[57037, 1490, 823, 19, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

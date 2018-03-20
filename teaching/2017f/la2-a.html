@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../..//hstyle.css">
+<link rel="stylesheet" type="text/css" href="../../hstyle-sub.css">
+<link rel="shortcut icon" href="../../img/favicon.png">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
+
+<title>線形代数学II - 佐藤弘康</title>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+
+<h1><a href="../../index.html">home</a> &#155;&#155; <a href="../index.html">Teaching</a> &#155;&#155; <!--<a href="../nit.html">NIT</a> &#155;&#155;--></h1>
+<p class="logo">2017年度秋学期 <b>線形代数学 II</b> <span class="gl">Linear Algebra II</span></p>
+
+<p class="description">月1限 9:10-10:50 | 2-372教室 | 対象：<span class="dep3">建築学科1年生</span><br>
+担当：佐藤 弘康（hiroyasu [at] nit.ac.jp | W1棟204 | 0480-33-7972）<br>
+スチューデントアワー：月・火・水の2限と昼休み（詳しくは<a href="http://www3.nit.ac.jp/~hiroyasu/appendix/cal.html">カレンダー</a>を参照）
+</p>
+</div>
+
+<div id="contents">
+
+<h2>連絡事項</h2>
+
+<ul>
+<li>連絡事項については <a href="https://portal.nit.ac.jp/">日本工大サポータル</a> の掲示板をメインに使っていきます. 定期的に確認するようにしてください. </li>
+<li>Twitter (<a href="https://twitter.com/shiroyasu_NIT">@shiroyasu_NIT</a>) でも, 授業に関する情報を発信していきます（ハッシュタグは <a href="https://twitter.com/hashtag/17fla2a?f=tweets&vertical=default&src=hash">#17Fla2A</a> ）. 質問, 意見などのリプライを歓迎します. </li>
+<li>授業に対する<a href="../../appendix/msg.html">基本的な考え方</a>にも目を通しておいてください. </li>
+<li>9/7にこのページを公開しました. </li>
+</ul>
+
+<h2>授業の目的</h2>
+<p>
+ベクトルや行列を扱う線形代数学は抽象的であるがゆえに, その概念や技法は数学はもちろんのこと, 工学のさまざまな分野でも応用されている. 線形代数学の考え方を身につけるために, 行列式, 1次変換, 固有値・固有ベクトルについて学習する. 行列式の性質を利用した計算技法を身につけるとともに, 行列の幾何学的側面も理解する. 
+</p>
+
+<p>
+<span class="remark">［追加］</span>上記に加え, この授業では線形代数の応用として, <b>透視投影（遠近法）を数学的に理解すること</b>も目的とする. 同次座標系を導入することによって, 透視投影を行列に積として表す方法を理解する.
+</p>	
+	
+<h2>達成目標</h2>
+
+<ol>
+<li><span class="remark">［追加］</span>平面ベクトル・空間ベクトルの線形演算と内積の計算ができる.</li>
+<li>行列式の定義を理解し, 説明できる. </li>
+<li>行列式の性質を利用した演算ができる.<br>
+<s>逆行列と行列式の関係を理解し, それを利用して逆行列を求めることができる. </s></li> 
+<li>1次変換の定義を理解し, 1次変換を表わす行列を求めることができる. </li>
+<li>固有値・固有ベクトルの定義を理解し, それを求めることができる. <br>
+<s>行列の対角化の意味や目的を理解し, 対称行列の対角化を行うことができる. </s><br>
+<s>行列の対角化を2次形式・2次曲線へ応用することができる. </s></li>
+<li><span class="remark">［追加］</span>直交座標系と同次座標系の関係を理解する.</li>
+<li><span class="remark">［追加］</span>透視投影を表す行列を求めることができる.</li>
+</ol>
+
+<h2>科目の位置づけ</h2>
+
+<ul>
+<li>この科目では, 線形代数学の基礎として, 行列式の性質を利用した計算技法や固有値・固有ベクトルを取り扱う. また, 先行科目である「<b>線形代数学I</b>」では, 線形代数学の導入として, 行列や行列式について学習する. </li>
+<li>「線形代数学I」と併せて履修することにより, 線形代数学の基礎知識を習得することができる（「線形代数学I」を履修しておくことが望ましい）. </li>
+</ul>
+
+<ul>
+<li>「線形代数学I」を履修していない場合は, 第4回の授業までに, 行列の基本事項 <span class="la3">&nbsp;第2章 &#167;2.1, 2.2, 2.3, 2.4&nbsp;</span> を自力で理解しておいてください（学修支援センターも活用してください）. 特に, <b>行列の積の計算</b>は必須です.</li>
+</ul>
+
+<h2>授業の予定と記録</h2>
+
+<table
+ style="width: 95%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="1" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="width: 50px; text-align: center; vertical-align: top;">第1回</td>
+      <td style="width: 40px; text-align: right; vertical-align: top;">9月</td>
+      <td style="width: 75px; text-align: right; vertical-align: top;">25日<span class="gs">（月）</span></td>
+      <td>ガイダンス<br>
+	      ベクトル①（ベクトルとその意味） <span class="la3">&nbsp;第1章 &#167;1.1&nbsp;</span> <a href="https://twitter.com/shiroyasu_nit/status/912156747610992641"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第2回</td>
+    <td class="rt">10月</td>
+    <td class="rt">2日<span class="gs">（月）</span></td>
+    <td>ベクトル②（和とスカラー倍） <span class="la3">&nbsp;第1章 &#167;1.2&nbsp;</span> <span class="la3">&nbsp;1.3&nbsp;</span> <a href="https://twitter.com/shiroyasu_nit/status/915066764819496960"><i class="fa fa-twitter"></i></a><br>
+    <u>課題</u>：p.8 <b>問1.1</b>, <b>問1.2</b>, p.11 <b>問1.3</b>, <b>問1.5</b></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td></td>
+    <td class="rt">16日<span class="gs">（月）</span></td>
+    <td><span class="g"> 出張のため休講</span></td>
+    </tr>
+    <tr>
+    <td class="ct"></td>
+    <td></td>
+    <td class="rt">23日<span class="gs">（月）</span></td>
+    <td><span class="g">台風21号の影響により休講</span></td>
+    </tr>
+    <td class="ct">第3回</td>
+    <td class="rt">11月</td>
+    <td class="rt">1日<span class="gs">（水）</span></td>
+    <td>ベクトル③（内積） <span class="la3">&nbsp;第1章 &#167;1.5&nbsp;</span> <a href="https://twitter.com/shiroyasu_nit/status/926019332001296384"><i class="fa fa-twitter"></i></a><br>
+    <u>課題</u>：p.23 <b>練習問題 2</b>, <b>4</b>, <b>5</b>, <b>9(2)(3)</b></td>
+    </tr>
+    <tr>
+    <td class="ct">第4回</td>
+    <td></td>
+    <td class="rt">6日<span class="gs">（月）</span></td>
+    <td>行列式①（定義） <span class="la3">&nbsp;第3章 &#167;3.1&nbsp;</span> <a href="https://twitter.com/shiroyasu_nit/status/928075269964890112"><i class="fa fa-twitter"></i></a><br>
+    <u>課題</u>：p.53 <b>問 3.2(1)(2)</b>, <b>問 3.3(1)</b>, p.64 <b>練習問題 1</b>, <b>3(1)(2)</b>, <b>9(2)(3)</b></td>
+    </tr>
+    <tr>
+    <td class="ct">第5回</td>
+    <td></td>
+    <td class="rt">13日<span class="gs">（月）</span></td>
+    <td>行列式②（性質） <span class="la3">&nbsp;第3章 &#167;3.2&nbsp;</span> <a href="https://twitter.com/shiroyasu_nit/status/930959752200306688"><i class="fa fa-twitter"></i></a><br>
+    <u>課題</u>：p.58 <b>問 3.4</b>, p.64 <b>練習問題 2</b>, <b>3(1)(2)</b><br>
+    ※ 行列式を求める問題は, 行列式の性質2回ないし1回使って, 式変形すること.</td>
+    </tr>
+    <tr>
+    <td class="ct">第6回</td>
+    <td></td>
+    <td class="rt">20日<span class="gs">（月）</span></td>
+    <td>線形変換①（定義と性質） <span class="la3">&nbsp;第5章 &#167;5.1&nbsp;</span> <a href="https://twitter.com/shiroyasu_nit/status/933442847923040256"><i class="fa fa-twitter"></i></a><br>
+    <u>課題</u>：p.95 <b>問 5.1</b>, <b>5.2</b>
+    </td>
+    </tr>
+    <tr>
+    <td class="ct">第7回</td>
+    <td></td>
+    <td class="rt">27日<span class="gs">（月）</span></td>
+    <td>線形変換②（合成と逆変換） <span class="la3">&nbsp;第5章 &#167;5.2&nbsp;</span> <a href="https://twitter.com/shiroyasu_nit/status/935546444643123200"><i class="fa fa-twitter"></i></a><br>
+    <u>課題</u>：p.96 <b>問 5.3</b>, p.97 <b>問 5.4</b></td>
+    </tr>
+    <tr>
+    <td class="ct"></td>
+    <td class="rt">12月</td>
+    <td class="rt">4日<span class="gs">（月）</span></td>
+    <td><span class="g">（体調不良により休講）</span></td>
+    </tr>
+    <td class="ct">第8回</td>
+    <td class="rt"></td>
+    <td class="rt"></td>
+    <td>線形変換③（いろいろな線形変換） <span class="la3">&nbsp;第5章 &#167;5.3&nbsp;</span>（ <a href="./la2-a-report.pdf">課題 <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> | <a href="./la2-a-textb-lintrans.pdf">資料 <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> ）<!--<a href=""><i class="fa fa-twitter"></i></a>--></td>
+    </tr>
+    <tr>
+    <td class="ct"></td>
+    <td></td>
+    <td class="rt">7日<span class="gs">（木）</span></td>
+    <td><b>中間試験</b><span class="g">（第1〜7回の内容）</span>（<a href="./la2-a-mdt.pdf">問題 <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> | <a href="./la2-a-mdt-ans.pdf">解答 <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> | <a href="./la2-a.html#mdt-r">得点分布</a>）<span class="g">【補講：6限 2-274】</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第9回</td>
+    <td></td>
+    <td class="rt">11日<span class="gs">（月）</span></td>
+    <td>固有値・固有ベクトル①（定義とその意味, 計算方法） <span class="la3">&nbsp;第6章 &#167;6.1&nbsp;</span> <span class="la3">&nbsp;6.2&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/941330921269035008"><i class="fa fa-twitter"></i></a><br>
+    <u>課題</u>：p.111 <b>問6.1(1)(2)</b></td>
+    </tr>
+    <tr>
+    <td class="ct">第10回</td>
+    <td></td>
+    <td class="rt">18日<span class="gs">（月）</span></td>
+    <td>固有値・固有ベクトル②（行列の対角化） <span class="la3">&nbsp;第6章 &#167;6.4.1&nbsp;</span> <a href="https://twitter.com/shiroyasu_nit/status/942674654002495489"><i class="fa fa-twitter"></i></a><br>
+    <u>課題</u>：p.118 <b>問6.4(1)(2)</b>（$P^{-1}AP$ が実際に対角行列になることを確かめよ）</td>
+    </tr>
+    <tr>
+    <td class="ct">第11回</td>
+    <td></td>
+    <td class="rt">25日<span class="gs">（月）</span></td>
+    <td>透視投影の数学的記述① <a href="./la2-perspective01.pdf">透視投影 <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> <a href="https://twitter.com/shiroyasu_nit/status/947014005104656384"><i class="fa fa-twitter"></i></a><br>
+    <u>課題</u>：<b>問題1.1(1)(2)</b>, <b>問題1.2(1)(2)</b>, <b>問題1.3</b></td>
+    </tr>
+    <tr>
+    <td class="ct">第12回</td>
+    <td></td>
+    <td class="rt">26日<span class="gs">（火）</span></td>
+    <td>透視投影の数学的記述② <a href="./la2-perspective02.pdf">同次座標系 <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> <a href="https://twitter.com/shiroyasu_nit/status/947017766279639041"><i class="fa fa-twitter"></i></a> <span class="g">【補講日：2限 2-372】</span> <br>
+    <u>課題</u>：<b>問題2.1</b>, <b>問題2.2</b>, <b>問題2.3</b></td>
+    </tr>
+    <tr>
+    <td class="ct">第13回</td>
+    <td class="rt">1月</td>
+    <td class="rt">15日<span class="gs">（月）</span></td>
+    <td>透視投影の数学的記述③ <a href="./la2-perspective03.pdf">同次座標系による透視投影 <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>（ <a href="./la2-perspective-ans.pdf">演習問題の解答<i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>）<span class="remark">［修正版］</span> <a href="https://twitter.com/shiroyasu_nit/status/952672214221971456"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct"></td>
+    <td></td>
+    <td class="rt">22日<span class="gs">（月）</span></td>
+    <td><b>期末試験</b><span class="g">（第6〜13回の内容）</span>（<a href="./la2-a-edt.pdf">問題 <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> | <a href="./la2-a-edt-ans.pdf">解答 <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> | <a href="./la2-a.html#edt-r">得点分布</a>）</td>
+    </tr>
+</tbody>
+</table>
+
+<h2>教科書・参考文献について</h2>
+<ul>
+<li>飯島 徹穂 編著・岩本 悌治 著 <span class="la3">『Ability 数学 ―線形代数―』</span> 裳華房 &#187; <a href="http://www.kyoritsu-pub.co.jp/bookdetail/9784320017566">リンク</a></li>
+<li>「同次座標系と透視投影」については, <s>講義録</s> <u>資料</u>を配布する.<br>
+（以前担当した講義で使用した<a href="http://www3.nit.ac.jp/~hiroyasu/teaching/dendai/2013/im3-f/lect_im3-chap5.pdf">テキスト <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> の情報は<a href="http://www3.nit.ac.jp/~hiroyasu/teaching/dendai/2013/im3-f/index.html">ここ</a>を参照）<span class="remark">［12/25 修正と追記］</span></li>
+</ul>
+
+<h2>評価について</h2>
+<ul>
+<li><s>期末試験<b>80%</b>, 小テスト・演習課題など<b>20%</b>の割合で評価する.</s><br>
+中間試験<b>40点</b>, 期末試験<b>40点</b>, 問題演習の課題（と12/18のレポート課題10点 <span class="remark">［12/18 修正］</span>）<b>20点</b>の合計で評価する.</li>
+<li>毎回の授業で問題演習を実施する. 手順は以下；
+<ul>
+<li>教科書等の問題を指定し, 指定の答案用紙に解答して提出してもらいます. <a href="../answersheet.pdf">指定の用紙</a>でしか受け付けません（<a href="../answersheet-remark.pdf">記入例</a>）. </li>
+<li>解答後は必ず答え合わせをして, <u>誤答だった場合は途中式のどこが間違えているか探して訂正</u>してください（正答をただ書き写すことではありません）. </li>
+<li>授業時間内に終わらない場合は, 次回の授業の前々日（授業があった週の土曜日）までに私に直接手渡すか, 研究室のドアの封筒に提出してもらいます. <u>提出期限が過ぎた答案は一切受け取りません</u>. </li>
+<li><s>「良」<b>2点</b>,「可」<b>1点</b>,「不」0点を加点します（合計点数は最大20点）.</s><br>
+	「可（検）」<b>1点</b>,「不」0点とし加点します. <span class="remark">［12/18 修正］</span>
+</li>
+</ul>
+</li>
+</ul>
+
+<h2>授業の欠席について</h2>
+
+<ul>
+<li>出席点というものがないので, <u>休んだことの届け出は基本的にしなくて結構です</u>. 友人にノートを写させてもらうなどの対処を各自行ってください（課題の有無も確認してください）. </li>
+<li>休んだ回の課題を提出する意思があるならば, メール等で連絡の上, 答案用紙を受け取りに来てください（または<a href="./answersheet.pdf">ここ</a>からダウンロードして印刷）. <u>レポート用紙やルーズリーフでの提出は原則不可</u>です. </li>
+<li>病欠等で数日休んでしまった場合は, 課題の提出期限を猶予します. その際は, 答案用紙を受け取る際に欠席届け等を見せてください. </li>
+</ul>
+
+
+<h2>試験の得点分布と評価など</h2>
+<ul>
+	<li><a name="mdt-r"></a>中間試験：<a href="./la2-a-mdt.pdf">問題 <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>と<a href="./la2-a-mdt-ans.pdf">解答 <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>（平均点：<b>21.35点</b> /40点）<br><br>
+<img src="./la2-a-mdt-result.png" width="400"><br><br>
+	</li>
+	<li><a name="edt-r"></a>期末試験：<a href="./la2-a-edt.pdf">問題 <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>と<a href="./la2-a-edt-ans.pdf">解答 <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>（平均点：<b>22.71点</b> /40点）<br><br>
+<table
+ style="width: 70%; text-align: left;"
+ border="0" cellpadding="1" cellspacing="0">
+ <tbody>
+ <tr>
+ <td><img src="./la2-a-edt-result.png" width="400"></td>
+ <td>
+<table
+ style="border-collapse: collapse;" border="1" cellpadding="3" cellspacing="1">
+  <tbody>
+    <tr><td class="ct">履修者</td><td class="rt">34</td></tr>
+    <tr><td class="ct">受験者</td><td class="rt">28</td></tr>
+    <tr><td class="ct">AA</td><td class="rt">1</td></tr>
+    <tr><td class="ct">A</td><td class="rt">3</td></tr>
+    <tr><td class="ct">B</td><td class="rt">4</td></tr>
+    <tr><td class="ct">C</td><td class="rt">10</td></tr>
+    <tr><td class="ct">D</td><td class="rt">10</td></tr>
+    <tr><td class="ct">未受験</td><td class="rt">6</td></tr>
+    <tr><td class="ct">単位修得者</td><td class="rt">18</td></tr>
+    <tr><td class="ct">単位修得率</td><td class="rt">64.3%</td></tr>
+  </tbody>
+</table>
+ </td></tr></tbody></table>
+	</li>
+</ul>
+
+</div>
+
+<div id="footer">
+<p><span class="gs">Copyright &copy; Hiroyasu Satoh. All Rights Reserved.</span></p>
+<p id="cds">CSS Template <a href="http://www.css-designsample.com/">CSSデザインサンプル</a></p>
+</div>
+
+</div>
+</body>
+</html>

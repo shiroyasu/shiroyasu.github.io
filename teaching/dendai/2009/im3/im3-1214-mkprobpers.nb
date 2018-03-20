@@ -1,0 +1,276 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      8715,        267]
+NotebookOptionsPosition[      7725,        228]
+NotebookOutlinePosition[      8075,        244]
+CellTagsIndexPosition[      8032,        241]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[StyleBox["\:6f14\:7fd2\:554f\:984c\:306e\:4f5c\:308a\:65b9\:ff08\
+\:81ea\:7fd2\:7528\:ff09",
+ FontSlant->"Italic"]], "Title",
+ CellChangeTimes->{{3.469421407647881*^9, 3.4694214114777946`*^9}, {
+  3.4694214556783733`*^9, 3.46942147428658*^9}, {3.469422434762541*^9, 
+  3.469422472475306*^9}, {3.469506776680933*^9, 3.469506796196937*^9}, {
+  3.469538606714799*^9, 3.469538608095669*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["\:5fc5\:8981\:306a\:30b3\:30de\:30f3\:30c9\:306e\:5b9a\
+\:7fa9",
+ FontSlant->"Italic"]], "Section",
+ CellChangeTimes->{{3.469421407647881*^9, 3.4694214114777946`*^9}, {
+  3.4694214556783733`*^9, 3.46942147428658*^9}, {3.469422434762541*^9, 
+  3.469422472475306*^9}, {3.469506776680933*^9, 3.469506796196937*^9}, {
+  3.46950839717349*^9, 3.469508405067621*^9}}],
+
+Cell["\:307e\:305a\:4ee5\:4e0b\:306e\:5b9a\:7fa9\:30b3\:30de\:30f3\:30c9\:3092\
+\:5b9f\:884c\:305b\:3088\:ff0e", "Text",
+ CellChangeTimes->{{3.4695065729061203`*^9, 3.4695065846141*^9}, {
+   3.469506634844041*^9, 3.469506635147455*^9}, 3.469508421028585*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "(*", " ", 
+   "\:540c\:6b21\:5ea7\:6a19\:3092\:76f4\:4ea4\:5ea7\:6a19\:306b\:5909\:63db",
+    " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"Hcs2Ocs3D", "[", "list_", "]"}], ":=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"list", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "/", 
+        RowBox[{"list", "[", 
+         RowBox[{"[", "4", "]"}], "]"}]}], ",", 
+       RowBox[{
+        RowBox[{"list", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "/", 
+        RowBox[{"list", "[", 
+         RowBox[{"[", "4", "]"}], "]"}]}], ",", 
+       RowBox[{
+        RowBox[{"list", "[", 
+         RowBox[{"[", "3", "]"}], "]"}], "/", 
+        RowBox[{"list", "[", 
+         RowBox[{"[", "4", "]"}], "]"}]}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"z", "=", 
+     RowBox[{"0", " ", "\:5e73\:9762\:3078\:306e\:900f\:8996\:6295\:5f71"}]}],
+     " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Perspective", "[", "viewpoint_", "]"}], "[", "point_", "]"}], ":=", 
+    RowBox[{"Hcs2Ocs3D", "[", 
+     RowBox[{
+      RowBox[{"(", GridBox[{
+         {
+          RowBox[{"-", 
+           RowBox[{"viewpoint", "[", 
+            RowBox[{"[", "3", "]"}], "]"}]}], "0", 
+          RowBox[{"viewpoint", "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "0"},
+         {"0", 
+          RowBox[{"-", 
+           RowBox[{"viewpoint", "[", 
+            RowBox[{"[", "3", "]"}], "]"}]}], 
+          RowBox[{"viewpoint", "[", 
+           RowBox[{"[", "2", "]"}], "]"}], "0"},
+         {"0", "0", "0", "0"},
+         {"0", "0", "1", 
+          RowBox[{"-", 
+           RowBox[{"viewpoint", "[", 
+            RowBox[{"[", "3", "]"}], "]"}]}]}
+        }], ")"}], ".", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"point", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], ",", 
+        RowBox[{"point", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], ",", 
+        RowBox[{"point", "[", 
+         RowBox[{"[", "3", "]"}], "]"}], ",", "1"}], "}"}]}], 
+     "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.469422535818173*^9, 3.469422740720867*^9}, {
+   3.4694230599587708`*^9, 3.4694230761222*^9}, {3.469506618193577*^9, 
+   3.469506624341488*^9}, {3.469506721085307*^9, 3.469506724445372*^9}, {
+   3.469508374387309*^9, 3.469508375530314*^9}, 3.4695383549557457`*^9, {
+   3.469538395616519*^9, 3.46953848789074*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["\:624b\:9806",
+ FontSlant->"Italic"]], "Section",
+ CellChangeTimes->{{3.469421407647881*^9, 3.4694214114777946`*^9}, {
+  3.4694214556783733`*^9, 3.46942147428658*^9}, {3.469422434762541*^9, 
+  3.469422472475306*^9}, {3.469506776680933*^9, 3.469506796196937*^9}, {
+  3.469508431505022*^9, 3.46950843406635*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\:8996\:70b9 ",
+ StyleBox["S",
+  FontSlant->"Italic"],
+ " \:3092\:9069\:5f53\:306b\:5b9a\:3081\:308b\:ff0e",
+ StyleBox["\:ff08\:4f8b\:3048\:3070 ",
+  FontColor->GrayLevel[0.5]],
+ StyleBox["S",
+  FontSlant->"Italic",
+  FontColor->GrayLevel[0.5]],
+ StyleBox[" = (4, 5, 6)\:ff09",
+  FontColor->GrayLevel[0.5]]
+}], "ItemNumbered",
+ CellChangeTimes->{{3.469506808157135*^9, 3.469506822269977*^9}, {
+  3.469506873044478*^9, 3.469506919436379*^9}}],
+
+Cell[TextData[{
+ "\:6295\:5f71\:3059\:308b\:70b9 ",
+ StyleBox["A",
+  FontSlant->"Italic"],
+ " \:3092\:9069\:5f53\:306b\:5b9a\:3081\:308b\:ff0e",
+ StyleBox["\:ff08\:4f8b\:3048\:3070 ",
+  FontColor->GrayLevel[0.5]],
+ StyleBox["A",
+  FontSlant->"Italic",
+  FontColor->GrayLevel[0.5]],
+ StyleBox[" = (3, 2, 1)\:ff09",
+  FontColor->GrayLevel[0.5]]
+}], "ItemNumbered",
+ CellChangeTimes->{{3.4695068762044907`*^9, 3.469506887356389*^9}, {
+  3.469507604688767*^9, 3.469507634629925*^9}, {3.469508050289144*^9, 
+  3.469508053776968*^9}}],
+
+Cell["\:554f\:984c\:3092\:8a2d\:5b9a\:ff1b", "ItemNumbered",
+ CellChangeTimes->{{3.469507684607437*^9, 3.469507710071047*^9}, {
+  3.469507951263835*^9, 3.469507963014578*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["\:554f\:984c",
+  FontWeight->"Bold"],
+ "\:ff0e\:8996\:70b9\:3092",
+ StyleBox["S",
+  FontSlant->"Italic"],
+ "\:3068\:3057\:6295\:5f71\:9762\:3092\:5e73\:9762 ",
+ StyleBox["z",
+  FontSlant->"Italic"],
+ " = 0 \:3068\:3059\:308b\:900f\:8996\:6295\:5f71\:3067\:70b9",
+ StyleBox["A",
+  FontSlant->"Italic"],
+ " \:3092\:79fb\:3057\:305f\:70b9\:3092\:6c42\:3081\:306a\:3055\:3044\:ff0e"
+}], "Text",
+ CellChangeTimes->{{3.469507783472053*^9, 3.469507910194007*^9}, {
+  3.4695385271561728`*^9, 3.46953852912976*^9}},
+ Background->RGBColor[1, 1, 0.85]],
+
+Cell[CellGroupData[{
+
+Cell["\:554f\:984c\:3092\:89e3\:304f\:ff08\:624b\:3067\:8a08\:7b97\:ff09\:ff0e\
+", "ItemNumbered",
+ CellChangeTimes->{{3.469507726617606*^9, 3.469507737014533*^9}, {
+  3.4695079688314323`*^9, 3.469507999576294*^9}}],
+
+Cell[TextData[{
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " \:3067\:7b54\:3048\:3092\:78ba\:304b\:3081\:308b\:ff0e"
+}], "ItemNumbered",
+ CellChangeTimes->{{3.469507739179295*^9, 3.469507763445641*^9}, 
+   3.4695080067360373`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{"Perspective", "[", 
+    RowBox[{"{", 
+     RowBox[{"4", ",", "5", ",", "6"}], "}"}], "]"}], "[", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "2", ",", "1"}], "}"}], "]"}],
+  FontColor->GrayLevel[0.5]]], "Input",
+ CellChangeTimes->{{3.469508035636321*^9, 3.469508058959525*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["\:6295\:5f71\:50cf\:306e\:53ef\:8996\:5316",
+ FontSlant->"Italic"]], "Section",
+ CellChangeTimes->{{3.469421407647881*^9, 3.4694214114777946`*^9}, {
+  3.4694214556783733`*^9, 3.46942147428658*^9}, {3.469422434762541*^9, 
+  3.469422472475306*^9}, {3.469506776680933*^9, 3.469506796196937*^9}, {
+  3.469508431505022*^9, 3.46950843406635*^9}, {3.4697037045064163`*^9, 
+  3.469703709414238*^9}, {3.4697037518818407`*^9, 3.4697037549352913`*^9}}],
+
+Cell["\:4f5c\:6210\:4e2d", "Text",
+ CellChangeTimes->{{3.4697037188095493`*^9, 3.469703720455711*^9}},
+ FontColor->GrayLevel[0.5]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{815, 696},
+WindowMargins->{{42, Automatic}, {Automatic, 2}},
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) \
+(2008\:5e7412\:670810\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 401, 6, 79, "Title"],
+Cell[CellGroupData[{
+Cell[993, 32, 384, 6, 70, "Section"],
+Cell[1380, 40, 258, 3, 28, "Text"],
+Cell[1641, 45, 2458, 69, 184, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4136, 119, 334, 5, 69, "Section"],
+Cell[CellGroupData[{
+Cell[4495, 128, 459, 14, 23, "ItemNumbered"],
+Cell[4957, 144, 528, 15, 23, "ItemNumbered"],
+Cell[5488, 161, 175, 2, 23, "ItemNumbered"]
+}, Open  ]],
+Cell[5678, 166, 568, 16, 44, "Text"],
+Cell[CellGroupData[{
+Cell[6271, 186, 215, 3, 23, "ItemNumbered"],
+Cell[6489, 191, 237, 6, 23, "ItemNumbered"]
+}, Open  ]],
+Cell[6741, 200, 321, 9, 27, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7099, 214, 465, 6, 69, "Section"],
+Cell[7567, 222, 130, 2, 28, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../..//hstyle.css">
+<link rel="stylesheet" type="text/css" href="../../hstyle-sub.css">
+<link rel="shortcut icon" href="../../img/favicon.png">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
+
+<title>電気数学II - 佐藤弘康</title>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+
+<h1><a href="../../index.html">home</a> &#155;&#155; <a href="../index.html">Teaching</a> &#155;&#155; <a href="../nit.html">NIT</a> &#155;&#155;</h1>
+<p class="logo">2015年度春学期 <b>電気数学 II</b><br><span class="gl">Mathematics for Electrical and Electronics Engineers II</span></p>
+
+<p class="description">月4限 15:05-16:45 | 2-274教室 | 対象：<span class="dep2">電気電子工学科1年生</span><br>
+担当：佐藤 弘康（hiroyasu [at] nit.ac.jp | W1棟204 | 0480-33-7972）
+</p>
+</div>
+
+<div id="contents">
+
+<h2>連絡事項</h2>
+
+<ul>
+<li>7/28：この授業は終了しました．期末試験の結果については<a href="./meee2.html#edt-r">ここ</a>を参照してください．</li>
+<li>
+<a href="https://twitter.com/shiroyasu_NIT">Twitter</a> <a href="https://twitter.com/hashtag/15smeee2e?src=hash&vertical=default&f=tweets">#15Smeee2E</a> を参照してください．</li>
+<li>
+4/3：このページを公開しました．
+</li>
+</ul>
+
+
+<h2>授業の目的</h2>
+
+<p>
+電気電子工学では、指数関数・対数関数やベクトルを用いて記述される現象が数多く見受けられ、その知識は欠かせない。
+専門科目の理解に必要とされる読解力・計算力を身に付けるために、指数関数・対数関数およびベクトルについて学習する。基礎的な計算技法に習熟するとともに、電気数学Ⅰで学習する三角関数・複素数との関係についても理解する。</p>
+
+<h2>達成目標</h2>
+
+<ol>
+<li>指数・対数の性質を理解し、それを利用して指数や対数の値を求めることができる。</li>
+<li>指数関数・対数関数の定義や性質を理解し、グラフの概形を描くことができる。</li>
+<li>指数方程式・対数方程式の解を求めることができる。</li>
+<li>ベクトルの定義を理解し、基本的な演算ができる。</li>
+<li>ベクトルの平行条件・垂直条件を理解し、適用することができる。</li>
+</ol>
+
+<h2>これまでの授業と今後の予定</h2>
+
+<table
+ style="width: 95%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="1" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="width: 50px; text-align: center; vertical-align: top;">第1回</td>
+      <td style="width: 40px; text-align: right; vertical-align: top;">4月</td>
+      <td style="width: 75px; text-align: right; vertical-align: top;">13日<span class="gs">（月）</span></td>
+      <td>ガイダンス <a href="https://twitter.com/shiroyasu_NIT/status/588064731560312834"><i class="fa fa-twitter"></i></a> <a href="https://twitter.com/shiroyasu_nit/status/590418525283491840"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第2回</td>
+    <td></td>
+    <td class="rt">20日<span class="gs">（月）</span></td>
+    <td>指数法則，累乗根 <span class="eem">&nbsp;II-1&nbsp;</span> <span class="bmee">&nbsp;10.1&nbsp;</span> <span class="bmee">&nbsp;10.2&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/590275386295988224"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第3回</td>
+    <td></td>
+    <td class="rt">27日<span class="gs">（月）</span></td>
+    <td>累乗根の性質 <span class="eem">&nbsp;II-1&nbsp;</span>，指数の拡張 <span class="eem">&nbsp;II-2&nbsp;</span> <span class="bmee">&nbsp;10.1&nbsp;</span> <span class="bmee">&nbsp;10.2&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/592676948628938752"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第4回</td>
+    <td class="rt">5月</td>
+    <td class="rt">11日<span class="gs">（月）</span></td>
+    <td>指数関数とそのグラフ <span class="eem">&nbsp;II-3&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/597848233700798464"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第5回</td>
+    <td></td>
+    <td class="rt">18日<span class="gs">（月）</span></td>
+    <td>指数方程式 <span class="eem">&nbsp;II-4&nbsp;</span>，対数とその性質 <span class="eem">&nbsp;II-5&nbsp;</span> <span class="bmee">&nbsp;10.3&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/600279083184889856"><i class="fa fa-twitter"></i></a>
+    </td>
+    </tr>
+    <tr>
+    <td class="ct">第6回</td>
+    <td></td>
+    <td class="rt">25日<span class="gs">（月）</span></td>
+    <td>底の変換公式 <span class="eem">&nbsp;II-5&nbsp;</span> <span class="bmee">&nbsp;10.3&nbsp;</span>，対数関数とそのグラフ <span class="eem">&nbsp;II-6&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/602937287706480640"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第7回</td>
+    <td class="rt">6月</td>
+    <td class="rt">1日<span class="gs">（月）</span></td>
+    <td>対数方程式 <span class="eem">&nbsp;II-7&nbsp;</span>，問題演習 <a href="https://twitter.com/shiroyasu_NIT/status/605354932435173376"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第8回</td>
+    <td></td>
+    <td class="rt">8日<span class="gs">（月）</span></td>
+    <td><b>小テスト</b>（<a href="./meee2-mdt.pdf">問題</a> | <a href="./meee2-mdt-ans.pdf">解答</a> | <a href="./meee2.html#mdt-r">得点分布</a>） <a href="https://twitter.com/shiroyasu_NIT/status/608051224299085824"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第9回</td>
+    <td></td>
+    <td class="rt">15日<span class="gs">（月）</span></td>
+    <td>ベクトルと空間の座標 <span class="eem">&nbsp;II-8&nbsp;</span> <span class="bmee">&nbsp;13.1&nbsp;</span> <span class="bmee">&nbsp;13.2&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/611024141144080384"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第10回</td>
+    <td></td>
+    <td class="rt">22日<span class="gs">（月）</span></td>
+    <td>点の対称移動 <span class="eem">&nbsp;II-8&nbsp;</span> <span class="bmee">&nbsp;13.1&nbsp;</span> <span class="bmee">&nbsp;13.2&nbsp;</span>，ベクトルの演算 <span class="eem">&nbsp;II-9&nbsp;</span> <span class="bmee">&nbsp;13.4&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/613336491972911106"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第11回</td>
+    <td></td>
+    <td class="rt">29日<span class="gs">（月）</span></td>
+    <td>ベクトルの基本ベクトル表示 <span class="eem">&nbsp;II-10&nbsp;</span> <span class="bmee">&nbsp;13.3&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/617511484633907200"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第12回</td>
+    <td class="rt">7月</td>
+    <td class="rt">6日<span class="gs">（月）</span></td>
+    <td>ベクトルの成分表示 <span class="eem">&nbsp;II-11&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/618620872476102656"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第13回</td>
+    <td></td>
+    <td class="rt">13日<span class="gs">（月）</span></td>
+    <td>内積とその性質 <span class="eem">&nbsp;II-12&nbsp;</span> <span class="bmee">&nbsp;13.5&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/620636149434822656"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第14回</td>
+    <td></td>
+    <td class="rt">20日<span class="gs">（月）</span></td>
+    <td>これまでのまとめ，問題演習 <a href="https://twitter.com/shiroyasu_NIT/status/623311635369713664"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct"></td>
+    <td></td>
+    <td class="rt">27日<span class="gs">（月）</span></td>
+    <td><b>期末試験</b>（<a href="./meee2.html#edt-r">得点分布</a>）</td>
+    </tr>
+</tbody>
+</table>
+
+<h2>教科書・参考文献について</h2>
+<ul>
+<li>森武昭・大矢征著 <span class="bmee">『電気電子工学のための基礎数学(第2版)』</span> 森北出版  &#187; <a href="http://www.morikita.co.jp/books/book/2706">リンク</a></li>
+<li>小冊子 <span class="eem">『電気数学（2015年度版）』</span></li>
+</ul>
+
+<h2>評価について</h2>
+<ul>
+<li>期末試験<b>80%</b>（科目共通試験），小テスト・演習課題など<b>20%</b>の割合で評価する．</li>
+<li>毎回の授業で問題演習を実施する．手順は以下；
+<ul>
+<li>教科書等の問題を指定し，指定の答案用紙に解答して提出してもらいます（<a href="../answersheet.pdf">指定の用紙</a>しか受け付けません）．</li>
+<li>解答後は必ず答え合わせをして，<u>正しくない場合は途中式のどこが間違えているか探して訂正</u>してください（正答をただ書き写すことではありません）．</li>
+<li>授業時間内に終わらない場合は，次回の授業の前々日（ただし土日を除く）の17:00までに私に直接手渡すか，研究室のドアの封筒に提出してもらいます．<u>提出期限が過ぎた答案は一切受け取りません</u>．</li>
+<li>1回の提出につき<b>1点</b>を加点します（合計点数は最大10点）．
+ただし，不完全な答案（解答されていない問題がある，答え合わせをしていない，誤答が正されていない，等々の不備）は<u>加点しません</u>．</li>
+</ul>
+</li>
+<li>中間期に小テスト（ミニ中間試験）を実施する（<b>10</b>点）．</li>
+<li>期末試験を実施する（100点満点）．<br><br></li>
+<li>$\min\{10,$(課題提出回数)$\}+$(中間小テストの点数)$+$(期末試験の点数)$\times 0.8\geqq 60$ で合格とする．</li>
+</ul>
+
+<h2>その他</h2>
+<ul>
+	<li>平成27年度のスチューデントアワー (SH) は<u>月火水木の昼休み</u>です．</li>
+	<li>
+<a href="https://twitter.com/shiroyasu_NIT">Twitter</a>でも，授業に関する情報を発信していきます（ハッシュタグは <a href="https://twitter.com/hashtag/15smeee2e?src=hash&vertical=default&f=tweets">#15Smeee2E</a> ）．質問，意見などのリプライを歓迎します．
+</li>
+<li>
+授業に対する<a href="../../appendix/msg.html">基本的な考え方</a>にも目を通しておいてください．
+</li>
+</ul>
+<ul>
+	<li>授業の欠席について
+<ul>
+<li>出席点というものがないので，<u>休んだことの届け出は基本的にしなくて結構です</u>．友人にノートを写させてもらうなどの対処を各自行ってください（課題の有無も確認してください）．</li>
+<li>休んだ回の課題を提出する意思があるならば，メール等で連絡の上，答案用紙を受け取りに来てください（または<a href="./answersheet.pdf">ここ</a>からダウンロードして印刷）．<u>レポート用紙やルーズリーフでの提出は原則不可</u>です．</li>
+<li>病欠等で数日休んでしまった場合は，課題の提出期限を猶予します．その際は，答案用紙を受け取る際に欠席届け等を見せてください．</li>
+</ul>
+</ul>
+
+<h2>試験の得点分布と評価など</h2>
+<ul>
+	<li><a name="mdt-r"></a>小テスト：<a href="./meee2-mdt.pdf">問題</a>と<a href="./meee2-mdt-ans.pdf">解答</a>（平均点 <b>6.6点</b>）<br><br>
+<a name="mdt-r"></a><img src="./meee2-mdt-result.png"><br><br>
+	</li>
+	<li><a name="edt-r"></a>期末試験（平均点 <b>60.5点</b>）<br><br>
+<table
+ style="width: 70%; text-align: left;"
+ border="0" cellpadding="1" cellspacing="0">
+ <tbody>
+ <tr>
+ <td><img src="meee2-edt-result.png"></td>
+ <td>
+<table
+ style="border-collapse: collapse;" border="1" cellpadding="3" cellspacing="1">
+  <tbody>
+    <tr><td class="ct">履修者</td><td class="rt">42</td></tr>
+    <tr><td class="ct">受験者</td><td class="rt">42</td></tr>
+    <tr><td class="ct">AA</td><td class="rt">2</td></tr>
+    <tr><td class="ct">A</td><td class="rt">9</td></tr>
+    <tr><td class="ct">B</td><td class="rt">12</td></tr>
+    <tr><td class="ct">C</td><td class="rt">5</td></tr>
+    <tr><td class="ct">D</td><td class="rt">14</td></tr>
+    <tr><td class="ct">未受験</td><td class="rt">0</td></tr>
+    <tr><td class="ct">単位修得者</td><td class="rt">28</td></tr>
+    <tr><td class="ct">単位修得率</td><td class="rt">67.7%</td></tr>
+  </tbody>
+</table>
+<br><br>
+ </td>
+ </tr>
+ </tbody>
+</table>
+</li>
+</ul>
+</div>
+
+<div id="footer">
+<p><span class="gs">Copyright &copy; Hiroyasu Satoh. All Rights Reserved.</span></p>
+<p id="cds">CSS Template <a href="http://www.css-designsample.com/">CSSデザインサンプル</a></p>
+</div>
+
+</div>
+</body>
+</html>

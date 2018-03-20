@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../..//hstyle.css">
+<link rel="stylesheet" type="text/css" href="../../hstyle-sub.css">
+<link rel="shortcut icon" href="../../img/favicon.png">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
+
+<title>微分方程式 - 佐藤弘康</title>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+
+<h1><a href="../../index.html">home</a> &#155;&#155; <a href="../index.html">Teaching</a> &#155;&#155; <a href="../nit.html">NIT</a> &#155;&#155;</h1>
+<p class="logo">2014年度秋学期 微分方程式 <span class="gl">Differential Equations</span></p>
+
+<p class="description">月2限 10:55-12:35 | 2-275教室 | 対象：<span class="dep1">機械工学科2年生</span><br>
+担当：佐藤 弘康（hiroyasu [at] nit.ac.jp | W1棟204 | 0480-33-7972）
+</p>
+</div>
+
+<div id="contents">
+
+<h2>連絡事項</h2>
+<ul>
+<li>2/3：期末試験の<a href="de-m-edt.pdf">問題</a>と<a href="de-m-edt-ans.pdf">解答</a>を公開しました．</li>
+<li>2/3：この授業は終了しました．<a href="./de-m.html#edt">期末試験の得点分布と成績に関する結果</a>を公開しました．</li>
+<li>12/22：12月15日に実施した小テストの<a href="./de-mdt.pdf">問題と解答</a>を公開しました．</li>
+<li>12/2：12月15日に小テストを実施します（試験範囲は，第1〜8回の内容まで）．なお，試験中は教科書のみ参照可とします．</li>
+<li>10/7：<a href="http://www.nit.ac.jp/whats_new/view/1438">台風18号の接近に伴う措置</a>により，10月6日の授業が休講になりました．振替授業は12月25(木)の補講日に実施する予定ですが，今後の進度等により変更する可能性があります．</li>
+<li>9/22：<a href="./guidance-2g.pdf">ガイダンス資料</a>を公開しました．</li>
+<li>
+9/18：このページを公開しました．
+</li>
+<li>
+Twitterでこの授業について<a href="https://twitter.com/shiroyasu_NIT">ツイート</a>していきます（ハッシュタグは#14fDEm）．質問，意見などのリプライを歓迎します．
+</li>
+<li>
+授業に対する<a href="../../appendix/msg.html">基本的な考え方</a>にも目を通しておいてください．
+</li>
+</ul>
+
+
+<h2>授業の目的</h2>
+
+<p>
+ニュートンが最初に微分方程式を用いて力学的な運動を表わして以来、自然科学の法則や工学における現
+象を表現する手段として、微分方程式は重要な役割を果たしている。
+専門科目の理解に必要とされる読解力・計算力を身に付けるために、常微分方程式について学習する。基
+本的な常微分方程式の解法に習熟するとともに、解の意味も認識する。
+</p>
+
+<h2>達成目標</h2>
+
+<ol>
+<li>変数分離形微分方程式の解を求めることができる。</li>
+<li>同次形微分方程式の解を求めることができる。</li>
+<li>1階線形微分方程式の解を求めることができる。</li>
+<li>完全微分方程式の解を求めることができる。</li>
+<li>積分因子を理解し、それを利用して微分方程式の解を求めることができる。</li>
+<li>微分演算子を理解し、それを利用して微分方程式の解を求めることができる。</li>
+<li>定数係数同次線形微分方程式の解を求めることができる。</li>
+<li>逆微分演算子を理解し、それを利用して微分方程式の解を求めることができる。</li>
+<li>定数係数非同次線形微分方程式の解を求めることができる。</li>
+</ol>
+
+<h2>科目の位置づけ</h2>
+<ul>
+<li>
+微分積分学I／微分法（1変数関数の微分） &#8594; 微分積分学II／積分法（1変数関数の積分） &#8594; <b>微分方程式</b>
+</li>
+<li>
+微分積分学の基礎として、「微分積分学I／微分法」では1変数関数の微分法を、「微分積分学II／積分法」では1変数関数の積分法を取り扱っている。この科目では、先行する2科目の内容を踏まえて、常微分 方程式の解法を学習する。</li>
+<li>この科目と「微分積分学I/微分法」、「微分積分学II/積分法」を併せて履修 することにより、基本的な常微分方程式の解法を一通り習得することができる。</li>
+</ul>
+
+<h2>授業の予定と記録</h2>
+
+<table
+ style="width: 95%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="1" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="width: 50px; text-align: center; vertiapl-align: top;">第1回</td>
+      <td style="width: 40px; text-align: right; vertiapl-align: top;">9月</td>
+      <td style="width: 75px; text-align: right; vertiapl-align: top;">22日<span class="gs">（月）</span></td>
+      <td><a href="./guidance-2g.pdf">ガイダンス</a>，微分と積分，微分方程式について</td>
+    </tr>
+    <tr>
+    <td class="ct">第2回</td>
+    <td></td>
+    <td class="rt">29日<span class="gs">（月）</span></td>
+    <td>微分方程式の解の存在 <span class="apl">&nbsp;第1部 第1章 &#167;1, 2&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct"></td>
+    <td class="rt">10月</td>
+    <td class="rt"><span class="gs">6日（月）</span></td>
+    <td><span class="gs">（台風18号の影響により休講）</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第3回</td>
+    <td class="rt"></td>
+    <td class="rt">20日<span class="gs">（月）</span></td>
+    <td>変数分離形微分方程式 <span class="apl">&nbsp;第1部 第2章 &#167;1&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第4回</td>
+    <td class="rt"></td>
+    <td class="rt">27日<span class="gs">（月）</span></td>
+    <td>同次形微分方程式 <span class="apl">&nbsp;第1部 第2章 &#167;2&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第5回</td>
+    <td>11月</td>
+    <td class="rt">10日<span class="gs">（月）</span></td>
+    <td>1階線形微分方程式 <span class="apl">&nbsp;第1部 第2章 &#167;3&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第6回</td>
+    <td class="rt"></td>
+    <td class="rt">17日<span class="gs">（月）</span></td>
+    <td>ベルヌーイの微分方程式，<s>リッカチの微分方程式</s> <span class="apl">&nbsp;第1部 第2章 &#167;3&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第7回</td>
+    <td></td>
+    <td class="rt">26日<span class="gs">（水）</span></td>
+    <td>完全微分方程式 <span class="apl">&nbsp;第1部 第2章 &#167;4&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第8回</td>
+    <td class="rt">12月</td>
+    <td class="rt">1日<span class="gs">（月）</span></td>
+    <td>積分因子 <span class="apl">&nbsp;第1部 第2章 &#167;4&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第9回</td>
+    <td class="rt"></td>
+    <td class="rt">8日<span class="gs">（月）</span></td>
+    <td>1階微分方程式の応用例 <span class="apl">&nbsp;第1部 第2章 &#167;6&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第10回</td>
+    <td></td>
+    <td class="rt">15日<span class="gs">（月）</span></td>
+    <td>高階同次線形微分方程式とその基本解系 <span class="apl">&nbsp;第1部 第3章 &#167;1&nbsp;</span><br><b>小テスト</b>（<a href="./de-mdt.pdf">問題と解答</a>）</td>
+    </tr>
+    <tr>
+    <td class="ct">第11回</td>
+    <td></td>
+    <td class="rt">22日<span class="gs">（月）</span></td>
+    <td>微分演算子 <span class="apl">&nbsp;第1部 第3章 &#167;2&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第12回</td>
+    <td class="rt"></td>
+    <td class="rt">25日<span class="gs">（木）</span></td>
+    <td><span class="gs">（補講日）</span>定数係数同次線形微分方程式 <span class="apl">&nbsp;第1部 第3章 &#167;3&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第13回</td>
+    <td class="rt">1月</td>
+    <td class="rt">14日<span class="gs">（水）</span></td>
+    <td>逆微分演算子 <span class="apl">&nbsp;第1部 第3章 &#167;4&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第14回</td>
+    <td></td>
+    <td class="rt">19日<span class="gs">（月）</span></td>
+    <td>定数係数非同次線形微分方程式 <span class="apl">&nbsp;第1部 第3章 &#167;5&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct"></td>
+    <td></td>
+    <td class="rt">26日<span class="gs">（月）</span></td>
+    <td><b>期末試験</b>（<a href="de-m-edt.pdf">問題</a>と<a href="de-m-edt-ans.pdf">解答</a>） <span class="gs">(10:40 -- 11:40)</span></td>
+    </tr>
+</tbody>
+</table>
+
+<h2>教科書・参考文献について</h2>
+<ul>
+<li>矢野健太郎・石原繁編 <span class="apl">『基礎 解析学』</span> 裳華房 &#187; <a href="http://www.shokabo.co.jp/mybooks/ISBN978-4-7853-1079-0.htm">リンク</a></li>
+</ul>
+
+<h2>評価について</h2>
+<ul>
+<li>期末試験<b>60%</b>，小テスト・演習課題など<b>40%</b>の割合で評価する．</li>
+<li>毎回の授業で問題演習を実施する．
+<ul>
+<li>教科書等の問題を指定し，指定の答案用紙に解答して提出してもらいます．．</li>
+<li>解答後は必ず答え合わせをして，正しくない場合は途中式のどこが間違えているか探して訂正してもらいます（正答をただ書き写すことではない）．</li>
+<li>授業時間内に終わらない場合は，次回の授業の前々日（ただし土日を除く）の17:00までに私に直接手渡すか，研究室のドアの封筒に提出してもらいます．<u>提出期限が過ぎた答案は一切受け取りません</u>．</li>
+<li>1回の提出につき<b>2点</b>を加点します（合計点数は最大20点）．
+ただし，不完全な答案（解答されていない問題がある，答え合わせをしていない，誤答が正されていない，等々の不備）は加点しません．</li>
+</ul>
+</li>
+<li>中間期に小テストを実施する（<b>20</b>点）．</li>
+<li>期末試験（共通試験）を実施する（100点満点）．<br><br></li>
+<li>$\min\{20,$(課題提出回数)$\times 2\}+$(中間小テストの点数)$+$(期末試験の点数)$\times 0.6\geqq 60$ で合格とする．
+</li>
+</ul>
+<h2>試験の得点分布と評価など</h2>
+<img src="./de-m-mdt-result.png">
+<br><br>
+<table
+ style="width: 70%; text-align: left;"
+ border="0" cellpadding="1" cellspacing="0">
+ <tbody>
+ <tr>
+ <td><a name="edt"></a><img src="de-m-edt-result.png"></td>
+ <td>
+<table
+ style="border-collapse: collapse;" border="1" cellpadding="3" cellspacing="1">
+  <tbody>
+    <tr><td class="ct">履修者</td><td class="rt">14</td></tr>
+    <tr><td class="ct">受験者</td><td class="rt">11</td></tr>
+    <tr><td class="ct">AA</td><td class="rt">0</td></tr>
+    <tr><td class="ct">A</td><td class="rt">1</td></tr>
+    <tr><td class="ct">B</td><td class="rt">3</td></tr>
+    <tr><td class="ct">C</td><td class="rt">3</td></tr>
+    <tr><td class="ct">D</td><td class="rt">4</td></tr>
+    <tr><td class="ct">未受験</td><td class="rt">4</td></tr>
+    <tr><td class="ct">単位修得者</td><td class="rt">7</td></tr>
+    <tr><td class="ct">単位修得率</td><td class="rt">63.3%</td></tr>
+  </tbody>
+</table>
+<br><br>
+ </td>
+ </tr>
+ </tbody>
+</table>
+
+</div>
+
+<div id="footer">
+<p><span class="gs">Copyright &copy; Hiroyasu Satoh. All Rights Reserved.</span></p>
+<p id="cds">CSS Template <a href="http://www.css-designsample.com/">CSSデザインサンプル</a></p>
+</div>
+
+</div>
+</body>
+</html>

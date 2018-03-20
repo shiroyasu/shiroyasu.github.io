@@ -1,0 +1,1683 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     59525,       1674]
+NotebookOptionsPosition[     53867,       1499]
+NotebookOutlinePosition[     55240,       1540]
+CellTagsIndexPosition[     55161,       1535]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["\:4eca\:65e5\:306e\:76ee\:6a19", "Section",
+ CellChangeTimes->{{3.463605533339016*^9, 3.463605543697534*^9}, {
+   3.4636068354484873`*^9, 3.4636068445848103`*^9}, 3.46361067063848*^9, {
+   3.463731835158626*^9, 3.463731840911984*^9}}],
+
+Cell[TextData[StyleBox["\:76f4\:7dda\:3084\:5e73\:9762\:306e\:30d9\:30af\:30c8\
+\:30eb\:65b9\:7a0b\:5f0f\:3092\:7406\:89e3\:3057\:ff0c\:5e7e\:4f55\:7684\:306a\
+\:30a4\:30e1\:30fc\:30b8\:3092\:3064\:304b\:3080\:ff0e",
+ FontColor->RGBColor[0, 0, 1]]], "Item",
+ CellChangeTimes->{{3.463608387795712*^9, 3.463608587349823*^9}, 
+   3.463610678307291*^9, {3.463731898401586*^9, 3.463731922285594*^9}, {
+   3.46373200680514*^9, 3.4637320376919203`*^9}, 3.463732182849847*^9, {
+   3.4637922398841476`*^9, 3.463792244562504*^9}}],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.46373266197535*^9}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["1.1 \:30d9\:30af\:30c8\:30eb\:306e\:5b9a\:7fa9", "Section",
+ CellChangeTimes->{{3.463605533339016*^9, 3.463605543697534*^9}, {
+   3.4636068354484873`*^9, 3.4636068445848103`*^9}, 3.46361067063848*^9, {
+   3.495263538892305*^9, 3.4952635399573803`*^9}}],
+
+Cell[TextData[{
+ "\:30d9\:30af\:30c8\:30eb\:ff0c\:70b9\:306e\:5ea7\:6a19\:306f",
+ StyleBox[" { }",
+  FontColor->RGBColor[0, 0, 1]],
+ " \:3067\:8868\:3057\:307e\:3059\:ff0e"
+}], "Text",
+ CellChangeTimes->{{3.463608387795712*^9, 3.463608587349823*^9}, 
+   3.463610678307291*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.4636106824086123`*^9, 3.463610694738564*^9}, 
+   3.463828168181159*^9}],
+
+Cell[BoxData["a"], "Input",
+ CellChangeTimes->{3.463610698188019*^9}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["1.2 \
+\:30d9\:30af\:30c8\:30eb\:306e\:53ef\:8996\:5316\:ff08\:ff11\:ff09", "Section",\
+
+ CellChangeTimes->{{3.463605533339016*^9, 3.463605543697534*^9}, {
+  3.4636068354484873`*^9, 3.4636068445848103`*^9}, {3.4636107302320633`*^9, 
+  3.463610730544149*^9}, {3.463828340057078*^9, 3.463828342186692*^9}, {
+  3.4952635481970053`*^9, 3.495263548716866*^9}}],
+
+Cell[TextData[{
+ "\:30d9\:30af\:30c8\:30eb\:ff08\:77e2\:5370\:3064\:304d\:7dda\:5206\:ff09\
+\:306f ",
+ StyleBox["Arrow",
+  FontColor->RGBColor[0, 0, 1]],
+ " \:30b3\:30de\:30f3\:30c9\:3067\:53ef\:8996\:5316\:3067\:304d\:307e\:3059\
+\:ff0e"
+}], "Text",
+ CellChangeTimes->{{3.463608387795712*^9, 3.463608587349823*^9}, {
+  3.463610722209529*^9, 3.463610725282219*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"Graphics", "[", 
+     RowBox[{"Arrow", "[", 
+      RowBox[{"\:59cb\:70b9", ",", "\:7d42\:70b9"}]}]}], "}"}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.4636098219310627`*^9, 3.46360983605997*^9}, {
+  3.463609868732613*^9, 3.463609870899831*^9}, {3.463609942373074*^9, 
+  3.463609946713431*^9}, {3.463609982827407*^9, 3.4636099841258183`*^9}, {
+  3.463610039466517*^9, 3.463610050294675*^9}, {3.463646240167639*^9, 
+  3.4636462495806437`*^9}},
+ Background->GrayLevel[0.85]],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"Arrow", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2"}], "}"}]}], "}"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4636098219310627`*^9, 3.46360983605997*^9}, {
+  3.463609868732613*^9, 3.463609870899831*^9}, {3.463609942373074*^9, 
+  3.463609946713431*^9}, {3.463609982827407*^9, 3.4636099841258183`*^9}, {
+  3.4637323827858686`*^9, 3.463732395218584*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["1.3 \
+\:30d9\:30af\:30c8\:30eb\:306e\:53ef\:8996\:5316\:ff08\:ff12\:ff09", "Section",\
+
+ CellChangeTimes->{{3.463605533339016*^9, 3.463605543697534*^9}, {
+   3.4636068354484873`*^9, 3.4636068445848103`*^9}, {3.4636107302320633`*^9, 
+   3.463610730544149*^9}, 3.463828346449275*^9, {3.495263551260894*^9, 
+   3.4952635535327473`*^9}}],
+
+Cell[TextData[{
+ "\:59cb\:70b9\:3068\:65b9\:5411\:3067\:30d9\:30af\:30c8\:30eb\:3092\:4e0e\
+\:3048\:308b\:30b3\:30de\:30f3\:30c9 ",
+ StyleBox["Vector ",
+  FontColor->RGBColor[0, 0, 1]],
+ "\:3092\:5b9a\:7fa9\:3057\:307e\:3057\:3087\:3046\:ff0e"
+}], "Text",
+ CellChangeTimes->{{3.463608387795712*^9, 3.463608587349823*^9}, {
+  3.4636090393925953`*^9, 3.463609057099618*^9}, {3.463609631861672*^9, 
+  3.4636096363141613`*^9}, {3.46360971215593*^9, 3.463609783549258*^9}, {
+  3.463610336020721*^9, 3.4636103496770267`*^9}, {3.463648626331115*^9, 
+  3.4636486284718103`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Vector", "[", 
+   RowBox[{"start_", ",", "direction_"}], "]"}], ":=", 
+  RowBox[{"Arrow", "[", 
+   RowBox[{"{", 
+    RowBox[{"start", ",", 
+     RowBox[{"start", "+", "direction"}]}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.463609645413679*^9, 3.463609697545619*^9}, {
+  3.4636101893551207`*^9, 3.463610191794071*^9}},
+ Background->RGBColor[1, 1, 0.85]],
+
+Cell[BoxData[
+ RowBox[{"Vector", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "3", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     RowBox[{"-", "2"}], ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.463610244020637*^9, 3.463610293533944*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"Vector", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "3", ",", "2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", 
+      RowBox[{"-", "2"}], ",", "1"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4636098219310627`*^9, 3.46360983605997*^9}, {
+  3.463609868732613*^9, 3.463609870899831*^9}, {3.463609942373074*^9, 
+  3.463609946713431*^9}, {3.463609982827407*^9, 3.4636099841258183`*^9}, {
+  3.4637323827858686`*^9, 3.463732395218584*^9}, {3.495279469467141*^9, 
+  3.495279477018713*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["1.4 \
+\:7dda\:5206\:306e\:592a\:3055\:ff0c\:8272\:3092\:5909\:3048\:308b", "Section",\
+
+ CellChangeTimes->{{3.463610843560734*^9, 3.4636108578328657`*^9}, {
+  3.4952635590046253`*^9, 3.495263561596415*^9}}],
+
+Cell["\:30d9\:30af\:30c8\:30eb\:306e\:7dda\:306e\:592a\:3055\:3084\:8272\:3092\
+\:5909\:3048\:308b\:3053\:3068\:304c\:3067\:304d\:307e\:3059", "Text",
+ CellChangeTimes->{{3.463644782572625*^9, 3.4636447871174*^9}, {
+  3.463644824679459*^9, 3.4636448625726643`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\:592a\:3055", " ", 
+     RowBox[{"(", 
+      RowBox[{"Thin", " ", "or", " ", "Thick"}], ")"}]}], ",", "\:8272", ",", 
+    "\:ff12\:6b21\:5143\:30aa\:30d6\:30b8\:30a7\:30af\:30c8"}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.4636468112305593`*^9, 3.463646828703773*^9}, {
+  3.495264565659007*^9, 3.495264605947928*^9}},
+ Background->GrayLevel[0.85]],
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\:592a\:3055", " ", 
+     RowBox[{"(", 
+      RowBox[{"Thin", " ", "or", " ", "Thick"}], ")"}]}], ",", "\:8272", ",", 
+    "\:ff13\:6b21\:5143\:30aa\:30d6\:30b8\:30a7\:30af\:30c8"}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.4636468112305593`*^9, 3.463646828703773*^9}, {
+  3.495264508688876*^9, 3.495264559059741*^9}},
+ Background->GrayLevel[0.85]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"p", "=", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"v", "=", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     RowBox[{"-", "1"}], ",", "2"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"Thin", ",", "Red", ",", 
+      RowBox[{"Vector", "[", 
+       RowBox[{"p", ",", "v"}], "]"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", "Blue", ",", 
+      RowBox[{"Vector", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "v"}], "]"}]}], 
+     "}"}]}], "}"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.4636452851038427`*^9, 3.4636452912012177`*^9}, {
+  3.463645356890615*^9, 3.4636453573407793`*^9}, {3.463645440974115*^9, 
+  3.463645461237557*^9}, {3.463645493768276*^9, 3.4636456257523193`*^9}, {
+  3.4636461270227947`*^9, 3.463646168201849*^9}, {3.4636468444313927`*^9, 
+  3.463646856455029*^9}, {3.463646894411463*^9, 3.463646938163972*^9}, {
+  3.463792402232642*^9, 3.463792408511031*^9}, {3.463792441792838*^9, 
+  3.463792459892496*^9}, {3.463792828867963*^9, 3.463792857635435*^9}, {
+  3.463792896536104*^9, 3.4637929011210747`*^9}, {3.495264551491569*^9, 
+  3.495264552338436*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["2.1 \:76f4\:7dda\:306e\:5a92\:4ecb\:5909\:6570\:8868\:793a\:ff08\:ff11\
+\:ff09", "Section",
+ CellChangeTimes->{{3.463610908540147*^9, 3.463610916168973*^9}, 
+   3.463647708986494*^9, {3.463648355876379*^9, 3.463648368389038*^9}, 
+   3.4638283545451803`*^9, {3.495263658765284*^9, 3.495263694116864*^9}}],
+
+Cell[TextData[{
+ "\:ff12\:70b9 ",
+ StyleBox["a",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["b",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " \:3092\:901a\:308b\:76f4\:7dda\:4e0a\:306e\:70b9 ",
+ StyleBox["p",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " \:306f"
+}], "Text",
+ CellChangeTimes->{
+  3.463647708986661*^9, {3.463647759413406*^9, 3.46364778712393*^9}, {
+   3.4636478200731907`*^9, 3.463647960961787*^9}, {3.463647997866671*^9, 
+   3.4636480878927937`*^9}, {3.463733170322888*^9, 3.463733188639233*^9}, {
+   3.463733431658996*^9, 3.46373346598494*^9}, {3.4637335717134447`*^9, 
+   3.463733572729795*^9}, {3.4952638023010197`*^9, 3.495263872661523*^9}}],
+
+Cell[TextData[{
+ StyleBox["p",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " = ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["a",
+    FontWeight->"Bold",
+    FontSlant->"Italic"], TraditionalForm]]],
+ " + ",
+ StyleBox["t",
+  FontSlant->"Italic"],
+ " (",
+ StyleBox[" b ",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ "-",
+ StyleBox[" a",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " )"
+}], "Text",
+ CellChangeTimes->{
+  3.463647708986661*^9, {3.463647759413406*^9, 3.46364778712393*^9}, {
+   3.4636478200731907`*^9, 3.463647960961787*^9}, {3.463647997866671*^9, 
+   3.4636480878927937`*^9}, {3.463733170322888*^9, 3.463733188639233*^9}, {
+   3.463733431658996*^9, 3.46373346598494*^9}, {3.463733554354763*^9, 
+   3.463733555277783*^9}, 3.463733599756535*^9, {3.495263880330701*^9, 
+   3.495263914001326*^9}},
+ TextAlignment->Center],
+
+Cell[TextData[{
+ "\:3067\:8868\:3055\:308c\:308b\:ff08",
+ StyleBox["t",
+  FontSlant->"Italic"],
+ " \:306f\:5a92\:4ecb\:5909\:6570\:ff09\:ff0e"
+}], "Text",
+ CellChangeTimes->{
+  3.463647708986661*^9, {3.463647759413406*^9, 3.46364778712393*^9}, {
+   3.4636478200731907`*^9, 3.463647960961787*^9}, {3.463647997866671*^9, 
+   3.4636480878927937`*^9}, {3.463733170322888*^9, 3.463733188639233*^9}, {
+   3.463733431658996*^9, 3.46373346598494*^9}, 3.463733550640129*^9, {
+   3.463793956831321*^9, 3.4637939723181057`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", " ", "\:5ea7\:6a19", " ", 
+      RowBox[{"(", "t\:306e\:95a2\:6570", ")"}]}], ",", 
+     RowBox[{"y", " ", "\:5ea7\:6a19", " ", 
+      RowBox[{"(", "t\:306e\:95a2\:6570", ")"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", " ", "\:306e\:52d5\:304f\:7bc4\:56f2"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.4636468112305593`*^9, 3.463646828703773*^9}, {
+  3.4637940940666933`*^9, 3.4637941697093067`*^9}},
+ Background->GrayLevel[0.85]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "2"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "1"}], ",", "3"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"ParametricPlot", "[", 
+  RowBox[{
+   RowBox[{"a", "+", 
+    RowBox[{"t", "*", 
+     RowBox[{"(", 
+      RowBox[{"b", "-", "a"}], ")"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.463648154321972*^9, 3.463648209983721*^9}, {
+  3.463648296588763*^9, 3.4636483095838623`*^9}, {3.463822888982956*^9, 
+  3.4638229005386257`*^9}, {3.495263974902281*^9, 3.495263988259268*^9}, {
+  3.495264040065867*^9, 3.4952640662975817`*^9}, {3.49527120850751*^9, 
+  3.495271227470331*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "2"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "1"}], ",", "3"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"ParametricPlot", "[", 
+    RowBox[{
+     RowBox[{"a", "+", 
+      RowBox[{"t", "*", 
+       RowBox[{"(", 
+        RowBox[{"b", "-", "a"}], ")"}]}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", 
+       RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", "Red", ",", 
+      RowBox[{"Vector", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0"}], "}"}], ",", "a"}], "]"}]}], "}"}], "]"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", "Blue", ",", 
+      RowBox[{"Vector", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0"}], "}"}], ",", "b"}], "]"}]}], "}"}], "]"}]}], 
+  "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.463648154321972*^9, 3.463648209983721*^9}, {
+   3.463648296588763*^9, 3.4636483095838623`*^9}, {3.463648821101406*^9, 
+   3.463648824053705*^9}, {3.4636488804059553`*^9, 3.4636490414218616`*^9}, {
+   3.463649099439272*^9, 3.4636491005064898`*^9}, {3.463822875841074*^9, 
+   3.4638228759036827`*^9}, {3.4638284577706842`*^9, 3.463828464916424*^9}, {
+   3.495264170755474*^9, 3.495264218845851*^9}, 3.495271257475274*^9}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["2.2 \:76f4\:7dda\:306e\:5a92\:4ecb\:5909\:6570\:8868\:793a\:ff08\:ff12\
+\:ff09", "Section",
+ CellChangeTimes->{{3.463610908540147*^9, 3.463610916168973*^9}, 
+   3.463647708986494*^9, {3.463648355876379*^9, 3.463648368389038*^9}, 
+   3.4638283583048573`*^9, {3.495263721040285*^9, 3.4952637243040857`*^9}, {
+   3.495276904954858*^9, 3.4952769054822702`*^9}}],
+
+Cell[TextData[{
+ "\:70b9 ",
+ StyleBox["a",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " \:3092\:901a\:308a\:ff0c\:65b9\:5411\:30d9\:30af\:30c8\:30eb\:304c ",
+ StyleBox["v",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " \:306e\:76f4\:7dda\:4e0a\:306e\:70b9\:ff08\:306e\:4f4d\:7f6e\:30d9\:30af\
+\:30c8\:30eb\:ff09",
+ StyleBox["p",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " \:306f"
+}], "Text",
+ CellChangeTimes->{
+  3.463647708986661*^9, {3.463647759413406*^9, 3.46364778712393*^9}, {
+   3.4636478200731907`*^9, 3.463647960961787*^9}, {3.463647997866671*^9, 
+   3.4636480878927937`*^9}, {3.463733170322888*^9, 3.463733188639233*^9}, {
+   3.463733431658996*^9, 3.46373346598494*^9}, {3.4637335717134447`*^9, 
+   3.463733572729795*^9}, {3.495271331976591*^9, 3.495271366796164*^9}}],
+
+Cell[TextData[{
+ StyleBox["p",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " = ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["a",
+    FontWeight->"Bold",
+    FontSlant->"Italic"], TraditionalForm]]],
+ " + ",
+ StyleBox["t",
+  FontSlant->"Italic"],
+ " ",
+ StyleBox["v",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " "
+}], "Text",
+ CellChangeTimes->{
+  3.463647708986661*^9, {3.463647759413406*^9, 3.46364778712393*^9}, {
+   3.4636478200731907`*^9, 3.463647960961787*^9}, {3.463647997866671*^9, 
+   3.4636480878927937`*^9}, {3.463733170322888*^9, 3.463733188639233*^9}, {
+   3.463733431658996*^9, 3.46373346598494*^9}, {3.463733554354763*^9, 
+   3.463733555277783*^9}, 3.463733599756535*^9, 3.49527137858539*^9},
+ TextAlignment->Center],
+
+Cell[TextData[{
+ "\:3067\:8868\:3055\:308c\:308b\:ff08",
+ StyleBox["t",
+  FontSlant->"Italic"],
+ " \:306f\:5a92\:4ecb\:5909\:6570\:ff09\:ff0e"
+}], "Text",
+ CellChangeTimes->{
+  3.463647708986661*^9, {3.463647759413406*^9, 3.46364778712393*^9}, {
+   3.4636478200731907`*^9, 3.463647960961787*^9}, {3.463647997866671*^9, 
+   3.4636480878927937`*^9}, {3.463733170322888*^9, 3.463733188639233*^9}, {
+   3.463733431658996*^9, 3.46373346598494*^9}, 3.463733550640129*^9, {
+   3.463793956831321*^9, 3.4637939723181057`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "1"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"v", "=", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", 
+     RowBox[{
+      RowBox[{"-", "1"}], "/", "2"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"ParametricPlot", "[", 
+    RowBox[{
+     RowBox[{"a", "+", 
+      RowBox[{"t", "*", "v"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", 
+       RowBox[{"-", "4"}], ",", "2"}], "}"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", "Red", ",", 
+      RowBox[{"Vector", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0"}], "}"}], ",", "a"}], "]"}]}], "}"}], "]"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", "Blue", ",", 
+      RowBox[{"Vector", "[", 
+       RowBox[{"a", ",", "v"}], "]"}]}], "}"}], "]"}]}], 
+  "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.463648154321972*^9, 3.463648209983721*^9}, {
+  3.463648296588763*^9, 3.4636483095838623`*^9}, {3.463648821101406*^9, 
+  3.463648824053705*^9}, {3.4636488804059553`*^9, 3.4636490414218616`*^9}, {
+  3.463649099439272*^9, 3.4636491005064898`*^9}, {3.463822875841074*^9, 
+  3.4638228759036827`*^9}, {3.4638284577706842`*^9, 3.463828464916424*^9}, {
+  3.495264170755474*^9, 3.495264218845851*^9}, {3.49527140206418*^9, 
+  3.495271482135459*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["3.1 3\:70b9\:3092\:901a\:308b\:5e73\:9762\:306e\:5a92\:4ecb\:5909\:6570\
+\:8868\:793a", "Section",
+ CellChangeTimes->{{3.46361093008946*^9, 3.463610947766162*^9}, {
+  3.4638283656409616`*^9, 3.4638283788437433`*^9}, {3.4952721214255123`*^9, 
+  3.4952721273555603`*^9}, {3.495276689580188*^9, 3.4952767011762457`*^9}, {
+  3.495276912613111*^9, 3.495276913409792*^9}, {3.495277421320488*^9, 
+  3.4952774225498457`*^9}, {3.4952783557520523`*^9, 3.4952783561912413`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"PA", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "1"}], ",", "0", ",", "2"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"PB", "=", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", 
+     RowBox[{"-", "2"}], ",", "1"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"PC", "=", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "2", ",", 
+     RowBox[{"-", "1"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics3D", "[", "\[IndentingNewLine]", 
+  RowBox[{"{", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"PointSize", "[", "Large", "]"}], ",", 
+      RowBox[{"Point", "[", 
+       RowBox[{"{", 
+        RowBox[{"PA", ",", " ", "PB", ",", " ", "PC"}], "}"}], "]"}]}], "}"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"Text", "[", 
+     RowBox[{"A", ",", 
+      RowBox[{"PA", "+", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "0.2"}], "}"}]}]}], "]"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Text", "[", 
+     RowBox[{"B", ",", 
+      RowBox[{"PB", "+", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "0.2"}], "}"}]}]}], "]"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Text", "[", 
+     RowBox[{"C", ",", 
+      RowBox[{"PC", "+", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "0.2"}], "}"}]}]}], "]"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", "Red", ",", 
+      RowBox[{"Vector", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "PA"}], "]"}]}], 
+     "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", "Red", ",", 
+      RowBox[{"Vector", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "PB"}], "]"}]}], 
+     "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", "Red", ",", 
+      RowBox[{"Vector", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "PC"}], "]"}]}], 
+     "}"}]}], "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.463800428386451*^9, 3.463800501166404*^9}, {
+   3.463800538257365*^9, 3.463800559125239*^9}, {3.463800589224245*^9, 
+   3.4638006049006233`*^9}, {3.463800728649111*^9, 3.463800765943368*^9}, {
+   3.46380091987786*^9, 3.463800939513775*^9}, {3.463801015367951*^9, 
+   3.4638010947748528`*^9}, {3.463801391776664*^9, 3.463801404847633*^9}, {
+   3.463801438228629*^9, 3.463801456877324*^9}, {3.4638014875429173`*^9, 
+   3.463801499692531*^9}, 3.463801536742425*^9, {3.463801736324102*^9, 
+   3.4638018455226717`*^9}, {3.495276592841083*^9, 3.495276594313117*^9}, {
+   3.495276729848311*^9, 3.495276799181197*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["3.2 3\:70b9\:3092\:901a\:308b\:5e73\:9762\:306e\:5a92\:4ecb\:5909\:6570\
+\:8868\:793a", "Section",
+ CellChangeTimes->{{3.46361093008946*^9, 3.463610947766162*^9}, {
+  3.4638283656409616`*^9, 3.4638283788437433`*^9}, {3.4952721214255123`*^9, 
+  3.4952721273555603`*^9}, {3.495276689580188*^9, 3.4952767011762457`*^9}, {
+  3.495276912613111*^9, 3.495276913409792*^9}, {3.495277426638624*^9, 
+  3.4952774427046747`*^9}, {3.4952783526885366`*^9, 3.495278353048088*^9}}],
+
+Cell[TextData[{
+ "\:ff13\:70b9 ",
+ StyleBox["a",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["b",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["c",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " \:3092\:901a\:308b\:5e73\:9762\:4e0a\:306e\:70b9 ",
+ StyleBox["p",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " \:306f"
+}], "Text",
+ CellChangeTimes->{
+  3.463647708986661*^9, {3.463647759413406*^9, 3.46364778712393*^9}, {
+   3.4636478200731907`*^9, 3.463647960961787*^9}, {3.463647997866671*^9, 
+   3.4636480878927937`*^9}, {3.463733170322888*^9, 3.463733188639233*^9}, {
+   3.463733431658996*^9, 3.46373346598494*^9}, {3.4637335717134447`*^9, 
+   3.463733572729795*^9}, {3.4952638023010197`*^9, 3.495263872661523*^9}, {
+   3.495277019948193*^9, 3.49527703993943*^9}, 3.495277134865843*^9}],
+
+Cell[TextData[{
+ StyleBox["p",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " = ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["a",
+    FontWeight->"Bold",
+    FontSlant->"Italic"], TraditionalForm]]],
+ " + ",
+ StyleBox["s",
+  FontSlant->"Italic"],
+ " (",
+ StyleBox[" b ",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ "-",
+ StyleBox[" a",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " ) + ",
+ StyleBox["t",
+  FontSlant->"Italic"],
+ " (",
+ StyleBox[" c ",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ "-",
+ StyleBox[" a",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " )"
+}], "Text",
+ CellChangeTimes->{
+  3.463647708986661*^9, {3.463647759413406*^9, 3.46364778712393*^9}, {
+   3.4636478200731907`*^9, 3.463647960961787*^9}, {3.463647997866671*^9, 
+   3.4636480878927937`*^9}, {3.463733170322888*^9, 3.463733188639233*^9}, {
+   3.463733431658996*^9, 3.46373346598494*^9}, {3.463733554354763*^9, 
+   3.463733555277783*^9}, 3.463733599756535*^9, {3.495263880330701*^9, 
+   3.495263914001326*^9}, {3.495277053498479*^9, 3.495277062357421*^9}, 
+   3.495277134866288*^9},
+ TextAlignment->Center],
+
+Cell[TextData[{
+ "\:3067\:8868\:3055\:308c\:308b\:ff08",
+ StyleBox["t",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["s",
+  FontSlant->"Italic"],
+ " \:306f\:5a92\:4ecb\:5909\:6570\:ff09\:ff0e"
+}], "Text",
+ CellChangeTimes->{
+  3.463647708986661*^9, {3.463647759413406*^9, 3.46364778712393*^9}, {
+   3.4636478200731907`*^9, 3.463647960961787*^9}, {3.463647997866671*^9, 
+   3.4636480878927937`*^9}, {3.463733170322888*^9, 3.463733188639233*^9}, {
+   3.463733431658996*^9, 3.46373346598494*^9}, 3.463733550640129*^9, {
+   3.463793956831321*^9, 3.4637939723181057`*^9}, {3.4952770708633213`*^9, 
+   3.495277077422806*^9}, 3.4952771348664703`*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "1"}], ",", "0", ",", "2"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", 
+     RowBox[{"-", "2"}], ",", "1"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"c", "=", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "2", ",", 
+     RowBox[{"-", "1"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"ParametricPlot3D", "[", 
+    RowBox[{
+     RowBox[{"a", "+", 
+      RowBox[{"s", "*", 
+       RowBox[{"(", 
+        RowBox[{"b", "-", "a"}], ")"}]}], "+", 
+      RowBox[{"t", "*", 
+       RowBox[{"(", 
+        RowBox[{"c", "-", "a"}], ")"}]}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", 
+       RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", 
+       RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", "Red", ",", 
+      RowBox[{"Vector", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "a"}], "]"}]}], "}"}],
+     "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", "Red", ",", 
+      RowBox[{"Vector", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "b"}], "]"}]}], "}"}],
+     "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{"{", 
+     RowBox[{"Thick", ",", "Red", ",", 
+      RowBox[{"Vector", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "c"}], "]"}]}], "}"}],
+     "]"}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.463800428386451*^9, 3.463800501166404*^9}, {
+   3.463800538257365*^9, 3.463800559125239*^9}, {3.463800589224245*^9, 
+   3.4638006049006233`*^9}, {3.463800728649111*^9, 3.463800765943368*^9}, {
+   3.46380091987786*^9, 3.463800939513775*^9}, {3.463801015367951*^9, 
+   3.4638010947748528`*^9}, {3.463801391776664*^9, 3.463801404847633*^9}, {
+   3.463801438228629*^9, 3.463801456877324*^9}, {3.4638014875429173`*^9, 
+   3.463801499692531*^9}, 3.463801536742425*^9, {3.463801736324102*^9, 
+   3.4638018455226717`*^9}, {3.495276592841083*^9, 3.495276594313117*^9}, {
+   3.495276729848311*^9, 3.495276799181197*^9}, {3.4952772189559183`*^9, 
+   3.495277224136338*^9}, {3.4952772631072893`*^9, 3.4952773817151318`*^9}, {
+   3.495277820481843*^9, 3.495277858158111*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellChangeTimes->{3.463657023337997*^9},
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["3.3 3\:70b9\:3092\:901a\:308b\:5e73\:9762\:306e\:5a92\:4ecb\:5909\:6570\
+\:8868\:793a", "Section",
+ CellChangeTimes->{{3.46361093008946*^9, 3.463610947766162*^9}, {
+  3.4638283656409616`*^9, 3.4638283788437433`*^9}, {3.4952721214255123`*^9, 
+  3.4952721273555603`*^9}, {3.495276689580188*^9, 3.4952767011762457`*^9}, {
+  3.495276912613111*^9, 3.495276913409792*^9}, {3.495277426638624*^9, 
+  3.495277461662836*^9}, {3.4952783491686153`*^9, 3.495278349616473*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "1"}], ",", "0", ",", "2"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", 
+     RowBox[{"-", "2"}], ",", "1"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"c", "=", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "2", ",", 
+     RowBox[{"-", "1"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Vector", "[", 
+    RowBox[{"start_", ",", "direction_"}], "]"}], ":=", 
+   RowBox[{"Arrow", "[", 
+    RowBox[{"{", 
+     RowBox[{"start", ",", 
+      RowBox[{"start", "+", "direction"}]}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Show", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"ParametricPlot3D", "[", 
+      RowBox[{
+       RowBox[{"a", "+", 
+        RowBox[{"s", "*", 
+         RowBox[{"(", 
+          RowBox[{"b", "-", "a"}], ")"}]}], "+", 
+        RowBox[{"t", "*", 
+         RowBox[{"(", 
+          RowBox[{"c", "-", "a"}], ")"}]}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"s", ",", 
+         RowBox[{"-", "1"}], ",", "1.5"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", 
+         RowBox[{"-", "1"}], ",", "1.5"}], "}"}], ",", 
+       RowBox[{"PlotStyle", "\[Rule]", 
+        RowBox[{"Opacity", "[", "0.3", "]"}]}]}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"{", 
+       RowBox[{"Thin", ",", "Red", ",", 
+        RowBox[{"Vector", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "a"}], "]"}]}], 
+       "}"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"{", 
+       RowBox[{"Thin", ",", "Red", ",", 
+        RowBox[{"Vector", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "b"}], "]"}]}], 
+       "}"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"{", 
+       RowBox[{"Thin", ",", "Red", ",", 
+        RowBox[{"Vector", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "c"}], "]"}]}], 
+       "}"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"{", 
+       RowBox[{"Thick", ",", "Blue", ",", 
+        RowBox[{"Vector", "[", 
+         RowBox[{"a", ",", 
+          RowBox[{"b", "-", "a"}]}], "]"}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"{", 
+       RowBox[{"Thick", ",", "Blue", ",", 
+        RowBox[{"Vector", "[", 
+         RowBox[{"a", ",", 
+          RowBox[{"c", "-", "a"}]}], "]"}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"PointSize", "[", "Large", "]"}], ",", 
+        RowBox[{"Point", "[", 
+         RowBox[{"{", 
+          RowBox[{"a", ",", "b", ",", "c", ",", 
+           RowBox[{"a", "+", 
+            RowBox[{"ss", "*", 
+             RowBox[{"(", 
+              RowBox[{"b", "-", "a"}], ")"}]}], "+", 
+            RowBox[{"tt", "*", 
+             RowBox[{"(", 
+              RowBox[{"c", "-", "a"}], ")"}]}]}]}], "}"}], "]"}]}], "}"}], 
+      "]"}]}], "\[IndentingNewLine]", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "ss", ",", "0", ",", "\"\<\:30d1\:30e9\:30e1\:30fc\:30bf\:30fc t\>\""}],
+       "}"}], ",", 
+     RowBox[{"-", "0.5"}], ",", "1.5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "tt", ",", "0", ",", "\"\<\:30d1\:30e9\:30e1\:30fc\:30bf\:30fc s\>\""}],
+       "}"}], ",", 
+     RowBox[{"-", "0.5"}], ",", "1.5"}], "}"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.463800428386451*^9, 3.463800501166404*^9}, {
+   3.463800538257365*^9, 3.463800559125239*^9}, {3.463800589224245*^9, 
+   3.4638006049006233`*^9}, {3.463800728649111*^9, 3.463800765943368*^9}, {
+   3.46380091987786*^9, 3.463800939513775*^9}, {3.463801015367951*^9, 
+   3.4638010947748528`*^9}, {3.463801391776664*^9, 3.463801404847633*^9}, {
+   3.463801438228629*^9, 3.463801456877324*^9}, {3.4638014875429173`*^9, 
+   3.463801499692531*^9}, 3.463801536742425*^9, {3.463801736324102*^9, 
+   3.4638018455226717`*^9}, {3.495276592841083*^9, 3.495276594313117*^9}, {
+   3.495276729848311*^9, 3.495276799181197*^9}, {3.4952772189559183`*^9, 
+   3.495277224136338*^9}, {3.4952772631072893`*^9, 3.4952773817151318`*^9}, {
+   3.495277499783568*^9, 3.495277594233589*^9}, {3.4952776834722347`*^9, 
+   3.495277747882008*^9}, {3.495277786141664*^9, 3.4952777966808443`*^9}, {
+   3.495277863195003*^9, 3.495277981709352*^9}, {3.495278028744071*^9, 
+   3.495278035628417*^9}, {3.495278103990901*^9, 3.495278145596929*^9}, {
+   3.495278188717951*^9, 3.495278226858199*^9}, 3.495279333107148*^9, {
+   3.495279378890356*^9, 3.495279381646834*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`ss$$ = 
+    0, $CellContext`tt$$ = -0.08999999999999997, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`ss$$], 0, 
+       "\:30d1\:30e9\:30e1\:30fc\:30bf\:30fc t"}, -0.5, 1.5}, {{
+       Hold[$CellContext`tt$$], 0, 
+       "\:30d1\:30e9\:30e1\:30fc\:30bf\:30fc s"}, -0.5, 1.5}}, 
+    Typeset`size$$ = {360., {204., 208.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`ss$3105$$ = 0, $CellContext`tt$3106$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`ss$$ = 0, $CellContext`tt$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`ss$$, $CellContext`ss$3105$$, 0], 
+        Hold[$CellContext`tt$$, $CellContext`tt$3106$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        ParametricPlot3D[$CellContext`a + $CellContext`s ($CellContext`b - \
+$CellContext`a) + $CellContext`t ($CellContext`c - $CellContext`a), \
+{$CellContext`s, -1, 1.5}, {$CellContext`t, -1, 1.5}, PlotStyle -> 
+         Opacity[0.3]], 
+        Graphics3D[{Thin, Red, 
+          $CellContext`Vector[{0, 0, 0}, $CellContext`a]}], 
+        Graphics3D[{Thin, Red, 
+          $CellContext`Vector[{0, 0, 0}, $CellContext`b]}], 
+        Graphics3D[{Thin, Red, 
+          $CellContext`Vector[{0, 0, 0}, $CellContext`c]}], 
+        Graphics3D[{Thick, Blue, 
+          $CellContext`Vector[$CellContext`a, $CellContext`b - \
+$CellContext`a]}], 
+        Graphics3D[{Thick, Blue, 
+          $CellContext`Vector[$CellContext`a, $CellContext`c - \
+$CellContext`a]}], 
+        Graphics3D[{
+          PointSize[Large], 
+          
+          Point[{$CellContext`a, $CellContext`b, $CellContext`c, \
+$CellContext`a + $CellContext`ss$$ ($CellContext`b - $CellContext`a) + \
+$CellContext`tt$$ ($CellContext`c - $CellContext`a)}]}]], 
+      "Specifications" :> {{{$CellContext`ss$$, 0, 
+          "\:30d1\:30e9\:30e1\:30fc\:30bf\:30fc t"}, -0.5, 
+         1.5}, {{$CellContext`tt$$, 0, 
+          "\:30d1\:30e9\:30e1\:30fc\:30bf\:30fc s"}, -0.5, 1.5}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{403., {262.34375, 267.65625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`a = {-1, 0, 2}, $CellContext`b = {2, -2, 
+        1}, $CellContext`c = {0, 2, -1}, $CellContext`Vector[
+         Pattern[$CellContext`start, 
+          Blank[]], 
+         Pattern[$CellContext`direction, 
+          Blank[]]] := 
+       Arrow[{$CellContext`start, $CellContext`start + \
+$CellContext`direction}]}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.495277335017416*^9, 3.495277382198414*^9}, {
+   3.4952775518912*^9, 3.495277572154052*^9}, {3.495277691180489*^9, 
+   3.495277698443451*^9}, {3.4952777335575733`*^9, 3.495277749226842*^9}, {
+   3.4952779531495533`*^9, 3.4952779821135387`*^9}, 3.4952780361681747`*^9, 
+   3.49527810968541*^9, 3.4952781470979977`*^9, 3.495278227674161*^9, 
+   3.495279334204965*^9, 3.495279383120553*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellChangeTimes->{3.463657023337997*^9},
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["3.4 \:5e73\:9762\:306e\:30d9\:30af\:30c8\:30eb\:65b9\:7a0b\:5f0f", \
+"Section",
+ CellChangeTimes->{{3.46361093008946*^9, 3.463610947766162*^9}, 
+   3.463657023338179*^9, {3.463828370605564*^9, 3.463828375935131*^9}, {
+   3.49527833535693*^9, 3.4952783446405993`*^9}}],
+
+Cell[TextData[{
+ "\:70b9 ",
+ StyleBox["a",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " \:3092\:901a\:308a\:6cd5\:7dda\:30d9\:30af\:30c8\:30eb ",
+ StyleBox["n",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " \:306b\:76f4\:4ea4\:3059\:308b\:5e73\:9762\:4e0a\:306e\:70b9 ",
+ StyleBox["p ",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ "\:306f\:4ee5\:4e0b\:306e\:95a2\:4fc2\:5f0f"
+}], "Text",
+ CellChangeTimes->{{3.463651082238771*^9, 3.463651188543626*^9}, {
+   3.463651278684415*^9, 3.463651295449807*^9}, {3.4636520686590242`*^9, 
+   3.46365217215245*^9}, 3.46373381587888*^9, {3.4637947116768303`*^9, 
+   3.463794817900785*^9}, {3.4952783854120827`*^9, 3.495278461315117*^9}}],
+
+Cell[TextData[{
+ StyleBox["( p",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " - ",
+ StyleBox["a",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ ")\:30fb",
+ StyleBox["n",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " = 0"
+}], "Text",
+ CellChangeTimes->{
+  3.463647708986661*^9, {3.463647759413406*^9, 3.46364778712393*^9}, {
+   3.4636478200731907`*^9, 3.463647960961787*^9}, {3.463647997866671*^9, 
+   3.4636480878927937`*^9}, {3.463733170322888*^9, 3.463733188639233*^9}, {
+   3.463733431658996*^9, 3.46373346598494*^9}, {3.463733554354763*^9, 
+   3.463733555277783*^9}, 3.463733599756535*^9, {3.463794647708274*^9, 
+   3.463794697664094*^9}, 3.495278957932744*^9},
+ TextAlignment->Center],
+
+Cell[TextData[{
+ "\:3092\:6e80\:305f\:3059\:ff0e ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["p",
+    FontWeight->"Bold",
+    FontSlant->"Italic"], TraditionalForm]]],
+ " = (",
+ StyleBox["x",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["y",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["z",
+  FontSlant->"Italic"],
+ ") \:3068\:304a\:304f\:3068\:ff0c\:4e0a\:306e\:5f0f\:306f ",
+ StyleBox["x",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["y",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["z",
+  FontSlant->"Italic"],
+ " \:306b\:95a2\:3059\:308b1\:6b21\:5f0f"
+}], "Text",
+ CellChangeTimes->{{3.463651082238771*^9, 3.463651188543626*^9}, {
+   3.463651278684415*^9, 3.463651295449807*^9}, {3.4636520686590242`*^9, 
+   3.46365217215245*^9}, {3.463655776581957*^9, 3.463655830879723*^9}, {
+   3.463656059518586*^9, 3.463656071266827*^9}, 3.4636570233391323`*^9, {
+   3.463730203353142*^9, 3.463730214138583*^9}, {3.463794904887865*^9, 
+   3.463794907539003*^9}, {3.4637951634177732`*^9, 3.463795210217317*^9}, 
+   3.495278467225299*^9, {3.495278696233774*^9, 3.4952787056320457`*^9}, {
+   3.495279007257059*^9, 3.4952790150193987`*^9}}],
+
+Cell[TextData[{
+ StyleBox["a x",
+  FontSlant->"Italic"],
+ " + ",
+ StyleBox["b y",
+  FontSlant->"Italic"],
+ " + ",
+ StyleBox["c z",
+  FontSlant->"Italic"],
+ " = ",
+ StyleBox["d ",
+  FontSlant->"Italic"]
+}], "Text",
+ CellChangeTimes->{
+  3.463647708986661*^9, {3.463647759413406*^9, 3.46364778712393*^9}, {
+   3.4636478200731907`*^9, 3.463647960961787*^9}, {3.463647997866671*^9, 
+   3.4636480878927937`*^9}, {3.463733170322888*^9, 3.463733188639233*^9}, {
+   3.463733431658996*^9, 3.46373346598494*^9}, {3.463733554354763*^9, 
+   3.463733555277783*^9}, 3.463733599756535*^9, {3.463794647708274*^9, 
+   3.463794697664094*^9}, {3.495278453216634*^9, 3.495278453216691*^9}, {
+   3.495278750527062*^9, 3.495278801442108*^9}},
+ TextAlignment->Center],
+
+Cell["\:306b\:5e30\:7740\:3055\:308c\:308b\:ff0e", "Text",
+ CellChangeTimes->{{3.463651082238771*^9, 3.463651188543626*^9}, {
+   3.463651278684415*^9, 3.463651295449807*^9}, {3.4636520686590242`*^9, 
+   3.46365217215245*^9}, {3.463655776581957*^9, 3.463655830879723*^9}, {
+   3.463656059518586*^9, 3.463656071266827*^9}, 3.4636570233391323`*^9, {
+   3.463730203353142*^9, 3.463730214138583*^9}, {3.463794904887865*^9, 
+   3.463794907539003*^9}, {3.4637951634177732`*^9, 3.463795210217317*^9}, 
+   3.495278467225299*^9, {3.495278696233774*^9, 3.4952787056320457`*^9}, {
+   3.495279007257059*^9, 3.4952790330253763`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\:5185\:7a4d", "Subsection",
+ CellChangeTimes->{{3.463651082238771*^9, 3.463651188543626*^9}, {
+   3.463651278684415*^9, 3.463651295449807*^9}, {3.4636520686590242`*^9, 
+   3.46365217215245*^9}, {3.463655776581957*^9, 3.463655830879723*^9}, {
+   3.463656059518586*^9, 3.463656071266827*^9}, 3.4636570233391323`*^9, {
+   3.463730203353142*^9, 3.463730214138583*^9}, {3.463794904887865*^9, 
+   3.463794907539003*^9}, {3.4637951634177732`*^9, 3.463795210217317*^9}, 
+   3.495278467225299*^9, {3.495278696233774*^9, 3.4952787056320457`*^9}, {
+   3.495279007257059*^9, 3.4952790330253763`*^9}, 3.495279222633923*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"a", ",", "b", ",", " ", "c"}], "}"}], ".", 
+  RowBox[{"{", 
+   RowBox[{"x", ",", "y", ",", "z"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.4636468112305593`*^9, 3.463646828703773*^9}, {
+  3.463795216956262*^9, 3.463795232462775*^9}},
+ Background->GrayLevel[0.85]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3"}], "}"}], ".", 
+  RowBox[{"{", 
+   RowBox[{"3", ",", "2", ",", "1"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.495279190896572*^9, 3.495279198912982*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:65b9\:7a0b\:5f0f\:3092\:8a08\:7b97\:3057\:3066\:307f\:308b", \
+"Subsection",
+ CellChangeTimes->{{3.463651082238771*^9, 3.463651188543626*^9}, {
+   3.463651278684415*^9, 3.463651295449807*^9}, {3.4636520686590242`*^9, 
+   3.46365217215245*^9}, {3.463655776581957*^9, 3.463655830879723*^9}, {
+   3.463656059518586*^9, 3.463656071266827*^9}, 3.4636570233391323`*^9, {
+   3.463730203353142*^9, 3.463730214138583*^9}, {3.463794904887865*^9, 
+   3.463794907539003*^9}, {3.4637951634177732`*^9, 3.463795210217317*^9}, 
+   3.495278467225299*^9, {3.495278696233774*^9, 3.4952787056320457`*^9}, {
+   3.495279007257059*^9, 3.4952790330253763`*^9}, {3.495279222633923*^9, 
+   3.49527925334004*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0", ",", "2"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"n", "=", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"x", ",", "y", ",", "z"}], "}"}], "-", "p0"}], ")"}], ".", 
+   "n"}], "\[Equal]", "0"}]}], "Input",
+ CellChangeTimes->{{3.463651514883521*^9, 3.463651615572357*^9}, {
+   3.463651769185432*^9, 3.463651773373714*^9}, {3.463651829220325*^9, 
+   3.463651983040928*^9}, {3.4636520319005136`*^9, 3.463652033001769*^9}, {
+   3.463652217556946*^9, 3.4636522927051697`*^9}, {3.463652337582505*^9, 
+   3.463652353118793*^9}, {3.4636558457702703`*^9, 3.463655884320722*^9}, {
+   3.463656074368866*^9, 3.463656086634853*^9}, {3.4636569857981033`*^9, 
+   3.463656990254335*^9}, 3.4636570233395777`*^9, {3.495279168102783*^9, 
+   3.4952791723291597`*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext",
+ CellChangeTimes->{3.463657023344159*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{993, 670},
+WindowMargins->{{132, Automatic}, {Automatic, 17}},
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (2009\:5e744\:670823\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[567, 22, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[2341, 68, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[4095, 122, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[6801, 199, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[9904, 286, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[13532, 387, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[19830, 575, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[24711, 717, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[28910, 831, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[35517, 1027, 106, 2, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[45799, 1279, 106, 2, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 54173, 1509}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[656, 27, 240, 3, 69, "Section"],
+Cell[899, 32, 520, 7, 22, "Item"],
+Cell[1422, 41, 86, 1, 43, "Input"],
+Cell[1511, 44, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2341, 68, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[2430, 73, 258, 3, 70, "Section"],
+Cell[2691, 78, 276, 7, 28, "Text"],
+Cell[2970, 87, 220, 6, 27, "Input"],
+Cell[3193, 95, 69, 1, 27, "Input"],
+Cell[3265, 98, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4095, 122, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[4184, 127, 360, 6, 70, "Section"],
+Cell[4547, 135, 365, 9, 28, "Text"],
+Cell[4915, 146, 538, 13, 49, "Input"],
+Cell[5456, 161, 512, 12, 27, "Input"],
+Cell[5971, 175, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6801, 199, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[6890, 204, 339, 6, 70, "Section"],
+Cell[7232, 212, 570, 11, 28, "Text"],
+Cell[7805, 225, 396, 10, 43, "Input"],
+Cell[8204, 237, 287, 8, 27, "Input"],
+Cell[8494, 247, 577, 13, 27, "Input"],
+Cell[9074, 262, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9904, 286, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[9993, 291, 212, 4, 70, "Section"],
+Cell[10208, 297, 265, 3, 28, "Text"],
+Cell[10476, 302, 438, 11, 50, "Input"],
+Cell[10917, 315, 440, 11, 50, "Input"],
+Cell[11360, 328, 1339, 33, 58, "Input"],
+Cell[12702, 363, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13532, 387, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[13621, 392, 309, 4, 70, "Section"],
+Cell[13933, 398, 690, 20, 28, "Text"],
+Cell[14626, 420, 835, 30, 26, "Text"],
+Cell[15464, 452, 517, 11, 28, "Text"],
+Cell[15984, 465, 555, 14, 49, "Input"],
+Cell[16542, 481, 842, 23, 58, "Input"],
+Cell[17387, 506, 1610, 43, 118, "Input"],
+Cell[19000, 551, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19830, 575, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[19919, 580, 363, 5, 70, "Section"],
+Cell[20285, 587, 791, 21, 28, "Text"],
+Cell[21079, 610, 734, 25, 26, "Text"],
+Cell[21816, 637, 517, 11, 28, "Text"],
+Cell[22336, 650, 1542, 41, 118, "Input"],
+Cell[23881, 693, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24711, 717, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[24800, 722, 473, 6, 70, "Section"],
+Cell[25276, 730, 2801, 75, 223, "Input"],
+Cell[28080, 807, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28910, 831, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[28999, 836, 471, 6, 70, "Section"],
+Cell[29473, 844, 829, 25, 28, "Text"],
+Cell[30305, 871, 1094, 42, 26, "Text"],
+Cell[31402, 915, 639, 15, 28, "Text"],
+Cell[32044, 932, 2640, 69, 148, "Input"],
+Cell[34687, 1003, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35517, 1027, 106, 2, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[35648, 1033, 469, 6, 70, "Section"],
+Cell[CellGroupData[{
+Cell[36142, 1043, 5075, 131, 233, "Input"],
+Cell[41220, 1176, 3734, 76, 547, "Output"]
+}, Open  ]],
+Cell[44969, 1255, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45799, 1279, 106, 2, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[45930, 1285, 273, 4, 70, "Section"],
+Cell[46206, 1291, 685, 18, 28, "Text"],
+Cell[46894, 1311, 697, 21, 26, "Text"],
+Cell[47594, 1334, 1112, 34, 28, "Text"],
+Cell[48709, 1370, 744, 21, 26, "Text"],
+Cell[49456, 1393, 619, 8, 28, "Text"],
+Cell[CellGroupData[{
+Cell[50100, 1405, 617, 8, 36, "Subsection"],
+Cell[50720, 1415, 315, 8, 43, "Input"],
+Cell[51038, 1425, 229, 6, 27, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[51304, 1436, 694, 10, 36, "Subsection"],
+Cell[52001, 1448, 1000, 25, 58, "Input"],
+Cell[53004, 1475, 823, 19, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

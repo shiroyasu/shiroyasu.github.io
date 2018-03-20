@@ -1,0 +1,120 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      3696,        111]
+NotebookOptionsPosition[      3217,         91]
+NotebookOutlinePosition[      3566,        106]
+CellTagsIndexPosition[      3523,        103]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+\:5b9f\:884c\:7d50\:679c\:3092\:4fdd\:5b58\:3057\:305f\:3053\:306e\:30ce\:30fc\
+\:30c8\:30d6\:30c3\:30af\:3092\:6388\:696d\:5f8c\:306b\:63d0\:51fa\:3057\:3066\
+\:3082\:3089\:3044\:307e\:3059\:ff08PWP\:ff09\:ff0e
+\:305d\:306e\:969b\:ff0c\:30d5\:30a1\:30a4\:30eb\:540d\:306e\:5f8c\:534a\:90e8\
+\:5206\:304c\:5b66\:7c4d\:756a\:53f7\:306b\:306a\:308b\:3088\:3046\:ff0cx \
+\:306e\:90e8\:5206\:3092\:5909\:66f4\:3057\:3066\:304f\:3060\:3055\:3044\:ff0e
+
+\:540d\:3000\:3000\:524d\:ff1a
+\:5b66\:7c4d\:756a\:53f7\:ff1a0xJKxxx\
+\>", "Text",
+ CellChangeTimes->{{3.463732194140025*^9, 3.463732273063616*^9}, {
+  3.463732449415152*^9, 3.463732619340905*^9}, {3.463732658059516*^9, 
+  3.4637326737865047`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"p", "[", "t_", "]"}], ":=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Cos", "[", "t", "]"}], ",", 
+    RowBox[{"Sin", "[", "t", "]"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.466073608566805*^9, 3.4660736224611*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot", "[", 
+  RowBox[{
+   RowBox[{"p", "[", "t", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", 
+     RowBox[{"2", "*", "Pi"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.466073948141275*^9, 3.466073951212669*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"Graphics", "[", 
+     RowBox[{"Arrow", "[", 
+      RowBox[{"\:59cb\:70b9", ",", "\:7d42\:70b9"}]}]}], "}"}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.4636098219310627`*^9, 3.46360983605997*^9}, {
+  3.463609868732613*^9, 3.463609870899831*^9}, {3.463609942373074*^9, 
+  3.463609946713431*^9}, {3.463609982827407*^9, 3.4636099841258183`*^9}, {
+  3.463610039466517*^9, 3.463610050294675*^9}, {3.463646240167639*^9, 
+  3.4636462495806437`*^9}},
+ Background->GrayLevel[0.85]],
+
+Cell[CellGroupData[{
+
+Cell["\:554f\:984c 4.1", "Section",
+ CellChangeTimes->{{3.466074518428096*^9, 3.466074520592308*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"A", "=", 
+   RowBox[{"(", GridBox[{
+      {"4", 
+       RowBox[{"-", "1"}]},
+      {"2", "1"}
+     }], ")"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.4659703063600273`*^9, 3.465970313512784*^9}, {
+   3.465970444354587*^9, 3.4659704707338867`*^9}, {3.465970623165642*^9, 
+   3.465970630225107*^9}, {3.465972644130265*^9, 3.465972656196377*^9}, {
+   3.465972745737854*^9, 3.465972785481392*^9}, {3.465976142274877*^9, 
+   3.465976143659384*^9}, {3.4659761793871937`*^9, 3.465976195413117*^9}, {
+   3.465976263239366*^9, 3.465976288382248*^9}, {3.4660735743627987`*^9, 
+   3.4660735777241583`*^9}, 3.466074422143309*^9, 3.4660744543411283`*^9, {
+   3.466074495627679*^9, 3.466074509943224*^9}, 3.466074545292696*^9}]
+}, Open  ]]
+},
+WindowSize->{640, 695},
+WindowMargins->{{107, Automatic}, {15, Automatic}},
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (2009\:5e744\:670823\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 706, 13, 93, "Text"],
+Cell[1254, 35, 254, 7, 27, "Input"],
+Cell[1511, 44, 271, 7, 27, "Input"],
+Cell[1785, 53, 538, 13, 49, "Input"],
+Cell[CellGroupData[{
+Cell[2348, 70, 101, 1, 68, "Section"],
+Cell[2452, 73, 749, 15, 45, "Input"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

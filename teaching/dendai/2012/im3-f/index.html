@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<link rel=stylesheet type="text/css" href="../../hstyle-d.css">
+<link rel="shortcut icon" href="../../img/favicon.png" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="../img/favicon.png" type="image/vnd.microsoft.icon" />
+<title>情報数学III（担当：佐藤）</title>
+</head>
+<body>
+<script src="../../MathJax/MathJax.js">
+MathJax.Hub.Config({
+	jax: ["input/TeX","output/HTML-CSS"],
+	extensions: ["tex2jax.js"],
+	tex2jax: {
+		inlineMath: [['$','$'],['\\(','\\)']],
+		processEscapes: 0
+		}
+	});
+</script>
+<span class="sg"><a href="../../../../index.html">home</a> &#155;&#155; <a href="../../../index.html">Teaching</a> &#155;&#155; <a href="../../../dendai.html">Previous Teaching at TDU</a> &#155;&#155;</span><br><br>
+<span class="ttl">情報数学 III（応用幾何）</span> <span class="ttl-g">Information Mathematics III (Applied Geometry)</span><br>
+<span class="sg">
+2012年度 秋セメスター 月水金 1時限 (9:30-10:20) 教育棟303教室<br>
+2012年度 秋セメスター 月水金 2時限 (10:30-11:20) 教育棟207・<s>208</s>教室
+</span>
+<br><br>
+担　当：佐藤 弘康 (hiroyasu [at] sie.dendai.ac.jp)<br>
+研究室：研究棟 501教員室 (0476-46-8652)
+<br><br>
+<small><a href="./index.html#sche">これまでの授業と今後の予定</a> | <a href="./index.html#lect">授業内容・目標・進め方</a> | <a href="./index.html#miniexam">小テストについて</a> | <a href="./index.html#bib">教科書・参考文献</a> | <a href="./index.html#score">成績について</a> | C-learning（<a href="https://sie.c-learning.jp/sp/">学生PC用</a> | <a href="https://sie.c-learning.jp/s/">学生モバイル用</a> | <a href="https://sie.c-learning.jp/t/">教員用</a>）</small>
+<hr>
+<br>
+<span class="c">連絡事項</span>
+<table width="800" border="0" class="box" cellpadding="3">
+<tr>
+<td>
+<ul>
+<li>1月15日：期末試験[1](1) の部分点の配点を1点から3点に変更しました．</li>
+<li>1月11日：この授業は終了しました．</li>
+<li>この授業について，<a href="https://twitter.com/#!/shiroyasu_SIE">@shiroyasu_SIE</a>というアカウントで<a href="http://twilog.org/shiroyasu_SIE/hashtags-%E6%83%85%E6%95%B03">#情数3</a> というハッシュタグをつけてツイートしました．</li>
+<!--
+<li>1月10日：期末試験の<a href="im3-0109-finalexama.pdf">解答</a>を公開しました．</li>
+<li>1月9日：期末試験を実施しました．1/11に答案を返却します．かならず受け取るように．</li>
+<li>12月17日：12/14の課題（<a href="im3-note-pers.pdf">小冊子</a>の問題 3.3）の解説をした<a href="../im3-s/im3-note-pers03-ex3.3.nb">ノートブック</a>を公開しました．</li>
+<li>11月12日：中間試験の答案を受け取っていない学生は必ず取りにくるように．</li>
+<li>12月14日：<a href="im3-note-pers.pdf">小冊子</a>の<b>問題 3.3</b>を宿題にしました．提出期限は<u>12/17 (月) 10:30</u>です．</li>
+<li>12月9日：12/7に実施した第5回小テストの<a href="im3-1207-minitest05a.pdf">略解</a>を公開しました．</li>
+<li>12月3日：12/7（金）の小テストの出題範囲は<b>「2次曲線の分類，固有値・固有ベクトル」</b>です．教科書，ノート等の紙，印刷物は参照可です（情報端末の使用は不可）．</li>
+<li>11月30日：2次曲線の分類に関する<a href="../im3-s/im3-ex4.3.pdf">演習問題</a>です（今年度前期に使用．<a href="../im3-s/im3-ex4.3a.pdf">解答</a>も）</li>
+<li>11月28日：固有値・固有ベクトルの計算に慣れるための<a href="../im3-s/im3-ex4.2.pdf">演習問題</a>です（今年度前期に使用．<a href="../im3-s/im3-ex4.2a.pdf">解答</a>も）</li>
+<li>11月26日：2次曲線（2次多項式）の行列表示，有心・無心2次曲線の分類に関する<a href="../im3-s/im3-ex4.1.pdf">演習問題</a>です（今年度前期に使用．<a href="../im3-s/im3-ex4.1a.pdf">解答</a>も）</li>
+<li>11月21日：第4回小テスト（レポート課題）の<a href="im3-1114-minitest04a.pdf">略解</a>を公開しました．</li>
+<li>11月21日：双曲線の理解を深めるための<a href="./im3-ex4.1.pdf">問題（と略解）</a>を公開しました．</li>
+<li>11月14日：<a href="im3-1114-minitest04.pdf">レポート課題</a>を出しました．</li>
+<li>11月13日：「平面の方程式」に関する<a href="../../2010/im3/im3-ex2.2.pdf">演習問題</a>です（2010年度の講義で使用．解答例はありませんが，４つの問題はすべて同一平面に関する問題ですので，注意深く解いていけば，解が何なのかわかるでしょう）．</li>
+<li>11月14日：11/16はMathematicaを使って授業をします．各自のパソコンを持ってくる必要はありませんが，あった方が理解しやすいでしょう．授業が始まる前にノートブックを予めダウンロードしておいてください（授業中にダウンロード先についての質問は一切受け付けません）．</li>
+<li>11/7：中間試験を行いました（試験問題 <a href="./im3-1107-midexam-1.pdf">1時限</a>・<a href="./im3-1107-midexam-2.pdf">2時限</a>）．解説<s>は後ほど</s>を<a href="./im3-1107-midexama.pdf">公開</a>しま<s>す</s>した．</li>
+<li>11/3：Mathematica演習(2)の<a href="im3-1101-02.pdf">スライド</a>と<a href="im3-1101-02.nb">ノートブック</a>を公開しました．</li>
+<li>11/2：本日の授業で配布した演習問題の<a href="./im3-ex3.1a.pdf">略解</a>を公開しました．</li>
+<li>11/1：レポート課題（第3回小テスト）の<a href="im3-1024-minitest03a.pdf">解答例</a>を公開しました．</li>
+<li>10/24：<u>11月7日（水）</u>に<a href="./im3-1024-keiji.pdf">中間試験</a>を行います．</li>
+<li>10/24：レポート課題（第3回小テスト）を出しました．配布した用紙の形式（B4両面印刷）でのみ受け付けます．欠席した者は私のところまで取りに来るか，ダンロードの上，指定の形式に印刷してください．</li>
+<li>10/26：11月1日と2日の8時限に補講を行います．詳しくは<a href="./im3-1026-keiji.pdf">掲示</a>を確認してください．</li>
+<li>10/24：10月26日（金）の1, 2時限の授業は休講にします．</li>
+<li>10/19：10月25日と26日の8時限に補講を行います．詳しくは<a href="./im3-1019-keiji.pdf">掲示</a>を確認してください．</li>
+<li>9/10：9月19日の小テストの試験範囲は<u>12日，14日の講義内容</u>と<u>「線形代数」</u>です．線形代数については今日の授業で配布した演習問題や，昨年度実施した<a href="../../2011/im3/im3-0914-laexam.pdf">試験</a>（とその<a href="../../2011/im3/im3-0914-laexam-ans.pdf">解説</a>）を参考にして復習してください．</li>
+<li>7/31：このページを公開しました．</li>
+<li>「線形代数」がこの授業の事前履修条件になっています．授業が始まるまでに十分に復習をしておくこと（行列の演算，転置行列，行列式の性質と求め方，連立1次方程式の掃き出し法）．</li>
+-->
+</ul>
+</td>
+<td>　</td>
+</tr>
+</table>
+<br>
+<br>
+<span class="c">これまでの授業と今後の予定</span> 
+<span class="sg">配布物のダウンロード</span><br>
+<br>
+<a name="sche"></a>
+<table
+ style="width: 88%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="1" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="width: 35px; text-align: right; vertical-align: top;">9月</td>
+      <td style="width: 75px; text-align: right; vertical-align: top;">10日<span class="sg">（月）</span></td>
+      <td>ガイダンス（<a href="im3-0910-guidance.pdf">資料</a>），線形代数の問題演習（<a href="../im3-s/im3-ex0.pdf">問題</a> | <a href="../im3-s/im3-ex0a.pdf">解答</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">12日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;1 座標とベクトル (1) 直交座標系</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">14日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;1 座標とベクトル (2) 有向線分・幾何ベクトル・位置ベクトル，ベクトルの和</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">19日<span class="sg">（水）</span></td>
+      <td class="lt"><b>第1回小テスト</b>（<a href="im3-0919-minitest01.pdf">問題</a> | <a href="im3-0919-minitest01a.pdf">解答例</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">21日<span class="sg">（金）</span></td>
+      <td class="lt"><span class=sg>（出張のため休講）</span></td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">24日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;1 座標とベクトル (3) 位置ベクトル，ベクトルの和と実数倍</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">26日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;1 座標とベクトル (4) 1次独立性，ベクトルの成分と座標</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">28日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;1 座標とベクトル (5) ベクトルの成分と演算，ベクトルの内積とノルム</td>
+    </tr>
+    <tr>
+      <td class="rt">10月</td>
+      <td class="rt">1日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;1 座標とベクトル (6) 内積の成分表示，ベクトルの外積</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">3日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;1 座標とベクトル (7) 外積の幾何的性質，その他<br>
+	      <b>第2回小テスト</b>（<a href="im3-1003-minitest02.pdf">レポート課題</a> | <a href="im3-1003-minitest02a.pdf">解答例</a>）
+      </td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">10日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;2  座標変換と点変換 (1) 座標変換（原点の平行移動，基底の変換）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">12日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;2  座標変換と点変換 (2) 一般の座標変換，直交座標系の変換</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">15日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;2  座標変換と点変換 (3) 直交座標系の変換と直交行列</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">17日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;2  座標変換と点変換 (4) 直交行列の性質，2次と3次の回転行列</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">19日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;2  座標変換と点変換 (5) 基本的な点変換1，不動点</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">22日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;2  座標変換と点変換 (6) 基本的な点変換2，変換の合成と逆変換</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">24日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;2  座標変換と点変換 (7) アフィン変換の性質，合同変換<br>
+      <b>第3回小テスト</b>（<a href="im3-1024-minitest03.pdf">レポート課題</a> | <a href="im3-1024-minitest03a.pdf">解答例</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">25日<span class="sg">（木）</span></td>
+      <td class="lt"><span class="sg">[補講](8時限)</span>  <i>Mathematica</i>演習(1) <small><i>Mathematica</i>の基本，数とベクトルの演算，グラフィックスプリミティブ</small>（<a href="./im3-1019-keiji.pdf">掲示</a> | <a href="im3-1025-26.nb">ノートブック</a> | <a href="im3-1025-26.pdf">スライド</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">26日<span class="sg">（金）</span></td>
+      <td class="lt"><span class="sg">（通常授業は担当者の都合により休講）</span><br>
+      <span class="sg">[補講](8時限)</span>  <i>Mathematica</i>演習(1) <small>同上</small></td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">29日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;2  座標変換と点変換 (8) 合同変換の性質<br>
+      &#167;3  直線と平面 (1) 直線の媒介変数表示</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">31日<span class="sg">（水）</span></td>
+      <td class="lt"><span class="sg">（担当者の都合により休講）</span></td>
+    </tr>
+    <tr>
+      <td class="rt">11月</td>
+      <td class="rt">1日<span class="sg">（木）</span></td>
+      <td class="lt"><span class="sg">[補講](8時限)</span> <i>Mathematica</i>演習(2) <small>行列の演算，アフィン変換，Plotコマンド</small>（<a href="./im3-1026-keiji.pdf">掲示</a> | <a href="./im3-1101-02.nb">ノートブック</a> | <a href="./im3-1101-02.pdf">スライド</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">2日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;3 直線と平面 (2) アフィン変換による直線の変換像（<a href="./im3-ex3.1.pdf">例題・演習問題</a> | <a href="./im3-ex3.1a.pdf">略解</a>）<br>
+      <span class="sg">[補講](8時限)</span> <i>Mathematica</i>演習(2) <small>同上</small></td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">5日<span class="sg">（月）</span></td>
+      <td class="lt">これまでのまとめ</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">7日<span class="sg">（水）</span></td>
+      <td class="lt"><b>中間試験</b>（<a href="./im3-1024-keiji.pdf">掲示</a> | 試験問題 <a href="./im3-1107-midexam-1.pdf">1時限</a>・<a href="./im3-1107-midexam-2.pdf">2時限</a> | <a href="./im3-1107-midexama.pdf">解説</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">9日<span class="sg">（金）</span></td>
+      <td class="lt">答案返却・解説</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">12日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;3 直線と平面 (3) 空間内の平面の方程式<small>（参考：<a href="http://www.math.sie.dendai.ac.jp/~hiroyasu/2010/im3/im3-ex2.2.pdf">演習問題</a>）</small></td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">14日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;3 直線と平面 (4) 3点を通る平面の方程式，平面と平面・平面と直線の交点の集合<br>
+      <b>第4回小テスト</b>（<a href="im3-1114-minitest04.pdf">レポート課題</a> | <a href="im3-1114-minitest04a.pdf">略解</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">16日<span class="sg">（金）</span></td>
+      <td class="lt"><i>Mathematica</i>演習(3) <small>いろいろな線形変換による図形の変換像</small><span class="sg">（課題はありません）</span>（<a href="im3-ex3.2.pdf">資料</a> | <a href="im3-ex3.2.nb">ノートブック</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">19日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;4 2次曲線と2次曲面 (1) 2次曲線とは何か，典型的な既約2次曲線 (i)</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">21日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;4 2次曲線と2次曲面 (2) 典型的な既約2次曲線 (ii) <small>（双曲線を理解するための<a href="./im3-ex4.1.pdf">問題</a>）</small>，有心・無心2次曲線<small>（参考：<a href="../im3-s/im3-ex4.1.pdf">演習問題</a> | <a href="../im3-s/im3-ex4.1a.pdf">解答</a>）</small></td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">26日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;4 2次曲線と2次曲面 (3) 固有値・固有ベクトルの定義</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">28日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;4 2次曲線と2次曲面 (4) 固有値・固有ベクトルの計算<small>（参考：<a href="../im3-s/im3-ex4.2.pdf">演習問題</a> | <a href="../im3-s/im3-ex4.2a.pdf">解答</a>）</small>，行列の対角化</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">30日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;4 2次曲線と2次曲面 (5) 行列の対角化の応用（2次曲線の分類）<small>（参考：<a href="../im3-s/im3-ex4.3.pdf">演習問題</a> | <a href="../im3-s/im3-ex4.3a.pdf">解答</a>）</small></td>
+    </tr>
+    <tr>
+      <td class="rt">12月</td>
+      <td class="rt">3日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;4 2次曲線と2次曲面 (6) 2次曲線の分類の具体例</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">5日<span class="sg">（水）</span></td>
+      <td class="lt"><span class=sg>（出張のため休講）</span></td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">7日<span class="sg">（金）</span></td>
+      <td class="lt"><b>第5回小テスト</b>（<a href="im3-1207-minitest05.pdf">問題</a> | <a href="im3-1207-minitest05a.pdf">略解</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">10日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;5 同次座標系と透視投影 (1) 透視投影<small>（参考：<a href="http://www.math.sie.dendai.ac.jp/~hiroyasu/vismath/projection/index.html">投影図</a>）</small></td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">12日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;5 同次座標系と透視投影 (2) 同次座標系における透視投影</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">14日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;5 同次座標系と透視投影 (3) 同次座標系における透視投影の計算，3次元形状の基本モデル<small>（<a href="im3-note-pers.pdf">小冊子</a>の問題 3.3 の解説<a href="../im3-s/im3-note-pers03-ex3.3.nb">ノートブック</a>）</small></td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">17日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;5 同次座標系と透視投影 (4) 同次座標系におけるアフィン変換</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">19日<span class="sg">（水）</span></td>
+      <td class="lt">これまでのまとめ</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">21日<span class="sg">（金）</span></td>
+      <td class="lt">これまでのまとめ</td>
+    </tr>
+    <tr>
+      <td class="rt">1月</td>
+      <td class="rt">9日<span class="sg">（水）</span></td>
+      <td class="lt"><b>期末試験</b>（<a href="im3-1219-keiji.pdf">掲示</a> | <a href="im3-0109-finalexam.pdf">問題</a> | <a href="im3-0109-finalexama.pdf">解答</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">11日<span class="sg">（金）</span></td>
+      <td class="lt">答案返却<span class=sg>（予備日）</span></td>
+    </tr>
+     </tbody>
+</table>
+<hr>
+<a name="lect"></a><span class="c">授業の内容と到達目標</span>
+<ul>
+<li>線形代数に引き続き，コンピュータグラフィックスに必要な空間や図形に関する数学の基礎となる概念を学ぶ．主な内容は，座標とベクトル，線形変換，固有値・固有ベクトル，2次曲線・2次曲面の分類，座標変換，同次座標と透視投影．</li>
+<li>直線，平面，球面などの図形や図形の変形と移動，透視投影などを数学的に表現するための方法を身につけることを目標とします．</li>
+</ul>
+<br>
+<span class="c">授業の進め方，注意事項</span>
+<ul>
+<li>講義と問題演習，そして<i>Mathematica</i>を用いた演習を柱に授業を進めていきます．</li>
+<li><i>Mathematica</i> は version 8 を使用します（version 7 でも構いません）．まだ version 6 を使用している者は必ず version 8 に入れ替えてください（version 8 のインストールの方法は<a href="http://www.dendai.ac.jp/media/math/math8index.html">こちら</a>を参照）．</li>
+<li><i>Mathematica</i> のライセンスは1年毎に更新する必要があります．更新手続きは<a href="http://www.chiba.mrcl.dendai.ac.jp/service_it/software/mathematica.html">メディアセンター</a>の「継続利用/ライセンス更新」の項目を参照してください．</li>
+<li><i>Mathematica</i> 演習の課題提出は <a href="https://sie.c-learning.jp/sp/">C-learning</a>の レポート機能を使います．</li>
+<li>理解できないところはそのままにせず，必ず私に質問してください（友人に尋ねたり，学習サポートセンターを活用するのもいいでしょう）．</li>
+<li>月曜日と金曜日の15:30〜17:00 をオフィスアワーとします．それ以外に時間でも質問は歓迎します（この場合は事前に電話かメールでアポを取ることが望ましい）．</li>
+<li>質問に来る場合は「<b>何がわからないのか</b>」ということだけでなく「<b>ここまでは理解している</b>」ということも申告してください．その際は授業のノートと配布したプリントを必ず持参すること．</li>
+<!---<ul>
+<li>C-learning に一度もログインしていない者は初期設定してください（ログインの方法は，私かメディアセンター担当の事務職員の方にたずねてください）．</li>
+<li>この「講義に参加する」手続きが必要です．講義IDは授業中に発表しました（わからない者は私までメールで問い合わせてください）．</li>
+</ul>
+<li><a name="takeuchi"></a><font color=red>（注意）</font><i>Mathematica</i> 演習は<u>207教室</u>にて行ないます（無線LANアクセスポイントが多く，情報コンセントが備わっているからです）．この際は必ず<u>LANケーブルを持参</u>してください．</li>
+--->
+</ul>
+<br>
+<a name="miniexam"></a><span class="c">小テスト・レポートについて</span>
+<ul>
+<li>単元の終わり(または区切りのいいところ)で小テストを実施するか，またはレポート課題を出します．</li>
+<li>レポートの提出場所は教育棟１階のレポートボックスとします．</li>
+<li>解を書いただけの答案(レポート)や，字があまりに粗暴なものは加点 しません(読みません)．計算の過程や考え方等をできるだけ詳しく記述すること．</li>
+</ul>
+</li>
+</ul>
+<br>
+<a name="bib"></a><span class="c">教科書・参考文献について</span>
+<ul>
+<li>教科書
+<ul>
+<li>「<font size="-1">古典的解析幾何学入門</font> <b>座標幾何学</b>」竹内伸子・泉屋周一・村山光孝 著（日科技連）<span class="sg"><a href="http://www.amazon.co.jp/%E5%BA%A7%E6%A8%99%E5%B9%BE%E4%BD%95%E5%AD%A6%E2%80%95%E5%8F%A4%E5%85%B8%E7%9A%84%E8%A7%A3%E6%9E%90%E5%B9%BE%E4%BD%95%E5%AD%A6%E5%85%A5%E9%96%80-%E7%AB%B9%E5%86%85-%E4%BC%B8%E5%AD%90/dp/4817192682">amazon</a></span></li>
+<li>「<a href="im3-note-pers.pdf">同次座標と透視投影</a>」<span class="sg">（授業開始時にプリントを配布します）</span></li>
+</ul>
+</li>
+<li>参考図書<br>
+<ul>
+<li>「<b>情報数学（下）</b>」田澤義彦 著（電機大出版局）<span class="g">：昨年度の教科書</span></li>
+<li>「<b>座標幾何学演習</b>」竹内伸子・泉屋周一・村山光孝 著（日科技連）<span class="sg"><a href="http://www.amazon.co.jp/%E5%BA%A7%E6%A8%99%E5%B9%BE%E4%BD%95%E5%AD%A6%E6%BC%94%E7%BF%92%E7%AB%B9%E5%86%85-%E4%BC%B8%E5%AD%90/dp/4817193085">amazon</a></span><span class="g">：教科書の演習書</span></li>
+</ul>
+</li>
+<li><i>Mathmatica</i> に関する本<br>
+<ul>
+<li>「<b>はやわかり Mathematica 第3版</b>」榊原 進 著（共立出版）<a href="http://www.amazon.co.jp/%E3%81%AF%E3%82%84%E3%82%8F%E3%81%8B%E3%82%8AMathematica-%E7%AC%AC3%E7%89%88-%E6%A6%8A%E5%8E%9F-%E9%80%B2/dp/4320122488/ref=sr_1_2?ie=UTF8&qid=1334108200&sr=8-2">amazon</a></li>
+<li>「<b>入門 Mathematica</b>」日本Mathematicaユーザー会 編著（東京電機大学出版局）<a href="http://www.amazon.co.jp/%E5%85%A5%E9%96%80Mathematica-%E3%80%90%E6%B1%BA%E5%AE%9A%E7%89%88%E3%80%91-Ver-7%E5%AF%BE%E5%BF%9C-%E6%97%A5%E6%9C%ACMathematica%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E4%BC%9A%E7%B7%A8%E8%91%97/dp/4501546204/ref=sr_1_3?ie=UTF8&qid=1334108200&sr=8-3">amazon</a></li>
+</ul>
+</li>
+</ul>
+<br>
+<a name="score"></a><span class="c">成績について</span>
+<ul>
+<li>中間試験 40点，期末試験 40点，その他（小テスト，レポート，<i>Mathematica</i>演習等）を20点とし，100点満点中60点以上で合格とします．</li>
+</ul>
+<hr>
+<span class="sg"><a href="./index.html">top</a></span>
+</body>
+</html>

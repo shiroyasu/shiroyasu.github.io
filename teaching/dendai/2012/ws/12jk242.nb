@@ -1,0 +1,259 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      8965,        250]
+NotebookOptionsPosition[      8553,        230]
+NotebookOutlinePosition[      8920,        246]
+CellTagsIndexPosition[      8877,        243]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\:5149\:7403", "Section",
+ CellChangeTimes->{{3.543172606462875*^9, 3.543172622842146*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"p1", "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"RotationTransform", "[", 
+     RowBox[{"\[Theta]", ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}], "[", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "2", ",", "0"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"p2", "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"RotationTransform", "[", 
+     RowBox[{
+      RowBox[{"\[Theta]", "+", 
+       RowBox[{"Pi", "/", "2"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0", ",", "1"}], "}"}]}], "]"}], "[", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "2", ",", "0"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"p3", "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"RotationTransform", "[", 
+     RowBox[{
+      RowBox[{"\[Theta]", "+", "Pi"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0", ",", "0"}], "}"}]}], "]"}], "[", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "2", ",", "0"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"p4", "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"RotationTransform", "[", 
+     RowBox[{
+      RowBox[{"\[Theta]", "+", 
+       RowBox[{"5", 
+        RowBox[{"Pi", "/", "2"}]}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0", ",", 
+        RowBox[{"-", "1"}]}], "}"}]}], "]"}], "[", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "2", ",", "0"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"p5", "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"RotationTransform", "[", 
+     RowBox[{
+      RowBox[{"\[Theta]", "+", 
+       RowBox[{"3", 
+        RowBox[{"Pi", "/", "2"}]}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0", ",", 
+        RowBox[{"-", "1"}]}], "}"}]}], "]"}], "[", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "2", ",", "0"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"p6", "[", "\[Theta]_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"RotationTransform", "[", 
+     RowBox[{
+      RowBox[{"\[Theta]", "+", 
+       RowBox[{"7", 
+        RowBox[{"Pi", "/", "2"}]}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", 
+        RowBox[{"-", "1"}]}], "}"}]}], "]"}], "[", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "2", ",", "0"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{
+     RowBox[{"Sphere", "[", "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Lighting", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\"\<Point\>\"", ",", 
+          RowBox[{"RGBColor", "[", 
+           RowBox[{"0.941176", ",", " ", "0.588235", ",", " ", "0"}], "]"}], 
+          ",", 
+          RowBox[{"p1", "[", "\[Theta]", "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\"\<Point\>\"", ",", "Yellow", ",", 
+          RowBox[{"p2", "[", "\[Theta]", "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\"\<Point\>\"", ",", 
+          RowBox[{"RGBColor", "[", 
+           RowBox[{
+           "0.00392157", ",", " ", "0.00392157", ",", " ", "0.305882"}], 
+           "]"}], ",", 
+          RowBox[{"p3", "[", "\[Theta]", "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\"\<Point\>\"", ",", 
+          RowBox[{"RGBColor", "[", 
+           RowBox[{"0.141176", ",", " ", "1", ",", " ", "0.141176"}], "]"}], 
+          ",", 
+          RowBox[{"p4", "[", "\[Theta]", "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\"\<Point\>\"", ",", "Red", ",", 
+          RowBox[{"p5", "[", "\[Theta]", "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\"\<Point\>\"", ",", "Blue", ",", 
+          RowBox[{"p6", "[", "\[Theta]", "]"}]}], "}"}]}], "}"}]}]}], "]"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Theta]", ",", "0", ",", 
+     RowBox[{"10", "Pi"}]}], "}"}], ",", 
+   RowBox[{"AnimationDirection", "\[Rule]", "ForwardBackward"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}], ",", " ", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]}], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`\[Theta]$$ = 0, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`\[Theta]$$], 0, 10 Pi}}, Typeset`size$$ = {
+    360., {193., 198.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`\[Theta]$6150$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`\[Theta]$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`\[Theta]$$, $CellContext`\[Theta]$6150$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics3D[
+        Sphere[], Lighting -> {{"Point", 
+           RGBColor[0.941176, 0.588235, 0], 
+           $CellContext`p1[$CellContext`\[Theta]$$]}, {"Point", Yellow, 
+           $CellContext`p2[$CellContext`\[Theta]$$]}, {"Point", 
+           RGBColor[0.00392157, 0.00392157, 0.305882], 
+           $CellContext`p3[$CellContext`\[Theta]$$]}, {"Point", 
+           RGBColor[0.141176, 1, 0.141176], 
+           $CellContext`p4[$CellContext`\[Theta]$$]}, {"Point", Red, 
+           $CellContext`p5[$CellContext`\[Theta]$$]}, {"Point", Blue, 
+           $CellContext`p6[$CellContext`\[Theta]$$]}}], 
+      "Specifications" :> {{$CellContext`\[Theta]$$, 0, 10 Pi, 
+         AnimationDirection -> ForwardBackward, AnimationRunning -> False, 
+         AppearanceElements -> {
+          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+           "DirectionButton"}}}, 
+      "Options" :> {
+       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
+        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
+        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
+     ImageSizeCache->{403., {230., 235.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`p1[
+         Pattern[$CellContext`\[Theta], 
+          Blank[]]] := 
+       RotationTransform[$CellContext`\[Theta], {0, 0, 1}][{0, 2, 
+         0}], $CellContext`p2[
+         Pattern[$CellContext`\[Theta], 
+          Blank[]]] := 
+       RotationTransform[$CellContext`\[Theta] + Pi/2, {1, 0, 1}][{0, 2, 
+         0}], $CellContext`p3[
+         Pattern[$CellContext`\[Theta], 
+          Blank[]]] := 
+       RotationTransform[$CellContext`\[Theta] + Pi, {1, 0, 0}][{0, 2, 
+         0}], $CellContext`p4[
+         Pattern[$CellContext`\[Theta], 
+          Blank[]]] := 
+       RotationTransform[$CellContext`\[Theta] + 5 (Pi/2), {1, 0, -1}][{0, 2, 
+         0}], $CellContext`p5[
+         Pattern[$CellContext`\[Theta], 
+          Blank[]]] := 
+       RotationTransform[$CellContext`\[Theta] + 3 (Pi/2), {1, 0, -1}][{0, 2, 
+         0}], $CellContext`p6[
+         Pattern[$CellContext`\[Theta], 
+          Blank[]]] := 
+       RotationTransform[$CellContext`\[Theta] + 7 (Pi/2), {0, 0, -1}][{0, 2, 
+         0}]}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Animate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.543172060984106*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1084, 694},
+WindowMargins->{{173, Automatic}, {Automatic, 73}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (2011\:5e743\
+\:670821\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 97, 1, 69, "Section"],
+Cell[CellGroupData[{
+Cell[701, 27, 4225, 124, 178, "Input"],
+Cell[4929, 153, 3596, 73, 482, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

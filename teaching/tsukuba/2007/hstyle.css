@@ -1,0 +1,29 @@
+@charset "ISO-2022-JP";
+body       { background: #ffffff;
+             color: #000000;
+             margin-left: 10px;
+             margin-top: 0px;
+             margin-right: 0px;
+             padding-top: 0px;
+             font-family: 'Lucida Grande', helvetica, arial, verdana, 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif;}
+a:link     { color: rgb(70, 130, 180); text-decoration: underline; }
+a:visited  { color: rgb(70, 130, 180); text-decoration: underline; }
+a:hover    { color: #FFFFFF; text-decoration: none; background: rgb(70, 130, 180); }
+a:active   { color: #FFFFFF; text-decoration: none; background: rgb(70, 130, 180); }
+hr         { border: 0pt none ;
+             width: 99%;
+             height: 3px;
+             background-color: #C0C0C0; }
+.ttl-j     { font-size: xx-large;
+             color: rgb(70, 130, 180); }
+.ttl-e     { font-size: xx-large;
+             color: rgb(153, 153, 153); }
+.sbttl-j   { font-size: large;
+             color: rgb(70, 130, 180); }
+.sbttl-e   { font-size: large;
+             color: rgb(153, 153, 153); }
+.e         { font-size: small;
+             color: rgb(153, 153, 153); }
+.c1        { color: rgb(0, 153, 0); }
+.c2        { color: rgb(51, 255, 51); }
+.c3        { color: rgb(153, 153, 153); }

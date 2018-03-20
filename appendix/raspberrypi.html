@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../hstyle.css">
+<link rel="stylesheet" type="text/css" href="../hstyle-sub.css">
+<link rel="shortcut icon" href="../img/favicon.png">
+
+<title>Using the Raspberry Pi</title>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+
+<h1>佐藤 弘康 <span class="g">Hiroyasu SATOH</span> - <a href="../index.html">home</a> &#155;&#155; <a href="../appendix.html">Appendix</a> &#155;&#155; <i>Mathematica</i> on Raspberry Pi</h1>
+<p class="logo">Raspberry Pi で <i>Mathematica</i> を使おう<br><span class="gl">Using <i>Mathematica</i> on Raspberry Pi</span></p>
+</div>
+
+<div id="contents">
+<div align="right">
+<span class="gss">（平成27年4月27日 更新）</span>
+</div>
+<ul>
+<li>安価なシングルボードコンピュータ Raspberry Pi (<a href="http://ja.wikipedia.org/wiki/Raspberry_Pi">wikipedia</a>) に，標準OSである Raspbian をインストールすると，数式処理ソフト <i>Mathematica</i> (<a href="http://ja.wikipedia.org/wiki/Mathematica">wikipedia</a>) を無償で使用することができます．</li>
+<li>本ページは，Raspberry Pi に OS をインストールし，無線ネットワークにつなげて Mac からリモートで<i>Mathematica</i> を利用できるようにするまで備忘録です．</li>
+</ul>
+
+<h2>用意したもの</h2>
+<ul>
+	<li><b>Raspberry Pi <a href="https://www.raspberrypi.org/products/raspberry-pi-2-model-b/">2 Model B</a></b></li>
+	<li>液晶モニター EIZO <a href="http://www.eizo.co.jp/products/lcd/ev2336wz/">FlexScan EV2336W-Z</a></li>
+	<li>USB キーボード Apple Keyboard (テンキー付き - US)</li>
+	<li>USB マウス Apple Mouse</li>
+	<li>Bluetooth Ver.3.0＋HS & Wi-Fi対応 MicroサイズUSBコンボアダプタ PLANEX <a href="http://www.planex.co.jp/product/bluetooth/bt-micro3h2x/">BT-Micro3H2X</a></li>
+	<li>micro SD カード (SanDisk microSDXCカード SDSDQUAN-064G-G4A)</li>
+	<li>DVI--HDMI ケーブル Amazonベーシック <a href="http://www.amazon.co.jp/Amazon%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF-HDMI-DVI-%E5%A4%89%E6%8F%9B%E3%82%B1%E3%83%BC%E3%83%96%E3%83%AB-%E3%82%BF%E3%82%A4%E3%83%97A%E3%82%AA%E3%82%B9--DVI24pin%E3%82%AA%E3%82%B9/dp/B001TH7T2U/ref=sr_1_2?ie=UTF8&qid=1419000166&sr=8-2&keywords=%EF%BD%88%EF%BD%84%EF%BD%8D%EF%BD%89+dvi">SK231</a>
+	（上記の液晶モニターには HDMI 端子がないため，DVI に変換して接続）</li>
+	<li>microUSBケーブル（電源用）<br>
+	<!--<a href="http://instagram.com/p/hNPcLLgsZy/?modal=true"><img src="http://photos-d.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/1169241_1434854103393019_77269428_a.jpg"></a>--></li>
+</ul>
+<ul>
+	<li><b>作業用コンピュータ</b>：MacBook Pro Retina, 13-inch, Late 2013 (OS X Yosemite 10.10.3)</li>
+</ul>
+
+<h2>OS (Raspbian) のインストール</h2>
+
+<ul>
+	<li>Raspberry Pi財団のWebサイトからOSイメージ (Raspbian) を<a href="http://www.raspberrypi.org/downloads/">ダウンロード</a>して解凍．</li>
+	<li>公式 WEB サイトの<a href="https://www.raspberrypi.org/documentation/installation/installing-images/mac.md">手順（注意：Mac OS Xの場合）</a>に従って，OSイメージをSDカードへ書き込む．<br>主な手順は以下；
+	<ol>
+	<li>SD カードを Mac にさして，FAT32 でフォーマット．</li>
+	<li>ターミナルから
+	<blockquote class="bquote">
+		$ df -h
+	</blockquote>
+	を実行し，SD カードのディバイス名を確認（例：/dev/disk2s1 ）．</li>
+	<li>SD カードをアンマウント
+	<blockquote class="bquote">
+		$ sudo diskutil unmount /dev/disk2s1
+	</blockquote></li>
+	<li>SD カードにOSイメージを書き込む．
+	<blockquote class="bquote">
+		$ sudo dd bs=1m if="イメージファイル名" of=/dev/rdisk2
+	</blockquote>
+	注意：ディバイス名が "disk2s1" の場合，先頭に「r」をつけ，「s1」を削除する．この<a href="https://www.raspberrypi.org/documentation/installation/installing-images/mac.md">ページ</a>の <b>Note: Some users have reported issues with using Mac OS X to create SD cards.</b> 以降を参照</li>
+	</li>
+	<li>書き込みが終わったら，
+	<blockquote class="bquote">
+		$ sudo diskutil eject /dev/disk2s1
+	</blockquote>
+	として，SDカードを取り出す．</li>
+	</ol>
+	</li>
+</ul>
+
+<h2>起動とその後</h2>
+
+<ul>
+	<li>microSD カードを Raspberry Pi にさす．キーボード，マウス，モニター，ネットワークケーブルを Raspberry Pi に接続し，最後に microUSBケーブルで電源につなぐ．</li>
+	<li>起動すると，初期設定 (raspi-config) が始まる．expand_rootfs, configue_keyboard, Change_pass, Change_locale などを設定．</li>
+	<li>ユーザーネーム "pi" でログイン（初期パスワードは "raspberry"）．</li>
+	<li>パッケージをアップデートする；
+	<blockquote class="bquote">
+		$ sudo apt-get update<br>
+		$ sudo apt-get upgrade
+	</blockquote>
+	プロクシ経由の場合は
+	<blockquote class="bquote">
+		$ sudo apt-get -o Acquire::http::proxy="http://(プロキシIP):(ポート番号)" update<br>
+		$ sudo apt-get -o Acquire::http::proxy="http://(プロキシIP):(ポート番号)" upgrade
+	</blockquote>
+	</li>
+	</li>
+	<li>X を起動．
+	<blockquote class="bquote">
+		$ startx
+	</blockquote></li>
+	<li>プロクシ経由でインターネットに接続するためには，</li>
+</ul>
+
+<h2>無線ネットワークへの接続</h2>
+
+<h2>Mac からリモート接続</h2>
+
+</div>
+
+<div id="footer">
+<p><span class="gs">Copyright &copy; Hiroyasu Satoh. All Rights Reserved.</span></p>
+<p id="cds">CSS Template <a href="http://www.css-designsample.com/">CSSデザインサンプル</a></p>
+</div>
+
+</div>
+</body>
+</html>

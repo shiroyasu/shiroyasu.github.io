@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created by Wolfram Mathematica 8.0 : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  Untitled
+ </title>
+ <link href="HTMLFiles/im3-1-yyJKnnn.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="font-size: Floor[100 FEPrivate`If[FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 1.25, 1.25 Inherited]]%;">
+
+<p class='SlideShowNavigationBar' style='text-align: left;'>
+ <a id="SlideShowHeader"></a>
+ 
+</p>
+
+
+
+<p class='Section' style='text-align: left;'>
+ 1. 基本
+</p>
+
+
+
+<p class='Item' style='text-align: left;'>
+ 四則演算は，加「<span style='color: #0000FF;'>+</span>（プラス）」減「<span style='color: #0000FF;'>-</span>（ハイフン）」乗「<span style='color: #0000FF;'>*</span>（アスタリスク）」除「<span style='color: #0000FF;'>/</span>（スラッシュ）」．
+</p>
+
+
+
+<p class="Item">
+ 等号（方程式を記述する際）は「<span style='color: #0000FF;'>==</span>」，代入（定義）は「<span style='color: #0000FF;'>=</span>」．
+</p>
+
+
+
+<p class="Item">
+ 「=」を使って定義したものは，<span style='font-style: italic;'>Mathematica</span>カーネルが動いている間だけ有効．カーネル（または<span style='font-style: italic;'>Mathematica</span>自体）を再起動した場合は，もう一度定義しなければならない．
+</p>
+
+
+
+<p class="Item">
+ 計算（命令）を実行するには「Shift 」を押しながら「Enter」．セルごとに実行する必要がある（実行したいセルを選択，またはカーソルがそのセルで点滅している状態で）．
+</p>
+
+
+
+<p class="Item">
+ 「セル」とは<span style='font-style: italic;'>Mathematica</span>ノートブック（このファイル）を構成する最小単位．
+</p>
+
+
+
+<p class='Text' style='background-color: #D9D9D9;text-align: left;'>
+ 例題 1.1：2 + 2 を計算しなさい．
+</p>
+
+
+
+<p class="CellLabel">
+ In[1]:=
+</p>
+
+
+
+<p class='Input' style='text-align: left;'>
+ <img src="HTMLFiles/im3-1-yyJKnnn_1.gif" alt="im3-1-yyJKnnn_1.gif" width="35" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[1]=
+</p>
+
+
+
+<p class='Output' style='text-align: left;'>
+ <img src="HTMLFiles/im3-1-yyJKnnn_2.gif" alt="im3-1-yyJKnnn_2.gif" width="9" height="16" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='background-color: #D9D9D9;text-align: left;'>
+ 例題 1.2：Na を１と定義し，Na の値を出力しなさい．
+</p>
+
+
+
+<p class="CellLabel">
+ In[2]:=
+</p>
+
+
+
+<p class='Input' style='text-align: left;'>
+ <img src="HTMLFiles/im3-1-yyJKnnn_3.gif" alt="im3-1-yyJKnnn_3.gif" width="46" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[2]=
+</p>
+
+
+
+<p class='Output' style='text-align: left;'>
+ <img src="HTMLFiles/im3-1-yyJKnnn_4.gif" alt="im3-1-yyJKnnn_4.gif" width="9" height="16" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='background-color: #FFFFD9;text-align: left;'>
+ 問題 1：Nb を2と定義し，Nb の値を出力しなさい． さらに，Na + Nb を計算しなさい．
+</p>
+
+
+
+<p class="CellLabel">
+ In[3]:=
+</p>
+
+
+
+<p class='Input' style='text-align: left;'>
+ <img src="HTMLFiles/im3-1-yyJKnnn_5.gif" alt="im3-1-yyJKnnn_5.gif" width="46" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[3]=
+</p>
+
+
+
+<p class='Output' style='text-align: left;'>
+ <img src="HTMLFiles/im3-1-yyJKnnn_6.gif" alt="im3-1-yyJKnnn_6.gif" width="9" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ In[4]:=
+</p>
+
+
+
+<p class='Input' style='text-align: left;'>
+ <img src="HTMLFiles/im3-1-yyJKnnn_7.gif" alt="im3-1-yyJKnnn_7.gif" width="53" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[4]=
+</p>
+
+
+
+<p class='Output' style='text-align: left;'>
+ <img src="HTMLFiles/im3-1-yyJKnnn_8.gif" alt="im3-1-yyJKnnn_8.gif" width="9" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="SlideShowNavigationBar">
+ 
+</p>
+
+
+
+<p class="Section">
+ 2. ベクトル
+</p>
+
+
+
+<p class="Item">
+ ベクトルはリストで表す．
+</p>
+
+
+
+<p class="Item">
+ リストとは複数の要素（数）を「<span style='color: #0000FF;'>,</span>（コンマ）」で区切って「<span style='color: #0000FF;'>{</span>」と「<span style='color: #0000FF;'>}</span>」（中括弧）で囲んだもの．
+</p>
+
+
+
+<p class='Text' style='background-color: #D9D9D9;'>
+ <img src="HTMLFiles/im3-1-yyJKnnn_9.gif" alt="im3-1-yyJKnnn_9.gif" width="362" height="54" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ In[5]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_10.gif" alt="im3-1-yyJKnnn_10.gif" width="129" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ In[6]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_11.gif" alt="im3-1-yyJKnnn_11.gif" width="18" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[6]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_12.gif" alt="im3-1-yyJKnnn_12.gif" width="83" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Item">
+ ベクトルの和は「<span style='color: #0000FF;'>+</span>」，差は「<span style='color: #0000FF;'>-</span>」，実数倍は「<span style='color: #0000FF;'>*</span>」．
+</p>
+
+
+
+<p class="Item">
+ 命令あとに「<span style='color: #0000FF;'>;</span>（セミコロン）」をつけると，計算結果が出力されない（実行されるだけ）．
+</p>
+
+
+
+<p class='Text' style='background-color: #FFFFD9;'>
+ <img src="HTMLFiles/im3-1-yyJKnnn_13.gif" alt="im3-1-yyJKnnn_13.gif" width="632" height="127" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ In[7]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_14.gif" alt="im3-1-yyJKnnn_14.gif" width="130" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[7]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_15.gif" alt="im3-1-yyJKnnn_15.gif" width="93" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ In[8]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_16.gif" alt="im3-1-yyJKnnn_16.gif" width="90" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[8]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_17.gif" alt="im3-1-yyJKnnn_17.gif" width="93" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ In[9]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_18.gif" alt="im3-1-yyJKnnn_18.gif" width="138" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[9]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_19.gif" alt="im3-1-yyJKnnn_19.gif" width="92" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="SlideShowNavigationBar">
+ 
+</p>
+
+
+
+<p class="Section">
+ 3. ベクトルの内積と長さ
+</p>
+
+
+
+<p class="Item">
+ 内積は「<span style='color: #0000FF;'>.</span>（ピリオド）」
+</p>
+
+
+
+<p class='Text' style='background-color: #D9D9D9;'>
+ 例題 3：ベクトル Va と Vb の内積を計算しなさい．
+</p>
+
+
+
+<p class="CellLabel">
+ In[10]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_20.gif" alt="im3-1-yyJKnnn_20.gif" width="45" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[10]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_21.gif" alt="im3-1-yyJKnnn_21.gif" width="19" height="16" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='background-color: #FFFFD9;'>
+ 問題 3.1：ベクトル Vu と Vv の内積を計算しなさい．
+</p>
+
+
+
+<p class="CellLabel">
+ In[11]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_22.gif" alt="im3-1-yyJKnnn_22.gif" width="45" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[11]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_23.gif" alt="im3-1-yyJKnnn_23.gif" width="18" height="16" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='background-color: #FFFFD9;'>
+ 問題 3.2：<br /> (1) 内積を利用して，ベクトル Vu の長さを計算しなさい．<br /> (2) 内積を利用して，ベクトル Vv の長さを計算しなさい．
+</p>
+
+
+
+<p class="Item">
+ ルートは 「<span style='color: #0000FF;'>Sqrt[ ]</span>」（<span style='font-style: italic;'>Mathematica</span> の命令はすべて大文字から始まります．）
+</p>
+
+
+
+<p class="CellLabel">
+ In[12]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_24.gif" alt="im3-1-yyJKnnn_24.gif" width="99" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[12]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_25.gif" alt="im3-1-yyJKnnn_25.gif" width="26" height="22" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ In[13]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_26.gif" alt="im3-1-yyJKnnn_26.gif" width="99" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[13]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_27.gif" alt="im3-1-yyJKnnn_27.gif" width="48" height="22" style="vertical-align:middle" />
+</p>
+
+<p class="Item">
+ ベクトルの長さは 「<span style='color: #0000FF;'>Norm[ ]</span>」 で計算できる．
+</p>
+
+
+
+<p class="CellLabel">
+ In[14]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_28.gif" alt="im3-1-yyJKnnn_28.gif" width="72" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[14]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_29.gif" alt="im3-1-yyJKnnn_29.gif" width="26" height="22" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ In[15]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_30.gif" alt="im3-1-yyJKnnn_30.gif" width="72" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[15]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_31.gif" alt="im3-1-yyJKnnn_31.gif" width="48" height="22" style="vertical-align:middle" />
+</p>
+
+<p class="SlideShowNavigationBar">
+ 
+</p>
+
+
+
+<p class="Section">
+ 4. ベクトルの外積
+</p>
+
+
+
+<p class="Item">
+ ベクトルの外積は「<span style='color: #0000FF;'>Cross[ ]</span>」
+</p>
+
+
+
+<p class='Text' style='background-color: #D9D9D9;'>
+ 例題 4：ベクトル Va と Vb の外積を計算しなさい．
+</p>
+
+
+
+<p class="CellLabel">
+ In[16]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_32.gif" alt="im3-1-yyJKnnn_32.gif" width="113" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[16]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_33.gif" alt="im3-1-yyJKnnn_33.gif" width="83" height="16" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='background-color: #FFFFD9;'>
+ 問題 4： <span style='background-color: #FFFFD9;'><span><img src="HTMLFiles/im3-1-yyJKnnn_34.gif" alt="im3-1-yyJKnnn_34.gif" width="35" height="54" style="vertical-align:middle" /></span></span>と&nbsp;&nbsp;<span style='background-color: #FFFFD9;'><span><img src="HTMLFiles/im3-1-yyJKnnn_35.gif" alt="im3-1-yyJKnnn_35.gif" width="35" height="54" style="vertical-align:middle" /></span></span> の外積を計算しなさい．
+</p>
+
+
+
+<p class="CellLabel">
+ In[17]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_36.gif" alt="im3-1-yyJKnnn_36.gif" width="223" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[17]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_37.gif" alt="im3-1-yyJKnnn_37.gif" width="93" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="SlideShowNavigationBar">
+ 
+</p>
+
+
+
+<p class="Section">
+ 5.&nbsp;&nbsp;空間内の直線
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_38.gif" alt="im3-1-yyJKnnn_38.gif" width="4" height="16" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='background-color: #D9D9D9;'>
+ 例題 5.1：点<span><span><img src="HTMLFiles/im3-1-yyJKnnn_39.gif" alt="im3-1-yyJKnnn_39.gif" width="45" height="54" style="vertical-align:middle" /></span></span>&nbsp;&nbsp;を通り，方向ベクトル<span><span><img src="HTMLFiles/im3-1-yyJKnnn_40.gif" alt="im3-1-yyJKnnn_40.gif" width="45" height="54" style="vertical-align:middle" /></span></span>である直線上の点を媒介変数表示しなさい．
+</p>
+
+
+
+<p class="CellLabel">
+ In[18]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_41.gif" alt="im3-1-yyJKnnn_41.gif" width="207" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[18]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_42.gif" alt="im3-1-yyJKnnn_42.gif" width="174" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Item">
+ 媒介変数表示され図形を描画するには「<span style='color: #0000FF;'>ParametricPlot3D[&ldquo;媒介変数表示（リスト）&rdquo; , &rdquo;変数の範囲（リスト）&rdquo; ]</span>」
+</p>
+
+
+
+<p class="Item">
+ &ldquo;変数の範囲&rdquo;は「 { &ldquo;変数&rdquo;, &ldquo;変数の最小値&rdquo;, &ldquo;変数の最大値&rdquo;}」と指定する．
+</p>
+
+
+
+<p class='Text' style='background-color: #D9D9D9;'>
+ 例題 5.2：例題 5.1 の直線を適当な範囲で描画しなさい．
+</p>
+
+
+
+<p class="CellLabel">
+ In[19]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_43.gif" alt="im3-1-yyJKnnn_43.gif" width="437" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[19]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_44.gif" alt="im3-1-yyJKnnn_44.gif" width="450" height="504" style="vertical-align:middle" />
+</p>
+
+<p class="SlideShowNavigationBar">
+ 
+</p>
+
+
+
+<p class="Section">
+ 6. 空間内の平面
+</p>
+
+
+
+<p class='Text' style='background-color: #D9D9D9;'>
+ 例題 6.1：点<span><span><img src="HTMLFiles/im3-1-yyJKnnn_45.gif" alt="im3-1-yyJKnnn_45.gif" width="45" height="54" style="vertical-align:middle" /></span></span>&nbsp;&nbsp;を通り，ベクトル<span><span><img src="HTMLFiles/im3-1-yyJKnnn_46.gif" alt="im3-1-yyJKnnn_46.gif" width="45" height="54" style="vertical-align:middle" /></span></span>と<span><span><img src="HTMLFiles/im3-1-yyJKnnn_47.gif" alt="im3-1-yyJKnnn_47.gif" width="35" height="54" style="vertical-align:middle" /></span></span>で張られる平面上の点を媒介変数表示しなさい．
+</p>
+
+
+
+<p class="CellLabel">
+ In[20]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_48.gif" alt="im3-1-yyJKnnn_48.gif" width="331" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[20]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_49.gif" alt="im3-1-yyJKnnn_49.gif" width="236" height="16" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='background-color: #FFFFD9;'>
+ 問題 6.1：例題 6.1 の平面を適当な範囲で描画しなさい．
+</p>
+
+
+
+<p class="CellLabel">
+ In[21]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_50.gif" alt="im3-1-yyJKnnn_50.gif" width="592" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[21]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_51.gif" alt="im3-1-yyJKnnn_51.gif" width="340" height="477" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='background-color: #FFFFD9;'>
+ 問題 6.2：例題 6.1 の平面の法線ベクトルを求めなさい．
+</p>
+
+
+
+<p class="CellLabel">
+ In[22]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_52.gif" alt="im3-1-yyJKnnn_52.gif" width="233" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[22]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_53.gif" alt="im3-1-yyJKnnn_53.gif" width="83" height="16" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='background-color: #D9D9D9;'>
+ 例題 6.2：例題 6.1 の平面上の点を<span><span><img src="HTMLFiles/im3-1-yyJKnnn_54.gif" alt="im3-1-yyJKnnn_54.gif" width="35" height="54" style="vertical-align:middle" /></span></span>とし，x, y, z が満たす方程式を求めなさい．
+</p>
+
+
+
+<p class="CellLabel">
+ In[23]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_55.gif" alt="im3-1-yyJKnnn_55.gif" width="324" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[23]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_56.gif" alt="im3-1-yyJKnnn_56.gif" width="185" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Item">
+ 「<span style='color: #0000FF;'>%</span>」は一番最後に出力したものを意味する．
+</p>
+
+
+
+<p class="CellLabel">
+ In[24]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_57.gif" alt="im3-1-yyJKnnn_57.gif" width="81" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[24]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_58.gif" alt="im3-1-yyJKnnn_58.gif" width="131" height="16" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='background-color: #D9D9D9;'>
+ 例題 6.3：例題 6.2 で求めた方程式が表す図形（平面）を描画しなさい．
+</p>
+
+
+
+<p class="Item">
+ x,y,z の方程式で表される図形を描画するには「<span style='color: #0000FF;'>ContourPlot3D[&ldquo;方程式 f(x,y,z)==0&rdquo; , &ldquo;xの範囲（リスト）&rdquo;, &ldquo;yの範囲（リスト）&rdquo;, &ldquo;zの範囲（リスト）&rdquo; ]</span>」
+</p>
+
+
+
+<p class="CellLabel">
+ In[25]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_59.gif" alt="im3-1-yyJKnnn_59.gif" width="557" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[25]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_60.gif" alt="im3-1-yyJKnnn_60.gif" width="397" height="399" style="vertical-align:middle" />
+</p>
+
+<p class="SlideShowNavigationBar">
+ 
+</p>
+
+
+
+<p class="Section">
+ 7. 平面内の円周
+</p>
+
+
+
+<p class="Subsection">
+ 原点が中心で，半径が1の円の媒介変数表示；
+</p>
+
+
+
+<p class="CellLabel">
+ In[26]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_61.gif" alt="im3-1-yyJKnnn_61.gif" width="404" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[26]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_62.gif" alt="im3-1-yyJKnnn_62.gif" width="450" height="448" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='background-color: #D9D9D9;'>
+ 例題 7.1：原点が(a, b)で，半径が r の円上の点を(x, y)とするとき，x, y の満たす方程式を求めなさい．
+</p>
+
+
+
+<p class="CellLabel">
+ In[27]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_63.gif" alt="im3-1-yyJKnnn_63.gif" width="332" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[27]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_64.gif" alt="im3-1-yyJKnnn_64.gif" width="195" height="20" style="vertical-align:middle" />
+</p>
+
+<p class="SlideShowNavigationBar">
+ 
+</p>
+
+
+
+<p class="Section">
+ 8. 空間内の球面
+</p>
+
+
+
+<p class="Subsection">
+ 原点が中心で，半径が1の球面の媒介変数表示；
+</p>
+
+
+
+<p class="CellLabel">
+ In[28]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_65.gif" alt="im3-1-yyJKnnn_65.gif" width="795" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[28]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_66.gif" alt="im3-1-yyJKnnn_66.gif" width="450" height="497" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='background-color: #FFFFD9;'>
+ 問題 7.1：原点が(a, b, c)で，半径が r の球面上の点を(x, y, z)とするとき，x, y, z の満たす方程式を求めなさい（例題7.1 を参考にしなさい）．
+</p>
+
+
+
+<p class="CellLabel">
+ In[29]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/im3-1-yyJKnnn_67.gif" alt="im3-1-yyJKnnn_67.gif" width="424" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[29]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/im3-1-yyJKnnn_68.gif" alt="im3-1-yyJKnnn_68.gif" width="282" height="20" style="vertical-align:middle" />
+</p>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/products/mathematica/" style="color:#000; text-decoration:none;">
+  <img src="HTMLFiles/spikeyIcon.png" alt="Spikey" width="20" height="21" style="padding-right:2px; border:0px solid white; vertical-align:middle;" />
+  <span style="color:#555555">Created with</span> Wolfram <span style="font-style: italic;">Mathematica</span> 8.0
+ </a>
+</div>
+</body>
+
+</html>

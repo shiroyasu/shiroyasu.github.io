@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../..//hstyle.css">
+<link rel="stylesheet" type="text/css" href="../../hstyle-sub.css">
+<link rel="shortcut icon" href="../../img/favicon.png">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
+
+<title>微分方程式 - 佐藤弘康</title>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+
+<h1><a href="../../index.html">home</a> &#155;&#155; <a href="../index.html">Teaching</a> &#155;&#155; <a href="../nit.html">NIT</a> &#155;&#155;</h1>
+<p class="logo">2016年度春学期 <b>微分方程式</b> <span class="gl">Differential Equations</span></p>
+
+<p class="description">月4限 15:05-16:45 | 2-274教室 | 対象：<span class="dep2">電気電子工学科2年生</span><br>
+担当：佐藤 弘康（e-mail : hiroyasu [at] nit.ac.jp | 研究室：W1棟204 | 電話番号：0480-33-7972）
+</p>
+</div>
+
+<div id="contents">
+
+<h2>連絡事項</h2>
+<ul>
+<li>4/18：連絡事項については <a href="https://portal.nit.ac.jp/">日本工大サポータル</a> の掲示板をメインに使っていきます．定期的に確認するようにしてください．</li>
+<li>4/7：このページを公開しました．</li>
+<li>
+<a href="https://twitter.com/shiroyasu_NIT">Twitter</a>でも，授業に関する情報を発信していきます（ハッシュタグは <a href="https://twitter.com/hashtag/16sdee?f=tweets&vertical=default&src=hash">#16SdeE</a> ）．質問，意見などのリプライを歓迎します．<!-- <br>
+<a class="twitter-timeline" href="https://twitter.com/shiroyasu_NIT" data-widget-id="717187995808305153">@shiroyasu_NITさんのツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
+</li>
+</ul>
+
+
+<h2>授業の目的</h2>
+
+<p>
+ニュートンが最初に微分方程式を用いて力学的な運動を表わして以来、自然科学の法則や工学における現
+象を表現する手段として、微分方程式は重要な役割を果たしている。
+専門科目の理解に必要とされる読解力・計算力を身に付けるために、常微分方程式について学習する。基本的な常微分方程式の解法に習熟するとともに、解の意味も認識する。
+</p>
+
+<h2>達成目標</h2>
+
+<ol>
+<li>変数分離形微分方程式の解を求めることができる。</li>
+<li>同次形微分方程式の解を求めることができる。</li>
+<li>1階線形微分方程式の解を求めることができる。</li>
+<li>完全微分方程式の解を求めることができる。</li>
+<li>積分因子を理解し、それを利用して微分方程式の解を求めることができる。</li>
+<li>微分演算子を理解し、それを利用して微分方程式の解を求めることができる。</li>
+<li>定数係数同次線形微分方程式の解を求めることができる。</li>
+<li>逆微分演算子を理解し、それを利用して微分方程式の解を求めることができる。</li>
+<li>定数係数非同次線形微分方程式の解を求めることができる。</li>
+</ol>
+
+<h2>科目の位置づけ</h2>
+<ul>
+<li>
+微分積分学I（1変数関数の微分） &#8594; 微分積分学II（1変数関数の積分） &#8594; <b>微分方程式</b>
+</li>
+<li>
+微分積分学の基礎として、「微分積分学I」では1変数関数の微分法を、「微分積分学II」では1変数関数の積分法を取り扱っている。この科目では、先行する2科目の内容を踏まえて、常微分 方程式の解法を学習する。</li>
+<li>この科目と「微分積分学I」、「微分積分学II」を併せて履修 することにより、基本的な常微分方程式の解法を一通り習得することができる。</li>
+</ul>
+
+<h2>これまでの授業と今後の予定</h2>
+
+<table
+ style="width: 95%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="1" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="width: 50px; text-align: center; vertical-align: top;">第1回</td>
+      <td style="width: 40px; text-align: right; vertical-align: top;">4月</td>
+      <td style="width: 75px; text-align: right; vertical-align: top;">11日<span class="gs">（月）</span></td>
+      <td>ガイダンス <a href="https://youtu.be/KNhDscDrU20"><i class="fa fa-youtube-play" aria-hidden="true"></i></a><br>
+      微分方程式とその解 (1) <span class="apl">&nbsp;第1部 第1章 &#167;1, 2&nbsp;</span> <a href="https://youtu.be/_Twg-mDoFas"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a href="https://twitter.com/shiroyasu_NIT/status/719690887358337025"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第2回</td>
+    <td></td>
+    <td class="rt">18日<span class="gs">（月）</span></td>
+    <td>微分方程式とその解 (2) <span class="apl">&nbsp;第1部 第1章 &#167;1, 2&nbsp;</span> <a href="https://twitter.com/shiroyasu_nit/status/722077417645289472"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第3回</td>
+    <td></td>
+    <td class="rt">25日<span class="gs">（月）</span></td>
+    <td>変数分離形微分方程式 <span class="apl">&nbsp;第1部 第2章 &#167;1&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/724610631958073344"><i class="fa fa-twitter"></i></a> <u>課題</u>：p.11 <b>問題 1</b></td>
+    </tr>
+    <tr>
+    <td class="ct">第4回</td>
+    <td style="width: 40px; text-align: right; vertical-align: top;">5月</td>
+    <td class="rt">2日<span class="gs">（月）</span></td>
+    <td>同次形微分方程式 <span class="apl">&nbsp;第1部 第2章 &#167;2&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/727044684074250240"><i class="fa fa-twitter"></i></a> <u>課題</u>：p.13 <b>問題 1</b></td>
+    </tr>
+    <tr>
+    <td class="ct">第5回</td>
+    <td></td>
+    <td class="rt">9日<span class="gs">（月）</span></td>
+    <td>1階線形微分方程式 <span class="apl">&nbsp;第1部 第2章 &#167;3&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/729977449245646849"><i class="fa fa-twitter"></i></a> <u>課題</u>：p.15 <b>問 1</b>, p.16 <b>問題 3(1)(2)</b></td>
+    </tr>
+    <tr>
+    <td class="ct">第6回</td>
+    <td></td>
+    <td class="rt">16日<span class="gs">（月）</span></td>
+    <td>ベルヌーイの微分方程式 <span class="apl">&nbsp;第1部 第2章 &#167;3&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/732233108230017024"><i class="fa fa-twitter"></i></a> <u>課題</u>：p.16 <b>問題 2</b>，<b>問題 3(3)</b></td>
+    </tr>
+    <tr>
+    <td class="ct">第7回</td>
+    <td></td>
+    <td class="rt">23日<span class="gs">（月）</span></td>
+    <td>完全微分方程式 <span class="apl">&nbsp;第1部 第2章 &#167;4&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/734762203325337602"><i class="fa fa-twitter"></i></a> <u>課題</u>：p.22 <b>問題1</b></td>
+    </tr>
+    <tr>
+    <td class="ct">第8回</td>
+    <td></td>
+    <td class="rt">30日<span class="gs">（月）</span></td>
+    <td>積分因子 <span class="apl">&nbsp;第1部 第2章 &#167;4&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/737860059477254144"><i class="fa fa-twitter"></i></a> <u>課題</u>：p.22 <b>問題2</b>, <b>3</b></td>
+    </tr>
+    <tr>
+    <td class="ct">第9回</td>
+    <td style="width: 40px; text-align: right; vertical-align: top;">6月</td>
+    <td class="rt">6日<span class="gs">（月）</span></td>
+    <td>高階同次線形微分方程式とその基本解系 <span class="apl">&nbsp;第1部 第3章 &#167;1&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/739749526840315904"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct">第10回</td>
+    <td></td>
+    <td class="rt">6日<span class="gs">（月）</span></td>
+    <td><b>小テスト</b><span class="gs">【補講：3限, 1-204】（</span><a href="./de-e-mdt.pdf">問題</a> | <a href="./de-e-mdt-ans.pdf">解答</a> | <a href="./de-e.html#mdt-r">得点分布</a>）</td>
+    </tr>
+    <tr>
+    <td class="ct">第10回</td>
+    <td></td>
+    <td class="rt">7日<span class="gs">（火）</span></td>
+    <td><b>小テスト</b><span class="gs">【補講：2限, 2-375】</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第10回</td>
+    <td></td>
+    <td class="rt">9日<span class="gs">（木）</span></td>
+    <td><b>小テスト</b><span class="gs">【補講：4限, 2-371】</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第11回</td>
+    <td></td>
+    <td class="rt">13日<span class="gs">（月）</span></td>
+    <td>微分演算子 <span class="apl">&nbsp;第1部 第3章 &#167;2&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/742966265980047360"><i class="fa fa-twitter"></i></a><br>
+    <u>課題</u>：p.43 <b>問題1</b> の各微分方程式を $f(D)y=0$ の形で表しなさい（多項式 $(t)$ を答えなさい）.</td>
+    </tr>
+    <tr>
+    <td class="ct">第12回</td>
+    <td></td>
+    <td class="rt">20日<span class="gs">（月）</span></td>
+    <td>定数係数同次線形微分方程式 <span class="apl">&nbsp;第1部 第3章 &#167;3&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/745252049978175488"><i class="fa fa-twitter"></i></a> <u>課題</u>：p.43 <b>問題1</b></td>
+    </tr>
+    <tr>
+    <td class="ct">第13回</td>
+    <td></td>
+    <td class="rt">27日<span class="gs">（月）</span></td>
+    <td>逆演算子 <span class="apl">&nbsp;第1部 第3章 &#167;4&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/747471844148551681"><i class="fa fa-twitter"></i></a> <u>課題</u>：p.47 <b>問1</b></td>
+    </tr>
+    <tr>
+    <td class="ct">第14回</td>
+    <td style="width: 40px; text-align: right; vertical-align: top;">7月</td>
+    <td class="rt">4日<span class="gs">（月）</span></td>
+    <td>定数係数非同次線形微分方程式 <span class="apl">&nbsp;第1部 第3章 &#167;5&nbsp;</span> <a href="https://twitter.com/shiroyasu_NIT/status/750581586089877505"><i class="fa fa-twitter"></i></a></td>
+    </tr>
+    <tr>
+    <td class="ct"></td>
+    <td></td>
+    <td class="rt">11日<span class="gs">（月）</span></td>
+    <td><span class="g">出張のため休講</span></td>
+    </tr>
+    <tr>
+    <td class="ct"></td>
+    <td></td>
+    <td class="rt">18日<span class="gs">（月）</span></td>
+    <td><span class="g">補講日（海の日）</span></td>
+    </tr>
+    <tr>
+    <td class="ct"></td>
+    <td></td>
+    <td class="rt">25日<span class="gs">（月）</span></td>
+    <td><b>期末試験</b>（<a href="./de-e-edt.pdf">問題</a> | <a href="./de-e-edt-ans.pdf">解答</a> | <a href="./de-e.html#edt-r">得点分布）</td>
+    </tr>
+</tbody>
+</table>
+
+<h2>教科書・参考文献について</h2>
+<ul>
+<li>矢野健太郎・石原繁編 <span class="apl">『基礎 解析学』</span> 裳華房 &#187; <a href="http://www.shokabo.co.jp/mybooks/ISBN978-4-7853-1079-0.htm">リンク</a></li>
+</ul>
+
+<h2>評価について</h2>
+<ul>
+<li>期末試験<b>80%</b>，小テスト・演習課題など<b>20%</b>の割合で評価する．</li>
+<li>毎回の授業で問題演習を実施する．手順は以下；
+<ul>
+<li>教科書等の問題を指定し，指定の答案用紙に解答して提出してもらいます．<a href="../answersheet.pdf">指定の用紙</a>でしか受け付けません（<a href="../answersheet-remark.pdf">記入例</a>）．</li>
+<li>解答後は必ず答え合わせをして，<u>正しくない場合は途中式のどこが間違えているか探して訂正</u>してください（正答をただ書き写すことではありません）．</li>
+<li>授業時間内に終わらない場合は，次回の授業の前々日（ただし土日を除く）の17:00までに私に直接手渡すか，研究室のドアの封筒に提出してもらいます．<u>提出期限が過ぎた答案は一切受け取りません</u>．</li>
+<li>1回の提出につき<b>1点</b>を加点します（合計点数は最大10点）．
+ただし，不完全な答案（解答されていない問題がある，答え合わせをしていない，誤答が正されていない，等々の不備）は<u>加点しません</u>．</li>
+</ul>
+</li>
+<li>中間期に小テスト（ミニ中間試験）を実施する（<b>10</b>点）．</li>
+<li>期末試験を実施する（100点満点）．<br><br></li>
+<li>$\min\{10,$(課題提出回数)$\}+$(中間小テストの点数)$+$(期末試験の点数)$\times 0.8\geqq 60$ で合格とする．</li>
+</ul>
+
+<h2>その他</h2>
+<ul>
+	<li>平成28年度春学期のオフィスアワーは<u>月3・火昼休み・水2・木2</u>です．</li>
+<li>
+授業に対する<a href="../../appendix/msg.html">基本的な考え方</a>にも目を通しておいてください．
+</li>
+</ul>
+<ul>
+	<li>授業の欠席について
+<ul>
+<li>出席点というものがないので，<u>休んだことの届け出は基本的にしなくて結構です</u>．友人にノートを写させてもらうなどの対処を各自行ってください（課題の有無も確認してください）．</li>
+<li>休んだ回の課題を提出する意思があるならば，メール等で連絡の上，答案用紙を受け取りに来てください（または<a href="./answersheet.pdf">ここ</a>からダウンロードして印刷）．<u>レポート用紙やルーズリーフでの提出は原則不可</u>です．</li>
+<li>病欠等で数日休んでしまった場合は，課題の提出期限を猶予します．その際は，答案用紙を受け取る際に欠席届け等を見せてください．</li>
+</ul>
+</ul>
+
+<h2>試験の得点分布と評価など</h2>
+<ul>
+	<li><a name="mdt-r"></a>小テスト：<a href="./de-e-mdt.pdf">問題</a>と<a href="./de-e-mdt-ans.pdf">解答</a>（平均点：<b>4.9点</b>）<br><br>
+<img src="./de-e-mdt-result.png"><br><br>
+	</li>
+	<li><a name="edt-r"></a>期末試験：<a href="./de-e-edt.pdf">問題</a>と<a href="./de-e-edt-ans.pdf">解答</a>（平均点 <b>57.9点</b> /100点）<br><br>
+<table
+ style="width: 70%; text-align: left;"
+ border="0" cellpadding="1" cellspacing="0">
+ <tbody>
+ <tr>
+ <td><img src="de-e-edt-result.png"></td>
+ <td>
+<table
+ style="border-collapse: collapse;" border="1" cellpadding="3" cellspacing="1">
+  <tbody>
+    <tr><td class="ct">履修者</td><td class="rt">59</td></tr>
+    <tr><td class="ct">受験者</td><td class="rt">49</td></tr>
+    <tr><td class="ct">AA</td><td class="rt">0</td></tr>
+    <tr><td class="ct">A</td><td class="rt">6</td></tr>
+    <tr><td class="ct">B</td><td class="rt">11</td></tr>
+    <tr><td class="ct">C</td><td class="rt">14</td></tr>
+    <tr><td class="ct">D</td><td class="rt">18</td></tr>
+    <tr><td class="ct">未受験</td><td class="rt">10</td></tr>
+    <tr><td class="ct">単位修得者</td><td class="rt">31</td></tr>
+    <tr><td class="ct">単位修得率</td><td class="rt">63.3%</td></tr>
+  </tbody>
+</table>
+<br><br>
+ </td>
+ </tr>
+ </tbody>
+</table>
+</li>
+</ul>
+
+</div>
+
+<div id="footer">
+<p><span class="gs">Copyright &copy; Hiroyasu Satoh. All Rights Reserved.</span></p>
+<p id="cds">CSS Template <a href="http://www.css-designsample.com/">CSSデザインサンプル</a></p>
+</div>
+
+</div>
+</body>
+</html>

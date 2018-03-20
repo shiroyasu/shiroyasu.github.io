@@ -1,0 +1,250 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      7721,        241]
+NotebookOptionsPosition[      7253,        222]
+NotebookOutlinePosition[      7699,        239]
+CellTagsIndexPosition[      7656,        236]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+\:5b9f\:884c\:7d50\:679c\:3092\:4fdd\:5b58\:3057\:305f\:3053\:306e\:30ce\:30fc\
+\:30c8\:30d6\:30c3\:30af\:3092\:6388\:696d\:5f8c\:306b\:63d0\:51fa\:3057\:3066\
+\:3082\:3089\:3044\:307e\:3059\:ff08PWP\:ff09\:ff0e
+\:305d\:306e\:969b\:ff0c\:30d5\:30a1\:30a4\:30eb\:540d\:306e\:5f8c\:534a\:90e8\
+\:5206\:304c\:5b66\:7c4d\:756a\:53f7\:306b\:306a\:308b\:3088\:3046\:ff0cx \
+\:306e\:90e8\:5206\:3092\:5909\:66f4\:3057\:3066\:304f\:3060\:3055\:3044\:ff0e
+
+\:540d\:3000\:3000\:524d\:ff1a
+\:5b66\:7c4d\:756a\:53f7\:ff1a0xJKxxx\
+\>", "Text",
+ CellChangeTimes->{{3.463732194140025*^9, 3.463732273063616*^9}, {
+  3.463732449415152*^9, 3.463732619340905*^9}, {3.463732658059516*^9, 
+  3.4637326737865047`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\:8ab2\:984c\:ff08\:554f\:984c 5.2\:ff09", "Section",
+ CellChangeTimes->{{3.466074518428096*^9, 3.466074520592308*^9}, 
+   3.468638297209736*^9, {3.468643755264513*^9, 3.468643759873992*^9}, {
+   3.468644222045126*^9, 3.468644232647503*^9}, 3.4686458695429153`*^9, {
+   3.468645939859439*^9, 3.4686459405176487`*^9}}],
+
+Cell[TextData[{
+ "2",
+ StyleBox[" \:6b21\:66f2\:7dda",
+  FontWeight->"Bold"],
+ StyleBox[" ",
+  FontSlant->"Italic"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["x", "2"], "+", "6"}], TraditionalForm]]],
+ StyleBox["xy+",
+  FontSlant->"Italic"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["y", "2"], "-", "x", "-", "y"}], "=", "0"}], 
+   TraditionalForm]]],
+ " \:306b\:3064\:3044\:3066\:4ee5\:4e0b\:306e\:554f\:306b\:7b54\:3048\:306a\
+\:3055\:3044\:ff0e\n\n",
+ StyleBox["(1) 2\:6b21\:5f0f\:306e\:5de6\:8fba\:3092 ", "Item"],
+ StyleBox["f ", "Item",
+  FontSlant->"Italic"],
+ StyleBox["(", "Item"],
+ StyleBox["x", "Item",
+  FontSlant->"Italic"],
+ StyleBox[",", "Item"],
+ StyleBox["y", "Item",
+  FontSlant->"Italic"],
+ StyleBox[") \:3068\:3057", "Item"],
+ StyleBox["x", "Item",
+  FontSlant->"Italic"],
+ StyleBox[",", "Item"],
+ StyleBox["y \:3092", "Item",
+  FontSlant->"Italic"],
+ StyleBox["\:72ec\:7acb\:5909\:6570\:3068\:3059\:308b\:95a2\:6570\:3068\:3057\
+", "Item"],
+ StyleBox["\:5b9a\:7fa9\:3057\:306a\:3055\:3044\:ff0e\n", "Item",
+  FontSlant->"Italic"],
+ StyleBox["(2)  ", "Item"],
+ StyleBox["f ", "Item",
+  FontSlant->"Italic"],
+ StyleBox["(", "Item"],
+ StyleBox["x", "Item",
+  FontSlant->"Italic"],
+ StyleBox[",", "Item"],
+ StyleBox["y", "Item",
+  FontSlant->"Italic"],
+ StyleBox[")=0 \:3092", "Item"],
+ "-",
+ StyleBox["5 ", "Item"],
+ "\[LessEqual] ",
+ StyleBox["x ", "Item",
+  FontSlant->"Italic"],
+ "\[LessEqual] 5, -5 \[LessEqual] ",
+ StyleBox["y ",
+  FontSlant->"Italic"],
+ "\[LessEqual] 5 ",
+ StyleBox["\:306e\:7bc4\:56f2\:3067\:63cf\:753b\:3057\:306a\:3055\:3044\:ff0e\
+\n(3) ", "Item"],
+ StyleBox["x", "Item",
+  FontWeight->"Bold"],
+ StyleBox["=", "Item"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", GridBox[{
+      {"x"},
+      {"y"}
+     }], ")"}], TraditionalForm]]],
+ StyleBox[" \:3068\:3057\:ff0c ", "Item"],
+ StyleBox["f ", "Item",
+  FontSlant->"Italic"],
+ StyleBox["(", "Item"],
+ StyleBox["x", "Item",
+  FontSlant->"Italic"],
+ StyleBox[", ", "Item"],
+ StyleBox["y", "Item",
+  FontSlant->"Italic"],
+ StyleBox[") \:306e2\:6b21\:306e\:9805\:3092 ", "Item"],
+ StyleBox[Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["\[InvisiblePrefixScriptBase]", "t"], 
+    StyleBox["x",
+     FontWeight->"Bold",
+     FontSlant->"Italic"]}], TraditionalForm]], "Item"], "Item"],
+ StyleBox["A", "Item",
+  FontSlant->"Italic"],
+ StyleBox["x ", "Item",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox["\:3068\:884c\:5217\:8868\:793a\:3057\:305f\:3068\:304d\:306e\:4fc2\
+\:6570\:884c\:5217\:3092A\:3068\:304a\:304d\:306a\:3055\:3044\:ff0e\n", "Item",
+  FontSlant->"Italic"],
+ StyleBox["(4) ", "Item"],
+ StyleBox["A", "Item",
+  FontSlant->"Italic"],
+ StyleBox[" \
+\:306e\:56fa\:6709\:5024\:3092\:6c42\:3081\:306a\:3055\:3044\:ff0e\n(5) ", 
+  "Item"],
+ StyleBox["A", "Item",
+  FontSlant->"Italic"],
+ StyleBox[" \
+\:306e\:56fa\:6709\:30d9\:30af\:30c8\:30eb\:3092\:6c42\:3081\:306a\:3055\:3044\
+\:ff0e\n(6) (5)\:3067\:6c42\:3081\:305f\:56fa\:6709\:30d9\:30af\:30c8\:30eb\
+\:3092\:9577\:3055\:304c1\:306b\:306a\:308b\:3088\:3046\:306b\:9069\:5f53\
+\:306b\:5b9a\:6570\:500d\:3057\:ff0c\:305d\:308c\:305e\:308cv1\:ff0cv2\:3068\
+\:304a\:304d\:306a\:3055\:3044\:ff0e\n(7) v1\:ff0cv2 \:3092\:5217\:30d9\:30af\
+\:30c8\:30eb\:3068\:3057\:ff0c\:3053\:306e2\:3064\:306e\:30d9\:30af\:30c8\
+\:30eb\:3092\:4e26\:3079\:3066\:884c\:5217\:3092\:3064\:304f\:308a\:ff0c\:305d\
+\:308c\:3092", "Item"],
+ StyleBox["P", "Item",
+  FontSlant->"Italic"],
+ StyleBox["\:3068\:304a\:304d\:306a\:3055\:3044\:ff0e\n(8) ", "Item"],
+ StyleBox["P", "Item",
+  FontSlant->"Italic"],
+ StyleBox[" \
+\:304c\:76f4\:4ea4\:884c\:5217\:3067\:3042\:308b\:3053\:3068\:3092\:78ba\:304b\
+\:3081\:306a\:3055\:3044\:ff0e\n(9) ", "Item"],
+ StyleBox[Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["\[InvisiblePrefixScriptBase]", "t"], "P"}], 
+   TraditionalForm]], "Item"], "Item"],
+ StyleBox["AP", "Item",
+  FontSlant->"Italic"],
+ StyleBox[" \
+\:304c\:5bfe\:89d2\:884c\:5217\:306b\:306a\:308b\:3053\:3068\:3092\:78ba\:304b\
+\:3081\:306a\:3055\:3044\:ff0e\n(10) ", "Item"],
+ StyleBox["X", "Item",
+  FontWeight->"Bold"],
+ StyleBox["=", "Item"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", GridBox[{
+      {"X"},
+      {"Y"}
+     }], ")"}], TraditionalForm]]],
+ StyleBox["\:3068\:3057\:ff0c", "Item"],
+ StyleBox["x", "Item",
+  FontWeight->"Bold"],
+ StyleBox["=", "Item"],
+ StyleBox["P", "Item",
+  FontSlant->"Italic"],
+ StyleBox["X", "Item",
+  FontWeight->"Bold"],
+ StyleBox["\:3068\:5ea7\:6a19\:5909\:63db\:3059\:308b\:3068\:304d", "Item"],
+ StyleBox["\:ff0c", "Item",
+  FontWeight->"Bold"],
+ StyleBox[" ", "Item"],
+ StyleBox["f ", "Item",
+  FontSlant->"Italic"],
+ StyleBox["(", "Item"],
+ StyleBox["x", "Item",
+  FontSlant->"Italic"],
+ StyleBox[",", "Item"],
+ StyleBox["y", "Item",
+  FontSlant->"Italic"],
+ StyleBox[")=0 ", "Item"],
+ StyleBox["\:3092", "Item",
+  FontWeight->"Bold"],
+ StyleBox["X", "Item",
+  FontSlant->"Italic"],
+ StyleBox[", ", "Item"],
+ StyleBox["Y \:306e\:65b9\:7a0b\:5f0f\:3067\:8868\:3057\:306a\:3055\:3044\
+\:ff0e", "Item",
+  FontSlant->"Italic"]
+}], "Text",
+ CellChangeTimes->{
+  3.46863862665245*^9, {3.468638663688282*^9, 3.4686389038553257`*^9}, {
+   3.4686389393600616`*^9, 3.468639323698893*^9}, {3.468639363234232*^9, 
+   3.468639383091558*^9}, {3.468639918641438*^9, 3.468640073974923*^9}, {
+   3.468640189106189*^9, 3.46864074491533*^9}, {3.468640920983144*^9, 
+   3.4686409214880533`*^9}, 3.468641353965768*^9, {3.468643998320034*^9, 
+   3.468644002055151*^9}, {3.4686451709749413`*^9, 3.4686451906960173`*^9}, {
+   3.468645781007213*^9, 3.468645784929782*^9}},
+ Background->RGBColor[1, 1, 0.85]]
+}, Open  ]]
+},
+WindowSize->{871, 507},
+WindowMargins->{{83, Automatic}, {Automatic, 0}},
+Magnification:>FEPrivate`If[
+  FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 1.5, 1.5 Inherited],
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (2009\:5e744\:670823\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 706, 13, 136, "Text"],
+Cell[CellGroupData[{
+Cell[1276, 37, 323, 4, 103, "Section"],
+Cell[1602, 43, 5635, 176, 448, "Text"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

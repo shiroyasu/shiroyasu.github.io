@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-2022-JP"> 
+<title>Maxima について</title>
+<link rel=stylesheet type="text/css" href="../hstyle.css">
+</head>
+<body link="#000099" alink="#000099" vlink="#990099">
+
+  <table style="vertical-align: top;
+		text-align: left; 
+		width: 100%;"
+	 border="0"
+	 cellpadding="0"
+	 cellspacing="0">
+<tbody>
+
+<tr align="left">
+<td>  
+
+<span class="ttl-j">Maxima (+gnuplot) を使ってみよう</span><br>
+<span class="sbttl-e">Exploring Mathematics with <i>Maxima</i> and <i>gnuplot</i></span><br>
+<br>
+ここでは，数式処理システムMaxima（とグラフ作成ソフトgnuplot）について簡単に説明します．<br><br>
+
+<a href="maxima.html#about">Maxima について</a> / 
+<a href="maxima.html#taylor">例：テイラー展開</a> / 
+<a href="maxima.html#zenbibun">例：2変数関数のグラフ</a>
+<hr></td>
+</tr>
+
+<tr align="left">
+<td>  
+
+<span class="sbttl-e"><a name="about">Maxima とは</a></span><br><br>
+<a href="http://ja.wikipedia.org/wiki/Maxima">Maxima</a> とは，<a href="http://ja.wikipedia.org/wiki/%E6%95%B0%E5%BC%8F%E5%87%A6%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0">数式処理ソフト</a>の一種です．つまり，数値の計算だけでなく，数式自体を扱う計算やグラフの描画など数学に関わる様々なことをコンピュータを用いて計算・処理することができます．このソフトはいわゆるフリーソフトなので，誰でも無料で使用することができます（<a href="http://maxima.sourceforge.net/">公式サイト</a>）．
+<br>
+<a href="http://ja.wikipedia.org/wiki/Gnuplot">gnuplot</a> とは，フリーのグラフ作成ソフトです．Maxima にはグラフ作成に関するコマンド（plot2d, plot3d など）が用意されてますが，実際にグラフを描画しているのはこの gnuplot です（<a href="http://www.gnuplot.info/">公式サイト</a>）．
+<br><br>
+
+<span class="sbttl-e">Maxima のインストールと起動</span><br><br>
+Maximaにはいくつかの種類があります．核の部分（計算するエンジン部分？）は同じですが，外観（インターフェイス）が異なります．ここでは私が一番使いやすくて導入しやすいと感じている「wxMaxima」のインストール方法を紹介します（<font color="red">注意</font> : Windows版のインストール方法の記述に間違いがありましたので訂正しました）．
+<br><br>
+　<u>Windows の場合</u><br>
+<ol>
+ <li><s><a href="http://sourceforge.net/project/showfiles.php?group_id=126731">ここ</a>のDownloadページから wxMaxima の最新版(2008.6.4現在，wxMaxima-0.7.5.exe)をダウンロードする．</s><br>
+<a href="http://sourceforge.net/project/showfiles.php?group_id=4933">ここ</a>のDownloadページから Maxima の最新版(2008.6.5現在，maxima-5.15.0.exe)をダウンロードする．
+ <li>ダウンロードした実行ファイルを実行し，ウィザードにしたがってインストールする．
+ <li>起動するには，「スタート」→「プログラム」→「maxima-(バージョン番号)」を開いて，wxMaximaをクリック．
+</ol>
+　<u>Mac OS X (Intel CPU) の場合</u><br>
+<ol>
+ <li>X11をインストールする（OSのインストールディスクに収録されてます）．
+ <li><a href="http://www.muskmelon.jp/macosx/index.html">ここ</a>から使用しているOS (Tiger, Leopard) 用のwxMaximaとgnuplotのバイナリパッケージを適当な場所にダウンロードする．
+ <li>ダウンロードしたファイルをダブルクリックして解凍する．
+ <li>解凍してできたファイル（wxMaxima.app と gnuplot.app）をアプリケーションフォルダに移動．
+ <li>実行するには，X11をあらかじめ実行して上で，wxMaxima.appをダブルクリックして起動（LeopardのX11は，必要なときに自動的に起動するようになっています）．
+</ol>
+　<u>Mac OS X (PPC) の場合</u> : <a href="http://www.finkproject.org/">Fink</a>を用いてインストールすることができます．
+<br><br>
+　<u>Linux の場合</u>
+<ul>
+ <li>Maximaは元々Unix用のソフトなので，Linuxでももちろん利用可能です．
+ <li>ディストリビューションによってはパッケージが用意されているものもあります．
+</ul>
+<br>
+
+<span class="sbttl-e">参考文献・サイト</span><br><br>
+Maximaを使用する上で参考になる情報をいくつか挙げます．この他にもweb上には有益な情報がたくさんあります．googleなどで検索してみてください．
+<br>
+<ul>
+ <li>MacWiki - Maxima, <a href="http://macwiki.sourceforge.jp/wiki/index.php/Maxima">http://macwiki.sourceforge.jp/wiki/index.php/Maxima</a>
+ <li>竹内薫, <a href="http://www.amazon.co.jp/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E6%95%B0%E5%BC%8F%E5%87%A6%E7%90%86%E3%82%BD%E3%83%95%E3%83%88-CD-ROM%E4%BB%98-%E3%83%96%E3%83%AB-%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9-%E7%AB%B9%E5%86%85-%E8%96%AB/dp/4062575604">はじめての数式処理ソフト(CD-ROM付)</a>, ブルーバックス, 講談社.
+ <li>中川義行, <a href="http://www.eonet.ne.jp/~kyo-ju/maxima.pdf">Maxima 入門ノート 1.2.0</a>．
+ <li><a href="http://www.bekkoame.ne.jp/~ponpoko/">横田博史</a>, <a href="http://www.bekkoame.ne.jp/~ponpoko/Math/maxima/ManualBook/ManualBook.html">Maxima 簡易マニュアル</a>．
+ <li>横田博史, <a href="http://www.bekkoame.ne.jp/~ponpoko/Math/library.html">Maxima でお絵描き</a>．
+ <li>横田博史, <a href="http://www.amazon.co.jp/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AEMaxima-I%E3%83%BBO-BOOKS-%E6%A8%AA%E7%94%B0-%E5%8D%9A%E5%8F%B2/dp/4777512010">はじめてのMaxima</a>, 工学社.
+</ul>
+<ul>
+ <li>GNUPLOTの第一歩，<a href="http://lagendra.s.kanazawa-u.ac.jp/ogurisu/manuals/gnuplot-intro/">http://lagendra.s.kanazawa-u.ac.jp/ogurisu/manuals/gnuplot-intro/</a>
+ <li>gnuplot tips (not so Frequently Asked Questions), <a href="http://t16web.lanl.gov/Kawano/gnuplot/">http://t16web.lanl.gov/Kawano/gnuplot/</a>
+</ul>
+<hr>
+</td>
+</tr>
+<tr><td>
+<br>
+<span class="ttl-e"><a name=taylor>例</a>1:
+</span><span class="ttl-j">テイラー展開</span>
+<br><br>
+2008年6月4日の微積分I演習の授業で，<i>sin x</i> と <i>log(x+1)</i> のテイラー級数がどのように収束していくのか実験してみました．<br>
+（キーワード：テイラー展開，テイラー級数，収束半径）<br><br>
+<div align=center><a href="./c12/slide1-taylor.pdf"><img src="./maxima_ex1/slide1-taylor.png"></a></div>
+<br>
+<span class="sbttl-e">使用したコマンド</span>
+<ul>
+ <li> plot2d : 一変数関数の平面グラフを描く．<br>
+<span class="ne">例：</span> <i>y=sin x</i> のグラフを <i>x</i> を 0 から 2πの範囲で描く．<br><br>
+<span class="prompt">(%i1)</span> <span class="input">plot2d(sin(x),[x,0,2*%pi])</span><br>
+<div style="text-lign: center;"><img src="./maxima_ex1/fig1_sin.png"></div>
+ <li> taylor : テイラー級数の計算<br>
+<span class="ne">例：</span> 関数 <i>f(x)=log(x+1)</i> を <i>x=0</i> でテイラー展開し，5次の項まで出力する．<br><br>
+<span class="prompt">(%i2)</span> <span class="input">taylor(log(x+1), x, 0, 5)</span><br>
+<img src="./maxima_ex1/fig2_taylog.png">
+</ul>
+<br>
+<span class="sbttl-e">課題</span>
+　<i>f(x)=log(x+1)</i> を <i>x=0</i> 以外の点に関してテイラー展開したとき，その収束半径はどうなるか？<br><br>
+</td></tr>
+<tr>
+<td>
+<hr>
+<br>
+<span class="ttl-e"><a name=zenbibun>例</a>2:
+</span><span class="ttl-j">2変数関数のグラフ</span>
+<br><br>
+2008年9月10日の微積分II演習の授業で，2変数関数の微分（偏微分と全微分）について解説しました．全微分不可能な関数の例として，<a href="./c12/exC2-06-0910.pdf">課題</a>で出てくる2変数関数のグラフを描いてみました．<br><br>
+<div align=center><a href="./c12/slide2-totD.pdf"><img src="./maxima_ex2/slide2-1.png"></a><a href="./c12/slide2-totD.pdf"><img src="./maxima_ex2/slide2-2.png"></a></div>
+<br>
+<span class="sbttl-e">使用したコマンド</span>
+<ul>
+ <li> plot3d : 2変数関数のグラフを描画する．<br><br>
+<span class="prompt">(%i1)</span> <span class="input">f(x,y):=x*abs(y)/sqrt(x^2+y^2)</span><br>
+<img src="./maxima_ex2/fig1.png"><br><br>
+<span class="prompt">(%i2)</span> <span class="input">plot3d(f(x,y),[x,-1,1],[y,-1,1])</span><br>
+<a href="./maxima_ex2/fig2.png"><img src="./maxima_ex2/fig2.png" width=500 height=350></a><br>
+<span class="prompt">(%i3)</span> <span class="input">plot3d(f(x,y),[x,-1,1],[y,-1,1], [gnuplot_pm3d,true])</span><br>
+<a href="./maxima_ex2/fig3.png"><img src="./maxima_ex2/fig3.png" width=500 height=350></a>
+<hr>
+<div style="text-lign: right;"><a href="./c12-ex.html">戻る</a>
+<span class="e">Back</span></div></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

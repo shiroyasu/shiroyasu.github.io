@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<link rel=stylesheet type="text/css" href="../../hstyle-d.css">
+<link rel="shortcut icon" href="../../img/favicon.png" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="../img/favicon.png" type="image/vnd.microsoft.icon" />
+<title>確率統計（担当：佐藤）</title>
+</head>
+<body>
+<script src="../../MathJax/MathJax.js">
+MathJax.Hub.Config({
+	jax: ["input/TeX","output/HTML-CSS"],
+	extensions: ["tex2jax.js"],
+	tex2jax: {
+		inlineMath: [['$','$'],['\\(','\\)']],
+		processEscapes: 0
+		}
+	});
+</script>
+<span class="sg"><a href="../../../../index.html">home</a> &#155;&#155; <a href="../../../index.html">Teaching</a> &#155;&#155; <a href="../../../dendai.html">Previous Teaching at TDU</a> &#155;&#155;</span><br><br>
+<span class="ttl">確率統計</span> <span class="ttl-g">Probability and Statistics</span><br>
+<span class="sg">
+2013年度 後期 月水金 1時限 (9:30-10:20) 教育棟306教室
+</span>
+<br><br>
+担　当：佐藤 弘康 (hiroyasu [at] mail.dendai.ac.jp)<br>
+研究室：研究棟 501教員室 (0476-46-8652)
+<br><br>
+<hr>
+<br>
+<span class="c">連絡事項</span>
+<table width="800" border="0" class="box" cellpadding="3">
+<tr>
+<td>
+<ul>
+<li>1/10：補講で出した課題の<a href="ps-0110-problem-ans2.pdf">解答</a>を公開します（この授業は終了しました）．</li>
+<li>ツイッター（<a href="https://twitter.com/#!/shiroyasu_SIE">@shiroyasu_SIE</a>，ハッシュタグは <a href="http://twilog.org/shiroyasu_SIE/hashtags-%E7%A2%BA%E7%8E%87%E7%B5%B1%E8%A8%88">#確率統計</a>）で授業のことをツイートしていきます．質問，意見などのリプライを歓迎します．</li>
+<li>（過去の連絡事項は<a href="index.html#old">ここ</a>）</li>
+</ul>
+</td>
+<td>　</td>
+</tr>
+</table>
+<br>
+<br>
+<span class="c">これまでの授業と今後の予定</span> 
+<span class="sg">配布物のダウンロード</span><br>
+<br>
+<a name="sche"></a>
+<table
+ style="width: 88%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="1" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="width: 35px; text-align: right; vertical-align: top;">9月</td>
+      <td style="width: 75px; text-align: right; vertical-align: top;">9日<span class="sg">（月）</span></td>
+      <td>ガイダンス（<a href="ps-0909-guidance.pdf">スライド</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">13日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;1 度数分布</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">18日<span class="sg">（水）</span></td>
+      <td class="lt"><span class="sg">休講</span></td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">20日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;2 代表値・散布図（平均・メディアン）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">25日<span class="sg">（水）</span></td>
+      <td class="lt"><b>第1回小テスト</b>（<a href="ps-0925-minitest01.pdf">問題</a> | <a href="ps-0925-minitest01-ans.pdf">解答</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">27日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;2 代表値・散布図（メディアン・モード）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">30日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;2 代表値・散布図（分散・標準偏差，チェビシェフの定理）</td>
+    </tr>
+    <tr>
+      <td class="rt">10月</td>
+      <td class="rt">2日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;2 代表値・散布図（変動係数・四分偏差）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">4日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;2 代表値・散布図（四分偏差の計算，例題の解説）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">7日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;2 代表値・散布図（例題の解説の続き）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">9日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;3 平均・分散の基本性質と簡易計算法</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">16日<span class="sg">（水）</span></td>
+      <td class="lt"><span class="sg">台風２６号の接近に伴い休講</span></td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">18日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;4 相関関係・相関係数</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">21日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;4 相関係数の計算<br>
+      <b>第2回<s>小テスト</s>レポート課題</b>（<a href="ps-1021-minitest02.pdf">問題</a> | <a href="ps-1021-minitest02-ans.pdf">解答</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">23日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;4 相関係数の計算（前回の例題についてのコメント．散布図と回帰直線の<a href="ps-1023-example-S4.nb"><i>Mathematica</i>ノートブック</a>），相関表</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">25日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;4 相関表（例題 4.1 の解説）<br>
+      &#167;5 確率の復習（標本空間と事象）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">28日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;5 確率の復習（確率），離散的確率変数と確率分布</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">30日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;5 連続的確率変数と確率密度関数，確率変数の期待値</td>
+    </tr>
+    <tr>
+      <td class="rt">11月</td>
+      <td class="rt">1日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;5 確率変数の分散</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">6日<span class="sg">（水）</span></td>
+      <td class="lt">これまでのまとめ</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">8日<span class="sg">（金）</span></td>
+      <td class="lt"><b>中間試験</b>（<a href="ps-1108-midtest.pdf">問題</a> | <a href="ps-1108-midtest-ans.pdf">解答</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">11日<span class="sg">（月）</span></td>
+      <td class="lt">中間試験の答案返却・解説（<a href="ps-1111-report.pdf">レポート課題</a> | <a href="ps-1111-report.xlsx">Excelファイル</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">13日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;6 同時確率分布</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">15日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;6 確率変数の独立性</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">18日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;6 同時確率変数の期待値と分散</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">20日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;6 確率変数の分散：再考，確率変数の平均</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">22日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;6 チェビシェフの定理と大数の法則<br>
+      <b>第3回小テスト</b>（<a href="ps-1122-minitest03.pdf">問題</a> | <a href="ps-1122-minitest03-ans.pdf">解答</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">25日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;7 二項分布と正規分布</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">27日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;7 標準正規分布，ラプラスの定理，正規分布表</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">29日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;7 標準正規分布表の使い方</td>
+    </tr>
+    <tr>
+      <td class="rt">12月</td>
+      <td class="rt">2日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;8 $\chi^2$分布と$t$分布</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">4日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;8 $t$分布の性質と不偏分散
+      <br>&#167;9 母集団と標本</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">6日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;9 標本平均の分布，中心極限定理<br>
+      <b>第4回小テスト</b>（<a href="ps-1206-minitest04.pdf">問題</a> | <a href="ps-1206-minitest04-ans.pdf">解答</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">9日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;10 区間推定とは，母平均の推定（母分散既知の場合）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">11日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;10 パーセント点</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">13日<span class="sg">（金）</span></td>
+      <td class="lt">&#167;10 母平均の推定（母分散未知の場合）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">16日<span class="sg">（月）</span></td>
+      <td class="lt">&#167;10 母分散の推定<span class="sg">（「母比率の推定」は割愛）</span></td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">18日<span class="sg">（水）</span></td>
+      <td class="lt">&#167;10 推定区間の幅と標本数</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">20日<span class="sg">（金）</span></td>
+      <td class="lt"><b>期末試験</b>（<a href="ps-1220-final.pdf">問題</a> | <a href="ps-1220-final-ans.pdf">解答</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt">1月</td>
+      <td class="rt">8日<span class="sg">（水）</span></td>
+      <td class="lt"><span class="sg">（補講）</span>&#167;11 仮説検定とは</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">9日<span class="sg">（木）</span></td>
+      <td class="lt"><span class="sg">（補講）</span>&#167;11 いろいろな検定（<a href="ps-0108-problem.pdf">問題</a> | <a href="ps-0109-problem-ans.pdf">解説</a> | 追加問題の<a href="ps-0110-problem-ans2.pdf">解答</a>）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">10日<span class="sg">（金）</span></td>
+      <td class="lt">期末試験の答案返却・解説<br><br></td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">28日<span class="sg">（火）</span></td>
+      <td class="lt"><span class="sg">（エクステンションプログラム）</span>「Rによる確率統計の補講」（鈴木秀一先生担当）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">29日<span class="sg">（水）</span></td>
+      <td class="lt"><span class="sg">（エクステンションプログラム）</span>「Rによる確率統計の補講」（鈴木秀一先生担当）</td>
+    </tr>
+    <tr>
+      <td class="rt"></td>
+      <td class="rt">30日<span class="sg">（木）</span></td>
+      <td class="lt"><span class="sg">（エクステンションプログラム）</span>「Rによる確率統計の補講」（鈴木秀一先生担当）</td>
+    </tr>
+     </tbody>
+</table>
+<hr>
+<a name="lect"></a><span class="c">授業の内容と到達目標</span>
+<ul>
+<li>身のまわりの自然や社会のなかにみられるような偶然現象を，数学的に捉え・考えるために必要な事象や確率分布，確率変数など確率論の基本的事項について学ぶ．また，調査・実験などから目的に応じて集められたデータについてそれらを整理し傾向などを分析する統計学の基礎概念について学ぶ．具体的な例を挙げ、高校の内容も振り返りながら講義をおこなう．</li>
+<li>確率論や統計学の基本事項を身に付け，具体例を扱えるようになることを目標とします．</li>
+</ul>
+<br>
+<span class="c">授業の進め方，注意事項</span>
+<ul>
+<li>授業中の心構えについては<a href="../../msg.html">これ</a>を読んでください．</li>
+<li>理解できないところはそのままにせず，必ず私に質問してください（友人に尋ねたり，学習サポートセンターを活用するのもいいでしょう）．</li>
+<li>月曜日と金曜日の15:30〜17:00 をオフィスアワーとします．それ以外に時間でも質問は歓迎します（この場合は事前に電話かメールでアポを取ることが望ましい）．</li>
+<li><small><font color=red>（9月13日追記）</font></small>授業中に教科書の誤植，私の板書の間違い（数学に関するもの．字の間違いなどは除く）を指摘してくれた学生には1点加点します．</li>
+</ul>
+<br>
+<a name="miniexam"></a><span class="c">小テスト・レポートについて</span>
+<ul>
+<li>単元の終わり(または区切りのいいところ)で小テストを実施するか，またはレポート課題を出します．</li>
+<li>字があまりに粗暴だったり，ただ解を書いただけの答案やレポートは加点しません（読むことを拒否します）．計算の過程や考え方等をできるだけ詳しく記してください．</li>
+</ul>
+</li>
+</ul>
+<br>
+<a name="bib"></a><span class="c">教科書・参考文献について</span>
+<ul>
+<li>教科書
+<ul>
+<li>「<b><a href="http://www.shokabo.co.jp/mybooks/ISBN978-4-7853-1099-8.htm">新統計入門</a></b>」小寺 平治 著（裳華房）<span class="sg"><a href="http://www.amazon.co.jp/%E6%96%B0%E7%B5%B1%E8%A8%88%E5%85%A5%E9%96%80-%E5%B0%8F%E5%AF%BA-%E5%B9%B3%E6%B2%BB/dp/4785310995/ref=sr_1_1?ie=UTF8&qid=1378531115&sr=8-1&keywords=%E6%96%B0%E7%B5%B1%E8%A8%88%E5%85%A5%E9%96%80">amazon</a></span></li>
+</ul>
+</li>
+<li>参考図書<br>
+<ul>
+<li>「<b>統計学演習</b>」村上 正康 ・安田 正実 著（裳華房）<span class="sg"><a href="http://www.amazon.co.jp/%E7%B5%B1%E8%A8%88%E5%AD%A6%E6%BC%94%E7%BF%92-%E6%9D%91%E4%B8%8A-%E6%AD%A3%E5%BA%B7/dp/4563008702/ref=sr_1_1?s=books&ie=UTF8&qid=1378532299&sr=1-1&keywords=%E7%B5%B1%E8%A8%88%E5%AD%A6%E6%BC%94%E7%BF%92">amazon</a></span>（昨年度まで教科書として指定していた．演習書．残部わずか…）</li>
+</ul>
+</li>
+<li>WEB サイト<br>
+<ul>
+<li>
+<a href="http://nenji-toukei.com/">年次統計</a> | <a href="http://www.stat.go.jp/edu/">統計学習サイト</a>（総務省統計局） | <a href="http://www.npa.go.jp/toukei/index.htm">統計</a>（警視庁） | <a href="http://www.rieti.go.jp/jp/database/index.html">データ・統計</a>（経済産業研究所）</li>
+<li>
+<a href="http://cran.r-project.org/">R</a> | <a href="http://www.rstudio.com/">RStudio</a> | Rの<a href="http://cran.r-project.org/doc/contrib/manuals-jp/">各種マニュアル</a> | <a href="http://oku.edu.mie-u.ac.jp/~okumura/stat/first.html">Rの初歩</a> | <a href="http://www.okada.jp.org/RWiki/">RjpWiki</a> | <a href="http://cse.naro.affrc.go.jp/takezawa/r-tips/r.html">R-Tips</a> | <a href="http://homepage2.nifty.com/nandemoarchive/sas_r_excel/mokuji_r.htm">Rによるデータ解析</a> | <a href="http://www.statmethods.net/">Quick-R</a>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<a name="score"></a><span class="c">成績について</span>
+<ul>
+<li>中間試験 40点，期末試験 40点，その他（小テスト，レポート等）を20点とし，100点満点中60点以上で合格とします．</li>
+</ul>
+<hr>
+<a name="old"></a><span class="c">過去の連絡事項</span>
+<ul>
+<li>1/10：期末試験の答案を返却しました．</li>
+<li>1/9：「検定に関する<a href="ps-0108-problem.pdf">問題</a>」で解説できなかった問題の<a href="ps-0109-problem-ans.pdf">解答</a>を公開します．</li>
+<li>12/20：<a href="ps-1220-final.pdf">期末試験</a>を実施しました（解答は<a href="ps-1220-final-ans.pdf">こちら</a>）．1月の授業については今後の予定を参照してください．答案を受け取らない場合は期末試験の点数を0点にします．</li>
+<li>12/6：本日実施した<a href="ps-1206-minitest04.pdf">小テスト</a>の<a href="ps-1206-minitest04-ans.pdf">解答</a>を公開しました．</li>
+<li>11/23：11月22日に実施した小テストの<a href="ps-1122-minitest03-ans.pdf">解答</a>を公開しました．</li>
+<li>11/22：中間試験の答案返却日に出したレポートの解（というかデータ解析した）の<a href="ps-1111-report.xlsx">Excelファイル</a>を公開しました．この課題に関するコメントは<a href="https://twitter.com/shiroyasu_SIE/status/404078781280694273">１</a><a href="https://twitter.com/shiroyasu_SIE/status/404079988963414016">２</a><a href="https://twitter.com/shiroyasu_SIE/status/404080758135861248">３</a><a href="https://twitter.com/shiroyasu_SIE/status/404081651832995840">４</a>．</li>
+
+<li>11/22：小テストの提出は教育棟事務のレポートボックス（〜16:40）か，または私の部屋へ直接持参してください．</li>
+<li>11/11：中間試験の答案を返却しました．<a href="ps-1111-report.pdf">レポート課題</a>を提出する予定の者は2つのデータを<u>今日中に</u>ダウンロードしてください<!--（<a href="ps-1111-report-A.csv">ps-1111-report-A.csv</a>, <a href="ps-1111-report-B.csv">ps-1111-report-B.csv</a>）．期日を過ぎると削除しますので注意してください（個別の対応はしません）-->．</li>
+<li>11/8：<a href="ps-1108-midtest.pdf">中間試験</a>を実施しました（<a href="ps-1108-midtest-ans.pdf">解答</a>）．</li>
+<li>11/1：中間試験では<u>指定の教科書を持ち込み参照可</u>とします（この件に関するツイート<a href="https://twitter.com/shiroyasu_sie/status/392901246459199488">１</a><a href="https://twitter.com/shiroyasu_sie/status/392901255913164800">２</a><a href="https://twitter.com/shiroyasu_sie/status/392901262129102848">３</a><a href="https://twitter.com/shiroyasu_sie/status/392902206640250880">４</a>）．</li>
+<li>11/1：10月21日に出した<a href="ps-1021-minitest02.pdf">レポート課題</a>を返却しました（これに関するコメント<a href="https://twitter.com/shiroyasu_sie/status/395974103753973762">１</a><a href="https://twitter.com/shiroyasu_sie/status/395975566739779585">２</a><a href="https://twitter.com/shiroyasu_sie/status/395976813760876544">３</a><a href="https://twitter.com/shiroyasu_sie/status/395977210021965824">４</a><a href="https://twitter.com/shiroyasu_sie/status/395978076422545408">５</a>）．</li>
+<li>10/28：10月21日に出した<a href="ps-1021-minitest02.pdf">レポート課題</a>の<a href="ps-1021-minitest02-ans.pdf">解答</a>です．</li>
+<li>10/23：11月8日に<b>中間試験</b>を実施します（掲示は後ほど）．</li>
+<li>10/21：<a href="ps-1021-minitest02.pdf">レポート課題</a>を出しました．注意事項をよく読んでからレポート作成してください．</li>
+<li>9/27：第1回小テストの<a href="ps-0925-minitest01-ans.pdf">解答</a>に部分点について追記しました．</li>
+<li>9/20：次回（9月25日水曜日）は小テストを実施します．「度数分布表」「平均」「メディアン」について出題します．</li>
+<li>9/13：「授業の進め方，注意事項」に新ルールを追加しました．</li>
+<li>9/9：教科書は明日か明後日，生協に入荷する予定です（木曜日には入手できるでしょう）．金曜日の授業までに購入してください．</li>
+<li>9/7：このページを公開しました．</li>
+</ul>
+<hr>
+<span class="sg"><a href="./index.html">top</a></span>
+</body>
+</html>

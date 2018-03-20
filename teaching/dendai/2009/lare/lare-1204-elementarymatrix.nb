@@ -1,0 +1,269 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      7036,        260]
+NotebookOptionsPosition[      6401,        235]
+NotebookOutlinePosition[      6751,        250]
+CellTagsIndexPosition[      6708,        247]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Elementary matrix", "Section",
+ CellChangeTimes->{{3.467796357086081*^9, 3.467796361832333*^9}, 
+   3.467796394318186*^9}],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["P", 
+    StyleBox[
+     RowBox[{"i", "j"}]]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " \:306f ",
+ StyleBox["i ",
+  FontSlant->"Italic"],
+ "\:884c\:76ee\:3068 ",
+ StyleBox["j ",
+  FontSlant->"Italic"],
+ "\:884c\:76ee\:3092\:5165\:308c\:66ff\:3048\:308b\:884c\:57fa\:672c\:5909\
+\:5f62\:306b\:5bfe\:5fdc\:3059\:308b\:ff0e"
+}], "Item",
+ CellChangeTimes->{{3.467796460627494*^9, 3.467796496587309*^9}, {
+   3.467796545702593*^9, 3.4677965756854973`*^9}, 3.467796746607655*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"P12", "=", 
+   RowBox[{"(", GridBox[{
+      {"0", "1", "0"},
+      {"1", "0", "0"},
+      {"0", "0", "1"}
+     }], ")"}]}], ";", 
+  RowBox[{"P23", "=", 
+   RowBox[{"(", GridBox[{
+      {"1", "0", "0"},
+      {"0", "0", "1"},
+      {"0", "1", "0"}
+     }], ")"}]}], ";", 
+  RowBox[{"P31", "=", 
+   RowBox[{"(", GridBox[{
+      {"0", "0", "1"},
+      {"0", "1", "0"},
+      {"1", "0", "0"}
+     }], ")"}]}], ";", 
+  RowBox[{"P21", "=", 
+   RowBox[{"(", GridBox[{
+      {"0", "1", "0"},
+      {"1", "0", "0"},
+      {"0", "0", "1"}
+     }], ")"}]}], ";", 
+  RowBox[{"P32", "=", 
+   RowBox[{"(", GridBox[{
+      {"1", "0", "0"},
+      {"0", "0", "1"},
+      {"0", "1", "0"}
+     }], ")"}]}], ";", 
+  RowBox[{"P13", "=", 
+   RowBox[{"(", GridBox[{
+      {"0", "0", "1"},
+      {"0", "1", "0"},
+      {"1", "0", "0"}
+     }], ")"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.4677935847547607`*^9, 3.4677936591346807`*^9}, {
+  3.467793914540852*^9, 3.467793983001495*^9}, {3.468730702904068*^9, 
+  3.468730735868738*^9}}],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["E", "i"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "(",
+ StyleBox["c",
+  FontSlant->"Italic"],
+ ") \:306f ",
+ StyleBox["i ",
+  FontSlant->"Italic"],
+ "\:884c\:76ee\:3092 ",
+ StyleBox["c ",
+  FontSlant->"Italic"],
+ "\:500d\:3059\:308b\:884c",
+ "\:57fa\:672c\:5909\:5f62\:306b\:5bfe\:5fdc\:3059\:308b\:ff0e"
+}], "Item",
+ CellChangeTimes->{{3.467796460627494*^9, 3.467796496587309*^9}, {
+  3.467796545702593*^9, 3.4677966354100943`*^9}, {3.4677967308253527`*^9, 
+  3.4677967366367903`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"E1", "[", "c_", "]"}], ":=", 
+   RowBox[{"(", GridBox[{
+      {"c", "0", "0"},
+      {"0", "1", "0"},
+      {"0", "0", "1"}
+     }], ")"}]}], ";", 
+  RowBox[{
+   RowBox[{"E2", "[", "c_", "]"}], ":=", 
+   RowBox[{"(", GridBox[{
+      {"1", "0", "0"},
+      {"0", "c", "0"},
+      {"0", "0", "1"}
+     }], ")"}]}], ";", 
+  RowBox[{
+   RowBox[{"E3", "[", "c_", "]"}], ":=", 
+   RowBox[{"(", GridBox[{
+      {"1", "0", "0"},
+      {"0", "1", "0"},
+      {"0", "0", "c"}
+     }], ")"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.467793673054172*^9, 3.467793731953005*^9}, {
+  3.468730743250499*^9, 3.468730745532153*^9}}],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["E", 
+    StyleBox[
+     RowBox[{"i", "j"}]]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "(",
+ StyleBox["c",
+  FontSlant->"Italic"],
+ ") \:306f ",
+ StyleBox["j ",
+  FontSlant->"Italic"],
+ "\:884c\:76ee\:3092",
+ StyleBox["c",
+  FontSlant->"Italic"],
+ " \:500d\:3057\:3066 ",
+ StyleBox["i ",
+  FontSlant->"Italic"],
+ "\:884c\:76ee\:306b\:52a0\:3048\:308b\:884c\:57fa\:672c\:5909\:5f62\:306b\
+\:5bfe\:5fdc\:3059\:308b\:ff0e"
+}], "Item",
+ CellChangeTimes->{{3.467796460627494*^9, 3.467796496587309*^9}, {
+  3.467796545702593*^9, 3.4677965756854973`*^9}, {3.467796669968108*^9, 
+  3.467796714864472*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"E12", "[", "c_", "]"}], ":=", 
+   RowBox[{"(", GridBox[{
+      {"1", "c", "0"},
+      {"0", "1", "0"},
+      {"0", "0", "1"}
+     }], ")"}]}], ";", 
+  RowBox[{
+   RowBox[{"E21", "[", "c_", "]"}], ":=", 
+   RowBox[{"(", GridBox[{
+      {"1", "0", "0"},
+      {"c", "1", "0"},
+      {"0", "0", "1"}
+     }], ")"}]}], ";", 
+  RowBox[{
+   RowBox[{"E23", "[", "c_", "]"}], ":=", 
+   RowBox[{"(", GridBox[{
+      {"1", "0", "0"},
+      {"0", "1", "c"},
+      {"0", "0", "1"}
+     }], ")"}]}], ";", 
+  RowBox[{
+   RowBox[{"E32", "[", "c_", "]"}], ":=", 
+   RowBox[{"(", GridBox[{
+      {"1", "0", "0"},
+      {"0", "1", "0"},
+      {"0", "c", "1"}
+     }], ")"}]}], ";", 
+  RowBox[{
+   RowBox[{"E31", "[", "c_", "]"}], ":=", 
+   RowBox[{"(", GridBox[{
+      {"1", "0", "0"},
+      {"0", "1", "0"},
+      {"c", "0", "1"}
+     }], ")"}]}], ";", 
+  RowBox[{
+   RowBox[{"E13", "[", "c_", "]"}], ":=", 
+   RowBox[{"(", GridBox[{
+      {"1", "0", "c"},
+      {"0", "1", "0"},
+      {"0", "0", "1"}
+     }], ")"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.4677937851663713`*^9, 3.467793887936503*^9}, {
+  3.4677966468523903`*^9, 3.467796648718124*^9}, {3.468730747901219*^9, 
+  3.468730777047209*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:4f8b\:984c 4.2", "Section",
+ CellChangeTimes->{{3.467796424245983*^9, 3.467796426692116*^9}}],
+
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"E21", "[", "4", "]"}], ".", 
+    RowBox[{"E23", "[", "7", "]"}], ".", " ", 
+    RowBox[{"E13", "[", 
+     RowBox[{"-", "1"}], "]"}], ".", 
+    RowBox[{"E2", "[", 
+     RowBox[{"-", "6"}], "]"}], ".", 
+    RowBox[{"E32", "[", "2", "]"}], ".", 
+    RowBox[{"E12", "[", "1", "]"}], ".", "P23"}], "//", 
+   "MatrixForm"}]}]], "Input",
+ CellChangeTimes->{{3.4677939890309677`*^9, 3.467794065169528*^9}, {
+   3.467794150153673*^9, 3.4677942070938873`*^9}, {3.467794625615676*^9, 
+   3.467794646344755*^9}, {3.467794694668455*^9, 3.467794729872075*^9}, {
+   3.4677953035775003`*^9, 3.467795322979249*^9}, {3.467795363809533*^9, 
+   3.467795395540308*^9}, 3.467795446138591*^9, {3.4677962699945593`*^9, 
+   3.4677963287839727`*^9}, 3.4677964435111523`*^9}]
+}, Open  ]]
+},
+WindowSize->{1084, 486},
+WindowMargins->{{106, Automatic}, {Automatic, 23}},
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (2009\:5e744\:670823\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 128, 2, 67, "Section"],
+Cell[698, 26, 546, 17, 25, "Item"],
+Cell[1247, 45, 1048, 40, 61, "Input"],
+Cell[2298, 87, 559, 19, 22, "Item"],
+Cell[2860, 108, 662, 24, 61, "Input"],
+Cell[3525, 134, 669, 24, 25, "Item"],
+Cell[4197, 160, 1234, 46, 115, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5468, 211, 101, 1, 70, "Section"],
+Cell[5572, 214, 813, 18, 27, "Input"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

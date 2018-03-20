@@ -1,0 +1,983 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     32528,        974]
+NotebookOptionsPosition[     27673,        821]
+NotebookOutlinePosition[     28953,        860]
+CellTagsIndexPosition[     28875,        855]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["0 \:306f\:3058\:3081\:306b", "Section",
+ CellChangeTimes->{{3.46849092282021*^9, 3.4684909261885967`*^9}, {
+  3.4685356836400146`*^9, 3.46853568621478*^9}, {3.4953489850758963`*^9, 
+  3.495348985458599*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\:5165\:529b\:ff0c\:51fa\:529b\:306e\:5358\:4f4d\:3092",
+ StyleBox["\:30bb\:30eb",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0, 0, 1]],
+ "\:3068\:3044\:3046\:ff0e"
+}], "Item",
+ CellChangeTimes->{{3.468530945714919*^9, 3.468530971486055*^9}, {
+  3.468535704205072*^9, 3.468535738040317*^9}}],
+
+Cell[TextData[{
+ "\:6f14\:7b97\:306e\:5b9f\:884c\:306f \:300c",
+ StyleBox[" ",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["(Shift)",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0, 0, 1]],
+ " +",
+ StyleBox[" ",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["(Enter)",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0, 0, 1]],
+ "\:300d"
+}], "Item",
+ CellChangeTimes->{
+  3.468535709912654*^9, {3.468535739958688*^9, 3.4685357728808737`*^9}}],
+
+Cell[TextData[{
+ "\:56f0\:3063\:305f\:3068\:304d\:306f\:300c",
+ StyleBox["\:30c9\:30ad\:30e5\:30e1\:30f3\:30c8\:30bb\:30f3\:30bf\:30fc",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0, 0, 1]],
+ "\:300d\:3067\:691c\:7d22\:ff0e"
+}], "Item",
+ CellChangeTimes->{{3.468535776629773*^9, 3.468535811604918*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["1.1 \:56db\:5247\:6f14\:7b97", "Section",
+ CellChangeTimes->{{3.46849092282021*^9, 3.4684909261885967`*^9}, {
+  3.4953489882632103`*^9, 3.495348988927101*^9}}],
+
+Cell[BoxData["+"], "Input",
+ CellChangeTimes->{3.4684923726116734`*^9}],
+
+Cell[BoxData["-"], "Input",
+ CellChangeTimes->{3.468492375043686*^9}],
+
+Cell[BoxData["*"], "Input",
+ CellChangeTimes->{3.468492377323217*^9}],
+
+Cell[BoxData["/"], "Input",
+ CellChangeTimes->{3.4684923792499228`*^9}],
+
+Cell[TextData[{
+ StyleBox["\:7df4\:7fd2 1.     ",
+  FontWeight->"Bold"],
+ "\:81ea\:8eab\:306e\:5b66\:7c4d\:756a\:53f7\:3092\:300c",
+ StyleBox["xy",
+  FontSlant->"Italic"],
+ "JK",
+ StyleBox["axybc",
+  FontSlant->"Italic"],
+ "\:300d\:3068\:3059\:308b\:3068\:304d\:ff0c\n\:3000(1)  (100",
+ StyleBox["a",
+  FontSlant->"Italic"],
+ "+10",
+ StyleBox["b",
+  FontSlant->"Italic"],
+ "+",
+ StyleBox["c",
+  FontSlant->"Italic"],
+ ") \:3068 (10",
+ StyleBox["x+y",
+  FontSlant->"Italic"],
+ ") \:3068\:306e\:7a4d\:3092\:8a08\:7b97\:3057\:306a\:3055\:3044\:ff0e\n\
+\:3000(2)  (100",
+ StyleBox["a",
+  FontSlant->"Italic"],
+ "+10",
+ StyleBox["b",
+  FontSlant->"Italic"],
+ "+",
+ StyleBox["c",
+  FontSlant->"Italic"],
+ ") \:3092 (10",
+ StyleBox["x+y",
+  FontSlant->"Italic"],
+ ") \:3067\:5272\:308a\:306a\:3055\:3044\:ff0e"
+}], "Text",
+ CellChangeTimes->{{3.468530945714919*^9, 3.468530971486055*^9}, {
+   3.468531018097904*^9, 3.4685310834904203`*^9}, {3.468531122047997*^9, 
+   3.468531265947175*^9}, {3.468534322764125*^9, 3.468534324571703*^9}, {
+   3.4685343634540243`*^9, 3.468534368176334*^9}, {3.49592804848374*^9, 
+   3.4959280876234303`*^9}, {3.495928203865313*^9, 3.495928238309702*^9}, 
+   3.49593027786971*^9},
+ Background->RGBColor[1, 1, 0.85]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["1.2 \:5e73\:65b9\:6839\:3068\:6307\:6570", "Section",
+ CellChangeTimes->{{3.46849092282021*^9, 3.4684909261885967`*^9}, {
+  3.468491097991577*^9, 3.468491103373354*^9}, {3.495348990759272*^9, 
+  3.4953489915588913`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Sqrt", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.4684923848553762`*^9, 3.468492387271647*^9}}],
+
+Cell[BoxData["^"], "Input",
+ CellChangeTimes->{3.468492391104891*^9}],
+
+Cell[TextData[{
+ StyleBox["\:7df4\:7fd2 2.     ",
+  FontWeight->"Bold"],
+ "\:81ea\:8eab\:306e\:5b66\:7c4d\:756a\:53f7\:3092\:300c",
+ StyleBox["xy",
+  FontSlant->"Italic"],
+ "JK",
+ StyleBox["abc",
+  FontSlant->"Italic"],
+ "\:300d\:3068\:3059\:308b\:3068\:304d\:ff0c\n\:3000(1) ",
+ StyleBox["x",
+  FontSlant->"Italic"],
+ " \:306e\:5e73\:65b9\:6839\:3092\:8a08\:7b97\:3057\:306a\:3055\:3044\:ff0e\n\
+\:3000(2)  (100",
+ StyleBox["a",
+  FontSlant->"Italic"],
+ "+10",
+ StyleBox["b",
+  FontSlant->"Italic"],
+ "+",
+ StyleBox["c",
+  FontSlant->"Italic"],
+ ") \:306e (10",
+ StyleBox["x+y",
+  FontSlant->"Italic"],
+ ") \:4e57\:3092\:8a08\:7b97\:3057\:306a\:3055\:3044\:ff0e"
+}], "Text",
+ CellChangeTimes->{{3.468530945714919*^9, 3.468530971486055*^9}, {
+   3.468531018097904*^9, 3.4685310834904203`*^9}, {3.468531122047997*^9, 
+   3.468531265947175*^9}, {3.468531365916295*^9, 3.468531383628721*^9}, {
+   3.468531414471959*^9, 3.46853145310139*^9}, {3.468534339958379*^9, 
+   3.468534360566011*^9}, {3.4959280920987864`*^9, 3.495928095014009*^9}, 
+   3.495928129922329*^9, 3.4959281744884043`*^9, 3.4959282282517567`*^9, 
+   3.4959302866372843`*^9},
+ Background->RGBColor[1, 1, 0.85]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["1.3 \:8fd1\:4f3c\:5024\:306e\:8a08\:7b97", "Section",
+ CellChangeTimes->{{3.46849092282021*^9, 3.4684909261885967`*^9}, {
+  3.468491097991577*^9, 3.468491103373354*^9}, {3.468491199844376*^9, 
+  3.468491212324223*^9}, {3.495348994479117*^9, 3.495348995398684*^9}}],
+
+Cell[BoxData[
+ RowBox[{"N", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.4684923941587276`*^9, 3.46849239526357*^9}}],
+
+Cell[BoxData["Pi"], "Input",
+ CellChangeTimes->{{3.49592826544361*^9, 3.495928275159738*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:7df4\:7fd2 3.     ",
+  FontWeight->"Bold"],
+ "\:81ea\:8eab\:306e\:5b66\:7c4d\:756a\:53f7\:3092\:300c",
+ StyleBox["xy",
+  FontSlant->"Italic"],
+ "JK",
+ StyleBox["abc",
+  FontSlant->"Italic"],
+ "\:300d\:3068\:3059\:308b\:3068\:304d\:ff0c\:5186\:5468\:7387\:306e  (10",
+ StyleBox["x+y",
+  FontSlant->"Italic"],
+ ") \:4e57\:306e\:8fd1\:4f3c\:5024\:3092 (100",
+ StyleBox["a",
+  FontSlant->"Italic"],
+ "+10",
+ StyleBox["b",
+  FontSlant->"Italic"],
+ "+",
+ StyleBox["c",
+  FontSlant->"Italic"],
+ ") \:6841\:307e\:3067\:51fa\:529b\:3057\:306a\:3055\:3044\:ff0e"
+}], "Text",
+ CellChangeTimes->{{3.468530945714919*^9, 3.468530971486055*^9}, {
+   3.468531018097904*^9, 3.4685310834904203`*^9}, {3.468531122047997*^9, 
+   3.468531265947175*^9}, {3.468531365916295*^9, 3.468531383628721*^9}, {
+   3.468531414471959*^9, 3.468531478141551*^9}, {3.4685315697697163`*^9, 
+   3.468531618469233*^9}, {3.468534343118123*^9, 3.468534374026205*^9}, {
+   3.495928102938195*^9, 3.4959281141315823`*^9}, 3.495928178106481*^9, 
+   3.495930289815675*^9},
+ Background->RGBColor[1, 1, 0.85]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["2.1 \:56e0\:6570\:5206\:89e3", "Section",
+ CellChangeTimes->{{3.46849092282021*^9, 3.4684909261885967`*^9}, {
+  3.468491097991577*^9, 3.468491103373354*^9}, {3.468491199844376*^9, 
+  3.468491212324223*^9}, {3.468491603368002*^9, 3.468491605010581*^9}, {
+  3.4684917302346087`*^9, 3.4684917312563677`*^9}, {3.49534900656628*^9, 
+  3.495349007190432*^9}, {3.495927850439644*^9, 3.495927850474366*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Factor", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.4684924555117197`*^9, 3.468492469261559*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ax", "^", "2"}], "+", "bx", "+", "c"}]], "Input",
+ CellChangeTimes->{{3.495927672646695*^9, 3.495927681165348*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:7df4\:7fd2",
+  FontWeight->"Bold"],
+ StyleBox[" 4.     ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "4"], TraditionalForm]]],
+ "+1 \:3092\:56e0\:6570\:5206\:89e3\:3057\:306a\:3055\:3044\:ff0e"
+}], "Text",
+ CellChangeTimes->{{3.468530945714919*^9, 3.468530971486055*^9}, {
+   3.468531018097904*^9, 3.4685310834904203`*^9}, {3.468531122047997*^9, 
+   3.468531265947175*^9}, {3.468531365916295*^9, 3.468531383628721*^9}, {
+   3.468531414471959*^9, 3.468531478141551*^9}, {3.4685315697697163`*^9, 
+   3.468531716611648*^9}, {3.468534378527062*^9, 3.4685343805836153`*^9}, 
+   3.4959303148550463`*^9},
+ Background->RGBColor[1, 1, 0.85]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["2.2 \:5c55\:958b", "Section",
+ CellChangeTimes->{{3.46849092282021*^9, 3.4684909261885967`*^9}, {
+   3.468491097991577*^9, 3.468491103373354*^9}, {3.468491199844376*^9, 
+   3.468491212324223*^9}, {3.468491603368002*^9, 3.468491605010581*^9}, 
+   3.468491725039694*^9, {3.495349001963356*^9, 3.495349004526575*^9}, {
+   3.4959278546285954`*^9, 3.49592785468329*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Expand", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.4684924374886723`*^9, 3.46849244103758*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:7df4\:7fd2",
+  FontWeight->"Bold"],
+ StyleBox[" 5.     ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", "x"}], TraditionalForm]]],
+ "+2)",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", "x"}], TraditionalForm]]],
+ "-1)",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", "x"}], TraditionalForm]]],
+ "-1) \:3092\:5c55\:958b\:3057\:306a\:3055\:3044\:ff0e"
+}], "Text",
+ CellChangeTimes->{{3.468530945714919*^9, 3.468530971486055*^9}, {
+   3.468531018097904*^9, 3.4685310834904203`*^9}, {3.468531122047997*^9, 
+   3.468531265947175*^9}, {3.468531365916295*^9, 3.468531383628721*^9}, {
+   3.468531414471959*^9, 3.468531478141551*^9}, {3.4685315697697163`*^9, 
+   3.468531716611648*^9}, {3.468534378527062*^9, 3.4685343805836153`*^9}, {
+   3.495927879147273*^9, 3.495927947865964*^9}, {3.495928011070519*^9, 
+   3.495928013063428*^9}, 3.495930319303754*^9},
+ Background->RGBColor[1, 1, 0.85]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["3.1 \:30d9\:30af\:30c8\:30eb\:3068\:884c\:5217\:ff08\:30ea\:30b9\:30c8\
+\:ff09", "Section",
+ CellChangeTimes->{{3.46849092282021*^9, 3.4684909261885967`*^9}, {
+  3.4685324588137283`*^9, 3.468532483240983*^9}, {3.495349009669839*^9, 
+  3.495349011254554*^9}, {3.495930369812269*^9, 3.495930370853533*^9}}],
+
+Cell[TextData[{
+ "\:30d9\:30af\:30c8\:30eb\:306f ",
+ StyleBox["{",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["\:6210\:5206",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[", ",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["\:6210\:5206",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[", ",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["\:6210\:5206",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["}",
+  FontColor->RGBColor[0, 0, 1]]
+}], "Text",
+ CellChangeTimes->{{3.468534423548986*^9, 3.46853446400148*^9}}],
+
+Cell[TextData[{
+ "\:884c\:5217\:306f ",
+ StyleBox["{{",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["\:7b2c1\:884c\:306e\:884c\:30d9\:30af\:30c8\:30eb",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["}, {",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["\:7b2c2\:884c\:306e\:884c\:30d9\:30af\:30c8\:30eb",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["}, {",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["\:7b2c3\:884c\:306e\:884c\:30d9\:30af\:30c8\:30eb",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["}}",
+  FontColor->RGBColor[0, 0, 1]]
+}], "Text",
+ CellChangeTimes->{{3.4685344761381397`*^9, 3.468534542386541*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:554f\:984c 1.",
+  FontWeight->"Bold"],
+ "\n(1) \:884c\:5217 ",
+ StyleBox["A",
+  FontSlant->"Italic"],
+ "\:ff0c",
+ StyleBox["B",
+  FontSlant->"Italic"],
+ " \:3092\:5b9a\:7fa9\:3057\:306a\:3055\:3044\:ff08\:6210\:5206\:306f\:6388\
+\:696d\:3067\:6307\:5b9a\:3057\:307e\:3059\:ff09\:ff0e\n(2) \
+\:81ea\:8eab\:306e\:5b66\:7c4d\:756a\:53f7\:300c",
+ StyleBox["xy",
+  FontSlant->"Italic"],
+ "JK",
+ StyleBox["abc",
+  FontSlant->"Italic"],
+ "\:300d\:306b\:5bfe\:3057\:ff0c\:30d9\:30af\:30c8\:30eb(",
+ StyleBox["a",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["b",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["c",
+  FontSlant->"Italic"],
+ ") \:3092 ",
+ StyleBox["v",
+  FontSlant->"Italic"],
+ "\:3068\:304a\:304d\:306a\:3055\:3044\:ff0e"
+}], "Text",
+ CellChangeTimes->{{3.468530945714919*^9, 3.468530971486055*^9}, {
+   3.468531018097904*^9, 3.4685310834904203`*^9}, {3.468531122047997*^9, 
+   3.468531265947175*^9}, {3.468647504978662*^9, 3.4686475752253036`*^9}, {
+   3.468647638611861*^9, 3.468647684241025*^9}, {3.468647818161865*^9, 
+   3.468647819690785*^9}, {3.46864790484095*^9, 3.468647953726076*^9}, {
+   3.495355634094088*^9, 3.495355634761047*^9}, 3.495928184889179*^9, {
+   3.49593032372266*^9, 3.4959303272328978`*^9}},
+ Background->RGBColor[1, 1, 0.85]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["3.2 \:884c\:5217\:306e\:548c\:3068\:5dee", "Section",
+ CellChangeTimes->{{3.46849092282021*^9, 3.4684909261885967`*^9}, {
+  3.468491097991577*^9, 3.468491103373354*^9}, {3.468532560240004*^9, 
+  3.468532571429652*^9}, {3.495349013798386*^9, 3.495349015130973*^9}}],
+
+Cell[BoxData["+"], "Input",
+ CellChangeTimes->{{3.4684923848553762`*^9, 3.468492387271647*^9}, {
+  3.468532583922244*^9, 3.46853258723971*^9}}],
+
+Cell[BoxData["-"], "Input",
+ CellChangeTimes->{
+  3.468492391104891*^9, {3.4685325894571733`*^9, 3.468532589752989*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:554f\:984c 2.   ",
+  FontWeight->"Bold"],
+ StyleBox["A",
+  FontSlant->"Italic"],
+ " + ",
+ StyleBox["B",
+  FontSlant->"Italic"],
+ " \:304a\:3088\:3073 ",
+ StyleBox["A ",
+  FontSlant->"Italic"],
+ "- ",
+ StyleBox["B ",
+  FontSlant->"Italic"],
+ "\:3092\:8a08\:7b97\:3057\:306a\:3055\:3044\:ff0e"
+}], "Text",
+ CellChangeTimes->{{3.468530945714919*^9, 3.468530971486055*^9}, {
+  3.468531018097904*^9, 3.4685310834904203`*^9}, {3.468531122047997*^9, 
+  3.468531265947175*^9}, {3.468531365916295*^9, 3.468531383628721*^9}, {
+  3.468531414471959*^9, 3.46853145310139*^9}, {3.468647868103692*^9, 
+  3.468647868159844*^9}, {3.4686479628424597`*^9, 3.4686480365857353`*^9}, {
+  3.495355638770955*^9, 3.495355639115465*^9}, {3.4959303303624687`*^9, 
+  3.495930330424301*^9}},
+ Background->RGBColor[1, 1, 0.85]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["3.3 \:884c\:5217\:306e\:7a4d", "Section",
+ CellChangeTimes->{{3.46849092282021*^9, 3.4684909261885967`*^9}, {
+   3.468491097991577*^9, 3.468491103373354*^9}, {3.468491199844376*^9, 
+   3.468491212324223*^9}, {3.468532598102401*^9, 3.4685326145655518`*^9}, 
+   3.468647843143074*^9, {3.495349017414053*^9, 3.495349018126206*^9}}],
+
+Cell[BoxData["."], "Input",
+ CellChangeTimes->{3.4685326260384827`*^9}],
+
+Cell[TextData[{
+ StyleBox["\:554f\:984c 3.",
+  FontWeight->"Bold"],
+ "   ",
+ StyleBox["Av",
+  FontSlant->"Italic"],
+ "\:ff0c",
+ StyleBox["Bv",
+  FontSlant->"Italic"],
+ " \:304a\:3088\:3073 ",
+ StyleBox["AB",
+  FontSlant->"Italic"],
+ " \:3092\:8a08\:7b97\:3057\:306a\:3055\:3044\:ff0e"
+}], "Text",
+ CellChangeTimes->{{3.468530945714919*^9, 3.468530971486055*^9}, {
+  3.468531018097904*^9, 3.4685310834904203`*^9}, {3.468531122047997*^9, 
+  3.468531265947175*^9}, {3.468647504978662*^9, 3.4686475752253036`*^9}, {
+  3.468647638611861*^9, 3.468647684241025*^9}, {3.468647818161865*^9, 
+  3.468647819690785*^9}, {3.468647864213076*^9, 3.4686478645200987`*^9}, {
+  3.4686480267609453`*^9, 3.4686480331386147`*^9}, {3.4953556422517557`*^9, 
+  3.495355644003776*^9}, {3.4959303342059717`*^9, 3.495930334288604*^9}},
+ Background->RGBColor[1, 1, 0.85]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["3.4 \:884c\:5217\:306e\:8ee2\:7f6e", "Section",
+ CellChangeTimes->{{3.46849092282021*^9, 3.4684909261885967`*^9}, {
+  3.468491097991577*^9, 3.468491103373354*^9}, {3.468491199844376*^9, 
+  3.468491212324223*^9}, {3.468491603368002*^9, 3.468491605010581*^9}, {
+  3.468491715745819*^9, 3.468491717140671*^9}, {3.468532661128957*^9, 
+  3.468532663388027*^9}, {3.495349023709997*^9, 3.49534902435785*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Transpose", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.468532856015523*^9, 3.468532862355582*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:554f\:984c 4.",
+  FontWeight->"Bold"],
+ "   ",
+ StyleBox["A ",
+  FontSlant->"Italic"],
+ "\:306e\:8ee2\:7f6e\:884c\:5217\:3092\:6c42\:3081\:306a\:3055\:3044\:ff0e"
+}], "Text",
+ CellChangeTimes->{{3.468530945714919*^9, 3.468530971486055*^9}, {
+  3.468531018097904*^9, 3.4685310834904203`*^9}, {3.468531122047997*^9, 
+  3.468531265947175*^9}, {3.468647504978662*^9, 3.4686475752253036`*^9}, {
+  3.468647638611861*^9, 3.468647684241025*^9}, {3.468647818161865*^9, 
+  3.468647819690785*^9}, {3.468647864213076*^9, 3.4686478645200987`*^9}, {
+  3.4686480267609453`*^9, 3.468648086700686*^9}, {3.4953559652813673`*^9, 
+  3.495355966136733*^9}, {3.495930337501937*^9, 3.495930337700902*^9}},
+ Background->RGBColor[1, 1, 0.85]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellChangeTimes->{3.463657023337997*^9},
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["3.5 \:9006\:884c\:5217", "Section",
+ CellChangeTimes->{{3.46849092282021*^9, 3.4684909261885967`*^9}, {
+   3.468491097991577*^9, 3.468491103373354*^9}, {3.468491199844376*^9, 
+   3.468491212324223*^9}, {3.468491603368002*^9, 3.468491605010581*^9}, 
+   3.468491725039694*^9, {3.4685326839508*^9, 3.4685326868207684`*^9}, {
+   3.495349027869417*^9, 3.4953490289259367`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Inverse", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.468532873585477*^9, 3.468532882454401*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:554f\:984c 5.",
+  FontWeight->"Bold"],
+ "   ",
+ StyleBox["A ",
+  FontSlant->"Italic"],
+ "\:306e\:9006\:884c\:5217\:3092\:6c42\:3081\:306a\:3055\:3044\:ff0e"
+}], "Text",
+ CellChangeTimes->{{3.468530945714919*^9, 3.468530971486055*^9}, {
+  3.468531018097904*^9, 3.4685310834904203`*^9}, {3.468531122047997*^9, 
+  3.468531265947175*^9}, {3.468647504978662*^9, 3.4686475752253036`*^9}, {
+  3.468647638611861*^9, 3.468647684241025*^9}, {3.468647818161865*^9, 
+  3.468647819690785*^9}, {3.468647864213076*^9, 3.4686478645200987`*^9}, {
+  3.4686480267609453`*^9, 3.468648125852531*^9}, {3.495355971608362*^9, 
+  3.495355972152431*^9}, {3.495928475107053*^9, 3.4959284759548693`*^9}, {
+  3.495930341133556*^9, 3.495930341950803*^9}},
+ Background->RGBColor[1, 1, 0.85]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext",
+ CellChangeTimes->{3.463657023344159*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{770, 669},
+WindowMargins->{{81, Automatic}, {Automatic, 9}},
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (2009\:5e744\:670823\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[567, 22, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[2791, 96, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[5411, 185, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[7930, 262, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[10430, 335, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[12728, 398, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[15069, 465, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[18825, 584, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[21115, 651, 64, 1, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[25394, 763, 106, 2, 8, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 27977, 831}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[656, 27, 213, 3, 69, "Section"],
+Cell[CellGroupData[{
+Cell[894, 34, 310, 8, 22, "Item"],
+Cell[1207, 44, 433, 16, 22, "Item"],
+Cell[1643, 62, 303, 7, 22, "Item"]
+}, Open  ]],
+Cell[1961, 72, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2791, 96, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[2880, 101, 165, 2, 70, "Section"],
+Cell[3048, 105, 71, 1, 27, "Input"],
+Cell[3122, 108, 69, 1, 27, "Input"],
+Cell[3194, 111, 69, 1, 27, "Input"],
+Cell[3266, 114, 71, 1, 27, "Input"],
+Cell[3340, 117, 1238, 42, 77, "Text"],
+Cell[4581, 161, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5411, 185, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[5500, 190, 226, 3, 69, "Section"],
+Cell[5729, 195, 120, 2, 27, "Input"],
+Cell[5852, 199, 69, 1, 27, "Input"],
+Cell[5924, 202, 1173, 34, 78, "Text"],
+Cell[7100, 238, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7930, 262, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[8019, 267, 270, 3, 70, "Section"],
+Cell[8292, 272, 116, 2, 27, "Input"],
+Cell[8411, 276, 93, 1, 27, "Input"],
+Cell[8507, 279, 1090, 30, 59, "Text"],
+Cell[9600, 311, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10430, 335, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[10519, 340, 405, 5, 69, "Section"],
+Cell[10927, 347, 122, 2, 27, "Input"],
+Cell[11052, 351, 150, 3, 27, "Input"],
+Cell[11205, 356, 690, 16, 45, "Text"],
+Cell[11898, 374, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12728, 398, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[12817, 403, 371, 5, 70, "Section"],
+Cell[13191, 410, 121, 2, 27, "Input"],
+Cell[13315, 414, 921, 25, 44, "Text"],
+Cell[14239, 441, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15069, 465, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[15158, 470, 310, 4, 70, "Section"],
+Cell[15471, 476, 564, 20, 28, "Text"],
+Cell[16038, 498, 672, 20, 28, "Text"],
+Cell[16713, 520, 1279, 38, 78, "Text"],
+Cell[17995, 560, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18825, 584, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[18914, 589, 270, 3, 70, "Section"],
+Cell[19187, 594, 143, 2, 27, "Input"],
+Cell[19333, 598, 120, 2, 27, "Input"],
+Cell[19456, 602, 826, 23, 44, "Text"],
+Cell[20285, 627, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21115, 651, 64, 1, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[21204, 656, 334, 4, 70, "Section"],
+Cell[21541, 662, 71, 1, 27, "Input"],
+Cell[21615, 665, 843, 21, 44, "Text"],
+Cell[22461, 688, 781, 18, 26, "PreviousNext"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23279, 711, 407, 5, 70, "Section"],
+Cell[23689, 718, 123, 2, 27, "Input"],
+Cell[23815, 722, 746, 15, 44, "Text"],
+Cell[24564, 739, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25394, 763, 106, 2, 8, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[25525, 769, 378, 5, 70, "Section"],
+Cell[25906, 776, 121, 2, 27, "Input"],
+Cell[26030, 780, 789, 16, 44, "Text"],
+Cell[26822, 798, 823, 19, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

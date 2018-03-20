@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../..//hstyle.css">
+<link rel="stylesheet" type="text/css" href="../../hstyle-sub.css">
+<link rel="shortcut icon" href="../../img/favicon.png">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
+
+<title>問題解説 - 佐藤弘康</title>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+
+<h1><a href="../../index.html">home</a> &#155;&#155; <a href="../index.html">Teaching</a> &#155;&#155; <a href="../nit.html">NIT</a> &#155;&#155;</h1>
+<p class="logo">2014年度春学期 期末試験問題の解説</p>
+</div>
+
+<div id="contents">
+
+<h2>「解析基礎」期末試験 問題[10]の解説</h2>
+
+<blockquote class="bquote">
+\[
+\sin 2\theta+\cos 2\theta+\sin 6\theta+\cos 6\theta=0\quad\cdots (\ast)
+\]
+を満たす$\theta$（ただし，$\displaystyle 0\leqq \theta\leqq \frac{\pi}{2}$）を求めよ．
+</blockquote>
+
+<font color="blue">三角関数の合成の公式</font>より，$(\ast)$は
+\[
+\sqrt{2}\sin\left(2\theta+\frac{\pi}{4}\right)
++\sqrt{2}\sin\left(6\theta+\frac{\pi}{4}\right)=0\quad\cdots (\ast')
+
+\]
+となる．さらに<font color="blue">三角関数の和を積に変換する公式</font>より，$(\ast')$は
+\[
+\sqrt{2}\times 2\sin\left(\frac{8\theta+\frac{\pi}{2}}{2}\right)\,\cos\left(\frac{4\theta}{2}\right)=0
+\]
+となる．したがって，$(\ast)$は
+\[
+\sin\left(4\theta+\frac{\pi}{4}\right)\,\cos\left(2\theta\right)=0,
+\]
+すなわち，「$\displaystyle\sin\left(4\theta+\frac{\pi}{4}\right)=0\ $ または $\ \cos(2\theta)=0$」と同値であるので，$\displaystyle 4\theta+\frac{\pi}{4}=m\pi$ または $\displaystyle 2\theta=\frac{\pi}{2}+n\pi$ である（$m, n$ は整数）．
+$\displaystyle 0\leqq \theta\leqq \frac{\pi}{2}$ より，$\displaystyle \theta=\frac{3\pi}{16}, \frac{\pi}{4}, \frac{7\pi}{16}$ である．
+
+<h2>「線形代数演習」期末試験 問題[8]の解説</h2>
+
+<blockquote class="bquote">
+点$(2, -4, 3)$を通り，2つの平面 $\pi_1 : 2x+y-z=9$ と $\pi_2 : x+y+z=15$ に垂直な平面 $\pi$ を求めよ．
+</blockquote>
+
+<font color="blue">平面の法線ベクトルの成分は変数 $x, y, z$ の係数である</font>から，$\pi_1, \pi_2$の法線ベクトルはそれぞれ $\vec{n}_1=(2, 1 -1)$，$\vec{n}_2=(1, 1, 1)$ である．$\pi$ の法線ベクトルを $\vec{n}=(a, b, c)$ とおくと，「<font color="blue">2つの平面が垂直ならば，それらの法線ベクトルは垂直である</font>」ことから，$\vec{n}\cdot \vec{n}_1=0$，$\vec{n}\cdot \vec{n}_2=0$，すなわち，
+$a, b, c$ は
+\[
+2a+b-c=0\quad \cdots (1)\qquad a+b+c=0\quad \cdots (2)
+\]
+を満たす数である．$(1)-(2)$ より，$a=2c$ を得る．さらに，これを $(1)$ に代入することにより，$b=-3c$ を得る．したがって，$\vec{n}=(2c, -3c, c)$ である．平面の方程式の公式より，$\pi$ の方程式は
+\[
+2c (x-2)+(-3c) (y-(-4))+c (z-3)=0
+\]
+となる．両辺を$c$で割って式を整理することにより，$2x-3y+z-19=0$ を得る．
+
+<h2>「微分積分学I」期末試験 問題[5]の解説</h2>
+
+<blockquote class="bquote">
+3次関数 $f(x)=ax^3-3(a^2+1)x^2+12ax$ の極大値が正で，極小値が負である．このとき，定数 $a$ のとり得る値の範囲を求めよ．
+</blockquote>
+
+考えることは関数 $f(x)$ の極値の符号である．
+$f(x)$ の導関数は
+\[
+f'(x)=3ax^2-6(a^2+1)x+12a=3(ax-2)(x-2a).
+\]
+<font color="blue">$x=x_0$で$f(x)$ が極値をとるならば，$f'(x_0)=0$</font> なので，$a\ne 0$ ならば $f(x)$ は $\displaystyle x=2a, \frac{2}{a}$ において極値をとることがわかる．
+<br><br>
+ところで，$2a$ と $\displaystyle\frac{2}{a}$ の大小関係はどうなっているだろうか？
+不等式 $2a<\displaystyle\frac{2}{a}$ は，$a>0$ ならば $a^2<1$ と同値であり，$a<0$ ならば $a^2>1$ と同値である．一方，$2a>\displaystyle\frac{2}{a}$ は，$a>0$ ならば $a^2>1$ と同値であり，$a<0$ ならば　$a^2<1$ と同値である．つまり，
+(i) $ 0 < a < 1 $, (ii) $ a < -1$, (iii) $1< a$, (iv) $-1< a< 0$
+の4つの場合に分けて考える必要がある．それぞれの場合について増減表は
+<table style="text-align: left;" border="0" cellpadding="1" cellspacing="10">
+ <tbody>
+ <tr><td>(i) $ 0 < a < 1 $</td><td>(ii) $ a < -1$</td><td>(iii) $1< a$</td><td>(iv) $-1< a< 0$</td></tr>
+ <tr><td>
+<table
+ style="text-align: center;"
+ border="1" cellpadding="5" cellspacing="0">
+ <tbody>
+ <tr><td>$x$</td><td></td><td>$2a$</td><td></td><td>$\displaystyle\frac{2}{a}$</td><td></td></tr>
+ <tr><td>$f'(x)$</td><td>$+$</td><td>$0$</td><td>$-$</td><td>$0$</td><td>$+$</td></tr>
+ <tr><td>$f(x)$</td><td></td><td>極大</td><td></td><td>極小</td><td></td></tr>
+ </tbody>
+</table>
+ </td>
+ <td>
+<table style="text-align: center;" border="1" cellpadding="5" cellspacing="0">
+ <tbody>
+ <tr><td>$x$</td><td></td><td>$2a$</td><td></td><td>$\displaystyle\frac{2}{a}$</td><td></td></tr>
+ <tr><td>$f'(x)$</td><td>$-$</td><td>$0$</td><td>$+$</td><td>$0$</td><td>$-$</td></tr>
+ <tr><td>$f(x)$</td><td></td><td>極小</td><td></td><td>極大</td><td></td></tr>
+ </tbody>
+</table>
+ </td>
+ <td>
+<table style="text-align: center;" border="1" cellpadding="5" cellspacing="0">
+ <tbody>
+ <tr><td>$x$</td><td></td><td>$\displaystyle\frac{2}{a}$</td><td></td><td>$2a$</td><td></td></tr>
+ <tr><td>$f'(x)$</td><td>$+$</td><td>$0$</td><td>$-$</td><td>$0$</td><td>$+$</td></tr>
+ <tr><td>$f(x)$</td><td></td><td>極大</td><td></td><td>極小</td><td></td></tr>
+ </tbody>
+</table>
+ </td>
+ <td>
+<table style="text-align: center;" border="1" cellpadding="5" cellspacing="0">
+ <tbody>
+ <tr><td>$x$</td><td></td><td>$\displaystyle\frac{2}{a}$</td><td></td><td>$2a$</td><td></td></tr>
+ <tr><td>$f'(x)$</td><td>$-$</td><td>$0$</td><td>$+$</td><td>$0$</td><td>$-$</td></tr>
+ <tr><td>$f(x)$</td><td></td><td>極小</td><td></td><td>極大</td><td></td></tr>
+ </tbody>
+</table>
+ </td>
+ </tr>
+ </tbody>
+</table>
+となる．
+<br>
+<br>
+$f(2a)=-4a^2(a^2-3)$，$\displaystyle f\left(\frac{2}{a}\right)=\frac{12}{a^2}\left(a^2-\frac{1}{3}\right)$ より，
+<br>
+$f(2a)>0$ かつ $\displaystyle f\left(\frac{2}{a}\right)<0$ となるのは，$\displaystyle -\frac{1}{\sqrt{3}}< a \frac{1}{\sqrt{3}}$ のときで，<br>
+$f(2a)<0$かつ $\displaystyle f\left(\frac{2}{a}\right)>0$ となるのは，$\displaystyle a<-\sqrt{3}$，$\sqrt{3}< a$ のときである．<br>
+したがって，上の増減表から (i) $\displaystyle  0 < a < \frac{1}{\sqrt{3}} $, (ii) $ a < -\sqrt{3}$, (iii) $\sqrt{3}< a$, (iv) $\displaystyle -\frac{1}{\sqrt{3}}< a< 0$ である．
+<br>
+<br>
+以上のことから，解は
+$ a < -\sqrt{3}$, $\displaystyle -\frac{1}{\sqrt{3}}< a< 0$, $\displaystyle  0 < a < \frac{1}{\sqrt{3}} $, $\sqrt{3}< a$ である．
+
+<h2>「線形代数学I」期末試験 問題[7]の解説</h2>
+
+<blockquote class="bquote">
+正方行列 $A$ が「$A^2+A+E=O$」を満たすとき，$A-E$ が正則か否か（<font color="blue">逆行列が存在するか否か</font>）判定せよ．
+</blockquote>
+
+$A=\left(\begin{array}{cc}a&b\\c&d\end{array}\right)$ とおき，<font color="blue">行列式</font> $|A-E|=\left|\begin{array}{cc}a-1&b\\c&d-1\end{array}\right|=ad-bc-(a+d)+1$<font color="blue"> の値が $0$ でないか否か</font>を調べればよい．
+<br>
+$A^2+A+E=O$ は次の4つの方程式と同値であることがわかる;
+\[
+\left\{
+\begin{array}{ll}
+a^2+a+bc+1=0&\cdots(1)\\
+b(a+d+1)=0&\cdots(2)\\
+c(a+d+1)=0&\cdots(3)\\
+d^2+d+bc+1=0&\cdots(4)
+\end{array}
+\right.
+\]
+$(2)(3)$式より，$a+d+1$ が $0$ か否かで場合分けして考える．
+<br>
+<br>
+(i) $a+d+1=0$ のとき：
+\[
+|A-E|=a(-a-1)-bc-(-1)+1=-(a^2+a+bc)+2=-(-1)+2=3\ne 0
+\]
+となり，$A-E$ が<u>正則である</u>ことがわかる．
+<br>
+<br>
+(ii) $a+d+1\ne 0$ のとき，：$(2)(3)$式より，$b=c=0$ である．これを$(1)(4)$に代入すると，
+\[
+\left\{
+\begin{array}{ll}
+a^2+a+1=0&\cdots(1')\\
+d^2+d+1=0&\cdots(4')
+\end{array}
+\right.
+\]
+となる．$(1')-(4')$を計算すると $(a-d)(a+d+1)=0$ となり，$a=d$ を得る．以上のことから，
+\[
+|A-E|=(ad-bc)-(a+d)+1=a^2-2a+1=(a-1)^2
+\]
+となるが，$(1')$式より，明らかに $a\ne 1$ であるから，$|A-E|\ne 0$ である．つまり，$A-E$ は<u>正則である</u>．
+<br>
+<br>
+<br>
+（別解）「行列の方程式 $A^2+A+E=O$ から $(A-E)B=E$ となる行列 $B$ が構成できるか」考えてみよう．
+<br>
+$x^2+x+1=(x-1)(x+2)+3$ より，$A^2+A+E=(A-E)(A+2E)+3E$ が成り立つ．つまり，$(A-E)(A+2E)=-3E$ が成り立つ．
+以上のことから，$A-E$ の逆行列は $\displaystyle -\frac{1}{3}(A+2E)$ であることがわかる．したがって，$A-E$ は<u>正則である</u>（この方法は$A$ が$2$次正方行列であることを使っていない．つまり，一般の $n$次正方行列に対して，この主張が成り立つことがわかる）．
+
+<h2>「電気数学II」期末試験 問題[8]の解説</h2>
+
+<blockquote class="bquote">
+$(\log_a b)^3,\ \log_b a^3,\ \log_b(\log_b a)^3$ の大小関係を調べよ．
+</blockquote>
+
+対数関数 $f(x)=\log_b x$ は<font color="blue">底が $b>1$ のとき増加関数で，$0< b< 1$ のとき減少関数</font>である．
+したがって，$0< a< b<1$より，$\log_b a>\log_b b=1$ であることがわかる．
+<br>
+<br>
+・$\displaystyle (\log_a b)^3=\left(\frac{\log_b b}{\log_b a}\right)^3=\left(\frac{1}{\log_b a}\right)^3$ より，$0< (\log_a b)^3< 1$ である．
+<br>
+・$\log_b a^3=3\log_b a >3$．<br>
+・$\log_b(\log_b a)^3=3\log_b(\log_b a)< 3\log_b 1 =0$．
+<br>
+<br>
+以上のことから，$\log_b(\log_b a)^3< (\log_a b)^3< \log_b a^3$ であることがわかる．
+
+
+</div>
+
+<div id="footer">
+<p><span class="gs">Copyright &copy; Hiroyasu Satoh. All Rights Reserved.</span></p>
+<p id="cds">CSS Template <a href="http://www.css-designsample.com/">CSSデザインサンプル</a></p>
+</div>
+
+</div>
+</body>
+</html>

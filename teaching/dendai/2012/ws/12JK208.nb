@@ -1,0 +1,1152 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     50182,       1143]
+NotebookOptionsPosition[     49659,       1119]
+NotebookOutlinePosition[     50023,       1135]
+CellTagsIndexPosition[     49980,       1132]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\:592a\:967d\:7cfb", "Section",
+ CellChangeTimes->{{3.5431810298117704`*^9, 3.54318103511578*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"rot", "[", "t_", "]"}], "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Cos", "[", "t", "]"}], ",", 
+      RowBox[{"-", 
+       RowBox[{"Sin", "[", "t", "]"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Sin", "[", "t", "]"}], ",", 
+      RowBox[{"Cos", "[", "t", "]"}]}], "}"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.543180809991784*^9, 3.543180809991784*^9}, {
+  3.5431810009049196`*^9, 3.54318102369656*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Cos", "[", "t", "]"}], ",", 
+     RowBox[{"-", 
+      RowBox[{"Sin", "[", "t", "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Sin", "[", "t", "]"}], ",", 
+     RowBox[{"Cos", "[", "t", "]"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.5431808953083344`*^9, {3.543181420173257*^9, 3.5431814718249474`*^9}, 
+   3.5431815485926824`*^9, 3.5431826072287416`*^9, 3.543182659707234*^9, 
+   3.5431827235737457`*^9, {3.5431829587129593`*^9, 3.5431829618173647`*^9}, 
+   3.543227384145732*^9, 3.5432844096369123`*^9, 3.5432934337544765`*^9, 
+   3.543317400214951*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"P", "[", "v_", "]"}], "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Disk", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"rot", "[", "v", "]"}], ".", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"78", " ", 
+               RowBox[{"Cos", "[", "s", "]"}]}], "+", "45"}], ")"}], "-", 
+            "45"}], ",", 
+           RowBox[{"78", " ", 
+            RowBox[{"Sin", "[", "s", "]"}]}]}], "}"}]}], "+", 
+        RowBox[{"{", 
+         RowBox[{"45", ",", "0"}], "}"}]}], ",", "0.4"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", "0", ",", 
+       RowBox[{"2", " ", "Pi"}], ",", 
+       RowBox[{"2", " ", 
+        RowBox[{"Pi", "/", "70"}]}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Q", "[", "v_", "]"}], "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Disk", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"rot", "[", "v", "]"}], ".", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"84", " ", 
+               RowBox[{"Cos", "[", "s", "]"}]}], "+", "45"}], ")"}], "-", 
+            "45"}], ",", 
+           RowBox[{"84", " ", 
+            RowBox[{"Sin", "[", "s", "]"}]}]}], "}"}]}], "+", 
+        RowBox[{"{", 
+         RowBox[{"45", ",", "0"}], "}"}]}], ",", "0.4"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", "0", ",", 
+       RowBox[{"2", " ", "Pi"}], ",", 
+       RowBox[{"2", " ", 
+        RowBox[{"Pi", "/", "70"}]}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"P", "[", "t", "]"}], ",", 
+       RowBox[{"Q", "[", "w", "]"}], ",", "Red", ",", 
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"45", ",", "0"}], "}"}], ",", "23"}], "]"}], ",", 
+       "\[IndentingNewLine]", "Blue", ",", 
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"rot", "[", "t", "]"}], ".", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", "9"}], "-", "45"}], ",", "0"}], "}"}]}], "+", 
+          RowBox[{"{", 
+           RowBox[{"45", ",", "0"}], "}"}]}], ",", "3.5"}], "]"}], ",", 
+       "\[IndentingNewLine]", "Gray", ",", 
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"rot", "[", "u", "]"}], ".", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"1.14", "-", "1"}], ")"}], "*", 
+             RowBox[{
+              RowBox[{"rot", "[", "t", "]"}], ".", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"-", "9"}], "-", "45"}], ",", "0"}], "}"}]}]}], 
+            ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"rot", "[", "t", "]"}], ".", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", "9"}], "-", "45"}], ",", "0"}], "}"}]}], "+", 
+          RowBox[{"{", 
+           RowBox[{"45", ",", "0"}], "}"}]}], ",", "1.4"}], "]"}], ",", 
+       "\[IndentingNewLine]", "Brown", ",", 
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"rot", "[", 
+            RowBox[{"5", " ", "t"}], "]"}], ".", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"13", "-", "40"}], ",", "0"}], "}"}]}], "+", 
+          RowBox[{"{", 
+           RowBox[{"45", ",", "0"}], "}"}]}], ",", "1.3"}], "]"}], ",", 
+       "\[IndentingNewLine]", "Yellow", ",", 
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"rot", "[", 
+            RowBox[{
+             RowBox[{"9", "/", "5"}], "*", "t"}], "]"}], ".", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"3", "-", "40"}], ",", "0"}], "}"}]}], "+", 
+          RowBox[{"{", 
+           RowBox[{"45", ",", "0"}], "}"}]}], ",", "2.6"}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"RGBColor", "[", 
+        RowBox[{"2", ",", "0.2", ",", "0", ",", "2"}], "]"}], ",", 
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"rot", "[", 
+            RowBox[{
+             RowBox[{"3", "/", "5"}], "*", "t"}], "]"}], ".", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", "25"}], "-", "45"}], ",", "0"}], "}"}]}], "+", 
+          RowBox[{"{", 
+           RowBox[{"45", ",", "0"}], "}"}]}], ",", "2"}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"rot", "[", 
+            RowBox[{"t", "/", "11"}], "]"}], ".", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", "55"}], "-", "45"}], ",", "0"}], "}"}]}], "+", 
+          RowBox[{"{", 
+           RowBox[{"45", ",", "0"}], "}"}]}], ",", "6"}], "]"}], ",", 
+       "\[IndentingNewLine]", "Brown", ",", 
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"rot", "[", 
+            RowBox[{"t", "/", "18"}], "]"}], ".", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", "90"}], "-", "45"}], ",", "0"}], "}"}]}], "+", 
+          RowBox[{"{", 
+           RowBox[{"45", ",", "0"}], "}"}]}], ",", "5"}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"RGBColor", "[", 
+        RowBox[{"0.2", ",", "0.2", ",", "1"}], "]"}], ",", 
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"rot", "[", 
+            RowBox[{"t", "/", "20"}], "]"}], ".", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", "110"}], "-", "45"}], ",", "0"}], "}"}]}], "+", 
+          RowBox[{"{", 
+           RowBox[{"45", ",", "0"}], "}"}]}], ",", "1.4"}], "]"}], ",", 
+       RowBox[{"RGBColor", "[", 
+        RowBox[{"0.1", ",", "0.1", ",", "1"}], "]"}], ",", 
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"rot", "[", 
+            RowBox[{"t", "/", "86"}], "]"}], ".", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", "130"}], "-", "45"}], ",", "0"}], "}"}]}], "+", 
+          RowBox[{"{", 
+           RowBox[{"45", ",", "0"}], "}"}]}], ",", "1.3"}], "]"}], ",", 
+       "\[IndentingNewLine]", "Gray", ",", 
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"rot", "[", "u", "]"}], ".", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"1.04", "-", "1"}], ")"}], "*", 
+             RowBox[{
+              RowBox[{"rot", "[", 
+               RowBox[{"3", 
+                RowBox[{"t", "/", "5"}]}], "]"}], ".", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"-", "25"}], "-", "45"}], ",", "0"}], "}"}]}]}], 
+            ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"rot", "[", 
+            RowBox[{"3", 
+             RowBox[{"t", "/", "5"}]}], "]"}], ".", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", "25"}], "-", "45"}], ",", "0"}], "}"}]}], "+", 
+          RowBox[{"{", 
+           RowBox[{"45", ",", "0"}], "}"}]}], ",", "0.7"}], "]"}], ",", 
+       "\[IndentingNewLine]", "Gray", ",", 
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"rot", "[", "u", "]"}], ".", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"1.05", "-", "1"}], ")"}], "*", 
+             RowBox[{
+              RowBox[{"rot", "[", 
+               RowBox[{"3", 
+                RowBox[{"t", "/", "5"}]}], "]"}], ".", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"-", "25"}], "-", "45"}], ",", "0"}], "}"}]}]}], 
+            ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"rot", "[", 
+            RowBox[{"3", 
+             RowBox[{"t", "/", "5"}]}], "]"}], ".", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", "25"}], "-", "45"}], ",", "0"}], "}"}]}], "+", 
+          RowBox[{"{", 
+           RowBox[{"45", ",", "0"}], "}"}]}], ",", "0.7"}], "]"}]}], "}"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "140"}], ",", "120"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "80"}], ",", "80"}], "}"}]}], "}"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", 
+     RowBox[{"0", "/", "12"}], ",", 
+     RowBox[{"16", " ", "Pi"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"u", ",", "0", ",", 
+     RowBox[{"5", " ", "Pi"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"w", ",", "0", ",", 
+     RowBox[{"Pi", "/", "3"}]}], "}"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.5431808532506604`*^9, 3.5431808532506604`*^9}, {
+   3.5431816154855995`*^9, 3.5431816916137333`*^9}, {3.543181788146703*^9, 
+   3.5431818272247715`*^9}, {3.5431818940084887`*^9, 3.543181927345748*^9}, 
+   3.543317423657648*^9, {3.543317771692264*^9, 3.543317777576923*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`t$$ = 6.031857894892402, $CellContext`u$$ = 
+    4.461061568097507, $CellContext`w$$ = 0.653451271946677, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`t$$], 0, 16 Pi}, {
+      Hold[$CellContext`u$$], 0, 5 Pi}, {
+      Hold[$CellContext`w$$], 0, Rational[1, 3] Pi}}, Typeset`size$$ = {
+    360., {109., 113.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`t$1143$$ = 
+    0, $CellContext`u$1144$$ = 0, $CellContext`w$1145$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`t$$ = 0, $CellContext`u$$ = 
+        0, $CellContext`w$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$1143$$, 0], 
+        Hold[$CellContext`u$$, $CellContext`u$1144$$, 0], 
+        Hold[$CellContext`w$$, $CellContext`w$1145$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics[{
+         $CellContext`P[$CellContext`t$$], 
+         $CellContext`Q[$CellContext`w$$], Red, 
+         Disk[{45, 0}, 23], Blue, 
+         Disk[Dot[
+            $CellContext`rot[$CellContext`t$$], {-9 - 45, 0}] + {45, 0}, 3.5],
+          Gray, 
+         Disk[Dot[
+            $CellContext`rot[$CellContext`u$$], (1.14 - 1) Dot[
+              $CellContext`rot[$CellContext`t$$], {-9 - 45, 0}]] + Dot[
+            $CellContext`rot[$CellContext`t$$], {-9 - 45, 0}] + {45, 0}, 1.4],
+          Brown, 
+         Disk[Dot[
+            $CellContext`rot[5 $CellContext`t$$], {13 - 40, 0}] + {45, 0}, 
+          1.3], Yellow, 
+         Disk[Dot[
+            $CellContext`rot[(9/5) $CellContext`t$$], {3 - 40, 0}] + {45, 0}, 
+          2.6], 
+         RGBColor[2, 0.2, 0, 2], 
+         Disk[Dot[
+            $CellContext`rot[(3/5) $CellContext`t$$], {-25 - 45, 0}] + {45, 
+           0}, 2], 
+         Disk[Dot[
+            $CellContext`rot[$CellContext`t$$/11], {-55 - 45, 0}] + {45, 0}, 
+          6], Brown, 
+         Disk[Dot[
+            $CellContext`rot[$CellContext`t$$/18], {-90 - 45, 0}] + {45, 0}, 
+          5], 
+         RGBColor[0.2, 0.2, 1], 
+         Disk[Dot[
+            $CellContext`rot[$CellContext`t$$/20], {-110 - 45, 0}] + {45, 0}, 
+          1.4], 
+         RGBColor[0.1, 0.1, 1], 
+         Disk[Dot[
+            $CellContext`rot[$CellContext`t$$/86], {-130 - 45, 0}] + {45, 0}, 
+          1.3], Gray, 
+         Disk[Dot[
+            $CellContext`rot[$CellContext`u$$], (1.04 - 1) Dot[
+              $CellContext`rot[3 ($CellContext`t$$/5)], {-25 - 45, 0}]] + Dot[
+            $CellContext`rot[3 ($CellContext`t$$/5)], {-25 - 45, 0}] + {45, 
+           0}, 0.7], Gray, 
+         Disk[Dot[
+            $CellContext`rot[$CellContext`u$$], (1.05 - 1) Dot[
+              $CellContext`rot[3 ($CellContext`t$$/5)], {-25 - 45, 0}]] + Dot[
+            $CellContext`rot[3 ($CellContext`t$$/5)], {-25 - 45, 0}] + {45, 
+           0}, 0.7]}, PlotRange -> {{-140, 120}, {-80, 80}}], 
+      "Specifications" :> {{$CellContext`t$$, 0, 16 Pi}, {$CellContext`u$$, 0,
+          5 Pi}, {$CellContext`w$$, 0, Rational[1, 3] Pi}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{403., {219., 225.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`P[
+         Pattern[$CellContext`v, 
+          Blank[]]] = {
+         Disk[{45 + 78 Cos[$CellContext`v], 78 Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[Pi/35]) Cos[$CellContext`v] - (78 Sin[Pi/35]) 
+           Sin[$CellContext`v], (78 Cos[$CellContext`v]) 
+            Sin[Pi/35] + (78 Cos[Pi/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[(2 Pi)/35]) Cos[$CellContext`v] - (78 Sin[(2 Pi)/35]) 
+           Sin[$CellContext`v], (78 Cos[$CellContext`v]) 
+            Sin[(2 Pi)/35] + (78 Cos[(2 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[(3 Pi)/35]) Cos[$CellContext`v] - (78 Sin[(3 Pi)/35]) 
+           Sin[$CellContext`v], (78 Cos[$CellContext`v]) 
+            Sin[(3 Pi)/35] + (78 Cos[(3 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[(4 Pi)/35]) Cos[$CellContext`v] - (78 Sin[(4 Pi)/35]) 
+           Sin[$CellContext`v], (78 Cos[$CellContext`v]) 
+            Sin[(4 Pi)/35] + (78 Cos[(4 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[Pi/7]) Cos[$CellContext`v] - (78 Sin[Pi/7]) 
+           Sin[$CellContext`v], (78 Cos[$CellContext`v]) 
+            Sin[Pi/7] + (78 Cos[Pi/7]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[(6 Pi)/35]) Cos[$CellContext`v] - (78 Sin[(6 Pi)/35]) 
+           Sin[$CellContext`v], (78 Cos[$CellContext`v]) 
+            Sin[(6 Pi)/35] + (78 Cos[(6 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + ((39 (1 + Sqrt[5])) Cos[$CellContext`v])/2 - (78 
+            Sqrt[5/8 - Sqrt[5]/8]) 
+           Sin[$CellContext`v], (78 Sqrt[5/8 - Sqrt[5]/8]) 
+            Cos[$CellContext`v] + ((39 (1 + Sqrt[5])) Sin[$CellContext`v])/2},
+           0.4], 
+         Disk[{
+          45 + (78 Cos[(8 Pi)/35]) Cos[$CellContext`v] - (78 Sin[(8 Pi)/35]) 
+           Sin[$CellContext`v], (78 Cos[$CellContext`v]) 
+            Sin[(8 Pi)/35] + (78 Cos[(8 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) Sin[(17 Pi)/70] - (78 Cos[(17 Pi)/70])
+             Sin[$CellContext`v], (78 Cos[(17 Pi)/70]) 
+            Cos[$CellContext`v] + (78 Sin[(17 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) Sin[(3 Pi)/14] - (78 Cos[(3 Pi)/14]) 
+           Sin[$CellContext`v], (78 Cos[(3 Pi)/14]) 
+            Cos[$CellContext`v] + (78 Sin[(3 Pi)/14]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) Sin[(13 Pi)/70] - (78 Cos[(13 Pi)/70])
+             Sin[$CellContext`v], (78 Cos[(13 Pi)/70]) 
+            Cos[$CellContext`v] + (78 Sin[(13 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) Sin[(11 Pi)/70] - (78 Cos[(11 Pi)/70])
+             Sin[$CellContext`v], (78 Cos[(11 Pi)/70]) 
+            Cos[$CellContext`v] + (78 Sin[(11 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) Sin[(9 Pi)/70] - (78 Cos[(9 Pi)/70]) 
+           Sin[$CellContext`v], (78 Cos[(9 Pi)/70]) 
+            Cos[$CellContext`v] + (78 Sin[(9 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + ((39 (-1 + Sqrt[5])) Cos[$CellContext`v])/2 - (78 
+            Sqrt[5/8 + Sqrt[5]/8]) 
+           Sin[$CellContext`v], (78 Sqrt[5/8 + Sqrt[5]/8]) 
+            Cos[$CellContext`v] + ((39 (-1 + Sqrt[5])) Sin[$CellContext`v])/
+            2}, 0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) Sin[Pi/14] - (78 Cos[Pi/14]) 
+           Sin[$CellContext`v], (78 Cos[Pi/14]) 
+            Cos[$CellContext`v] + (78 Sin[Pi/14]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) Sin[(3 Pi)/70] - (78 Cos[(3 Pi)/70]) 
+           Sin[$CellContext`v], (78 Cos[(3 Pi)/70]) 
+            Cos[$CellContext`v] + (78 Sin[(3 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) Sin[Pi/70] - (78 Cos[Pi/70]) 
+           Sin[$CellContext`v], (78 Cos[Pi/70]) 
+            Cos[$CellContext`v] + (78 Sin[Pi/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) Sin[Pi/70] - (78 Cos[Pi/70]) 
+           Sin[$CellContext`v], (78 Cos[Pi/70]) Cos[$CellContext`v] - (78 
+            Sin[Pi/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) Sin[(3 Pi)/70] - (78 Cos[(3 Pi)/70]) 
+           Sin[$CellContext`v], (78 Cos[(3 Pi)/70]) Cos[$CellContext`v] - (78 
+            Sin[(3 Pi)/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) Sin[Pi/14] - (78 Cos[Pi/14]) 
+           Sin[$CellContext`v], (78 Cos[Pi/14]) Cos[$CellContext`v] - (78 
+            Sin[Pi/14]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + ((39 (1 - Sqrt[5])) Cos[$CellContext`v])/2 - (78 
+            Sqrt[5/8 + Sqrt[5]/8]) 
+           Sin[$CellContext`v], (78 Sqrt[5/8 + Sqrt[5]/8]) 
+            Cos[$CellContext`v] + ((39 (1 - Sqrt[5])) Sin[$CellContext`v])/2},
+           0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) Sin[(9 Pi)/70] - (78 Cos[(9 Pi)/70]) 
+           Sin[$CellContext`v], (78 Cos[(9 Pi)/70]) Cos[$CellContext`v] - (78 
+            Sin[(9 Pi)/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) 
+           Sin[(11 Pi)/70] - (78 Cos[(11 Pi)/70]) 
+           Sin[$CellContext`v], (78 Cos[(11 Pi)/70]) Cos[$CellContext`v] - (
+            78 Sin[(11 Pi)/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) 
+           Sin[(13 Pi)/70] - (78 Cos[(13 Pi)/70]) 
+           Sin[$CellContext`v], (78 Cos[(13 Pi)/70]) Cos[$CellContext`v] - (
+            78 Sin[(13 Pi)/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) Sin[(3 Pi)/14] - (78 Cos[(3 Pi)/14]) 
+           Sin[$CellContext`v], (78 Cos[(3 Pi)/14]) Cos[$CellContext`v] - (78 
+            Sin[(3 Pi)/14]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) 
+           Sin[(17 Pi)/70] - (78 Cos[(17 Pi)/70]) 
+           Sin[$CellContext`v], (78 Cos[(17 Pi)/70]) Cos[$CellContext`v] - (
+            78 Sin[(17 Pi)/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[(8 Pi)/35]) Cos[$CellContext`v] - (78 Sin[(8 Pi)/35]) 
+           Sin[$CellContext`v], (78 Cos[$CellContext`v]) Sin[(8 Pi)/35] - (78 
+            Cos[(8 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + ((39 (-1 - Sqrt[5])) Cos[$CellContext`v])/2 - (78 
+            Sqrt[5/8 - Sqrt[5]/8]) 
+           Sin[$CellContext`v], (78 Sqrt[5/8 - Sqrt[5]/8]) 
+            Cos[$CellContext`v] + ((39 (-1 - Sqrt[5])) Sin[$CellContext`v])/
+            2}, 0.4], 
+         Disk[{
+          45 - (78 Cos[(6 Pi)/35]) Cos[$CellContext`v] - (78 Sin[(6 Pi)/35]) 
+           Sin[$CellContext`v], (78 Cos[$CellContext`v]) Sin[(6 Pi)/35] - (78 
+            Cos[(6 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[Pi/7]) Cos[$CellContext`v] - (78 Sin[Pi/7]) 
+           Sin[$CellContext`v], (78 Cos[$CellContext`v]) Sin[Pi/7] - (78 
+            Cos[Pi/7]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[(4 Pi)/35]) Cos[$CellContext`v] - (78 Sin[(4 Pi)/35]) 
+           Sin[$CellContext`v], (78 Cos[$CellContext`v]) Sin[(4 Pi)/35] - (78 
+            Cos[(4 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[(3 Pi)/35]) Cos[$CellContext`v] - (78 Sin[(3 Pi)/35]) 
+           Sin[$CellContext`v], (78 Cos[$CellContext`v]) Sin[(3 Pi)/35] - (78 
+            Cos[(3 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[(2 Pi)/35]) Cos[$CellContext`v] - (78 Sin[(2 Pi)/35]) 
+           Sin[$CellContext`v], (78 Cos[$CellContext`v]) Sin[(2 Pi)/35] - (78 
+            Cos[(2 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[Pi/35]) Cos[$CellContext`v] - (78 Sin[Pi/35]) 
+           Sin[$CellContext`v], (78 Cos[$CellContext`v]) Sin[Pi/35] - (78 
+            Cos[Pi/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{45 - 78 Cos[$CellContext`v], (-78) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[Pi/35]) 
+           Cos[$CellContext`v] + (78 Sin[Pi/35]) 
+            Sin[$CellContext`v], ((-78) Cos[$CellContext`v]) Sin[Pi/35] - (78 
+            Cos[Pi/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[(2 Pi)/35]) 
+           Cos[$CellContext`v] + (78 Sin[(2 Pi)/35]) 
+            Sin[$CellContext`v], ((-78) Cos[$CellContext`v]) 
+            Sin[(2 Pi)/35] - (78 Cos[(2 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[(3 Pi)/35]) 
+           Cos[$CellContext`v] + (78 Sin[(3 Pi)/35]) 
+            Sin[$CellContext`v], ((-78) Cos[$CellContext`v]) 
+            Sin[(3 Pi)/35] - (78 Cos[(3 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[(4 Pi)/35]) 
+           Cos[$CellContext`v] + (78 Sin[(4 Pi)/35]) 
+            Sin[$CellContext`v], ((-78) Cos[$CellContext`v]) 
+            Sin[(4 Pi)/35] - (78 Cos[(4 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[Pi/7]) 
+           Cos[$CellContext`v] + (78 Sin[Pi/7]) 
+            Sin[$CellContext`v], ((-78) Cos[$CellContext`v]) Sin[Pi/7] - (78 
+            Cos[Pi/7]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[(6 Pi)/35]) 
+           Cos[$CellContext`v] + (78 Sin[(6 Pi)/35]) 
+            Sin[$CellContext`v], ((-78) Cos[$CellContext`v]) 
+            Sin[(6 Pi)/35] - (78 Cos[(6 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + ((39 (-1 - Sqrt[5])) Cos[$CellContext`v])/
+            2 + (78 Sqrt[5/8 - Sqrt[5]/8]) 
+            Sin[$CellContext`v], ((-78) Sqrt[5/8 - Sqrt[5]/8]) 
+            Cos[$CellContext`v] + ((39 (-1 - Sqrt[5])) Sin[$CellContext`v])/
+            2}, 0.4], 
+         Disk[{
+          45 - (78 Cos[(8 Pi)/35]) 
+           Cos[$CellContext`v] + (78 Sin[(8 Pi)/35]) 
+            Sin[$CellContext`v], ((-78) Cos[$CellContext`v]) 
+            Sin[(8 Pi)/35] - (78 Cos[(8 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) 
+           Sin[(17 Pi)/70] + (78 Cos[(17 Pi)/70]) 
+            Sin[$CellContext`v], ((-78) Cos[(17 Pi)/70]) 
+            Cos[$CellContext`v] - (78 Sin[(17 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) 
+           Sin[(3 Pi)/14] + (78 Cos[(3 Pi)/14]) 
+            Sin[$CellContext`v], ((-78) Cos[(3 Pi)/14]) 
+            Cos[$CellContext`v] - (78 Sin[(3 Pi)/14]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) 
+           Sin[(13 Pi)/70] + (78 Cos[(13 Pi)/70]) 
+            Sin[$CellContext`v], ((-78) Cos[(13 Pi)/70]) 
+            Cos[$CellContext`v] - (78 Sin[(13 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) 
+           Sin[(11 Pi)/70] + (78 Cos[(11 Pi)/70]) 
+            Sin[$CellContext`v], ((-78) Cos[(11 Pi)/70]) 
+            Cos[$CellContext`v] - (78 Sin[(11 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) 
+           Sin[(9 Pi)/70] + (78 Cos[(9 Pi)/70]) 
+            Sin[$CellContext`v], ((-78) Cos[(9 Pi)/70]) 
+            Cos[$CellContext`v] - (78 Sin[(9 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + ((39 (1 - Sqrt[5])) Cos[$CellContext`v])/
+            2 + (78 Sqrt[5/8 + Sqrt[5]/8]) 
+            Sin[$CellContext`v], ((-78) Sqrt[5/8 + Sqrt[5]/8]) 
+            Cos[$CellContext`v] + ((39 (1 - Sqrt[5])) Sin[$CellContext`v])/2},
+           0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) 
+           Sin[Pi/14] + (78 Cos[Pi/14]) 
+            Sin[$CellContext`v], ((-78) Cos[Pi/14]) Cos[$CellContext`v] - (78 
+            Sin[Pi/14]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) 
+           Sin[(3 Pi)/70] + (78 Cos[(3 Pi)/70]) 
+            Sin[$CellContext`v], ((-78) Cos[(3 Pi)/70]) 
+            Cos[$CellContext`v] - (78 Sin[(3 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 - (78 Cos[$CellContext`v]) 
+           Sin[Pi/70] + (78 Cos[Pi/70]) 
+            Sin[$CellContext`v], ((-78) Cos[Pi/70]) Cos[$CellContext`v] - (78 
+            Sin[Pi/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) Sin[Pi/70] + (78 Cos[Pi/70]) 
+            Sin[$CellContext`v], ((-78) Cos[Pi/70]) 
+            Cos[$CellContext`v] + (78 Sin[Pi/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) Sin[(3 Pi)/70] + (78 Cos[(3 Pi)/70]) 
+            Sin[$CellContext`v], ((-78) Cos[(3 Pi)/70]) 
+            Cos[$CellContext`v] + (78 Sin[(3 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) Sin[Pi/14] + (78 Cos[Pi/14]) 
+            Sin[$CellContext`v], ((-78) Cos[Pi/14]) 
+            Cos[$CellContext`v] + (78 Sin[Pi/14]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + ((39 (-1 + Sqrt[5])) Cos[$CellContext`v])/
+            2 + (78 Sqrt[5/8 + Sqrt[5]/8]) 
+            Sin[$CellContext`v], ((-78) Sqrt[5/8 + Sqrt[5]/8]) 
+            Cos[$CellContext`v] + ((39 (-1 + Sqrt[5])) Sin[$CellContext`v])/
+            2}, 0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) Sin[(9 Pi)/70] + (78 Cos[(9 Pi)/70]) 
+            Sin[$CellContext`v], ((-78) Cos[(9 Pi)/70]) 
+            Cos[$CellContext`v] + (78 Sin[(9 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) 
+            Sin[(11 Pi)/70] + (78 Cos[(11 Pi)/70]) 
+            Sin[$CellContext`v], ((-78) Cos[(11 Pi)/70]) 
+            Cos[$CellContext`v] + (78 Sin[(11 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) 
+            Sin[(13 Pi)/70] + (78 Cos[(13 Pi)/70]) 
+            Sin[$CellContext`v], ((-78) Cos[(13 Pi)/70]) 
+            Cos[$CellContext`v] + (78 Sin[(13 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) Sin[(3 Pi)/14] + (78 Cos[(3 Pi)/14]) 
+            Sin[$CellContext`v], ((-78) Cos[(3 Pi)/14]) 
+            Cos[$CellContext`v] + (78 Sin[(3 Pi)/14]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (78 Cos[$CellContext`v]) 
+            Sin[(17 Pi)/70] + (78 Cos[(17 Pi)/70]) 
+            Sin[$CellContext`v], ((-78) Cos[(17 Pi)/70]) 
+            Cos[$CellContext`v] + (78 Sin[(17 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (78 Cos[(8 Pi)/35]) Cos[$CellContext`v] + (78 Sin[(8 Pi)/35]) 
+            Sin[$CellContext`v], ((-78) Cos[$CellContext`v]) 
+            Sin[(8 Pi)/35] + (78 Cos[(8 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + ((39 (1 + Sqrt[5])) Cos[$CellContext`v])/
+            2 + (78 Sqrt[5/8 - Sqrt[5]/8]) 
+            Sin[$CellContext`v], ((-78) Sqrt[5/8 - Sqrt[5]/8]) 
+            Cos[$CellContext`v] + ((39 (1 + Sqrt[5])) Sin[$CellContext`v])/2},
+           0.4], 
+         Disk[{
+          45 + (78 Cos[(6 Pi)/35]) Cos[$CellContext`v] + (78 Sin[(6 Pi)/35]) 
+            Sin[$CellContext`v], ((-78) Cos[$CellContext`v]) 
+            Sin[(6 Pi)/35] + (78 Cos[(6 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[Pi/7]) Cos[$CellContext`v] + (78 Sin[Pi/7]) 
+            Sin[$CellContext`v], ((-78) Cos[$CellContext`v]) 
+            Sin[Pi/7] + (78 Cos[Pi/7]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[(4 Pi)/35]) Cos[$CellContext`v] + (78 Sin[(4 Pi)/35]) 
+            Sin[$CellContext`v], ((-78) Cos[$CellContext`v]) 
+            Sin[(4 Pi)/35] + (78 Cos[(4 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[(3 Pi)/35]) Cos[$CellContext`v] + (78 Sin[(3 Pi)/35]) 
+            Sin[$CellContext`v], ((-78) Cos[$CellContext`v]) 
+            Sin[(3 Pi)/35] + (78 Cos[(3 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[(2 Pi)/35]) Cos[$CellContext`v] + (78 Sin[(2 Pi)/35]) 
+            Sin[$CellContext`v], ((-78) Cos[$CellContext`v]) 
+            Sin[(2 Pi)/35] + (78 Cos[(2 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (78 Cos[Pi/35]) Cos[$CellContext`v] + (78 Sin[Pi/35]) 
+            Sin[$CellContext`v], ((-78) Cos[$CellContext`v]) 
+            Sin[Pi/35] + (78 Cos[Pi/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{45 + 78 Cos[$CellContext`v], 78 Sin[$CellContext`v]}, 
+          0.4]}, $CellContext`Q[
+         Pattern[$CellContext`v, 
+          Blank[]]] = {
+         Disk[{45 + 84 Cos[$CellContext`v], 84 Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[Pi/35]) Cos[$CellContext`v] - (84 Sin[Pi/35]) 
+           Sin[$CellContext`v], (84 Cos[$CellContext`v]) 
+            Sin[Pi/35] + (84 Cos[Pi/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[(2 Pi)/35]) Cos[$CellContext`v] - (84 Sin[(2 Pi)/35]) 
+           Sin[$CellContext`v], (84 Cos[$CellContext`v]) 
+            Sin[(2 Pi)/35] + (84 Cos[(2 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[(3 Pi)/35]) Cos[$CellContext`v] - (84 Sin[(3 Pi)/35]) 
+           Sin[$CellContext`v], (84 Cos[$CellContext`v]) 
+            Sin[(3 Pi)/35] + (84 Cos[(3 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[(4 Pi)/35]) Cos[$CellContext`v] - (84 Sin[(4 Pi)/35]) 
+           Sin[$CellContext`v], (84 Cos[$CellContext`v]) 
+            Sin[(4 Pi)/35] + (84 Cos[(4 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[Pi/7]) Cos[$CellContext`v] - (84 Sin[Pi/7]) 
+           Sin[$CellContext`v], (84 Cos[$CellContext`v]) 
+            Sin[Pi/7] + (84 Cos[Pi/7]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[(6 Pi)/35]) Cos[$CellContext`v] - (84 Sin[(6 Pi)/35]) 
+           Sin[$CellContext`v], (84 Cos[$CellContext`v]) 
+            Sin[(6 Pi)/35] + (84 Cos[(6 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (21 (1 + Sqrt[5])) Cos[$CellContext`v] - (84 
+            Sqrt[5/8 - Sqrt[5]/8]) 
+           Sin[$CellContext`v], (84 Sqrt[5/8 - Sqrt[5]/8]) 
+            Cos[$CellContext`v] + (21 (1 + Sqrt[5])) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[(8 Pi)/35]) Cos[$CellContext`v] - (84 Sin[(8 Pi)/35]) 
+           Sin[$CellContext`v], (84 Cos[$CellContext`v]) 
+            Sin[(8 Pi)/35] + (84 Cos[(8 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) Sin[(17 Pi)/70] - (84 Cos[(17 Pi)/70])
+             Sin[$CellContext`v], (84 Cos[(17 Pi)/70]) 
+            Cos[$CellContext`v] + (84 Sin[(17 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) Sin[(3 Pi)/14] - (84 Cos[(3 Pi)/14]) 
+           Sin[$CellContext`v], (84 Cos[(3 Pi)/14]) 
+            Cos[$CellContext`v] + (84 Sin[(3 Pi)/14]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) Sin[(13 Pi)/70] - (84 Cos[(13 Pi)/70])
+             Sin[$CellContext`v], (84 Cos[(13 Pi)/70]) 
+            Cos[$CellContext`v] + (84 Sin[(13 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) Sin[(11 Pi)/70] - (84 Cos[(11 Pi)/70])
+             Sin[$CellContext`v], (84 Cos[(11 Pi)/70]) 
+            Cos[$CellContext`v] + (84 Sin[(11 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) Sin[(9 Pi)/70] - (84 Cos[(9 Pi)/70]) 
+           Sin[$CellContext`v], (84 Cos[(9 Pi)/70]) 
+            Cos[$CellContext`v] + (84 Sin[(9 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (21 (-1 + Sqrt[5])) Cos[$CellContext`v] - (84 
+            Sqrt[5/8 + Sqrt[5]/8]) 
+           Sin[$CellContext`v], (84 Sqrt[5/8 + Sqrt[5]/8]) 
+            Cos[$CellContext`v] + (21 (-1 + Sqrt[5])) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) Sin[Pi/14] - (84 Cos[Pi/14]) 
+           Sin[$CellContext`v], (84 Cos[Pi/14]) 
+            Cos[$CellContext`v] + (84 Sin[Pi/14]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) Sin[(3 Pi)/70] - (84 Cos[(3 Pi)/70]) 
+           Sin[$CellContext`v], (84 Cos[(3 Pi)/70]) 
+            Cos[$CellContext`v] + (84 Sin[(3 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) Sin[Pi/70] - (84 Cos[Pi/70]) 
+           Sin[$CellContext`v], (84 Cos[Pi/70]) 
+            Cos[$CellContext`v] + (84 Sin[Pi/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) Sin[Pi/70] - (84 Cos[Pi/70]) 
+           Sin[$CellContext`v], (84 Cos[Pi/70]) Cos[$CellContext`v] - (84 
+            Sin[Pi/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) Sin[(3 Pi)/70] - (84 Cos[(3 Pi)/70]) 
+           Sin[$CellContext`v], (84 Cos[(3 Pi)/70]) Cos[$CellContext`v] - (84 
+            Sin[(3 Pi)/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) Sin[Pi/14] - (84 Cos[Pi/14]) 
+           Sin[$CellContext`v], (84 Cos[Pi/14]) Cos[$CellContext`v] - (84 
+            Sin[Pi/14]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (21 (1 - Sqrt[5])) Cos[$CellContext`v] - (84 
+            Sqrt[5/8 + Sqrt[5]/8]) 
+           Sin[$CellContext`v], (84 Sqrt[5/8 + Sqrt[5]/8]) 
+            Cos[$CellContext`v] + (21 (1 - Sqrt[5])) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) Sin[(9 Pi)/70] - (84 Cos[(9 Pi)/70]) 
+           Sin[$CellContext`v], (84 Cos[(9 Pi)/70]) Cos[$CellContext`v] - (84 
+            Sin[(9 Pi)/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) 
+           Sin[(11 Pi)/70] - (84 Cos[(11 Pi)/70]) 
+           Sin[$CellContext`v], (84 Cos[(11 Pi)/70]) Cos[$CellContext`v] - (
+            84 Sin[(11 Pi)/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) 
+           Sin[(13 Pi)/70] - (84 Cos[(13 Pi)/70]) 
+           Sin[$CellContext`v], (84 Cos[(13 Pi)/70]) Cos[$CellContext`v] - (
+            84 Sin[(13 Pi)/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) Sin[(3 Pi)/14] - (84 Cos[(3 Pi)/14]) 
+           Sin[$CellContext`v], (84 Cos[(3 Pi)/14]) Cos[$CellContext`v] - (84 
+            Sin[(3 Pi)/14]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) 
+           Sin[(17 Pi)/70] - (84 Cos[(17 Pi)/70]) 
+           Sin[$CellContext`v], (84 Cos[(17 Pi)/70]) Cos[$CellContext`v] - (
+            84 Sin[(17 Pi)/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[(8 Pi)/35]) Cos[$CellContext`v] - (84 Sin[(8 Pi)/35]) 
+           Sin[$CellContext`v], (84 Cos[$CellContext`v]) Sin[(8 Pi)/35] - (84 
+            Cos[(8 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (21 (-1 - Sqrt[5])) Cos[$CellContext`v] - (84 
+            Sqrt[5/8 - Sqrt[5]/8]) 
+           Sin[$CellContext`v], (84 Sqrt[5/8 - Sqrt[5]/8]) 
+            Cos[$CellContext`v] + (21 (-1 - Sqrt[5])) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 - (84 Cos[(6 Pi)/35]) Cos[$CellContext`v] - (84 Sin[(6 Pi)/35]) 
+           Sin[$CellContext`v], (84 Cos[$CellContext`v]) Sin[(6 Pi)/35] - (84 
+            Cos[(6 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[Pi/7]) Cos[$CellContext`v] - (84 Sin[Pi/7]) 
+           Sin[$CellContext`v], (84 Cos[$CellContext`v]) Sin[Pi/7] - (84 
+            Cos[Pi/7]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[(4 Pi)/35]) Cos[$CellContext`v] - (84 Sin[(4 Pi)/35]) 
+           Sin[$CellContext`v], (84 Cos[$CellContext`v]) Sin[(4 Pi)/35] - (84 
+            Cos[(4 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[(3 Pi)/35]) Cos[$CellContext`v] - (84 Sin[(3 Pi)/35]) 
+           Sin[$CellContext`v], (84 Cos[$CellContext`v]) Sin[(3 Pi)/35] - (84 
+            Cos[(3 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[(2 Pi)/35]) Cos[$CellContext`v] - (84 Sin[(2 Pi)/35]) 
+           Sin[$CellContext`v], (84 Cos[$CellContext`v]) Sin[(2 Pi)/35] - (84 
+            Cos[(2 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[Pi/35]) Cos[$CellContext`v] - (84 Sin[Pi/35]) 
+           Sin[$CellContext`v], (84 Cos[$CellContext`v]) Sin[Pi/35] - (84 
+            Cos[Pi/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{45 - 84 Cos[$CellContext`v], (-84) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[Pi/35]) 
+           Cos[$CellContext`v] + (84 Sin[Pi/35]) 
+            Sin[$CellContext`v], ((-84) Cos[$CellContext`v]) Sin[Pi/35] - (84 
+            Cos[Pi/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[(2 Pi)/35]) 
+           Cos[$CellContext`v] + (84 Sin[(2 Pi)/35]) 
+            Sin[$CellContext`v], ((-84) Cos[$CellContext`v]) 
+            Sin[(2 Pi)/35] - (84 Cos[(2 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[(3 Pi)/35]) 
+           Cos[$CellContext`v] + (84 Sin[(3 Pi)/35]) 
+            Sin[$CellContext`v], ((-84) Cos[$CellContext`v]) 
+            Sin[(3 Pi)/35] - (84 Cos[(3 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[(4 Pi)/35]) 
+           Cos[$CellContext`v] + (84 Sin[(4 Pi)/35]) 
+            Sin[$CellContext`v], ((-84) Cos[$CellContext`v]) 
+            Sin[(4 Pi)/35] - (84 Cos[(4 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[Pi/7]) 
+           Cos[$CellContext`v] + (84 Sin[Pi/7]) 
+            Sin[$CellContext`v], ((-84) Cos[$CellContext`v]) Sin[Pi/7] - (84 
+            Cos[Pi/7]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[(6 Pi)/35]) 
+           Cos[$CellContext`v] + (84 Sin[(6 Pi)/35]) 
+            Sin[$CellContext`v], ((-84) Cos[$CellContext`v]) 
+            Sin[(6 Pi)/35] - (84 Cos[(6 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (21 (-1 - Sqrt[5])) 
+            Cos[$CellContext`v] + (84 Sqrt[5/8 - Sqrt[5]/8]) 
+            Sin[$CellContext`v], ((-84) Sqrt[5/8 - Sqrt[5]/8]) 
+            Cos[$CellContext`v] + (21 (-1 - Sqrt[5])) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 - (84 Cos[(8 Pi)/35]) 
+           Cos[$CellContext`v] + (84 Sin[(8 Pi)/35]) 
+            Sin[$CellContext`v], ((-84) Cos[$CellContext`v]) 
+            Sin[(8 Pi)/35] - (84 Cos[(8 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) 
+           Sin[(17 Pi)/70] + (84 Cos[(17 Pi)/70]) 
+            Sin[$CellContext`v], ((-84) Cos[(17 Pi)/70]) 
+            Cos[$CellContext`v] - (84 Sin[(17 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) 
+           Sin[(3 Pi)/14] + (84 Cos[(3 Pi)/14]) 
+            Sin[$CellContext`v], ((-84) Cos[(3 Pi)/14]) 
+            Cos[$CellContext`v] - (84 Sin[(3 Pi)/14]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) 
+           Sin[(13 Pi)/70] + (84 Cos[(13 Pi)/70]) 
+            Sin[$CellContext`v], ((-84) Cos[(13 Pi)/70]) 
+            Cos[$CellContext`v] - (84 Sin[(13 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) 
+           Sin[(11 Pi)/70] + (84 Cos[(11 Pi)/70]) 
+            Sin[$CellContext`v], ((-84) Cos[(11 Pi)/70]) 
+            Cos[$CellContext`v] - (84 Sin[(11 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) 
+           Sin[(9 Pi)/70] + (84 Cos[(9 Pi)/70]) 
+            Sin[$CellContext`v], ((-84) Cos[(9 Pi)/70]) 
+            Cos[$CellContext`v] - (84 Sin[(9 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (21 (1 - Sqrt[5])) 
+            Cos[$CellContext`v] + (84 Sqrt[5/8 + Sqrt[5]/8]) 
+            Sin[$CellContext`v], ((-84) Sqrt[5/8 + Sqrt[5]/8]) 
+            Cos[$CellContext`v] + (21 (1 - Sqrt[5])) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) 
+           Sin[Pi/14] + (84 Cos[Pi/14]) 
+            Sin[$CellContext`v], ((-84) Cos[Pi/14]) Cos[$CellContext`v] - (84 
+            Sin[Pi/14]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) 
+           Sin[(3 Pi)/70] + (84 Cos[(3 Pi)/70]) 
+            Sin[$CellContext`v], ((-84) Cos[(3 Pi)/70]) 
+            Cos[$CellContext`v] - (84 Sin[(3 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 - (84 Cos[$CellContext`v]) 
+           Sin[Pi/70] + (84 Cos[Pi/70]) 
+            Sin[$CellContext`v], ((-84) Cos[Pi/70]) Cos[$CellContext`v] - (84 
+            Sin[Pi/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) Sin[Pi/70] + (84 Cos[Pi/70]) 
+            Sin[$CellContext`v], ((-84) Cos[Pi/70]) 
+            Cos[$CellContext`v] + (84 Sin[Pi/70]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) Sin[(3 Pi)/70] + (84 Cos[(3 Pi)/70]) 
+            Sin[$CellContext`v], ((-84) Cos[(3 Pi)/70]) 
+            Cos[$CellContext`v] + (84 Sin[(3 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) Sin[Pi/14] + (84 Cos[Pi/14]) 
+            Sin[$CellContext`v], ((-84) Cos[Pi/14]) 
+            Cos[$CellContext`v] + (84 Sin[Pi/14]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (21 (-1 + Sqrt[5])) 
+            Cos[$CellContext`v] + (84 Sqrt[5/8 + Sqrt[5]/8]) 
+            Sin[$CellContext`v], ((-84) Sqrt[5/8 + Sqrt[5]/8]) 
+            Cos[$CellContext`v] + (21 (-1 + Sqrt[5])) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) Sin[(9 Pi)/70] + (84 Cos[(9 Pi)/70]) 
+            Sin[$CellContext`v], ((-84) Cos[(9 Pi)/70]) 
+            Cos[$CellContext`v] + (84 Sin[(9 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) 
+            Sin[(11 Pi)/70] + (84 Cos[(11 Pi)/70]) 
+            Sin[$CellContext`v], ((-84) Cos[(11 Pi)/70]) 
+            Cos[$CellContext`v] + (84 Sin[(11 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) 
+            Sin[(13 Pi)/70] + (84 Cos[(13 Pi)/70]) 
+            Sin[$CellContext`v], ((-84) Cos[(13 Pi)/70]) 
+            Cos[$CellContext`v] + (84 Sin[(13 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) Sin[(3 Pi)/14] + (84 Cos[(3 Pi)/14]) 
+            Sin[$CellContext`v], ((-84) Cos[(3 Pi)/14]) 
+            Cos[$CellContext`v] + (84 Sin[(3 Pi)/14]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[$CellContext`v]) 
+            Sin[(17 Pi)/70] + (84 Cos[(17 Pi)/70]) 
+            Sin[$CellContext`v], ((-84) Cos[(17 Pi)/70]) 
+            Cos[$CellContext`v] + (84 Sin[(17 Pi)/70]) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[(8 Pi)/35]) Cos[$CellContext`v] + (84 Sin[(8 Pi)/35]) 
+            Sin[$CellContext`v], ((-84) Cos[$CellContext`v]) 
+            Sin[(8 Pi)/35] + (84 Cos[(8 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (21 (1 + Sqrt[5])) 
+            Cos[$CellContext`v] + (84 Sqrt[5/8 - Sqrt[5]/8]) 
+            Sin[$CellContext`v], ((-84) Sqrt[5/8 - Sqrt[5]/8]) 
+            Cos[$CellContext`v] + (21 (1 + Sqrt[5])) Sin[$CellContext`v]}, 
+          0.4], 
+         Disk[{
+          45 + (84 Cos[(6 Pi)/35]) Cos[$CellContext`v] + (84 Sin[(6 Pi)/35]) 
+            Sin[$CellContext`v], ((-84) Cos[$CellContext`v]) 
+            Sin[(6 Pi)/35] + (84 Cos[(6 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[Pi/7]) Cos[$CellContext`v] + (84 Sin[Pi/7]) 
+            Sin[$CellContext`v], ((-84) Cos[$CellContext`v]) 
+            Sin[Pi/7] + (84 Cos[Pi/7]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[(4 Pi)/35]) Cos[$CellContext`v] + (84 Sin[(4 Pi)/35]) 
+            Sin[$CellContext`v], ((-84) Cos[$CellContext`v]) 
+            Sin[(4 Pi)/35] + (84 Cos[(4 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[(3 Pi)/35]) Cos[$CellContext`v] + (84 Sin[(3 Pi)/35]) 
+            Sin[$CellContext`v], ((-84) Cos[$CellContext`v]) 
+            Sin[(3 Pi)/35] + (84 Cos[(3 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[(2 Pi)/35]) Cos[$CellContext`v] + (84 Sin[(2 Pi)/35]) 
+            Sin[$CellContext`v], ((-84) Cos[$CellContext`v]) 
+            Sin[(2 Pi)/35] + (84 Cos[(2 Pi)/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{
+          45 + (84 Cos[Pi/35]) Cos[$CellContext`v] + (84 Sin[Pi/35]) 
+            Sin[$CellContext`v], ((-84) Cos[$CellContext`v]) 
+            Sin[Pi/35] + (84 Cos[Pi/35]) Sin[$CellContext`v]}, 0.4], 
+         Disk[{45 + 84 Cos[$CellContext`v], 84 Sin[$CellContext`v]}, 
+          0.4]}, $CellContext`rot[
+         Pattern[$CellContext`a, 
+          Blank[]]] = {{
+          Cos[$CellContext`a], -Sin[$CellContext`a]}, {
+          Sin[$CellContext`a], 
+          Cos[$CellContext`a]}}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.5431809045435505`*^9, 3.5431813152474723`*^9, {3.5431814332460794`*^9, 
+   3.543181455632119*^9}, 3.5431814870661745`*^9, 3.543181565471912*^9, 
+   3.543181832684781*^9, 3.5431819284221497`*^9, {3.5431826163079576`*^9, 
+   3.5431826275399776`*^9}, 3.543182669925252*^9, 3.5431827327309623`*^9, 
+   3.5431829721445827`*^9, 3.5432273943481503`*^9, 3.543284418482128*^9, 
+   3.5432934421472907`*^9, 3.5433174066149406`*^9, {3.543317761870101*^9, 
+   3.5433177782156*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1031, 787},
+WindowMargins->{{3, Automatic}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (2011\:5e743\
+\:670821\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 104, 1, 69, "Section"],
+Cell[CellGroupData[{
+Cell[708, 27, 504, 15, 27, "Input"],
+Cell[1215, 44, 672, 17, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1924, 66, 9731, 284, 238, "Input"],
+Cell[11658, 352, 37973, 763, 461, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

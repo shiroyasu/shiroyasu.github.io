@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../..//hstyle.css">
+<link rel="stylesheet" type="text/css" href="../../hstyle-sub.css">
+<link rel="shortcut icon" href="../../img/favicon.png">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
+
+<title>電気数学II - 佐藤弘康</title>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+
+<h1><a href="../../index.html">home</a> &#155;&#155; <a href="../index.html">Teaching</a> &#155;&#155; <a href="../nit.html">NIT</a> &#155;&#155;</h1>
+<p class="logo">2014年度春学期 電気数学 II<br><span class="gl">Mathematics for Electrical and Electronics Engineers II</span></p>
+
+<p class="description">月4限 15:05-16:45 | 2-275教室 | 対象：<span class="dep2">電気電子工学科1年生</span><br>
+担当：佐藤 弘康（hiroyasu [at] nit.ac.jp | W1棟204 | 0480-33-7972）
+</p>
+</div>
+
+<div id="contents">
+
+<h2>連絡事項</h2>
+
+<ul>
+<li>8/18：期末試験の得点分布および問題[8]の解説（このページの最下部を参照）を公開しました．</li>
+<li>7/28：本日は期末試験でした．これをもってこの授業はすべて終了しました．</li>
+<li>5/30：6月9日に小テストを実施します（授業時間内，30分程度）．出題範囲は「指数関数と対数関数」です．授業中の問題演習で解いてもらった問題，または例題として解説した問題の中から出題します（これまでのノート，答案を確認してください）．</li>
+<li>
+4/7：このページを公開しました．
+</li>
+<li>
+Twitterでこの授業について<a href="https://twitter.com/shiroyasu_NIT">ツイート</a>していきます（ハッシュタグは<a href="https://twitter.com/search?q=%2314S%E9%9B%BB%E6%B0%97%E6%95%B0%E5%AD%A62&src=hash">#14S電気数学2</a>．ツイログは<a href="http://twilog.org/shiroyasu_NIT/hashtags-14S%E9%9B%BB%E6%B0%97%E6%95%B0%E5%AD%A62">こちら</a>）．質問，意見などのリプライを歓迎します．
+</li>
+<li>
+授業に対する<a href="../../appendix/msg.html">基本的な考え方</a>にも目を通しておいてください．
+</li>
+</ul>
+
+
+<h2>授業の目的</h2>
+
+<p>
+電気電子工学では、指数関数・対数関数やベクトルを用いて記述される現象が数多く見受けられ、その知識は欠かせない。
+専門科目の理解に必要とされる読解力・計算力を身に付けるために、指数関数・対数関数およびベクトルについて学習する。基礎的な計算技法に習熟するとともに、電気数学Ⅰで学習する三角関数・複素数との関係についても理解する。</p>
+
+<h2>達成目標</h2>
+
+<ol>
+<li>指数・対数の性質を理解し、それを利用して指数や対数の値を求めることができる。</li>
+<li>指数関数・対数関数の定義や性質を理解し、グラフの概形を描くことができる。</li>
+<li>指数方程式・対数方程式の解を求めることができる。</li>
+<li>ベクトルの定義を理解し、基本的な演算ができる。</li>
+<li>ベクトルの平行条件・垂直条件を理解し、適用することができる。</li>
+</ol>
+
+<h2>授業の予定と記録</h2>
+
+<table
+ style="width: 95%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="1" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="width: 50px; text-align: center; vertical-align: top;">第1回</td>
+      <td style="width: 40px; text-align: right; vertical-align: top;">4月</td>
+      <td style="width: 75px; text-align: right; vertical-align: top;">7日<span class="gs">（月）</span></td>
+      <td>ガイダンス，ミニクイズ（2次関数のグラフ，2次方程式）</td>
+    </tr>
+    <tr>
+    <td class="ct">第2回</td>
+    <td></td>
+    <td class="rt">14日<span class="gs">（月）</span></td>
+    <td>指数法則，累乗根の定義 <span class="eem">&nbsp;II-1(p.22, 23)&nbsp;</span> <span class="bmee">&nbsp;10.1&nbsp;</span> <span class="bmee">&nbsp;10.2&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第3回</td>
+    <td></td>
+    <td class="rt">21日<span class="gs">（月）</span></td>
+    <td>累乗根の性質 <span class="eem">&nbsp;II-1(p.22, 23)&nbsp;</span>，指数の拡張 <span class="eem">&nbsp;II-2(p.24, 25)&nbsp;</span> <span class="bmee">&nbsp;10.1&nbsp;</span> <span class="bmee">&nbsp;10.2&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第4回</td>
+    <td></td>
+    <td class="rt">28日<span class="gs">（月）</span></td>
+    <td>指数関数とそのグラフ <span class="eem">&nbsp;II-3(p.26)&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第5回</td>
+    <td class="rt">5月</td>
+    <td class="rt">12日<span class="gs">（月）</span></td>
+    <td>指数方程式 <span class="eem">&nbsp;II-4(p.27)&nbsp;</span><br>
+	    対数とその性質・底の変換公式 <span class="eem">&nbsp;II-5(p.28, 29)&nbsp;</span> <span class="bmee">&nbsp;10.3&nbsp;</span>
+    </td>
+    </tr>
+    <tr>
+    <td class="ct">第6回</td>
+    <td></td>
+    <td class="rt">19日<span class="gs">（月）</span></td>
+    <td>対数関数とそのグラフ <span class="eem">&nbsp;II-6(p.30)&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第7回</td>
+    <td></td>
+    <td class="rt">26日<span class="gs">（月）</span></td>
+    <td>対数方程式 <span class="eem">&nbsp;II-7(p.31)&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第8回</td>
+    <td class="rt">6月</td>
+    <td class="rt">2日<span class="gs">（月）</span></td>
+    <td>ベクトル，空間の座標 (1) <span class="eem">&nbsp;II-8(p.32, 33)&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第9回</td>
+    <td></td>
+    <td class="rt">9日<span class="gs">（月）</span></td>
+    <td>空間の座標 (2) <span class="eem">&nbsp;II-8&nbsp;</span> <span class="bmee">&nbsp;13.1&nbsp;</span> <span class="bmee">&nbsp;13.2&nbsp;</span><br>
+    <b>小テスト（中間試験）</b> <a href="meee2-20140609-mdt.pdf">問題</a> <a href="meee2-20140609-mdt-ans.pdf">解答</a></td>
+    </tr>
+    <tr>
+    <td class="ct">第10回</td>
+    <td></td>
+    <td class="rt">16日<span class="gs">（月）</span></td>
+    <td>2点間の距離の公式 <span class="eem">&nbsp;II-8&nbsp;</span><br>
+    ベクトルとその演算 <span class="eem">&nbsp;II-9&nbsp;</span> <span class="bmee">&nbsp;13.4&nbsp;</span>
+    </td>
+    </tr>
+    <tr>
+    <td class="ct">第11回</td>
+    <td></td>
+    <td class="rt">23日<span class="gs">（月）</span></td>
+    <td>ベクトルとその演算の性質 <span class="eem">&nbsp;II-9&nbsp;</span> <span class="bmee">&nbsp;13.4&nbsp;</span><br>
+    ベクトルの基本ベクトル表示 <span class="eem">&nbsp;II-10&nbsp;</span> <span class="bmee">&nbsp;13.3&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第12回</td>
+    <td></td>
+    <td class="rt">30日<span class="gs">（月）</span></td>
+    <td>ベクトルの成分表示 <span class="eem">&nbsp;II-11&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第13回</td>
+    <td class="rt">7月</td>
+    <td class="rt">7日<span class="gs">（月）</span></td>
+    <td>内積とその性質 <span class="eem">&nbsp;II-12&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">第14回</td>
+    <td></td>
+    <td class="rt">14日<span class="gs">（月）</span></td>
+    <td>内積の応用 <span class="bmee">&nbsp;13.5&nbsp;</span></td>
+    </tr>
+    <tr>
+    <td class="ct">試験</td>
+    <td></td>
+    <td class="rt">28日<span class="gs">（月）</span></td>
+    <td><b>期末試験</b> <span class="gs">(14:00 -- 15:00)</span></td>
+    </tr>
+</tbody>
+</table>
+
+<h2>教科書・参考文献について</h2>
+<ul>
+<li>森武昭・大矢征著 <span class="bmee">『電気電子工学のための基礎数学』</span> 森北出版  &#187; <a href="http://www.morikita.co.jp/books/book/1629">リンク</a></li>
+<li>小冊子 <span class="eem">『電気数学（2014年度版）』</span></li>
+</ul>
+
+<h2>評価について</h2>
+<ul>
+<li>期末試験80点（共通試験），小テスト・演習課題など20点の配点で評価する．</li>
+<li>中間期にミニ中間試験を実施する（10点）．
+</li>
+<li>毎回の授業で問題演習を実施する（手順は以下）．
+<ul>
+<li>教科書等の問題を指定し，指定の答案用紙に解答．</li>
+<li>一定時間の後，各自答え合わせ（必要に応じて解説）．</li>
+<li>授業終了時に答案用紙を回収．</li>
+</ul>
+1回の提出につき1点を加点する（合計10点）．
+ほぼ白紙の答案や，単に解答を書き写しただけと思われる場合は加点しない．
+</li>
+</ul>
+<h2>期末試験の得点分布と評価など</h2>
+<table
+ style="width: 70%; text-align: left;"
+ border="0" cellpadding="1" cellspacing="0">
+ <tbody>
+ <tr>
+ <td><img src="meee2-20140728-edt-result.png"></td>
+ <td>
+<table
+ style="border-collapse: collapse;" border="1" cellpadding="3" cellspacing="1">
+  <tbody>
+    <tr><td class="ct">履修者</td><td class="rt">35</td></tr>
+    <tr><td class="ct">受験者</td><td class="rt">33</td></tr>
+    <tr><td class="ct">AA</td><td class="rt">0</td></tr>
+    <tr><td class="ct">A</td><td class="rt">7</td></tr>
+    <tr><td class="ct">B</td><td class="rt">14</td></tr>
+    <tr><td class="ct">C</td><td class="rt">4</td></tr>
+    <tr><td class="ct">D</td><td class="rt">8</td></tr>
+    <tr><td class="ct">未受験</td><td class="rt">2</td></tr>
+    <tr><td class="ct">単位修得者</td><td class="rt">25</td></tr>
+    <tr><td class="ct">単位修得率</td><td class="rt">75.8%</td></tr>
+  </tbody>
+</table>
+<br><br>
+ </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<div id="footer">
+<p><span class="gs">Copyright &copy; Hiroyasu Satoh. All Rights Reserved.</span></p>
+<p id="cds">CSS Template <a href="http://www.css-designsample.com/">CSSデザインサンプル</a></p>
+</div>
+
+</div>
+</body>
+</html>

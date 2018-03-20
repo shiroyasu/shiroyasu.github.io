@@ -1,0 +1,215 @@
+@charset "UTF-8";
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+a:link    { color: black ; border-bottom: 2px solid #24ade2 ; text-decoration: none; }
+a:visited { color: black ; border-bottom: 2px solid #24ade2 ; text-decoration: none; }
+a:hover   { color: #24ade2 ; text-decoration: none; }
+
+/* ---------------------------------------- フォントスタイル フォントサイズ */
+body {
+  font-size: 0.9em;
+  text-align: center;
+  font-family: optima, suns-serif, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic";
+  text-rendering: optimizeLegibility;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.icon-fa a:link		{ color: gray; border-bottom: 0px; text-decoration: none; }
+.icon-fa a:visited	{ color: gray; border-bottom: 0px; text-decoration: none; }
+.icon-fa a:hover	{ color: #24ade2; text-decoration: none; }
+
+.sns-link a:link	{ color: black; border-bottom: 0px; text-decoration: none; }
+.sns-link a:visited	{ color: black; border-bottom: 0px; text-decoration: none; }
+.sns-link a:hover	{ color: black; border-bottom: 0px; text-decoration: none; }
+
+p { }
+
+div { padding: 0; margin: 0;}
+
+ul { padding: 0; margin: 1px;}
+
+ol { padding: 0; margin: 1px;}
+
+hr { height: 4px; width: 100%; border: 1px; background-color: #d3d3d3; }
+/* ---------------------------------------- フォントカラー */
+.dep1 {background-color: white ; color: #cc005a ;}
+.dep2 {background-color: white ; color: #003fb3 ;}
+.dep3 {background-color: white ; color: #00a43e ;}
+.dep01 {background-color: white ; color: #e60066 ;}
+.dep02 {background-color: white ; color: #0080ff ;}
+.dep03 {background-color: white ; color: #40ff00 ;}
+.depH {background-color: #FCC35A ; color: white ;}
+
+.cal { background-color: mediumseagreen ; color: white ;}
+.la { background-color: navy ; color: white ; }
+.la2 { background-color: coral ; color: white ; }
+.la3 { background-color: coral ; color: black ; }
+.bm { background-color: crimson ; color: white ;}
+.bmee { background-color: yellow ; color: green ;}
+.eem { background-color: dodgerblue ; color: black ;}
+.apl { background-color: forestgreen ; color: black ;}
+.ps { background-color: aquamarine ; color: black ;}
+.main {background-color:#24ade2 ; color: white ;}
+.com {background-color:black ; color: white ;}
+
+.remark { color: red ; font-weight: bold; }
+
+.gs { font-size: small; color: #808080; line-height: 135%;}
+.gss { font-size: x-small; color: #808080; line-height: 135%;}
+.gl { font-size: x-large; color: #808080; }
+.g { color: #808080; }
+.w { font-size: x-small; color: white; }
+.oh { font-size: x-small; font-weight: bold; }
+.bquote { background-color: #f0f0f0; padding: 10px 20px; }
+
+/* ---------------------------------------- ボックススタイル・カラー */
+.kamoku {background-color:#f3f3f3 ; border-color: gray; border-style: solid; border-width: 1px; text-align: center;}
+.kamoku2 {background-color:#f3f3f3 ; border-color: gray; border-style: solid; border-width: 1px; vertical-align: text-top; font-size: small}
+.dep1box {background-color:#cc005a ; color: white;}
+.dep2box {background-color:#003fb3 ; color: white;}
+.dep3box {background-color:#00a43e ; color: white;}
+
+.area {background-color:#24ade2 ; color: white ; text-align: center; vertical-align: middle;}
+.grd {background-color:#24ade2 ; color: white ; text-align: center; vertical-align: middle;}
+
+.essay	{font-family: serif; }
+
+
+.box       { border: 1px solid #808080; border-collapse: collapse; }
+
+.rt        { text-align: right; vertical-align: top; }
+.lt        { text-align: left; vertical-align: top; }
+.ct        { text-align: center; vertical-align: top; }
+
+/* -- 見出しレベル1 -- */
+h1 {
+  text-align: left;
+  font-size: 0.8em;
+  font-weight: normal;
+  text-indent: inherit;
+}
+
+.logo {
+  font-size: 1.7em;
+  margin-bottom: 0.3em;
+}
+
+.logo a {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #0099ff;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #ff0000;
+}
+
+/* -- 概要 -- */
+.description { }
+
+/* ---------------------------------------- #contents内の指定 */
+
+/* -- 見出し -- */
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  padding: 5px 0 5px 5px;
+  border-left: 0px solid #000000;
+  border-bottom: 3px solid #d3d3d3;
+}
+
+h3 {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  margin-top: 2.5em; 
+  padding: 5px 0 5px 5px;
+  border-left: 0px solid #000000;
+  border-bottom: 1px dashed #d3d3d3;
+}
+
+h4,h5,h6 {
+  font-size: 1em;
+  margin-bottom: 1em;
+  padding: 5px 0 3px 3px;
+  border-left: 0px solid #d3d3d3;
+  border-bottom: 0px dashed #d3d3d3;
+}
+
+/* -- 文字 -- */
+#contents p {
+  line-height: 150%;
+  margin-bottom: 0.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  text-indent: 1em;
+}
+
+/* -- パン屑リスト -- */
+#contents .topic-path {
+  line-height: 1em;
+  margin-bottom: 2em;
+}
+
+/* -- 以下 リスト関係 -- */
+#contents dl { margin: 1em 0; }
+
+#contents dt {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  border-bottom: 1px dotted #666666;
+}
+
+#contents dd { margin-bottom: 2em; }
+
+#contents ul { margin: 1em 0 1em 20px; }
+#contents ol { margin: 1em 0 1em 30px; }
+#contents li { margin-bottom: 0.2em; }
+
+/* ---------------------------------------- #sidebar内の指定 */
+
+/* -- カテゴリタイトル -- */
+.sidetitle {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #666666;
+}
+
+/* -- リスト -- */
+.localnavi {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+.localnavi li { display: inline; }
+
+.localnavi a {
+  text-decoration: none;
+  display: block;
+  width: 170px;
+  padding: 0.5em 5px;
+  background-color: #eeeeee;
+  color: #000000;
+  border-bottom: 1px solid #cccccc;
+}
+
+.localnavi a:hover {
+  text-decoration: none;
+  background-color: #999999;
+  color: #000000;
+  border-bottom: 1px solid #ff0000;
+}
+.tt{
+  background-color: #eeeeee;
+  font-size: x-small;
+  color: #808080;
+  padding: 0px 0px 0px 2px;
+}
+
+/* ---------------------------------------- #footer内の指定 */
+#footer p { text-align: center; }
+
+/* 以下 CSSデザインサンプルクレジット部分 */
+#cds{ display: none; }

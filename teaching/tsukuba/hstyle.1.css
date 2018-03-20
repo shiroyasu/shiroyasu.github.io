@@ -1,0 +1,35 @@
+@charset "ISO-2022-JP";
+body       { background: #ffffff;
+             color: #000000;
+             margin-left: 10px;
+             margin-top: 0px;
+             margin-right: 0px;
+             padding-top: 0px;
+             font-family: 'Lucida Grande', helvetica, arial, verdana, 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif;}
+a:link     { color: #0000cd; text-decoration: underline; }
+a:visited  { color: #0000cd; text-decoration: underline; }
+a:hover    { color: #FFFFFF; text-decoration: none; background: #0000cd; }
+a:active   { color: #FFFFFF; text-decoration: none; background: #0000cd; }
+hr         { border: 0pt none ;
+             width: 99%;
+             height: 3px;
+             background-color: #C0C0C0; }
+.ttl-j     { font-size: x-large;
+             color: #000000; }
+.ttl-e     { font-size: x-large;
+             color: #696969; }
+.sbttl-j   { font-size: large;
+             color: #000000; }
+.sbttl-e   { font-size: large;
+             color: #696969; }
+.ne        { color: rgb(153, 153, 153); }
+.e         { font-size: small;
+             color: #696969; }
+.c1        { color: #000000; }
+.c2        { color: #000000; }
+.c3        { color: #000000; }
+/* ------------------------------
+ Maxima
+------------------------------ */
+.prompt    { color: rgb(255,0,0); }
+.input     { color: rgb(0,0,255); }

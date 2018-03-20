@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE jv-disp SYSTEM "http://www.javaview.de/rsrc/jv-disp.dtd">
+<jv-disp>
+	<meta generator="JavaView v.3.95.001"/>
+	<meta dtd="1.10.001"/>
+	<meta date="Tue Apr 14 17:29:43 JST 2009"/>
+	<version type="dump">0.99</version>
+	<title>Empty Polygon Set[208]</title>
+	<displays>
+		<display depthcue="hide" edgesOnce="hide">
+			<bndbox>
+				<color type="rgb">0 0 255</color>
+				<thickness>1.0</thickness>
+			</bndbox>
+			<boxRatio>1.0 1.0 1.0</boxRatio>
+			<cameras select="Perspective">
+				<camera projection="Perspective" name="Perspective">
+					<position>-6.778594735362154 3.452838600187613 2.538082275643687</position>
+					<interest>-1.0050074834353913 0.47256002739793906 0.34736527495123415</interest>
+					<fieldOfView>0.5</fieldOfView>
+					<roll>-0.24492695294378056</roll>
+					<clipping enable="hide">
+						<near>10.0</near>
+						<far>-10.0</far>
+					</clipping>
+				</camera>
+			</cameras>
+			<lights select="1" lightingModel="Light">
+				<light reference="scene" shading="fullSphere" highlight="off" switch="on" name="Sky" type="sky" visible="hide">
+					<position>0.0 0.0 10.0</position>
+					<interest>0.0 0.0 0.0</interest>
+					<color type="rgb">255 255 255</color>
+					<intensity>0.3</intensity>
+					<exponent>10.0</exponent>
+					<angle>20.0</angle>
+					<corona>15.0</corona>
+					<falloff>10.0</falloff>
+				</light>
+				<light reference="camera" shading="halfSphere" highlight="off" switch="on" name="Head" type="head" visible="hide">
+					<position>0.0 0.0 10.0</position>
+					<interest>0.0 0.0 0.0</interest>
+					<color type="rgb">255 255 255</color>
+					<intensity>0.8</intensity>
+					<exponent>10.0</exponent>
+					<angle>20.0</angle>
+					<corona>15.0</corona>
+					<falloff>10.0</falloff>
+				</light>
+			</lights>
+			<transform majorMode="rotate" mode="camera"/>
+			<background>
+				<color type="rgb">225 225 225</color>
+			</background>
+			<foreground>
+				<color type="rgb">0 0 0</color>
+			</foreground>
+			<window>
+				<x>432</x>
+				<y>81</y>
+				<width>602</width>
+				<height>474</height>
+			</window>
+		</display>
+	</displays>
+</jv-disp>
+

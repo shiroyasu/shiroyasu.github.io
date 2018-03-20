@@ -1,0 +1,213 @@
+\documentclass[a4j,landscape,25pt]{jsarticle}
+
+\usepackage{amsmath,amssymb,ascmac, bm, graphics}
+\usepackage{mypresen}
+\usepackage[display]{texpower}
+
+\def\thesection{\hspace{-1zw}}
+\def\thesection{\hspace{-1zw}}
+
+\AtBeginDvi{\special{papersize=297mm,210mm}}
+\setcounter{page}{0}
+\setlength{\headheight}{10pt}
+\setlength{\textheight}{215pt}
+\setlength{\footskip}{10pt}
+
+\usepackage{fancyheadings}
+\pagestyle{fancy}
+\headrulewidth=0mm
+\footrulewidth=0mm
+\lhead{}
+\rhead{}
+\chead{}
+\lfoot{}
+\rfoot{{\footnotesize 東京電機大学情報環境学部 入学前ガイダンス (\thepage)}}
+\cfoot{}
+
+\newcommand{\defarrow}{\stackrel{\mathrm{\sf def}}{\Longleftrightarrow}}
+\newcommand{\iffarrow}{\stackrel{\mathrm{\sf iff}}{\Longleftrightarrow}}
+\newcommand{\isomeq}{\stackrel{\mathrm{\sf isom}}{=}}
+\newcommand{\RN}{\mathbb{R}}
+\newcommand{\CN}{\mathbb{C}}
+\newcommand{\HN}{\mathbb{H}}
+\newcommand{\ON}{\mathbb{O}}
+\def\diff{\mathop{\mathrm{Diff}}\nolimits}
+\def\vol{\mathop{\mathrm{Vol}}\nolimits}
+\def\isom{\mathop{\mathrm{Isom}}\nolimits}
+\def\id{\mathop{\mathrm{id}}\nolimits}
+\def\grad{\mathop{\mathrm{grad}}\nolimits}
+\def\trace{\mathop{\mathrm{trace}}\nolimits}
+
+\definecolor{gray1}{gray}{0.7}
+
+\begin{document}
+
+%%% タイトルページ
+\thispagestyle{empty}
+\vspace*{30pt}
+\begin{center}
+{\small 東京電機大学 情報環境学部}
+\vspace{15pt}
+
+{\large 入学前ガイダンス}
+\vspace{45pt}
+
+{\footnotesize 
+平成23年12月24日（土）\\
+数学担当：佐藤 弘康
+}
+\end{center}
+
+\section{高等学校と大学の違い}
+
+\noindent どちらも卒業するためには「科目」を履修し，「単位」を修得することが必要．
+
+\underline{高等学校}\vspace{-5pt}
+\begin{itemize}
+\item 履修する科目を選ぶことはできない（ある程度の選択は可能）．
+\item 単位修得の条件は「学業成績」と「出席日数」
+\end{itemize}\pause
+
+\underline{大学（東京電機大学情報環境学部）}\vspace{-5pt}
+\begin{itemize}
+\item 履修する科目は{\color{blue}{自由}}に選択可能（``しばり"はあるが，必修はない）．
+\item 単位修得の条件は「学業成績」のみ．
+\item 原則として「出席」は成績に反映されない（授業に出席するかしないかは{\color{blue}{自由}}）．
+\end{itemize}\pause
+
+\begin{center}
+{\large ただし，「自由」には「責任」が伴う．}
+\end{center}
+
+\section{数学科目の履修の流れの概略（標準的なモデル）}
+
+初年次前期：\fbox{基礎数学}\hspace{25pt}\fbox{線形代数}
+
+　　　　　　　　↓　　　　　　\hspace{3.5pt}↓
+
+初年次後期：\fbox{微分積分学}\hspace{5pt}\quad　　↓　　　\fbox{確率統計}\quad\fbox{計算機数学}
+
+　　　　　　　　↓　　　　　　\hspace{3.5pt}↓\hspace{104pt}↓
+
+２年次以降：\fbox{情報数学I}\quad\fbox{II}\quad\fbox{III}\quad\fbox{IV}\quad\fbox{V}\hspace{31pt}\fbox{離散数学}
+
+\bigskip
+
+\begin{itemize}
+\item 「基礎数学」は\underline{高校数学の内容の一部を復習}する科目．
+\item 「↓」は\underline{事前履修条件}．
+\item 「微分積分学」は多くの科目の事前履修条件になっている．
+\item したがって，「基礎数学」の単位が取れるかどうかがその後の科目の履修に大きく影響する（実際には単位を落とす学生が少なくない）．
+
+\end{itemize}
+
+\section{「基礎数学」の授業内容}
+この学部で学ぶ数学の科目を修得するために最低限必要な数学
+の内容を復習する（高校数学 I, A, II, B の一部）．
+
+\begin{itemize}
+\item 実数 --
+{\footnotesize 素数，最小公倍数，最大公約数，平方根，絶対値}\vspace{2pt}
+\item 2次関数 --
+{\footnotesize グラフ，2次方程式，2次不等式}\vspace{2pt}
+\item 整式 -- \
+{\footnotesize 式の計算，因数分解，多項式の割り算，因数定理，剰余定理}\vspace{2pt}
+\item 三角関数 --
+{\footnotesize 正弦・余弦・正接，グラフ，加法定理}\vspace{2pt}
+\item 指数関数と対数関数 --
+{\footnotesize 指数法則，対数の性質，グラフ}\vspace{2pt}
+\item 微分 --
+{\footnotesize 微分係数，導関数，接線，極値，関数の増減と最大値・最小値}\vspace{2pt}
+\item 積分 --
+{\footnotesize 原始関数，不定積分，定積分，グラフに囲まれた部分の面積}\vspace{2pt}
+\item 数列 --
+{\footnotesize 等差数列，等比数列，数列の和，階差数列，漸化式}
+\end{itemize}
+
+\section{「基礎数学」の単位修得状況（佐藤が担当したクラス）}
+
+\begin{center}
+\begin{tabular}{|c|rl|c|c|c|}
+\hline
+&&&{\small 受講者数}&{\small 単位修得者数}&{\small 修得率}\vspace{-8pt}\\
+&&&{\scriptsize （実質）}&{\scriptsize （ドロップアウト）}&\\
+\hline
+\hline
+21年度&（前期）&通常クラス&46&28&60.9 \%\\
+&&&{\color{blue}{40}}&{\color{blue}{6 (13.0\%)}}&{\color{blue}{70.0\%}}\\
+\hline
+&（前期）&特別クラス&37&20&54.1\%\\
+&&&{\color{blue}{32}}&{\color{blue}{32 (13.5\%)}}&{\color{blue}{62.5\%}}\\
+\hline
+&（後期）&（再履修）&51&26&51.0\%\\
+&&&{\color{blue}{40}}&{\color{blue}{11 (21.6\%)}}&{\color{blue}{65.0\%}}\\
+\hline
+\hline
+22年度&（前期）&通常クラス&64&30&46.9 \%\\
+&&&{\color{blue}{59}}&{\color{blue}{5 (7.8\%)}}&{\color{blue}{50.8\%}}\\
+\hline
+&（前期）&特別クラス&34&10&29.4\%\\
+&&&{\color{blue}{26}}&{\color{blue}{8 (23.5\%)}}&{\color{blue}{38.5\%}}\\
+\hline
+ \end{tabular}
+\end{center}
+
+\section{「基礎数学」の特別クラス}
+
+\begin{itemize}
+\item 入学後，「プレースメントテスト」を実施．その成績をもとに習熟度別にクラス分けをする．\\
+\item 成績が特に悪い→「基礎数学特別クラス」
+\begin{itemize}
+\item 通常は週50分$\times 3$コマだが，これは50分$\times 5$コマ．
+\item これにより，１年次前期に「線形代数」の履修が不可となる．\\
+\end{itemize}
+\item  成績が特に良い→「基礎数学」を免除，「微分積分学」の履修が可．\\
+\item クラス分けは強制ではない．\\
+（特別クラスから通常のクラスに移動可能だが...）
+\end{itemize}
+
+\section{数学科目の履修の流れの概略（別の2つのモデル）}
+
+初年次前期：\fbox{基礎数学（特別クラス）}
+
+　　　　　　　　↓
+
+初年次後期：\fbox{微分積分学}\hspace{17pt}\fbox{線形代数}　\fbox{確率統計}\quad\fbox{計算機数学}
+
+　　　　　　　　↓　　　　　　\hspace{3.5pt}↓\hspace{104pt}↓
+
+２年次以降：\fbox{情報数学I}\quad\fbox{II}\quad\fbox{III}\quad\fbox{IV}\quad\fbox{V}\hspace{31pt}\fbox{離散数学}
+
+-------------------------------------------------------------------------------------------
+
+初年次前期：\fbox{微分積分学{\small \color{gray1}{（基礎数学を免除）}}}
+
+　　　　　　　　↓\hspace{43pt}\fbox{線形代数}
+
+初年次後期：　　↓\hspace{30.5pt}\quad　　↓　　　\fbox{確率統計}\quad\fbox{計算機数学}
+
+　　　　　　　　↓　　　　　　\hspace{3.5pt}↓\hspace{104pt}↓
+
+２年次以降：\fbox{情報数学I}\quad\fbox{II}\quad\fbox{III}\quad\fbox{IV}\quad\fbox{V}\hspace{31pt}\fbox{離散数学}
+
+
+
+
+\section{プレースメントテストの成績分布（入試経路別）}
+
+\section{入学までの期間をどう過ごすか}
+
+\begin{itemize}
+\item 数学が得意でない者；
+\begin{itemize}
+\item まずは「高校数学 I, A, II, B」の範囲を復習．
+\item 「基礎数学」の教科書「大学新入生の数学（田澤義彦 著）」
+\item ひとつのやり方：とにかく「問題」を解く．
+わからないときは対応する「例題」を読み進めて理解する．
+教科書を読んでもわからないときは先生に質問しよう．\\
+\end{itemize}
+\item 数学が得意な者は，さらなる高みを目指して勉強してください．\\
+\item 一般入試での入学を目指している者は今が勉強の追い込み期間である．\\
+（危機感を持って欲しい）
+\end{itemize}
+\end{document}

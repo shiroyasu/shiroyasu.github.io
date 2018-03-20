@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+a:link    { color: #24ade2; text-decoration: none; }
+a:visited { color: #24ade2; text-decoration: none; }
+a:hover   { color: #004e87; text-decoration: none; }
+
+/* ---------------------------------------- フォントスタイル フォントサイズ */
+body {
+  font-size: 0.9em;
+  text-align: center;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+div { padding: 0; margin: 0;}
+
+ul { padding: 0; margin: 0px;}
+ol { padding: 0; margin: 0px;}
+
+.kamoku {background-color:#f3f3f3 ; border-color: gray; border-style: solid; border-width: 1px;}
+.kamoku2 {background-color:#f3f3f3 ; border-color: gray; border-style: solid; border-width: 1px; vertical-align: text-top; font-size: small}
+.dep1 {background-color:#ff0000 ; color: white ;}
+.dep2 {background-color:#4f81bd ; color: white ;}
+.dep3 {background-color:#00b050 ; color: white ;}
+.main {background-color:#24ade2 ; color: white ;}
+.com {background-color:black ; color: white ;}
+
+.area {background-color:#24ade2 ; color: white ; text-align: center; vertical-align: middle;}
+.grd {background-color:#24ade2 ; color: white ; text-align: center; vertical-align: middle;}
+
+hr         { height: 4px; width: 100%; border: 1px; color: #d3d3d3; }
+
+.esy	{text-indent: 1em; }
+.essay	{font-family: serif; font-size: medium;}
+
+.gs { font-size: small; color: #808080; }
+.gss { font-size: x-small; color: #808080; line-height: 135%;}
+.gl { font-size: x-large; color: #808080; }
+.g { color: #808080; }
+.bquote { background-color: #f0f0f0; padding: 10px 20px; }
+/* ---------------------------------------- レイアウトに関する指定 */
+.box       { border: 1px solid #808080; border-collapse: collapse; }
+#wrapper {
+  text-align: left;
+  margin: 1em auto 0;
+  width: 880px;
+  border: 0px solid #cccccc;
+}
+
+#header {
+  padding: 20px 20px 10px;
+  border-bottom: 3px solid #cccccc;
+}
+
+#contents {
+  width: 880px;
+  padding: 10px 10px 10px 10px;
+}
+
+#footer {
+  clear: both;
+  padding: 0.5em 0 1em;
+  border-top: 3px solid #cccccc;
+}
+
+/* ---------------------------------------- #header内の指定 */
+
+/* -- 見出しレベル1 -- */
+h1 {
+  text-align: left;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+/* -- 企業名 ショップ名 サイト名 -- */
+.logo {
+  font-size: 1.7em;
+  margin-bottom: 0.3em;
+}
+
+.logo a {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #0099ff;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #ff0000;
+}
+
+/* -- 概要 -- */
+.description {
+}
+
+/* ---------------------------------------- #contents内の指定 */
+
+/* -- 見出し -- */
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  padding: 5px 0 5px 5px;
+  border-left: 0px solid #000000;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+h3,h4,h5,h6 {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  padding: 5px 0 5px 5px;
+  border-left: 0px solid #000000;
+  border-bottom: 1px dashed #d3d3d3;
+}
+
+/* -- 文字 -- */
+#contents p {
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+/* -- パン屑リスト -- */
+#contents .topic-path {
+  line-height: 1em;
+  margin-bottom: 2em;
+}
+
+/* -- 以下 リスト関係 -- */
+#contents dl { margin: 1em 0; }
+
+#contents dt {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  border-bottom: 1px dotted #666666;
+}
+
+#contents dd { margin-bottom: 2em; }
+
+#contents ul { margin: 1em 0 1em 20px; }
+#contents ol { margin: 1em 0 1em 30px; }
+#contents li { margin-bottom: 0.2em; }
+
+/* ---------------------------------------- #sidebar内の指定 */
+
+/* -- カテゴリタイトル -- */
+.sidetitle {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #666666;
+}
+
+/* -- リスト -- */
+.localnavi {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+.localnavi li { display: inline; }
+
+.localnavi a {
+  text-decoration: none;
+  display: block;
+  width: 170px;
+  padding: 0.5em 5px;
+  background-color: #eeeeee;
+  color: #000000;
+  border-bottom: 1px solid #cccccc;
+}
+
+.localnavi a:hover {
+  text-decoration: none;
+  background-color: #999999;
+  color: #000000;
+  border-bottom: 1px solid #ff0000;
+}
+.tt{
+  background-color: #eeeeee;
+  font-size: x-small;
+  color: #808080;
+  padding: 0px 0px 0px 2px;
+}
+
+.rt        { text-align: right; vertical-align: top; }
+.lt        { text-align: left; vertical-align: top; }
+.ct        { text-align: center; vertical-align: top; }
+/* ---------------------------------------- #footer内の指定 */
+#footer p { text-align: center; }
+
+/* 以下 CSSデザインサンプルクレジット部分 */
+#cds{ display: none; }
