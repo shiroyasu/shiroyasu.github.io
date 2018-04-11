@@ -52,6 +52,8 @@ hr { height: 4px; width: 100%; border: 1px; background-color: #d3d3d3; }
 .ps { background-color: aquamarine ; color: black ;}
 .main {background-color:#24ade2 ; color: white ;}
 .com {background-color:black ; color: white ;}
+.qm {background-color:#bbc8e6 ; color: white ;}
+.dsk {background-color:#e79db0 ; color: black ;}
 
 .remark { color: red ; font-weight: bold; }
 
