@@ -81,13 +81,13 @@
      <td style="width: 33px; text-align: right; vertical-align: top;">4月</td>
      <td style="width: 55px; text-align: right; vertical-align: top;">10日<span class="gs">(火)</span></td>
      <td>ガイダンス（授業の諸注意）<br>
-	     <b>偏微分(1)</b> 2変数関数のグラフ <span class="qm">&nbsp;2.3[1]&nbsp;</span> <span class="dsk">&nbsp;134, 135, 136&nbsp;</span>, 偏微分の定義 <span class="qm">&nbsp;2.4[1]&nbsp;</span> <span class="dsk">&nbsp;137, 138, 139&nbsp;</span> <a href="./math-slide01-s.pdf">スライド <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> <!--<a href=""><i class="fa fa-twitter"></i></a>--><br>
+	     <b>偏微分(1)</b> 2変数関数のグラフ <span class="qm">&nbsp;2.3[1]&nbsp;</span> <span class="dsk">&nbsp;134, 135, 136&nbsp;</span>, 偏微分の定義 <span class="qm">&nbsp;2.4[1]&nbsp;</span> <span class="dsk">&nbsp;137, 138, 139&nbsp;</span> （<a href="./math-slide01-s.pdf">スライド <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>） <!--<a href=""><i class="fa fa-twitter"></i></a>--><br>
 	     <span class="gss">【授業前】導関数の定義と記号 $\dfrac{dy}{dx}$ の意味についてテキストを用いて調べ, 理解できなかった事項をノートに記しておくこと.</span><br>
 		 <span class="gss">【授業後】２変数関数とその偏微分係数, 偏導関数について確認し, 授業中に解いた問題を解き直すことで知識の定着に努めること.</span>
 		 <ul>
-			 <li>質問１：<b>偏微分係数の幾何的な意味</b><br>
+			 <li>質問1.1：<b>偏微分係数の幾何的な意味</b><br>
 		 １変数関数の微分係数は<u>接線の傾き</u>という幾何的な意味をもつが, ２変数関数の偏微分係数はどのように解釈できるのでしょうか？偏微分係数を定義するときは, 一方の変数を固定（例えば $y=b$）した１変数関数（$\varphi(x)=f(x,b)$）の微分係数として定めます. 一方の変数を固定した関数のグラフは空間内の曲線となり, 偏微分係数はこの曲線の傾きと解釈できます.</li>
-		 	<li>質問２：<b>微分可能性とは</b><br>
+		 	<li>質問1.2：<b>微分可能性とは</b><br>
 		 １変数関数 $f(x)$ の $x=a$ における微分係数が存在するとき, この関数は「$x=a$ で微分可能である」といます. では<u>微分可能でない</u>とはどういうことなのでしょうか？例えば, $f(x)=\sqrt[3]{x}$ という関数を考えます. この関数は実数全体が定義域で, $y=\sqrt[3]{x}$ のグラフは下図のようになります. 
 		 <div align="center"><img src="math-fig1-1.png" height="200px"></div>
 		 この関数の $x=0$ における微分係数を定義に従って求めてみると,
@@ -99,11 +99,17 @@
    <tr>
    <td class="ct">第2回</td>
    <td></td>
-   <td class="rt">13日<span class="gs">(金)</span></td>
-   <td><b>偏微分(2)</b> 高次偏導関数, 合成関数 $F(t) = f(x(t), y(t))$ の微分<br>
+   <td class="rt">13日<span class="gsc">(金)</span></td>
+   <td><b>偏微分(2)</b> 高次偏導関数 <span class="qm">&nbsp;2.4[2]&nbsp;</span> <span class="dsk">&nbsp;140, 141&nbsp;</span>, 合成関数 $F(t) = f(x(t), y(t))$ の微分 <span class="qm">&nbsp;2.4[3] 〜p.60&nbsp;</span> <span class="dsk">&nbsp;146, 147&nbsp;</span> （<a href="./math-slide02-s.pdf">スライド <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>）<br>
 	     <span class="gss">【授業前】１変数関数の高次導関数と合成関数の微分公式についてテキストを用いて調べ, 理解できなかった事項をノートに記しておくこと.</span><br>
 		 <span class="gss">【授業後】高次偏導関数と合成関数の微分公式について確認し, 授業中に解いた問題を解き直すことで知識の定着に努めること.</span><br>
-	   <b>【第１回小テスト】</b><!--<a href=""><i class="fa fa-twitter"></i></a>-->
+	   <b>【第１回小テスト】</b><!--<a href=""><i class="fa fa-twitter"></i></a>--><ul>
+			 <li>質問2.1：<b>$(x,y)=(at+h, bt+k)$ が直線を表すこと</b><br>
+		 合成関数の微分のところで, 一般に $(x,y)=(\varphi(t), \psi(t))$ は$xy$-平面内の曲線を表すと説明しました. 特に, $a, b, h, k$ を定数とするとき, $(x,y)=(a+ht, b+kt)$ は $(a, b)$ を通り, ベクトル $(h, k)$ に平行な直線であると述べました. これが直線を表すことを, 別の方法で説明します. $x=a+ht$, $y=b+kt$ なので, $t$ について解くと, $t=\dfrac{x-a}{h}$, $t=\dfrac{y-b}{k}$ となります. この2式から $t$ を消去すると, $\dfrac{x-a}{h}=\dfrac{y-b}{k}$ となり, 式変形により $y=\dfrac{k}{h}x+\dfrac{bh-ak}{h}$ を得ます. これは傾きが $\dfrac{k}{h}$ で点 $(a,b)$ を通る平面内の直線であることがわかります. ただし, $h\ne 0$ の場合であることに注意してください（$h=0$ の場合の考察はみなさんに任せます）.</li>
+		 <li>質問2.2：<b>合成関数の微分の公式（p.59, 定理2）の式の解釈</b><br>定理で与えられている式と, 授業内で書いた式
+		 $$z'(t)=f_x(\varphi(t), \psi(t))\,\varphi'(t)+f_y(\varphi(t), \psi(t))\,\psi(t)$$
+		 が結びつかない, どう考えればよいのか, という質問がありました. このタイプの合成関数の公式は, 上に書いた式をまずは理解してください. 教科書の式は, 上の式を理解している人が簡略化して書いた式と理解して下さい（簡略化した式を見たときに, 変数などを補完して, 上の式に直せるようになることが望ましいです）.
+		 </li>
 	   </td>
    </tr>
    <tr>
