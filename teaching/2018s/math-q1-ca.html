@@ -85,9 +85,9 @@
 	     <span class="gss">【授業前】導関数の定義と記号 $\dfrac{dy}{dx}$ の意味についてテキストを用いて調べ, 理解できなかった事項をノートに記しておくこと.</span><br>
 		 <span class="gss">【授業後】２変数関数とその偏微分係数, 偏導関数について確認し, 授業中に解いた問題を解き直すことで知識の定着に努めること.</span>
 		 <ul>
-			 <li>質問1.1：<b>偏微分係数の幾何的な意味</b><br>
+			 <li>補足1.1：<b>偏微分係数の幾何的な意味</b><br>
 		 １変数関数の微分係数は<u>接線の傾き</u>という幾何的な意味をもちますが, ２変数関数の偏微分係数はどのように解釈できるのでしょうか？偏微分係数は, 一方の変数を固定（例えば $y=b$）した１変数関数（$\varphi(x)=f(x,b)$）の微分係数として定めます. 一方の変数を固定した関数のグラフは空間内の曲線と解釈でき, 偏微分係数はこの曲線の傾きとなります.</li>
-		 	<li>質問1.2：<b>微分可能性とは</b><br>
+		 	<li>補足1.2：<b>微分可能性とは</b><br>
 		 １変数関数 $f(x)$ の $x=a$ における微分係数が存在するとき, この関数は「$x=a$ で微分可能である」といいます. では<u>微分可能でない</u>とはどういうことなのでしょうか？例えば, $f(x)=\sqrt[3]{x}$ という関数を考えます. この関数は実数全体が定義域で, そのグラフは下図のようになります. 
 		 <div align="center"><img src="math-fig1-1.png" height="200px"></div>
 		 この関数の $x=0$ における微分係数を定義に従って求めてみると,
@@ -105,9 +105,9 @@
 		 <span class="gss">【授業後】高次偏導関数と合成関数の微分公式について確認し, 授業中に解いた問題を解き直すことで知識の定着に努めること.</span><br>
 	   <b>【第１回小テスト】</b><!--<a href=""><i class="fa fa-twitter"></i></a>-->
 	   <ul>
-		<li>質問2.1：<b>$(x,y)=(at+h, bt+k)$ が直線を表すこと</b><br>
+		<li>補足2.1：<b>$(x,y)=(at+h, bt+k)$ が直線を表すこと</b><br>
 		 合成関数の微分のところで, 一般に $(x,y)=(\varphi(t), \psi(t))$ は$xy$-平面内の曲線を表すと説明しました. 特に, $a, b, h, k$ を定数とするとき, $(x,y)=(a+ht, b+kt)$ は, $(a, b)$ を通り, ベクトル $(h, k)$ に平行な直線であると述べました. これが直線を表すことを, 別の方法で説明します. $x=a+ht$, $y=b+kt$ なので, これらを $t$ について解くと, $t=\dfrac{x-a}{h}$, $t=\dfrac{y-b}{k}$ となります. この2式から $t$ を消去すると, $\dfrac{x-a}{h}=\dfrac{y-b}{k}$ となり, 式変形により $y=\dfrac{k}{h}x+\dfrac{bh-ak}{h}$ を得ます. これは傾きが $\dfrac{k}{h}$ で点 $(a,b)$ を通る平面内の直線であることがわかります. ただし, これは $h\ne 0$ の場合の議論であることに注意してください（$h=0$ の場合の考察はみなさんにお任せします）.</li>
-		<li>質問2.2：<b>合成関数の微分の公式（p.59, 定理2）の式の解釈</b><br>
+		<li>補足2.2：<b>合成関数の微分の公式（p.59, 定理2）の式の解釈</b><br>
 		定理で与えられている式と, 授業内で書いた式
 		 $$z'(t)=f_x(\varphi(t), \psi(t))\,\varphi'(t)+f_y(\varphi(t), \psi(t))\,\psi'(t)$$
 		 が結びつかない, どう考えればよいのか, という質問がありました. このタイプの合成関数の微分公式は, まずは上に書いた式(2)を理解してください. 教科書の式は, (2)の式を理解している人が簡略化して書いた式と理解して下さい（簡略化した式を見たときに, 変数などを補完して, (2)の式に直せるようになることが望ましいです）.</li>
@@ -145,7 +145,13 @@
    <td class="rt">24日<span class="gs">(火)</span></td>
    <td><b>関数の極値(1)</b> １変数関数の極値の判定 <span class="qm">&nbsp;2.6[1]&nbsp;</span> <span class="dsk">&nbsp;150〜152&nbsp;</span>, ２変数関数の極値の判定 <span class="qm">&nbsp;2.6[2]&nbsp;</span> <span class="dsk">&nbsp;153&nbsp;</span> / <a href="./math-slide03-s.pdf">スライド <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a><br>
 	     <span class="gss">【授業前】関数の増減と導関数の符号についてテキストを用いて調べ, 理解できなかった事項をノートに記しておくこと.</span><br>
-		 <span class="gss">【授業後】１変数関数の極値とその判定法を確認し, 授業中に解いた問題を解き直すことで知識の定着に努めること.</span><br></td>
+		 <span class="gss">【授業後】１変数関数の極値とその判定法を確認し, 授業中に解いた問題を解き直すことで知識の定着に努めること.</span>
+		<ul>
+		<li>補足5.1：<b>極値の判定条件</b><br>
+		 1変数関数の極値を求める際, $f''(a)$ の符号で極大か極小かを判定しましたが, $f''(a)=0$ のときは極値をとる場合もとらない場合もあることを述べました. 一般に, $x=a$ における1次から$(2m-1)$次までの微分係数がすべて $0$ で, $f^{(2m)}(a)\ne 0$ の場合は, $f^{(2m)}(a)$ の符号で極値の判定ができます. 1次から$2m$次までの微分係数がすべて $0$ で, $f^{(2m+1)}(a)\ne 0$ の場合, $f(a)$ は極値には<b>なり得ません</b>（テイラーの定理を用いて証明できます）.</li>
+		<li>補足5.2：<b>$F(t)=f(a+ht. b+kt)$ の2次導関数の式変形</b><br>
+		2変数関数の極値の判定条件を導出するところで, $F''(0)$ を平方完成しました. なぜこのような式変形をするのか, という質問がありました. 式の符号を調べる際, $(\qquad)^2$ という項をつくっていくという方法をあります（2乗すると必ず$0$以上になる）. この結果, $F''(0)$ の符号を調べるには, $D(a, b)=\{f_{xy}(a,b)\}^2-f_{xx}(a,b)\,f_{yy}(a,b)\}$ と $f_{xx}(a,b)$ の符号を調べればよい, ということがわかるわけです.</li>
+	   </ul></td>
    </tr>
    <tr>
    <td class="ct">第6回</td>
@@ -154,7 +160,20 @@
    <td><b>関数の極値(2)</b> ２変数関数の極値の判定（判定の手順と例の紹介） <span class="qm">&nbsp;2.6[2]&nbsp;</span> <span class="dsk">&nbsp;154, 155&nbsp;</span><!--<a href=""><i class="fa fa-twitter"></i></a>--><br>
 	     <span class="gss">【授業前】１変数関数の極値の求め方と判定法についてテキストを用いて調べ, 理解できなかった事項をノートに記しておくこと.</span><br>
 		 <span class="gss">【授業後】２変数関数の極値とその判定法を確認し, 授業中に解いた問題を解き直すことで知識の定着に努めること.</span><br>
-	   <b>【第３回小テスト】</b></td>
+	   <b>【第３回小テスト】</b>
+	   <ul>
+		<li>補足6.1：<b>2変数関数の極値の判定条件について</b><br>
+		$f_x(a,b)=f_y(a,b)=0$ を満たす点 $(a, b)$ に対して, $f(a,b)$ が極値か否かを判定する際, $D(a, b)$ と $f_{xx}(a, b)$ の符号に着目しました. これに関連し, $f_{xx}(a, b)$ の代わりに $f_{yy}(a, b)$ の符号で判定することはできないのか？との質問がありました（とても良い質問）. 答えは「<b>できる</b>」です. この判定条件は, $F(t)=f(a+ht, b+kt)$ の2次微分係数 $F''(0)$ の符号を調べることに由来しており, $F''(0)$ を $h$ の2次式とみて平方完成した式
+		$$
+		F''(0)=f_{xx}(a, b)\left\{
+\left(h+\frac{f_{xy}(a, b)}{f_{xx}(a, b)}\cdot k\right)^2-\frac{D(a, b)}{\{f_{xx}(a, b)\}^2}\cdot k^2\right\}
+		$$
+		から導かれます. しかし, 同様に $k$ について平方完成した式
+		$$
+		F''(0)=f_{yy}(a, b)\left\{
+\left(k+\frac{f_{xy}(a, b)}{f_{yy}(a, b)}\cdot h\right)^2-\frac{D(a, b)}{\{f_{yy}(a, b)\}^2}\cdot h^2\right\}
+		$$
+		から判定することもできます. この場合は, <b>$\boldsymbol{D(a, b)}$ と $\boldsymbol{f_{yy}(a, b)}$ の符号</b>から判定することになります.</li></td>
    </tr>
    <tr>
    <td class="ct">第7回</td>
@@ -236,7 +255,7 @@
 <ul>
 <li>南部徳盛著, 現代数学ゼミナール９ <span class="qm">『数学概論　微分積分と線形代数 <a href="https://www.kindaikagaku.co.jp/math/kd1011.htm"><i class="fa fa-external-link" aria-hidden="true"></i></a>』</span>, 近代科学社 &#187; <a href="https://www.amazon.co.jp/%E6%95%B0%E5%AD%A6%E6%A6%82%E8%AB%96%E2%80%95%E5%BE%AE%E5%88%86%E7%A9%8D%E5%88%86%E3%81%A8%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0-%E7%8F%BE%E4%BB%A3%E6%95%B0%E5%AD%A6%E3%82%BC%E3%83%9F%E3%83%8A%E3%83%BC%E3%83%AB-%E5%8D%97%E9%83%A8-%E5%BE%B3%E7%9B%9B/dp/476491011X/ref=sr_1_1?ie=UTF8&qid=1523339921&sr=8-1&keywords=%E8%BF%91%E4%BB%A3%E7%A7%91%E5%AD%A6%E3%80%80%E6%95%B0%E5%AD%A6%E6%A6%82%E8%AB%96">amazon.co.jp<i class="fa fa-amazon" aria-hidden="true"></i></a><br>
 <span class="gss">ISBN:978-4-7649-1011-9</span></li>
-<li>衛藤和文・佐藤弘康・柳下稔・高岡邦行 著, <span class="dsk">「大学数学これだけは ―精選1000問 <a href="http://www.gakujutsu.co.jp/mybooks/ISBN978-4-7806-0650-8.html"><i class="fa fa-external-link" aria-hidden="true"></i></a>」</span>, 「同・解答集 <a href="http://www.gakujutsu.co.jp/mybooks/ISBN978-4-7806-0651-5.html"><i class="fa fa-external-link" aria-hidden="true"></i></a>」, 学術図書出版<br>
+<li>衛藤和文・佐藤弘康・柳下稔・高岡邦行 著, <span class="dsk">『大学数学これだけは ―精選1000問 <a href="http://www.gakujutsu.co.jp/mybooks/ISBN978-4-7806-0650-8.html"><i class="fa fa-external-link" aria-hidden="true"></i></a>』</span>, 『同・解答集 <a href="http://www.gakujutsu.co.jp/mybooks/ISBN978-4-7806-0651-5.html"><i class="fa fa-external-link" aria-hidden="true"></i></a>』, 学術図書出版<br>
 <span class="gss">ISBN:978-4-7806-0650-8, 978-4-7806-0651-5</span></li>
 </ul>
 
