@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-a:link    { color: black ; border-bottom: 2px solid #24ade2 ; text-decoration: none; }
-a:visited { color: black ; border-bottom: 2px solid #24ade2 ; text-decoration: none; }
-a:hover   { color: #24ade2 ; text-decoration: none; }
+a:link    { color: black ; background: linear-gradient(transparent 60%, #87cefa 60%) ; text-decoration: none; }
+a:visited { color: black ; background: linear-gradient(transparent 60%, #87cefa 60%) ; text-decoration: none; }
+a:hover   { color: black ; background: linear-gradient(transparent 0%, #87cefa 0%) ; text-decoration: none; }
 
 /* ---------------------------------------- フォントスタイル フォントサイズ */
 body {
