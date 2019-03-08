@@ -31,7 +31,7 @@ body {
 
 .icon-fa a:link		{ color: gray; border-bottom: 0px; text-decoration: none; }
 .icon-fa a:visited	{ color: gray; border-bottom: 0px; text-decoration: none; }
-.icon-fa a:hover	{ color: #24ade2; text-decoration: none; }
+.icon-fa a:hover	{ color: gray; border-bottom: 0px; text-decoration: none; }
 
 .sns-link a:link	{ color: black; border-bottom: 0px; text-decoration: none; }
 .sns-link a:visited	{ color: black; border-bottom: 0px; text-decoration: none; }
