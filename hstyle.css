@@ -69,6 +69,9 @@ hr { height: 4px; width: 100%; border: 1px; background-color: #d3d3d3; }
 .qm {background-color:#bbc8e6 ; color: white ;}
 .dsk {background-color:#e79db0 ; color: black ;}
 
+.color-researchgate {color: #21CBBA}
+.color-orcid {color: #A6CE39}
+
 .remark { color: red ; font-weight: bold; }
 
 .gs { font-size: small; color: #808080; line-height: 135%;}
