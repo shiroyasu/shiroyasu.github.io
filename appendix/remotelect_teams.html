@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../hstyle.css">
+<link rel="stylesheet" type="text/css" href="../hstyle-sub.css">
+<link rel="shortcut icon" href="../img/favicon.png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+       <script type="text/x-mathjax-config">
+         MathJax.Hub.Config({
+           tex2jax: {
+             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+             processEscapes: true
+           }
+         });
+       </script>
+       <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
+
+<title>遠隔授業メモ：Teams</title>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+
+<h1>佐藤 弘康 <span class="g">Hiroyasu SATOH</span> - <a href="../index.html">home</a> &#155;&#155; <a href="../appendix.html">Appendix</a> &#155;&#155; 遠隔授業</h1>
+<p class="logo">遠隔授業に関するメモ (Teams)</span></p>
+</div>
+
+<div id="contents">
+<div align="right">
+<span class="gss">（令和3年2月2日 更新）</span>
+</div>
+
+<h2>Teams：チームメンバーリストの取得</h2>
+
+<ul>
+	<li>［課題］タブで課題を作成することにより，［成績］タブからチームメンバーの一覧が取得できる．</li>
+	<li>しかし，チームメンバーが200名を超える場合は，Teams の仕様制限により，課題を作成することができない．この場合は，PowerShell の Teamsモジュールを利用することにより，チームメンバーのリストを得ることができる．</li>
+</ul>
+
+<h3>手順（macOS の場合）</h3>
+
+<ol>
+	<li><b>PowerShell</b> を<a href="https://docs.microsoft.com/ja-jp/powershell/scripting/install/installing-powershell?view=powershell-7.1">インストール</a>する．※初回のみ</li>
+	<li>ターミナルで PowerShell を起動
+	<blockquote class="bquote">$ pwsh<br>PS > </blockquote></li>
+	<li><b>Microsoft-Teamsモジュール</b>をインストールする．※初回のみ
+	<blockquote class="bquote">PS > Install-Module -Name MicrosoftTeams</blockquote>
+	（何やら尋ねられるので，[Y] を入力して Enter）</li>
+	<li>Microsoft-Teamsモジュールを読み込み
+	<blockquote class="bquote">PS > Import-Module -Name MicrosoftTeams</blockquote></li>
+	<li>Microsoft-Teamsに接続
+	<blockquote class="bquote">PS > Connect-MicrosoftTeams</blockquote>
+	（ここで認証します．ブラウザで <a href="https://microsoft.com/devicelogin">https://microsoft.com/devicelogin</a> に接続し，メッセージ内にあるコードを入力する）<br>
+	<div align="center"><img width="600" src="./remotelect/fig-teams01.png"></div></li>
+	<li>対象のチームのグループIDを調べる．<br>
+	（チームのURLの「...groupId=<b>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</b>&...」の太字の部分がグループID）</li>
+	<li>メンバー一覧を入手し，テキストファイル (member.txt) に書き出す．
+	<blockquote class="bquote">PS > Get-TeamUser -GroupId （6で調べたグループID） >> member.txt</blockquote></li>
+</ol>
+
+<h2>Teams：チームメンバーの一括登録</h2>
+
+（作成中）
+
+<div id="footer">
+<p><span class="gs">Copyright &copy; Hiroyasu Satoh. All Rights Reserved.</span></p>
+<p id="cds">CSS Template <a href="http://www.css-designsample.com/">CSSデザインサンプル</a></p>
+</div>
+
+</div>
+</body>
+</html>
