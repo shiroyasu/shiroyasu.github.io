@@ -1,0 +1,41 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	  <div class="localNaviLab">
+	    <ul>
+	      <li style="border-bottom: 1px solid #fff">
+			<p class="group3"><a href="../lab/lab4-8.html">学習基盤・キャリア</a></p>
+	        </li>
+	      <li>
+	        <p class="group2">教養系</p>
+	        <ul>
+	          <!--<li><a href="../lab/lab5-1.html">文学研究室</a></li>-->
+	          <li><a href="../lab/lab5-2.html">心理学研究室</a></li>
+	          <!--<li><a href="">憲法・会計学研究室</a></li>-->
+	          <li><a href="../lab/lab5-4.html">体育研究室</a></li>
+	          </ul>
+	        </li>
+	      <li>
+	        <p class="group2">言語系</p>
+	        <ul>
+	          <li><a href="../lab/lab1-3.html">英語研究室</a></li>
+	          <!--<li><a href="">独語研究室</a></li>-->
+	          <li><a href="../lab/lab1-11.html">中国語研究室</a></li>
+	          </ul>
+	        </li>
+	      <li>
+	        <p class="group2">理数系</p>
+	        <ul>
+	          <li><a href="../lab/lab2-3.html">数学研究室</a></li>
+	          <li><a href="../lab/lab3-1.html">物理学研究室</a></li>
+	          </ul>
+	        </li>
+	      <li style="border-bottom: 1px solid #fff">
+	        <p class="groupNL">環境系</p>
+	        </li>
+	      <li style="border-bottom: 1px solid #fff">
+	        <p class="group3"><a href="../lab/lab6-1.html">教職系</a></p>
+	        </li>
+	      <li>
+	        <p class="group4"><a href="../lab/teacher.html">教員一覧</a></p>
+	        </li>
+	      </ul>
+	    <!-- /.localNaviLab -->
+	    </div>

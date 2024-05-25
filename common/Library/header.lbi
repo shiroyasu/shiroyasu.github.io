@@ -1,0 +1,81 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><header>
+<div class="nit">
+<ul>
+	<li><a href="http://www.nit.ac.jp/" target="_blank"><img src="../img/logo-nit.svg" alt="日本工業大学"></a></li>
+	<li><a href="http://www.nit.ac.jp/" target="_blank"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>大学サイトへ</a></li>
+</ul>
+<!-- /.nit --></div>
+<div class="department">
+<ul>
+	<li><a href="../index.html"><img src="../img/department.svg" alt="共通教育学群"></a></li>
+	<li><img src="../img/img-department.png" alt="共通教育学群"></li>
+</ul>
+<!-- /.department --></div>
+</header>
+
+
+<div class="wsmenucontainer">
+<div class="wsmenuexpandermain slideRight"><a id="navToggle" class="animated-arrow slideLeft"><span></span></a></div>
+<div class="wsmenucontent overlapblackbg"></div>
+
+<div class="globalNavi">
+<nav class="wsmenu slideLeft">
+
+<ul class="mobile-sub wsmenu-list">
+	<li><a href="../index.html">トップ</a></li>
+
+	<li><a href="../subject/">共通教育科目の紹介</a></li>
+
+	<li><a href="">研究室紹介<span class="arrow"></span></a>
+        <ul class="wsmenu-submenu">
+            <li><a href="../lab/lab4-8.html"><i class="fa fa-arrow-circle-right"></i>学習基盤・キャリア系</a></li>
+            <li><a href=""><i class="fa fa-arrow-circle-right"></i>教養系</a>
+				<ul class="wsmenu-submenu-sub">
+					<!--<li><a href="../lab/lab5-1.html"><i class="fa fa-arrow-circle-right"></i>文学研究室</a></li>-->
+					<li><a href="../lab/lab5-2.html"><i class="fa fa-arrow-circle-right"></i>心理学研究室</a></li>
+					<!--<li><a href="#"><i class="fa fa-arrow-circle-right"></i>憲法・会計学研究室</a></li>-->
+					<li><a href="../lab/lab5-4.html"><i class="fa fa-arrow-circle-right"></i>体育研究室</a></li>
+				</ul>
+			</li>
+            <li><a href=""><i class="fa fa-arrow-circle-right"></i>言語系</a>
+				<ul class="wsmenu-submenu-sub">
+					<li><a href="../lab/lab1-7.html"><i class="fa fa-arrow-circle-right"></i>英語研究室</a></li>
+					<!--<li><a href="#"><i class="fa fa-arrow-circle-right"></i>独語研究室</a></li>-->
+					<li><a href="../lab/lab1-11.html"><i class="fa fa-arrow-circle-right"></i>中国語研究室</a></li>
+				</ul>
+			</li>
+            <li><a href=""><i class="fa fa-arrow-circle-right"></i>理数系</a>
+				<ul class="wsmenu-submenu-sub">
+					<li><a href="../lab/lab2-3.html"><i class="fa fa-arrow-circle-right"></i>数学研究室</a></li>
+					<li><a href="../lab/lab3-1.html"><i class="fa fa-arrow-circle-right"></i>物理学研究室</a></li>
+				</ul>
+			</li>
+            <li><a href="../lab/lab6-1.html"><i class="fa fa-arrow-circle-right"></i>教職系</a></li>
+            <li class="kyoin"><a href="../lab/teacher.html"><i class="fa fa-arrow-circle-right"></i>教員一覧</a></li>
+        </ul>
+    </li>
+
+	<li><a href="../course/">履修ガイド</a></li>
+	
+    <li><a href="http://www.nit.ac.jp/guide/" target="_blank">アクセス</a></li>
+	
+	<li><a href="">その他の学科<span class="arrow"></span></a>
+        <ul class="wsmenu-submenu">
+            <li class="gakubu1"><a href="http://nit-mech.jp/wp/" target="_blank"><i class="fa fa-arrow-circle-right"></i>機械工学科</a></li>
+            <li class="gakubu1"><a href="https://www.nit.ac.jp/department/electronic" target="_blank"><i class="fa fa-arrow-circle-right"></i>電気電子通信工学科</a></li>
+            <li class="gakubu1"><a href="http://www.nit-chemistry.net/" target="_blank"><i class="fa fa-arrow-circle-right"></i>応用化学科</a></li>
+            <li class="gakubu2"><a href="http://nit-robot.net" target="_blank"><i class="fa fa-arrow-circle-right"></i>ロボティクス学科</a></li>
+            <li class="gakubu2"><a href="https://www.nit.ac.jp/department/media" target="_blank"><i class="fa fa-arrow-circle-right"></i>情報メディア工学科</a></li>
+			<li class="gakubu2"><a href="https://www.nit.ac.jp/department/science" target="_blank"><i class="fa fa-arrow-circle-right"></i>データサイエンス学科</a></li>
+            <li class="gakubu3"><a href="http://nit-kenchiku.jp/activities/" target="_blank"><i class="fa fa-arrow-circle-right"></i>建築コース</a></li>
+            <li class="gakubu3"><a href="http://www3.nit.ac.jp/seikatsu/" target="_blank"><i class="fa fa-arrow-circle-right"></i>生活環境デザインコース</a></li>
+        </ul>
+    </li>
+
+    <li class="spNav"><a href="http://www.nit.ac.jp/contact/" target="_blank">お問い合わせ</a></li>
+    <li class="spNav"><a href="http://www.nit.ac.jp/" target="_blank">大学サイトへ</a></li>
+</ul>
+
+</nav>
+</div>
+<!-- wsmenucontainer --></div>

@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+.localNaviLab > ul > li > p.group {
+	color: #fff;
+	background: rgba(246,171,0,1.00);
+	padding: 8px 10px;
+	font-weight: bold;
+}
+.localNaviLab > ul > li > p.group2 {
+	color: #fff;
+	background: rgba(0,64,133,1.00);
+	font-weight: bold;
+	padding: 8px 10px;
+}
+.localNaviLab > ul > li > p.group3 a {
+	display: block;
+	color: #fff;
+	background: rgba(0,64,133,1.00);
+	font-weight: bold;
+	padding: 8px 10px;
+}
+.localNaviLab > ul > li > p.group3 a:hover {
+	background: rgba(0,96,200,1.00);
+}
+.localNaviLab > ul > li > p.group4 {
+	background: rgba(255,255,255,1.00);
+}
+.localNaviLab > ul > li > p.group4 a {
+	display: block;
+	color: #333;
+	background: rgba(255,255,255,1.00);
+	font-weight: bold;
+	margin-top: 10px;
+	padding: 8px 10px;
+	border: 4px double #999;
+}
+.localNaviLab > ul > li > p.group4 a:hover {
+	background: rgba(0,96,200,0.1);
+}
+.localNaviLab > ul > li > p.groupNL {
+	display: block;
+	color: #fff;
+	background: rgba(0,64,133,1.00);
+	font-weight: bold;
+	padding: 8px 10px;
+}
+.localNaviLab > ul > li > p.groupSub {
+	padding: 6px 10px;
+	font-weight: bold;
+	background: #eee;
+	font-size: 0.88em;
+}
+.localNaviLab > ul > li > ul > li {
+	background: rgba(255,255,255,1.00);
+	border-bottom: 1px solid #ddd;
+}
+.localNaviLab > ul > li > ul > li:last-child {
+	border-bottom: none;
+}
+.localNaviLab > ul > li > ul > li.noLink {
+	display: block;
+	padding: 8px;
+	font-size: 0.8em;
+	line-height: 1.4;
+}
+.localNaviLab > ul > li > ul > li a {
+	display: block;
+	padding: 8px;
+	font-size: 0.8em;
+	line-height: 1.4;
+}
+.localNaviLab > ul > li > ul > li a:hover {
+	background: rgba(246,171,0,0.1);
+}
+.photo240 {
+	max-width: 240px;
+	margin: 0 auto 10px;
+}
+.photo320 {
+	max-width: 320px;
+	margin: 0 auto 10px;
+}
+.photo400 {
+	max-width: 400px;
+	margin: 0 auto 10px;
+}
+.photo480 {
+	max-width: 480px;
+	margin: 0 auto 10px;
+}
+.photo640 {
+	max-width: 640px;
+	margin: 0 auto 10px;
+}
+.photo160 p,
+.photo320 p,
+.photo400 p,
+.photo480 p,
+.photo640 p {
+	margin-top: 5px;
+	font-size: 0.75em !important;
+}
+.laboratory p {
+	font-size: 0.94em;
+	margin-bottom: 10px;
+	line-height: 1.6;
+}
+.laboratory .labTTL {
+	font-size: 1em;
+	font-weight: bold;
+}
+.laboratory .ol01 {
+	margin-left: 1.5em;
+	list-style: decimal;
+}
+.laboratory .ul01 {
+	margin-left: 1.5em;
+	list-style: disc;
+}
+.laboratory .ol01 li,
+.laboratory .ul01 li {
+	font-size: 0.94em;
+	margin-bottom: 5px;
+	line-height: 1.6;
+}
+.laboratory .link {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+.laboratory .link ul li a {
+	display: block;
+}
+.laboratory .link ul li a:before {
+	content: "\f14c";
+	font-family: FontAwesome;
+	color: rgba(246,171,0,1.00);
+	margin-right: 0.3em;
+}
+.laboratory .imgRight {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	width: auto;
+	height: auto;
+}
+.index .indexTxt {
+	font-size: 0.94em;
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+.index .photo {
+	margin-bottom: 30px;
+}
+.index .photo p {
+	margin-top: 5px;
+	font-size: 0.75em !important;
+}
+
+.teacher .icon {
+	width: 7em;
+	margin-left: auto;
+	font-size: 0.9em;
+}
+.teacher .icon:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+.teacher .icon dt {
+	clear: both;
+	float: left;
+	width: 1em;
+}
+.teacher .icon dd {
+	padding-left: 1.8em;
+}
+.teacher .teacherList {
+	width: 100%;
+}
+.teacher .teacherList .trBorder {
+	border-bottom: 1px dotted #999;
+}
+.teacher .teacherList th {
+	text-align: center;
+	font-weight: bold;
+	padding: 8px;
+	vertical-align: top;
+}
+.teacher .teacherList td {
+	padding: 8px;
+	vertical-align: top;
+}
+.teacher .teacherList .aiu {
+	color: #999;
+}
+.teacher .teacherList .name {
+	text-indent: -1.3em;
+	padding-left: 1.3em;
+	white-space: nowrap;
+}
+.teacher .teacherList .name:before {
+	content: "\f138";
+	font-family: FontAwesome;
+	margin-right: 0.3em;
+	color: rgba(0,64,133,1.00);
+}
+.teacher .teacherList .name2:before {color: rgba(157,13,70,1.00)}
+
+.teacher .teacherList .nw {white-space: nowrap;}
+.teacher .icon .fa-user-circle,
+.teacher .icon .fa-graduation-cap,
+.teacher .teacherList .fa-user-circle,
+.teacher .teacherList .fa-graduation-cap {color: rgba(0,64,133,1.00);}
+.teacher .teacherList .fa-user-circle:hover,
+.teacher .teacherList .fa-graduation-cap:hover {color: rgba(246,171,0,1.00);}
+.pic_lst,.sp_pilst{text-align: center;}
+.pic_lst li,.sp_pilst li{display: inline-block;width: 30%;margin: 0 0.46em;}
+/* ---------------------------------------------
+	768px 以下
+--------------------------------------------- */
+@media only screen and (max-width: 768px) {
+
+	.localNaviLab > ul > li > p.group,
+	.localNaviLab > ul > li > p.group2,
+	.localNaviLab > ul > li > p.group3 {
+		font-size: 0.88em;
+	}
+	.localNaviLab > ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.localNaviLab > ul > li {
+		width: 32%;
+		margin-right: 2%;
+		margin-bottom: 5px;
+	}
+	.localNaviLab > ul > li:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.teacher .teacherList th {
+		font-size: 0.9em;
+		padding: 8px 5px;
+	}
+	.teacher .teacherList td {
+		font-size: 0.9em;
+		padding: 8px 5px;
+	}
+	.pic_lst li{display: inline-flex;width:80%;margin-bottom:0.6em;}
+	.sp_pilst li{margin: 0 0.2em;}
+
+}
+
+/* ---------------------------------------------
+	640px 以下
+--------------------------------------------- */
+@media only screen and (max-width: 640px) {
+
+	.localNaviLab > ul > li {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+
+
+}
+
+/* ---------------------------------------------
+	480px 以下
+--------------------------------------------- */
+@media only screen and (max-width: 480px) {
+
+	.laboratory .imgRight {
+		display: block;
+		float: none;
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+}
